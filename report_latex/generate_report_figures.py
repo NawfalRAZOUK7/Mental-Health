@@ -155,6 +155,82 @@ def v1_who_crude_vs_age_std() -> None:
         print(f"[ok] Wrote {out}")
 
 
+def v1_who_map() -> None:
+    path = REPO_ROOT / "v1" / "data_clean" / "who_2021_clean.csv"
+    if not path.exists():
+        print(f"[warn] Missing {path}")
+        return
+    df = pd.read_csv(path)
+    sex_values = df["sex_name"].dropna().unique().tolist()
+    sex_pick = "Both sexes" if "Both sexes" in sex_values else ("Both" if "Both" in sex_values else None)
+    if sex_pick:
+        df = df[df["sex_name"] == sex_pick].copy()
+    else:
+        df = df.copy()
+    df["age_standardized_suicide_rate_2021"] = pd.to_numeric(
+        df["age_standardized_suicide_rate_2021"], errors="coerce"
+    )
+    df = df.dropna(subset=["iso3", "age_standardized_suicide_rate_2021"])
+    if df.empty:
+        print("[warn] v1 WHO map filter returned empty")
+        return
+    fig = px.choropleth(
+        df,
+        locations="iso3",
+        color="age_standardized_suicide_rate_2021",
+        hover_name="location_name",
+        color_continuous_scale="Reds",
+        title="WHO 2021: taux de suicide age-standardise (Both)",
+    )
+    fig.update_layout(margin=dict(l=0, r=0, t=60, b=0))
+    out = save_fig(fig, "fig_v1_who_map")
+    if out:
+        print(f"[ok] Wrote {out}")
+
+
+def v1_selfharm_sex_top15() -> None:
+    path = REPO_ROOT / "v1" / "data_clean" / "gbd_selfharm_clean.csv"
+    if not path.exists():
+        print(f"[warn] Missing {path}")
+        return
+    df = pd.read_csv(path)
+    df = df[
+        (df["measure_name"] == "Deaths")
+        & (df["metric_name"] == "Rate")
+        & (df["year"] == 2023)
+    ].copy()
+    age_values = df["age_name"].dropna().unique().tolist()
+    age_pick = "25+ years" if "25+ years" in age_values else (age_values[0] if age_values else None)
+    if age_pick:
+        df = df[df["age_name"] == age_pick]
+    df = df[df["sex_name"].isin(["Male", "Female"])]
+    df["val"] = pd.to_numeric(df["val"], errors="coerce")
+    df = df.dropna(subset=["val"])
+    if df.empty:
+        print("[warn] v1 self-harm sex filter returned empty")
+        return
+    df = df.groupby(["location_name", "sex_name"], as_index=False)["val"].mean()
+    top_locs = (
+        df.groupby("location_name", as_index=False)["val"].max()
+        .sort_values("val", ascending=False)
+        .head(15)["location_name"]
+        .tolist()
+    )
+    df = df[df["location_name"].isin(top_locs)]
+    fig = px.bar(
+        df,
+        x="val",
+        y="location_name",
+        color="sex_name",
+        orientation="h",
+        title=f"Self-harm deaths rate (Top 15, {age_pick}, 2023)",
+    )
+    fig.update_layout(margin=dict(l=220, r=40, t=70, b=40), height=520)
+    out = save_fig(fig, "fig_v1_selfharm_sex_top15")
+    if out:
+        print(f"[ok] Wrote {out}")
+
+
 def v1_allcause_trends() -> None:
     path = REPO_ROOT / "v1" / "data_clean" / "context_tables" / "context_allcauses_trend.csv"
     if not path.exists():
@@ -331,6 +407,104 @@ def v2_clusters_scatter() -> None:
         print(f"[ok] Wrote {out}")
 
 
+def v2_perm_importance_bar() -> None:
+    path = REPO_ROOT / "v2" / "report" / "v2_perm_importance.csv"
+    if not path.exists():
+        print(f"[warn] Missing {path}")
+        return
+    df = pd.read_csv(path)
+    if df.empty or "feature" not in df.columns or "importance_mean" not in df.columns:
+        print("[warn] v2 perm importance data invalid")
+        return
+    df = df.sort_values("importance_mean", ascending=True).tail(8)
+    fig = px.bar(
+        df,
+        x="importance_mean",
+        y="feature",
+        orientation="h",
+        title="v2 explicabilite: importance par permutation",
+    )
+    fig.update_layout(margin=dict(l=220, r=40, t=70, b=40), height=420)
+    out = save_fig(fig, "fig_v2_perm_importance")
+    if out:
+        print(f"[ok] Wrote {out}")
+
+
+def v3_what_if_curve() -> None:
+    path = REPO_ROOT / "v3" / "data_clean" / "v3_features_v1.csv"
+    if not path.exists():
+        print(f"[warn] Missing {path}")
+        return
+    df = pd.read_csv(path)
+    for col in ["suicide_rate", "depression_dalys_rate", "addiction_death_rate", "selfharm_death_rate"]:
+        df[col] = pd.to_numeric(df[col], errors="coerce")
+    df = df.dropna(subset=["suicide_rate", "depression_dalys_rate"])
+
+    cutoff = 0.7
+    threshold = float(df["suicide_rate"].quantile(cutoff))
+
+    if ColumnTransformer is None or LogisticRegression is None:
+        x = np.linspace(df["depression_dalys_rate"].quantile(0.1), df["depression_dalys_rate"].quantile(0.9), 30)
+        y = (x - x.min()) / (x.max() - x.min() + 1e-6)
+        fig = px.line(
+            x=x,
+            y=y,
+            labels={"x": "Depression DALYs rate", "y": "Relative risk (scaled)"},
+            title="v3 what-if: impact de la depression (courbe illustrative)",
+        )
+        out = save_fig(fig, "fig_v3_what_if")
+        if out:
+            print(f"[ok] Wrote {out}")
+        return
+
+    cat_cols = [c for c in ["region_name", "income_group", "sex_name"] if c in df.columns]
+    num_cols = [c for c in ["depression_dalys_rate", "addiction_death_rate", "selfharm_death_rate"] if c in df.columns]
+    if not num_cols:
+        print("[warn] v3 missing numeric cols for what-if")
+        return
+
+    X = df[cat_cols + num_cols]
+    y = (df["suicide_rate"] >= threshold).astype(int)
+    if y.nunique() < 2 or len(df) < 40:
+        print("[warn] v3 insufficient class balance for what-if")
+        return
+
+    preprocessor = ColumnTransformer(
+        [
+            ("cat", OneHotEncoder(handle_unknown="ignore"), cat_cols),
+            ("num", StandardScaler(), num_cols),
+        ],
+        remainder="drop",
+    )
+    model = LogisticRegression(max_iter=1000, class_weight="balanced")
+    pipe = Pipeline([("prep", preprocessor), ("model", model)])
+    pipe.fit(X, y)
+
+    baseline = df[num_cols].median()
+    baseline_cat = {}
+    for col in cat_cols:
+        baseline_cat[col] = df[col].mode().iloc[0] if not df[col].mode().empty else df[col].dropna().iloc[0]
+
+    sweep = np.linspace(df["depression_dalys_rate"].quantile(0.1), df["depression_dalys_rate"].quantile(0.9), 30)
+    rows = []
+    for val in sweep:
+        row = {**baseline_cat, **baseline.to_dict()}
+        row["depression_dalys_rate"] = float(val)
+        rows.append(row)
+    sweep_df = pd.DataFrame(rows)
+    proba = pipe.predict_proba(sweep_df)[:, 1]
+
+    fig = px.line(
+        x=sweep,
+        y=proba,
+        labels={"x": "Depression DALYs rate", "y": "P(haut risque)"},
+        title="v3 what-if: effet de la depression sur le risque",
+    )
+    out = save_fig(fig, "fig_v3_what_if")
+    if out:
+        print(f"[ok] Wrote {out}")
+
+
 def v3_calibration_or_hist() -> None:
     path = REPO_ROOT / "v3" / "data_clean" / "v3_features_v1.csv"
     if not path.exists():
@@ -429,13 +603,17 @@ def v3_calibration_or_hist() -> None:
 def main() -> None:
     FIG_DIR.mkdir(parents=True, exist_ok=True)
     copy_v0_map()
+    v1_who_map()
     v1_who_crude_vs_age_std()
     v1_depression_top10()
+    v1_selfharm_sex_top15()
     v1_relationships_scatter()
     v1_allcause_trends()
     v1_big_categories_treemap()
     v2_clusters_scatter()
+    v2_perm_importance_bar()
     v3_calibration_or_hist()
+    v3_what_if_curve()
 
 
 if __name__ == "__main__":
