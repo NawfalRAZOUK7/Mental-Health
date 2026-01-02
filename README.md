@@ -29,6 +29,8 @@ python scripts/run_app.py --version v1
 # or v0, v2, v3
 ```
 
+Once the app is running, you can switch versions directly in the sidebar (no terminal needed).
+
 ## Build pipelines
 v1 (real data):
 ```bash
@@ -61,6 +63,11 @@ latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
 ```
 
 Output: `report_latex/main.pdf`
+
+## Deploy (Streamlit Cloud)
+1) Push this repository to GitHub.  
+2) Create a new app on Streamlit Community Cloud and point it to `src/app.py`.  
+3) The app defaults to v1 and includes a version selector in the sidebar.  
 
 ## Repository layout
 - `data_raw/`: raw source data.

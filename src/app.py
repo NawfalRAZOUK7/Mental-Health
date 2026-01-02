@@ -10,7 +10,7 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
-from project_paths import DATA_CLEAN, REPORT_DIR, VERSION
+from project_paths import DATA_CLEAN, REPORT_DIR, REPO_ROOT, VERSION
 
 try:
     from sklearn.calibration import CalibratedClassifierCV
@@ -36,6 +36,7 @@ except ImportError:
 
 
 CONTEXT_DIR = DATA_CLEAN / "context_tables"
+VERSION_OPTIONS = ["v1", "v2", "v3", "v0"]
 V3_NUMERIC_COLS = [
     "depression_dalys_rate",
     "addiction_death_rate",
@@ -148,6 +149,28 @@ html, body, [class*="css"]  {
 """,
     unsafe_allow_html=True,
 )
+
+
+def select_version(default: str) -> str:
+    query = st.experimental_get_query_params()
+    query_version = (query.get("version") or [None])[0]
+    fallback = query_version or default or "v1"
+    if fallback not in VERSION_OPTIONS:
+        fallback = "v1"
+    index = VERSION_OPTIONS.index(fallback)
+    choice = st.sidebar.selectbox("Version", VERSION_OPTIONS, index=index)
+    st.session_state["mhv_version"] = choice
+    if query_version != choice:
+        st.experimental_set_query_params(version=choice)
+    return choice
+
+
+def apply_version(version: str) -> None:
+    global VERSION, DATA_CLEAN, REPORT_DIR, CONTEXT_DIR
+    VERSION = version
+    DATA_CLEAN = REPO_ROOT / VERSION / "data_clean"
+    REPORT_DIR = REPO_ROOT / VERSION / "report"
+    CONTEXT_DIR = DATA_CLEAN / "context_tables"
 
 
 V1_PAGE_GUIDES = {
@@ -4097,22 +4120,26 @@ PAGES_V0 = {
     "v0 Static Gallery": page_v0_gallery,
 }
 
-if VERSION == "v2":
-    PAGES = PAGES_V2
-elif VERSION == "v3":
-    PAGES = PAGES_V3
-elif VERSION == "v0":
-    PAGES = PAGES_V0
-else:
-    PAGES = PAGES_V1
+def pages_for(version: str) -> dict[str, callable]:
+    if version == "v2":
+        return PAGES_V2
+    if version == "v3":
+        return PAGES_V3
+    if version == "v0":
+        return PAGES_V0
+    return PAGES_V1
 
 
 def main() -> None:
     st.sidebar.markdown("## Navigation")
-    st.sidebar.markdown(f"**Version**: {VERSION}")
-    page = st.sidebar.radio("Go to", list(PAGES.keys()))
+    version_default = st.session_state.get("mhv_version", VERSION)
+    version_choice = select_version(version_default)
+    apply_version(version_choice)
+    st.sidebar.markdown(f"**Version active**: {VERSION}")
+    pages = pages_for(VERSION)
+    page = st.sidebar.radio("Go to", list(pages.keys()), key=f"nav_{VERSION}")
     st.sidebar.markdown('<span class="info-chip">Layer A + Layer B integrated</span>', unsafe_allow_html=True)
-    PAGES[page]()
+    pages[page]()
 
 
 if __name__ == "__main__":
