@@ -77,4 +77,21 @@ Output: `report_latex/main.pdf`
 - WHO suicide statistics (2021)
 - IHME Global Burden of Disease (GBD 2023)
 
-If you want this to be public, consider adding a license file and a short citation section.
+## License
+- Code: MIT License (`LICENSE`).
+- Report, figures, and written content: CC BY 4.0 (`LICENSE-CC-BY-4.0`).
+
+## Citation
+Plain text:
+Razouk, N. (2025). *Mental Health Viz: WHO/IHME GBD dashboards and analytics*. GitHub repository. https://github.com/NawfalRAZOUK7/Mental-Health
+
+BibTeX:
+```bibtex
+@misc{razouk2025mentalhealthviz,
+  author = {Nawfal Razouk},
+  title = {Mental Health Viz: WHO/IHME GBD dashboards and analytics},
+  year = {2025},
+  howpublished = {\\url{https://github.com/NawfalRAZOUK7/Mental-Health}},
+  note = {Versioned dashboards (v0-v3), report, and pipelines}
+}
+```
