@@ -152,8 +152,7 @@ html, body, [class*="css"]  {
 
 
 def select_version(default: str) -> str:
-    query = st.experimental_get_query_params()
-    query_version = (query.get("version") or [None])[0]
+    query_version = st.query_params.get("version")
     fallback = query_version or default or "v1"
     if fallback not in VERSION_OPTIONS:
         fallback = "v1"
@@ -161,7 +160,7 @@ def select_version(default: str) -> str:
     choice = st.sidebar.selectbox("Version", VERSION_OPTIONS, index=index)
     st.session_state["mhv_version"] = choice
     if query_version != choice:
-        st.experimental_set_query_params(version=choice)
+        st.query_params["version"] = choice
     return choice
 
 

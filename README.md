@@ -65,9 +65,14 @@ latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
 Output: `report_latex/main.pdf`
 
 ## Deploy (Streamlit Cloud)
-1) Push this repository to GitHub.  
-2) Create a new app on Streamlit Community Cloud and point it to `src/app.py`.  
-3) The app defaults to v1 and includes a version selector in the sidebar.  
+1) Push this repository to GitHub.
+2) In Streamlit Community Cloud, click **New app** → select repo/branch → main file `src/app.py`.
+3) Click **Deploy**.
+
+Notes:
+- Default version is v1; users can switch in the sidebar or via `?version=v2`.
+- Streamlit Cloud installs `requirements.txt` only. To enable v2/v3 advanced features, merge `requirements-v2.txt` into `requirements.txt` before deploy.
+- `.streamlit/config.toml` is already included for recommended settings.
 
 ## Repository layout
 - `data_raw/`: raw source data.
