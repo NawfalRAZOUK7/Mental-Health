@@ -1,0 +1,100 @@
+country,data_quality,income_group,sex,number_suicides_2021,crude_suicide_rate_2021,age_standardized_suicide_rate_2021
+Antigua and Barbuda,Medium,HI,Both sexes,1,1.5,1.4
+Antigua and Barbuda,Medium,HI,Females,1,1.3,1.0
+Antigua and Barbuda,Medium,HI,Males,1,1.6,1.6
+Argentina,Medium,UMI,Both sexes,3594,7.9,7.7
+Argentina,Medium,UMI,Females,770,3.4,3.4
+Argentina,Medium,UMI,Males,2823,12.6,12.2
+Bahamas,Medium,HI,Both sexes,13,3.3,2.9
+Bahamas,Medium,HI,Females,2,0.8,0.7
+Bahamas,Medium,HI,Males,11,5.9,5.4
+Barbados,Low,HI,Both sexes,10,3.5,2.8
+Barbados,Low,HI,Females,2,1.0,0.9
+Barbados,Low,HI,Males,8,6.2,5.1
+Belize,High,UMI,Both sexes,17,4.2,4.6
+Belize,High,UMI,Females,3,1.5,1.6
+Belize,High,UMI,Males,14,6.8,7.7
+Bolivia,Very low,LMI,Both sexes,501,4.2,5.1
+Bolivia,Very low,LMI,Females,140,2.4,2.6
+Bolivia,Very low,LMI,Males,361,6.0,7.8
+Brazil,High,UMI,Both sexes,15907,7.6,6.9
+Brazil,High,UMI,Females,4141,3.9,3.6
+Brazil,High,UMI,Males,11766,11.4,10.6
+Canada,High,HI,Both sexes,3631,9.4,8.1
+Canada,High,HI,Females,919,4.7,4.1
+Canada,High,HI,Males,2712,14.2,12.1
+Chile,High,HI,Both sexes,1496,7.7,6.8
+Chile,High,HI,Females,306,3.1,2.9
+Chile,High,HI,Males,1189,12.3,10.8
+Colombia,High,UMI,Both sexes,2534,5.0,4.7
+Colombia,High,UMI,Females,540,2.1,2.0
+Colombia,High,UMI,Males,1994,7.9,7.7
+Costa Rica,High,UMI,Both sexes,408,8.1,7.6
+Costa Rica,High,UMI,Females,71,2.8,2.7
+Costa Rica,High,UMI,Males,337,13.5,12.5
+Cuba,High,UMI,Both sexes,1534,13.8,9.2
+Cuba,High,UMI,Females,243,4.3,2.8
+Cuba,High,UMI,Males,1291,23.5,16.2
+Dominican Republic,Low,UMI,Both sexes,467,4.2,4.3
+Dominican Republic,Low,UMI,Females,83,1.5,1.5
+Dominican Republic,Low,UMI,Males,384,6.9,7.4
+Ecuador,Medium,UMI,Both sexes,1336,7.6,7.4
+Ecuador,Medium,UMI,Females,233,2.6,2.6
+Ecuador,Medium,UMI,Males,1102,12.5,12.4
+El Salvador,Low,UMI,Both sexes,478,7.6,7.8
+El Salvador,Low,UMI,Females,103,3.2,3.1
+El Salvador,Low,UMI,Males,374,12.6,14.0
+Grenada,Medium,UMI,Both sexes,2,1.3,1.2
+Grenada,Medium,UMI,Females,0,0.7,0.5
+Grenada,Medium,UMI,Males,1,1.9,1.7
+Guatemala,High,UMI,Both sexes,869,4.9,5.3
+Guatemala,High,UMI,Females,249,2.8,2.8
+Guatemala,High,UMI,Males,620,7.1,7.9
+Guyana,Medium,HI,Both sexes,202,24.8,26.3
+Guyana,Medium,HI,Females,43,10.4,10.6
+Guyana,Medium,HI,Males,159,39.9,44.0
+Haiti,Very low,LMI,Both sexes,889,7.8,9.3
+Haiti,Very low,LMI,Females,291,5.1,5.5
+Haiti,Very low,LMI,Males,598,10.6,13.6
+Honduras,Very low,LMI,Both sexes,306,3.0,3.7
+Honduras,Very low,LMI,Females,49,0.9,1.1
+Honduras,Very low,LMI,Males,257,5.0,6.6
+Jamaica,High,UMI,Both sexes,48,1.7,1.7
+Jamaica,High,UMI,Females,6,0.4,0.4
+Jamaica,High,UMI,Males,42,3.0,3.1
+Mexico,High,UMI,Both sexes,8872,7.0,6.9
+Mexico,High,UMI,Females,1706,2.6,2.6
+Mexico,High,UMI,Males,7165,11.6,11.5
+Nicaragua,High,LMI,Both sexes,282,4.2,4.2
+Nicaragua,High,LMI,Females,57,1.7,1.6
+Nicaragua,High,LMI,Males,225,6.9,6.9
+Panama,High,HI,Both sexes,143,3.3,3.3
+Panama,High,HI,Females,21,1.0,1.0
+Panama,High,HI,Males,121,5.6,5.6
+Paraguay,Medium,UMI,Both sexes,424,6.4,6.5
+Paraguay,Medium,UMI,Females,156,4.7,4.7
+Paraguay,Medium,UMI,Males,268,8.0,8.5
+Peru,Medium,UMI,Both sexes,510,1.5,1.5
+Peru,Medium,UMI,Females,134,0.8,0.8
+Peru,Medium,UMI,Males,376,2.3,2.3
+Saint Lucia,High,UMI,Both sexes,9,5.3,4.7
+Saint Lucia,High,UMI,Females,1,1.3,1.1
+Saint Lucia,High,UMI,Males,8,9.3,8.6
+Saint Vincent and the Grenadines,High,UMI,Both sexes,0,0.4,0.3
+Saint Vincent and the Grenadines,High,UMI,Females,0,0.0,0.0
+Saint Vincent and the Grenadines,High,UMI,Males,0,0.8,0.6
+Suriname,Medium,UMI,Both sexes,138,22.3,22.5
+Suriname,Medium,UMI,Females,43,14.0,14.2
+Suriname,Medium,UMI,Males,94,30.5,31.4
+Trinidad and Tobago,Low,HI,Both sexes,199,13.3,11.6
+Trinidad and Tobago,Low,HI,Females,35,4.6,4.1
+Trinidad and Tobago,Low,HI,Males,164,22.2,19.6
+United States of America,High,HI,Both sexes,53162,15.6,14.2
+United States of America,High,HI,Females,10938,6.5,5.9
+United States of America,High,HI,Males,42224,24.7,22.3
+Uruguay,Medium,HI,Both sexes,841,24.8,22.0
+Uruguay,Medium,HI,Females,184,10.5,8.9
+Uruguay,Medium,HI,Males,657,39.9,36.0
+Venezuela (Bolivarian Republic of),High,UMI,Both sexes,2437,8.6,8.9
+Venezuela (Bolivarian Republic of),High,UMI,Females,288,2.0,2.0
+Venezuela (Bolivarian Republic of),High,UMI,Males,2148,15.4,16.2

@@ -1,0 +1,42 @@
+\chapter{Modèle BI et indicateurs (KPIs)}
+\section{Schéma en étoile}
+Le modèle BI est construit autour d'une table de faits principale issue de la fusion OMS+GBD, et de dimensions simples qui permettent la navigation par pays, temps, sexe et âge.
+\begin{itemize}
+    \item \textbf{Table de faits} : \texttt{FACT\_MentalHealth\_CountryYearAge} (\texttt{v1/data\_clean/merged\_ml\_country.csv})
+    \item \textbf{Grain} : Pays \texttimes{} groupe d'âge \texttimes{} année (OMS 2021) avec année GBD stockée à part.
+\end{itemize}
+
+\textbf{Dimensions principales}
+\begin{itemize}
+    \item \texttt{DIM\_Country} : \texttt{iso3}, \texttt{location\_name}, \texttt{region\_name}, \texttt{income\_group}
+    \item \texttt{DIM\_Time} : \texttt{year} (OMS), \texttt{gbd\_year} (GBD)
+    \item \texttt{DIM\_AgeGroup} : \texttt{age\_name}
+    \item \texttt{DIM\_Sex} : \texttt{sex\_name} (stocké par mesure dans la table ML)
+\end{itemize}
+
+\textbf{Tables de contexte (couche analytique)}
+\begin{itemize}
+    \item \texttt{FACT\_Context\_AllCause} : \texttt{v1/data\_clean/context\_tables/context\_allcauses\_trend.csv}
+    \item \texttt{FACT\_Context\_ProbDeath} : \texttt{v1/data\_clean/context\_tables/context\_probdeath\_2023.csv}
+    \item \texttt{FACT\_Context\_BigCategories} : \texttt{v1/data\_clean/context\_tables/context\_big\_categories\_2023.csv}
+\end{itemize}
+
+\section{Définitions des KPIs}
+Les indicateurs clés sont définis de façon cohérente avec les sources OMS/GBD :
+\begin{itemize}
+    \item \textbf{Taux de suicide (OMS)} : \texttt{age\_standardized\_suicide\_rate\_2021} (pour 100\,000).
+    \item \textbf{Taux brut de suicide} : \texttt{crude\_suicide\_rate\_2021} (pour 100\,000).
+    \item \textbf{Dépression (GBD)} : \texttt{gbd\_depression\_dalys\_rate\_both} (DALYs rate / 100\,000).
+    \item \textbf{Addictions (GBD)} : \texttt{gbd\_addiction\_death\_rate\_both/female/male} (Deaths rate / 100\,000).
+    \item \textbf{Automutilation (GBD)} : \texttt{gbd\_selfharm\_death\_rate\_female/male} (Deaths rate / 100\,000).
+    \item \textbf{Probabilité de décès} : \texttt{metric\_name = Probability of death} (valeurs entre 0 et 1).
+\end{itemize}
+
+\section{Dictionnaire des données}
+Le dictionnaire détaillé des colonnes est disponible dans \texttt{v1/report/data\_dictionary.md}. Il précise pour chaque variable : définition, unité, et remarques de qualité. Les champs clés couvrent :
+\begin{itemize}
+    \item \texttt{iso3}, \texttt{location\_name}, \texttt{region\_name}, \texttt{income\_group}
+    \item \texttt{year}, \texttt{gbd\_year}, \texttt{age\_name}, \texttt{sex\_name}
+    \item \texttt{measure\_name}, \texttt{metric\_name}, \texttt{cause\_name}
+    \item \texttt{val}, \texttt{upper}, \texttt{lower}
+\end{itemize}

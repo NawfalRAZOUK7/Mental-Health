@@ -1,0 +1,26 @@
+\chapter{Estimateur de risque (v3)}
+\section{Problématique et seuil de risque}
+La v3 formalise un score de \emph{haut risque} à partir de la probabilité prédite. Le seuil (cutoff) est sélectionné dans l'interface et permet d'adapter l'analyse à des contextes plus ou moins stricts (ex. 0{,}60 ou 0{,}70). Ce choix est explicite et ajustable afin de garder une interprétation transparente.
+
+\section{Entrées et sorties du modèle}
+L'utilisateur fournit des valeurs pour les variables clés (ex. dépression, addictions, automutilation), ainsi que le pays/région lorsqu'ils sont disponibles. Le modèle retourne :
+\begin{itemize}
+    \item une probabilité estimée de haut risque ;
+    \item une décision binaire (au-dessus ou en dessous du seuil) ;
+    \item des éléments d'explication visuels pour comprendre le résultat.
+\end{itemize}
+
+\section{Calibration et fiabilité}
+La calibration isotone est appliquée pour aligner les probabilités prédites avec les fréquences observées. Une courbe de fiabilité permet de vérifier que les prédictions sont interprétables comme des probabilités cohérentes.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{figures/fig_v3_calibration.png}
+    \caption{v3 : calibration ou distribution du risque selon le seuil.}
+    \label{fig:v3_calibration}
+\end{figure}
+
+\section{Pistes contrefactuelles}
+Un module de simulation propose des variations simples (ex. baisse de 10\% de l'indicateur d'automutilation) et montre l'effet attendu sur la probabilité de risque. Cela transforme le modèle en outil d'aide à la décision.
+
+\section{Drivers des prédictions}
+Des barres d'explication de type SHAP simplifiées permettent d'identifier les variables qui poussent le plus le risque vers le haut ou vers le bas. L'objectif est de rendre le modèle interprétable pour un public non technique.

@@ -1,0 +1,151 @@
+region_name,location_name,iso3,sex_name,year,number_suicides_2021,crude_suicide_rate_2021,age_standardized_suicide_rate_2021,data_quality,income_group
+Europe,Albania,ALB,Both sexes,2021,78,2.8,2.1,Low,UMI
+Europe,Albania,ALB,Females,2021,33,2.3,1.7,Low,UMI
+Europe,Albania,ALB,Males,2021,45,3.2,2.6,Low,UMI
+Europe,Armenia,ARM,Both sexes,2021,69,2.5,1.9,High,UMI
+Europe,Armenia,ARM,Females,2021,14,1.0,0.7,High,UMI
+Europe,Armenia,ARM,Males,2021,55,4.2,3.6,High,UMI
+Europe,Austria,AUT,Both sexes,2021,1301,14.5,10.2,High,HI
+Europe,Austria,AUT,Females,2021,262,5.7,4.1,High,HI
+Europe,Austria,AUT,Males,2021,1040,23.6,16.7,High,HI
+Europe,Azerbaijan,AZE,Both sexes,2021,160,1.6,1.6,Very low,UMI
+Europe,Azerbaijan,AZE,Females,2021,43,0.8,0.8,Very low,UMI
+Europe,Azerbaijan,AZE,Males,2021,117,2.3,2.4,Very low,UMI
+Europe,Belarus,BLR,Both sexes,2021,1444,15.6,11.7,High,UMI
+Europe,Belarus,BLR,Females,2021,250,5.1,3.3,High,UMI
+Europe,Belarus,BLR,Males,2021,1194,27.7,22.1,High,UMI
+Europe,Belgium,BEL,Both sexes,2021,2124,18.4,14.3,High,HI
+Europe,Belgium,BEL,Females,2021,627,10.7,8.0,High,HI
+Europe,Belgium,BEL,Males,2021,1497,26.2,20.8,High,HI
+Europe,Bosnia and Herzegovina,BIH,Both sexes,2021,291,9.0,5.7,Medium,UMI
+Europe,Bosnia and Herzegovina,BIH,Females,2021,80,4.7,2.4,Medium,UMI
+Europe,Bosnia and Herzegovina,BIH,Males,2021,211,13.7,9.5,Medium,UMI
+Europe,Bulgaria,BGR,Both sexes,2021,654,9.5,6.3,Medium,HI
+Europe,Bulgaria,BGR,Females,2021,149,4.2,2.6,Medium,HI
+Europe,Bulgaria,BGR,Males,2021,505,15.2,10.4,Medium,HI
+Europe,Croatia,HRV,Both sexes,2021,615,15.7,10.6,High,HI
+Europe,Croatia,HRV,Females,2021,141,6.9,4.2,High,HI
+Europe,Croatia,HRV,Males,2021,474,25.1,17.6,High,HI
+Europe,Cyprus,CYP,Both sexes,2021,40,3.0,2.7,High,HI
+Europe,Cyprus,CYP,Females,2021,14,2.2,1.6,High,HI
+Europe,Cyprus,CYP,Males,2021,26,3.8,3.7,High,HI
+Europe,Czechia,CZE,Both sexes,2021,1403,13.3,10.3,High,HI
+Europe,Czechia,CZE,Females,2021,303,5.7,4.6,High,HI
+Europe,Czechia,CZE,Males,2021,1100,21.2,16.3,High,HI
+Europe,Denmark,DNK,Both sexes,2021,613,10.5,7.6,High,HI
+Europe,Denmark,DNK,Females,2021,186,6.3,4.3,High,HI
+Europe,Denmark,DNK,Males,2021,427,14.7,11.0,High,HI
+Europe,Estonia,EST,Both sexes,2021,199,14.9,12.5,High,HI
+Europe,Estonia,EST,Females,2021,40,5.8,5.3,High,HI
+Europe,Estonia,EST,Males,2021,159,25.1,20.4,High,HI
+Europe,Finland,FIN,Both sexes,2021,807,14.6,12.6,High,HI
+Europe,Finland,FIN,Females,2021,246,8.8,7.9,High,HI
+Europe,Finland,FIN,Males,2021,562,20.5,17.4,High,HI
+Europe,France,FRA,Both sexes,2021,10957,16.6,11.8,Medium,HI
+Europe,France,FRA,Females,2021,3242,9.5,6.0,Medium,HI
+Europe,France,FRA,Males,2021,7715,24.1,18.0,Medium,HI
+Europe,Georgia,GEO,Both sexes,2021,193,5.1,4.6,Medium,UMI
+Europe,Georgia,GEO,Females,2021,26,1.3,1.0,Medium,UMI
+Europe,Georgia,GEO,Males,2021,167,9.5,8.9,Medium,UMI
+Europe,Germany,DEU,Both sexes,2021,10799,12.9,8.2,High,HI
+Europe,Germany,DEU,Females,2021,3213,7.6,4.2,High,HI
+Europe,Germany,DEU,Males,2021,7587,18.4,12.2,High,HI
+Europe,Greece,GRC,Both sexes,2021,495,4.7,3.4,Medium,HI
+Europe,Greece,GRC,Females,2021,89,1.6,1.2,Medium,HI
+Europe,Greece,GRC,Males,2021,407,7.9,5.8,Medium,HI
+Europe,Hungary,HUN,Both sexes,2021,1597,16.5,11.4,High,HI
+Europe,Hungary,HUN,Females,2021,378,7.5,4.8,High,HI
+Europe,Hungary,HUN,Males,2021,1219,26.2,19.0,High,HI
+Europe,Iceland,ISL,Both sexes,2021,44,11.9,10.8,High,HI
+Europe,Iceland,ISL,Females,2021,17,9.3,8.4,High,HI
+Europe,Iceland,ISL,Males,2021,27,14.4,13.0,High,HI
+Europe,Ireland,IRL,Both sexes,2021,430,8.5,7.7,High,HI
+Europe,Ireland,IRL,Females,2021,116,4.6,4.2,High,HI
+Europe,Ireland,IRL,Males,2021,313,12.6,11.3,High,HI
+Europe,Israel,ISR,Both sexes,2021,391,4.4,4.4,High,HI
+Europe,Israel,ISR,Females,2021,110,2.4,2.3,High,HI
+Europe,Israel,ISR,Males,2021,280,6.3,6.5,High,HI
+Europe,Italy,ITA,Both sexes,2021,4176,7.0,4.6,High,HI
+Europe,Italy,ITA,Females,2021,1108,3.6,2.2,High,HI
+Europe,Italy,ITA,Males,2021,3068,10.5,7.1,High,HI
+Europe,Kazakhstan,KAZ,Both sexes,2021,2882,14.6,15.2,High,UMI
+Europe,Kazakhstan,KAZ,Females,2021,540,5.3,5.5,High,UMI
+Europe,Kazakhstan,KAZ,Males,2021,2343,24.4,26.2,High,UMI
+Europe,Kyrgyzstan,KGZ,Both sexes,2021,464,6.8,7.8,High,LMI
+Europe,Kyrgyzstan,KGZ,Females,2021,108,3.1,3.6,High,LMI
+Europe,Kyrgyzstan,KGZ,Males,2021,355,10.5,12.4,High,LMI
+Europe,Latvia,LVA,Both sexes,2021,287,15.2,12.0,High,HI
+Europe,Latvia,LVA,Females,2021,47,4.6,3.0,High,HI
+Europe,Latvia,LVA,Males,2021,240,27.5,22.1,High,HI
+Europe,Lithuania,LTU,Both sexes,2021,618,22.1,16.8,High,HI
+Europe,Lithuania,LTU,Females,2021,136,9.2,5.9,High,HI
+Europe,Lithuania,LTU,Males,2021,483,36.7,28.8,High,HI
+Europe,Luxembourg,LUX,Both sexes,2021,53,8.2,6.2,High,HI
+Europe,Luxembourg,LUX,Females,2021,14,4.3,2.9,High,HI
+Europe,Luxembourg,LUX,Males,2021,39,12.1,9.6,High,HI
+Europe,Malta,MLT,Both sexes,2021,34,6.5,5.6,High,HI
+Europe,Malta,MLT,Females,2021,11,4.4,3.3,High,HI
+Europe,Malta,MLT,Males,2021,23,8.4,7.5,High,HI
+Europe,Montenegro,MNE,Both sexes,2021,68,11.3,8.9,Low,UMI
+Europe,Montenegro,MNE,Females,2021,19,6.0,4.3,Low,UMI
+Europe,Montenegro,MNE,Males,2021,50,17.1,14.1,Low,UMI
+Europe,Netherlands (Kingdom of the),NLD,Both sexes,2021,2040,11.5,9.1,High,HI
+Europe,Netherlands (Kingdom of the),NLD,Females,2021,680,7.6,5.9,High,HI
+Europe,Netherlands (Kingdom of the),NLD,Males,2021,1359,15.4,12.5,High,HI
+Europe,North Macedonia,MKD,Both sexes,2021,107,5.8,4.6,Medium,UMI
+Europe,North Macedonia,MKD,Females,2021,36,3.8,3.0,Medium,UMI
+Europe,North Macedonia,MKD,Males,2021,71,7.9,6.4,Medium,UMI
+Europe,Norway,NOR,Both sexes,2021,713,13.2,11.4,High,HI
+Europe,Norway,NOR,Females,2021,199,7.4,6.3,High,HI
+Europe,Norway,NOR,Males,2021,515,18.9,16.3,High,HI
+Europe,Poland,POL,Both sexes,2021,5199,13.7,11.5,Medium,HI
+Europe,Poland,POL,Females,2021,753,3.8,3.2,Medium,HI
+Europe,Poland,POL,Males,2021,4446,24.1,20.2,Medium,HI
+Europe,Portugal,PRT,Both sexes,2021,1197,11.5,7.2,High,HI
+Europe,Portugal,PRT,Females,2021,323,5.9,3.5,High,HI
+Europe,Portugal,PRT,Males,2021,874,17.7,11.4,High,HI
+Europe,Republic of Moldova,MDA,Both sexes,2021,428,14.1,11.9,High,UMI
+Europe,Republic of Moldova,MDA,Females,2021,82,5.0,4.0,High,UMI
+Europe,Republic of Moldova,MDA,Males,2021,346,24.8,22.1,High,UMI
+Europe,Romania,ROU,Both sexes,2021,1852,9.6,7.2,High,HI
+Europe,Romania,ROU,Females,2021,327,3.3,2.3,High,HI
+Europe,Romania,ROU,Males,2021,1526,16.4,12.5,High,HI
+Europe,Russian Federation,RUS,Both sexes,2021,31172,21.4,17.9,Medium,HI
+Europe,Russian Federation,RUS,Females,2021,6320,8.1,6.1,Medium,HI
+Europe,Russian Federation,RUS,Males,2021,24852,36.7,31.6,Medium,HI
+Europe,Serbia,SRB,Both sexes,2021,1035,15.1,9.4,Medium,UMI
+Europe,Serbia,SRB,Females,2021,287,8.0,4.4,Medium,UMI
+Europe,Serbia,SRB,Males,2021,748,23.0,15.0,Medium,UMI
+Europe,Slovakia,SVK,Both sexes,2021,539,9.9,7.6,High,HI
+Europe,Slovakia,SVK,Females,2021,84,3.0,2.3,High,HI
+Europe,Slovakia,SVK,Males,2021,455,17.1,13.5,High,HI
+Europe,Slovenia,SVN,Both sexes,2021,398,18.9,13.2,High,HI
+Europe,Slovenia,SVN,Females,2021,81,7.7,5.1,High,HI
+Europe,Slovenia,SVN,Males,2021,318,29.9,21.4,High,HI
+Europe,Spain,ESP,Both sexes,2021,4160,8.7,6.2,High,HI
+Europe,Spain,ESP,Females,2021,1085,4.5,3.2,High,HI
+Europe,Spain,ESP,Males,2021,3075,13.1,9.4,High,HI
+Europe,Sweden,SWE,Both sexes,2021,1442,13.8,11.7,High,HI
+Europe,Sweden,SWE,Females,2021,450,8.7,7.1,High,HI
+Europe,Sweden,SWE,Males,2021,992,18.9,16.2,High,HI
+Europe,Switzerland,CHE,Both sexes,2021,1221,14.0,9.9,High,HI
+Europe,Switzerland,CHE,Females,2021,403,9.2,6.0,High,HI
+Europe,Switzerland,CHE,Males,2021,818,18.9,13.9,High,HI
+Europe,Tajikistan,TJK,Both sexes,2021,242,2.4,3.1,Low,LMI
+Europe,Tajikistan,TJK,Females,2021,68,1.3,1.7,Low,LMI
+Europe,Tajikistan,TJK,Males,2021,174,3.6,4.5,Low,LMI
+Europe,Türkiye,TUR,Both sexes,2021,2332,2.7,2.6,Medium,UMI
+Europe,Türkiye,TUR,Females,2021,473,1.1,1.0,Medium,UMI
+Europe,Türkiye,TUR,Males,2021,1859,4.3,4.2,Medium,UMI
+Europe,Turkmenistan,TKM,Both sexes,2021,484,6.8,7.5,Very low,UMI
+Europe,Turkmenistan,TKM,Females,2021,126,3.5,3.9,Very low,UMI
+Europe,Turkmenistan,TKM,Males,2021,358,10.3,11.7,Very low,UMI
+Europe,Ukraine,UKR,Both sexes,2021,9397,21.2,17.0,Medium,UMI
+Europe,Ukraine,UKR,Females,2021,1625,6.9,4.7,Medium,UMI
+Europe,Ukraine,UKR,Males,2021,7773,37.7,30.9,Medium,UMI
+Europe,United Kingdom of Great Britain and Northern Ireland,GBR,Both sexes,2021,6461,9.5,8.8,High,HI
+Europe,United Kingdom of Great Britain and Northern Ireland,GBR,Females,2021,1581,4.6,4.1,High,HI
+Europe,United Kingdom of Great Britain and Northern Ireland,GBR,Males,2021,4880,14.7,13.5,High,HI
+Europe,Uzbekistan,UZB,Both sexes,2021,2857,8.3,9.1,Medium,LMI
+Europe,Uzbekistan,UZB,Females,2021,1029,6.1,6.5,Medium,LMI
+Europe,Uzbekistan,UZB,Males,2021,1828,10.6,11.8,Medium,LMI

@@ -1,0 +1,12 @@
+\chapter{Qualité des données et limites}
+\section{Manquants et trous de couverture}
+Le scorecard de qualité (\texttt{v1/report/data\_quality\_scorecard.md}) montre que plusieurs fichiers GBD comportent des lignes sans ISO3 (valeurs agrégées GBD). Les fichiers contextuels ont donc une proportion élevée d'iso3 manquants (ex. \texttt{context\_big\_categories\_2023} proche de 99\%), ce qui est attendu pour des agrégats. La table ML finale (\texttt{merged\_ml\_country}) ne contient pas de manquants ISO3. Le rapport \texttt{data\_quality\_iso3\_unmatched.csv} indique 574 pays/entités GBD non appariés lors du mapping ISO3, principalement des agrégats et des sous-régions.
+
+\section{Fusion inter-années}
+La fusion principale combine un outcome OMS 2021 avec des features GBD 2023. Cela introduit un décalage temporel explicite : les relations estimées ne sont pas causales et peuvent varier entre les périodes. Cette limitation est affichée dans la page méthodes du tableau de bord et rappelle que les analyses ML sont exploratoires.
+
+\section{Risque d'erreur écologique}
+Les analyses sont conduites à l'échelle des pays et régions. Les corrélations observées ne doivent pas être interprétées comme des relations individuelles. Cette erreur écologique est une limite classique des analyses macroscopiques et doit être mentionnée dans toute interprétation.
+
+\section{Limites liées aux données synthétiques}
+Les versions v2/v3 reposent sur des données synthétiques pour permettre des démonstrations avancées (clustering, forecasting, scenario lab). Ces résultats ont une valeur pédagogique et méthodologique, mais ne doivent pas être interprétés comme des faits empiriques. Cette distinction est indiquée dans la documentation et dans les pages de méthodes.

@@ -1,0 +1,64 @@
+country,data_quality,income_group,sex,number_suicides_2021,crude_suicide_rate_2021,age_standardized_suicide_rate_2021
+Australia,High,HI,Both sexes,3394,13.1,11.7
+Australia,High,HI,Females,880,6.7,6.1
+Australia,High,HI,Males,2514,19.5,17.5
+Brunei Darussalam,High,HI,Both sexes,14,3.0,2.8
+Brunei Darussalam,High,HI,Females,1,0.6,0.7
+Brunei Darussalam,High,HI,Males,12,5.2,4.6
+Cambodia,Very low,LMI,Both sexes,764,4.5,5.0
+Cambodia,Very low,LMI,Females,237,2.7,2.9
+Cambodia,Very low,LMI,Males,526,6.3,7.4
+China,Very low,UMI,Both sexes,127601,8.9,6.8
+China,Very low,UMI,Females,52479,7.5,5.3
+China,Very low,UMI,Males,75122,10.3,8.5
+Fiji,Low,UMI,Both sexes,76,8.3,8.5
+Fiji,Low,UMI,Females,25,5.3,5.4
+Fiji,Low,UMI,Males,51,11.2,11.8
+Japan,High,HI,Both sexes,21904,17.4,14.7
+Japan,High,HI,Females,7417,11.5,9.8
+Japan,High,HI,Males,14487,23.6,19.6
+Kiribati,Very low,LMI,Both sexes,22,17.5,18.7
+Kiribati,Very low,LMI,Females,3,4.8,5.2
+Kiribati,Very low,LMI,Males,19,31.0,33.9
+Lao People's Democratic Republic,Very low,LMI,Both sexes,341,4.6,5.0
+Lao People's Democratic Republic,Very low,LMI,Females,96,2.6,2.7
+Lao People's Democratic Republic,Very low,LMI,Males,245,6.5,7.4
+Malaysia,Low,UMI,Both sexes,1938,5.7,5.6
+Malaysia,Low,UMI,Females,355,2.2,2.2
+Malaysia,Low,UMI,Males,1584,8.8,8.8
+Micronesia (Federated States of),Low,LMI,Both sexes,22,19.8,20.8
+Micronesia (Federated States of),Low,LMI,Females,5,8.6,8.9
+Micronesia (Federated States of),Low,LMI,Males,17,31.1,33.1
+Mongolia,High,UMI,Both sexes,618,18.5,19.8
+Mongolia,High,UMI,Females,81,4.8,5.4
+Mongolia,High,UMI,Males,537,32.2,34.5
+New Zealand,High,HI,Both sexes,609,11.9,11.1
+New Zealand,High,HI,Females,156,6.1,5.8
+New Zealand,High,HI,Males,453,17.9,16.5
+Papua New Guinea,Very low,LMI,Both sexes,182,1.8,2.1
+Papua New Guinea,Very low,LMI,Females,68,1.4,1.6
+Papua New Guinea,Very low,LMI,Males,114,2.2,2.7
+Philippines,Medium,LMI,Both sexes,3947,3.5,4.0
+Philippines,Medium,LMI,Females,1000,1.8,2.1
+Philippines,Medium,LMI,Males,2946,5.2,6.1
+Republic of Korea,High,HI,Both sexes,14273,27.5,20.6
+Republic of Korea,High,HI,Females,4399,16.9,13.6
+Republic of Korea,High,HI,Males,9874,38.2,28.2
+Samoa,Very low,LMI,Both sexes,26,12.0,14.3
+Samoa,Very low,LMI,Females,7,7.0,8.0
+Samoa,Very low,LMI,Males,18,17.0,20.8
+Singapore,High,HI,Both sexes,449,8.1,7.0
+Singapore,High,HI,Females,131,4.9,4.3
+Singapore,High,HI,Males,318,11.1,9.6
+Solomon Islands,Low,LMI,Both sexes,149,19.6,22.5
+Solomon Islands,Low,LMI,Females,36,9.6,10.9
+Solomon Islands,Low,LMI,Males,114,29.2,33.7
+Tonga,Very low,UMI,Both sexes,5,4.7,5.4
+Tonga,Very low,UMI,Females,2,3.5,3.8
+Tonga,Very low,UMI,Males,3,6.0,7.3
+Vanuatu,Very low,LMI,Both sexes,48,15.7,18.2
+Vanuatu,Very low,LMI,Females,10,6.6,7.6
+Vanuatu,Very low,LMI,Males,38,24.7,28.9
+Viet Nam,Very low,LMI,Both sexes,7222,7.3,7.0
+Viet Nam,Very low,LMI,Females,2191,4.3,3.9
+Viet Nam,Very low,LMI,Males,5031,10.4,10.5

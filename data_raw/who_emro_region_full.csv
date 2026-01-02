@@ -1,0 +1,64 @@
+country,data_quality,income_group,sex,number_suicides_2021,crude_suicide_rate_2021,age_standardized_suicide_rate_2021
+Afghanistan,Very low,LI,Both sexes,1438,3.6,5.3
+Afghanistan,Very low,LI,Females,468,2.4,3.7
+Afghanistan,Very low,LI,Males,970,4.8,7.0
+Bahrain,Low,HI,Both sexes,70,4.7,4.2
+Bahrain,Low,HI,Females,8,1.5,1.5
+Bahrain,Low,HI,Males,62,6.6,5.9
+Djibouti,Very low,LMI,Both sexes,89,8.0,10.1
+Djibouti,Very low,LMI,Females,36,6.4,7.7
+Djibouti,Very low,LMI,Males,53,9.6,13.0
+Egypt,Low,LMI,Both sexes,699,0.6,0.7
+Egypt,Low,LMI,Females,184,0.3,0.4
+Egypt,Low,LMI,Males,515,0.9,1.1
+Iran (Islamic Republic of),Medium,UMI,Both sexes,3603,4.1,4.1
+Iran (Islamic Republic of),Medium,UMI,Females,1007,2.3,2.4
+Iran (Islamic Republic of),Medium,UMI,Males,2596,5.8,5.7
+Iraq,Low,UMI,Both sexes,1281,3.0,3.8
+Iraq,Low,UMI,Females,327,1.5,1.8
+Iraq,Low,UMI,Males,954,4.4,6.1
+Jordan,Medium,LMI,Both sexes,67,0.6,0.7
+Jordan,Medium,LMI,Females,15,0.3,0.3
+Jordan,Medium,LMI,Males,52,0.9,1.0
+Kuwait,Low,HI,Both sexes,101,2.3,2.2
+Kuwait,Low,HI,Females,6,0.3,0.4
+Kuwait,Low,HI,Males,95,3.6,3.3
+Lebanon,Low,LMI,Both sexes,40,0.7,0.7
+Lebanon,Low,LMI,Females,16,0.6,0.6
+Lebanon,Low,LMI,Males,24,0.9,0.9
+Libya,Very low,UMI,Both sexes,357,5.0,5.1
+Libya,Very low,UMI,Females,95,2.7,2.8
+Libya,Very low,UMI,Males,262,7.2,7.4
+Morocco,Very low,LMI,Both sexes,1076,2.9,3.0
+Morocco,Very low,LMI,Females,444,2.4,2.4
+Morocco,Very low,LMI,Males,633,3.4,3.5
+Oman,Very low,HI,Both sexes,41,0.9,0.9
+Oman,Very low,HI,Females,4,0.2,0.3
+Oman,Very low,HI,Males,37,1.4,1.4
+Pakistan,Very low,LMI,Both sexes,13506,5.6,6.5
+Pakistan,Very low,LMI,Females,3711,3.2,3.4
+Pakistan,Very low,LMI,Males,9794,8.0,9.5
+Qatar,Very low,HI,Both sexes,132,4.7,4.2
+Qatar,Very low,HI,Females,6,0.8,0.9
+Qatar,Very low,HI,Males,126,6.2,5.6
+Saudi Arabia,High,HI,Both sexes,296,0.9,1.6
+Saudi Arabia,High,HI,Females,79,0.7,1.2
+Saudi Arabia,High,HI,Males,217,1.1,2.0
+Somalia,Very low,LI,Both sexes,1375,8.0,15.3
+Somalia,Very low,LI,Females,525,6.1,11.4
+Somalia,Very low,LI,Males,850,9.8,19.6
+Sudan,Very low,LI,Both sexes,1519,3.2,3.9
+Sudan,Very low,LI,Females,586,2.4,2.8
+Sudan,Very low,LI,Males,933,3.9,5.1
+Syrian Arab Republic,Low,LI,Both sexes,127,0.6,0.7
+Syrian Arab Republic,Low,LI,Females,28,0.3,0.3
+Syrian Arab Republic,Low,LI,Males,98,0.9,1.1
+Tunisia,Low,LMI,Both sexes,222,1.8,1.8
+Tunisia,Low,LMI,Females,74,1.2,1.2
+Tunisia,Low,LMI,Males,148,2.5,2.5
+United Arab Emirates,Low,HI,Both sexes,167,1.7,1.7
+United Arab Emirates,Low,HI,Females,13,0.4,0.5
+United Arab Emirates,Low,HI,Males,154,2.5,2.3
+Yemen,Very low,LI,Both sexes,1564,4.2,5.2
+Yemen,Very low,LI,Females,520,2.8,3.3
+Yemen,Very low,LI,Males,1044,5.6,7.2

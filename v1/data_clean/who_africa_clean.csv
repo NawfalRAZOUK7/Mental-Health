@@ -1,0 +1,142 @@
+region_name,location_name,iso3,sex_name,year,number_suicides_2021,crude_suicide_rate_2021,age_standardized_suicide_rate_2021,data_quality,income_group
+Africa,Algeria,DZA,Both sexes,2021,976,2.2,2.3,Very low,UMI
+Africa,Algeria,DZA,Females,2021,292,1.3,1.4,Very low,UMI
+Africa,Algeria,DZA,Males,2021,684,3.0,3.2,Very low,UMI
+Africa,Angola,AGO,Both sexes,2021,2802,8.1,14.6,Very low,LMI
+Africa,Angola,AGO,Females,2021,672,3.9,6.3,Very low,LMI
+Africa,Angola,AGO,Males,2021,2130,12.5,24.4,Very low,LMI
+Africa,Benin,BEN,Both sexes,2021,956,7.1,11.8,Very low,LMI
+Africa,Benin,BEN,Females,2021,207,3.1,5.1,Very low,LMI
+Africa,Benin,BEN,Males,2021,749,11.1,19.3,Very low,LMI
+Africa,Botswana,BWA,Both sexes,2021,201,8.4,10.4,Very low,UMI
+Africa,Botswana,BWA,Females,2021,66,5.5,6.8,Very low,UMI
+Africa,Botswana,BWA,Males,2021,134,11.2,14.2,Very low,UMI
+Africa,Burkina Faso,BFA,Both sexes,2021,1869,8.5,15.4,Very low,LI
+Africa,Burkina Faso,BFA,Females,2021,443,4.0,6.7,Very low,LI
+Africa,Burkina Faso,BFA,Males,2021,1426,13.0,26.2,Very low,LI
+Africa,Burundi,BDI,Both sexes,2021,992,7.7,14.8,Very low,LI
+Africa,Burundi,BDI,Females,2021,254,3.9,7.0,Very low,LI
+Africa,Burundi,BDI,Males,2021,738,11.5,24.0,Very low,LI
+Africa,Cabo Verde,CPV,Both sexes,2021,77,14.9,16.6,Low,LMI
+Africa,Cabo Verde,CPV,Females,2021,11,4.2,4.4,Low,LMI
+Africa,Cabo Verde,CPV,Males,2021,66,25.3,30.3,Low,LMI
+Africa,Cameroon,CMR,Both sexes,2021,2287,8.5,13.8,Very low,LMI
+Africa,Cameroon,CMR,Females,2021,477,3.5,6.0,Very low,LMI
+Africa,Cameroon,CMR,Males,2021,1809,13.5,22.4,Very low,LMI
+Africa,Central African Republic,CAF,Both sexes,2021,470,9.2,18.7,Very low,LI
+Africa,Central African Republic,CAF,Females,2021,104,4.0,7.5,Very low,LI
+Africa,Central African Republic,CAF,Males,2021,366,14.7,33.1,Very low,LI
+Africa,Chad,TCD,Both sexes,2021,929,5.2,10.7,Very low,LI
+Africa,Chad,TCD,Females,2021,269,3.0,6.4,Very low,LI
+Africa,Chad,TCD,Males,2021,660,7.4,15.4,Very low,LI
+Africa,Comoros,COM,Both sexes,2021,49,6.0,8.9,Very low,LMI
+Africa,Comoros,COM,Females,2021,18,4.5,6.4,Very low,LMI
+Africa,Comoros,COM,Males,2021,31,7.5,11.5,Very low,LMI
+Africa,Congo,COG,Both sexes,2021,396,6.7,11.2,Very low,LMI
+Africa,Congo,COG,Females,2021,98,3.3,5.5,Very low,LMI
+Africa,Congo,COG,Males,2021,298,10.1,17.5,Very low,LMI
+Africa,Côte d'Ivoire,CIV,Both sexes,2021,2191,7.4,12.7,Very low,LMI
+Africa,Côte d'Ivoire,CIV,Females,2021,376,2.6,4.4,Very low,LMI
+Africa,Côte d'Ivoire,CIV,Males,2021,1815,12.0,20.8,Very low,LMI
+Africa,Democratic Republic of the Congo,COD,Both sexes,2021,8695,8.8,15.8,Very low,LI
+Africa,Democratic Republic of the Congo,COD,Females,2021,1953,3.9,6.8,Very low,LI
+Africa,Democratic Republic of the Congo,COD,Males,2021,6742,13.7,25.8,Very low,LI
+Africa,Equatorial Guinea,GNQ,Both sexes,2021,124,7.0,10.5,Very low,UMI
+Africa,Equatorial Guinea,GNQ,Females,2021,29,3.5,5.0,Very low,UMI
+Africa,Equatorial Guinea,GNQ,Males,2021,95,10.2,15.9,Very low,UMI
+Africa,Eritrea,ERI,Both sexes,2021,443,13.2,20.2,Very low,LI
+Africa,Eritrea,ERI,Females,2021,122,7.2,10.5,Very low,LI
+Africa,Eritrea,ERI,Males,2021,321,19.4,31.7,Very low,LI
+Africa,Eswatini,SWZ,Both sexes,2021,329,27.2,31.8,Very low,LMI
+Africa,Eswatini,SWZ,Females,2021,62,10.1,11.4,Very low,LMI
+Africa,Eswatini,SWZ,Males,2021,266,45.0,54.2,Very low,LMI
+Africa,Ethiopia,ETH,Both sexes,2021,7412,6.1,10.7,Very low,LI
+Africa,Ethiopia,ETH,Females,2021,1864,3.1,5.1,Very low,LI
+Africa,Ethiopia,ETH,Males,2021,5547,9.1,17.1,Very low,LI
+Africa,Gabon,GAB,Both sexes,2021,173,7.3,10.5,Very low,UMI
+Africa,Gabon,GAB,Females,2021,28,2.4,3.5,Very low,UMI
+Africa,Gabon,GAB,Males,2021,145,12.0,17.6,Very low,UMI
+Africa,Gambia,GMB,Both sexes,2021,124,4.8,8.3,Very low,LI
+Africa,Gambia,GMB,Females,2021,40,3.1,5.4,Very low,LI
+Africa,Gambia,GMB,Males,2021,84,6.5,11.4,Very low,LI
+Africa,Ghana,GHA,Both sexes,2021,1729,5.3,8.1,Very low,LMI
+Africa,Ghana,GHA,Females,2021,381,2.3,3.4,Very low,LMI
+Africa,Ghana,GHA,Males,2021,1348,8.3,13.5,Very low,LMI
+Africa,Guinea,GIN,Both sexes,2021,661,4.8,8.2,Very low,LMI
+Africa,Guinea,GIN,Females,2021,246,3.5,5.7,Very low,LMI
+Africa,Guinea,GIN,Males,2021,415,6.1,11.3,Very low,LMI
+Africa,Guinea-Bissau,GNB,Both sexes,2021,158,7.7,12.2,Very low,LI
+Africa,Guinea-Bissau,GNB,Females,2021,40,3.9,6.0,Very low,LI
+Africa,Guinea-Bissau,GNB,Males,2021,118,11.6,19.8,Very low,LI
+Africa,Kenya,KEN,Both sexes,2021,2438,4.6,8.9,Very low,LMI
+Africa,Kenya,KEN,Females,2021,666,2.5,4.6,Very low,LMI
+Africa,Kenya,KEN,Males,2021,1772,6.7,14.2,Very low,LMI
+Africa,Lesotho,LSO,Both sexes,2021,648,28.7,36.7,Very low,LMI
+Africa,Lesotho,LSO,Females,2021,193,16.6,20.3,Very low,LMI
+Africa,Lesotho,LSO,Males,2021,455,41.4,55.8,Very low,LMI
+Africa,Liberia,LBR,Both sexes,2021,314,6.0,9.6,Very low,LI
+Africa,Liberia,LBR,Females,2021,103,3.9,6.3,Very low,LI
+Africa,Liberia,LBR,Males,2021,210,8.0,13.3,Very low,LI
+Africa,Madagascar,MDG,Both sexes,2021,1808,6.1,10.0,Very low,LI
+Africa,Madagascar,MDG,Females,2021,515,3.5,5.5,Very low,LI
+Africa,Madagascar,MDG,Males,2021,1294,8.7,15.0,Very low,LI
+Africa,Malawi,MWI,Both sexes,2021,1517,7.6,14.2,Very low,LI
+Africa,Malawi,MWI,Females,2021,299,2.9,5.3,Very low,LI
+Africa,Malawi,MWI,Males,2021,1219,12.5,25.4,Very low,LI
+Africa,Mali,MLI,Both sexes,2021,931,4.2,8.3,Very low,LI
+Africa,Mali,MLI,Females,2021,309,2.8,5.4,Very low,LI
+Africa,Mali,MLI,Males,2021,621,5.5,11.4,Very low,LI
+Africa,Mauritania,MRT,Both sexes,2021,128,2.7,4.9,Very low,LMI
+Africa,Mauritania,MRT,Females,2021,42,1.7,3.1,Very low,LMI
+Africa,Mauritania,MRT,Males,2021,87,3.7,6.9,Very low,LMI
+Africa,Mauritius,MUS,Both sexes,2021,135,10.5,9.6,High,UMI
+Africa,Mauritius,MUS,Females,2021,19,3.0,2.9,High,UMI
+Africa,Mauritius,MUS,Males,2021,115,18.0,15.9,High,UMI
+Africa,Mozambique,MOZ,Both sexes,2021,3363,10.6,19.0,Very low,LI
+Africa,Mozambique,MOZ,Females,2021,974,6.0,8.8,Very low,LI
+Africa,Mozambique,MOZ,Males,2021,2389,15.6,33.1,Very low,LI
+Africa,Namibia,NAM,Both sexes,2021,241,8.6,11.1,Very low,UMI
+Africa,Namibia,NAM,Females,2021,51,3.6,4.6,Very low,UMI
+Africa,Namibia,NAM,Males,2021,190,13.9,18.4,Very low,UMI
+Africa,Niger,NER,Both sexes,2021,1097,4.5,8.9,Very low,LI
+Africa,Niger,NER,Females,2021,357,3.0,5.8,Very low,LI
+Africa,Niger,NER,Males,2021,740,5.9,12.1,Very low,LI
+Africa,Nigeria,NGA,Both sexes,2021,10912,5.0,8.8,Very low,LMI
+Africa,Nigeria,NGA,Females,2021,1658,1.5,2.9,Very low,LMI
+Africa,Nigeria,NGA,Males,2021,9254,8.4,15.1,Very low,LMI
+Africa,Rwanda,RWA,Both sexes,2021,1159,8.7,13.6,Very low,LI
+Africa,Rwanda,RWA,Females,2021,327,4.8,7.0,Very low,LI
+Africa,Rwanda,RWA,Males,2021,832,12.8,22.4,Very low,LI
+Africa,Sao Tome and Principe,STP,Both sexes,2021,2,0.9,1.3,Very low,LMI
+Africa,Sao Tome and Principe,STP,Females,2021,0,0.4,0.7,Very low,LMI
+Africa,Sao Tome and Principe,STP,Males,2021,1,1.3,1.9,Very low,LMI
+Africa,Senegal,SEN,Both sexes,2021,1164,6.8,11.6,Very low,LMI
+Africa,Senegal,SEN,Females,2021,252,3.0,4.9,Very low,LMI
+Africa,Senegal,SEN,Males,2021,912,10.4,18.4,Very low,LMI
+Africa,Seychelles,SYC,Both sexes,2021,5,4.3,3.9,Medium,HI
+Africa,Seychelles,SYC,Females,2021,1,1.7,1.7,Medium,HI
+Africa,Seychelles,SYC,Males,2021,4,6.3,6.0,Medium,HI
+Africa,Sierra Leone,SLE,Both sexes,2021,497,6.1,9.7,Very low,LI
+Africa,Sierra Leone,SLE,Females,2021,182,4.5,6.9,Very low,LI
+Africa,Sierra Leone,SLE,Males,2021,315,7.8,12.9,Very low,LI
+Africa,South Africa,ZAF,Both sexes,2021,13712,22.3,21.1,Medium,UMI
+Africa,South Africa,ZAF,Females,2021,3145,9.9,9.7,Medium,UMI
+Africa,South Africa,ZAF,Males,2021,10567,35.4,32.9,Medium,UMI
+Africa,South Sudan,SSD,Both sexes,2021,857,7.9,13.4,Very low,LI
+Africa,South Sudan,SSD,Females,2021,213,3.9,6.2,Very low,LI
+Africa,South Sudan,SSD,Males,2021,645,12.1,22.5,Very low,LI
+Africa,Togo,TGO,Both sexes,2021,829,9.3,15.2,Very low,LI
+Africa,Togo,TGO,Females,2021,175,4.0,6.4,Very low,LI
+Africa,Togo,TGO,Males,2021,654,14.6,24.4,Very low,LI
+Africa,Uganda,UGA,Both sexes,2021,2524,5.5,11.6,Very low,LI
+Africa,Uganda,UGA,Females,2021,525,2.3,4.3,Very low,LI
+Africa,Uganda,UGA,Males,2021,1999,8.8,20.9,Very low,LI
+Africa,United Republic of Tanzania,TZA,Both sexes,2021,3207,5.1,9.1,Very low,LMI
+Africa,United Republic of Tanzania,TZA,Females,2021,868,2.7,4.6,Very low,LMI
+Africa,United Republic of Tanzania,TZA,Males,2021,2339,7.5,14.6,Very low,LMI
+Africa,Zambia,ZMB,Both sexes,2021,1397,7.1,13.3,Very low,LMI
+Africa,Zambia,ZMB,Females,2021,305,3.1,5.5,Very low,LMI
+Africa,Zambia,ZMB,Males,2021,1091,11.2,22.6,Very low,LMI
+Africa,Zimbabwe,ZWE,Both sexes,2021,2740,17.3,25.4,Very low,LMI
+Africa,Zimbabwe,ZWE,Females,2021,971,11.7,15.8,Very low,LMI
+Africa,Zimbabwe,ZWE,Males,2021,1769,23.6,38.2,Very low,LMI

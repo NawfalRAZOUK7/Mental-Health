@@ -1,0 +1,64 @@
+region_name,location_name,iso3,sex_name,year,number_suicides_2021,crude_suicide_rate_2021,age_standardized_suicide_rate_2021,data_quality,income_group
+WPRO,Australia,AUS,Both sexes,2021,3394,13.1,11.7,High,HI
+WPRO,Australia,AUS,Females,2021,880,6.7,6.1,High,HI
+WPRO,Australia,AUS,Males,2021,2514,19.5,17.5,High,HI
+WPRO,Brunei Darussalam,BRN,Both sexes,2021,14,3.0,2.8,High,HI
+WPRO,Brunei Darussalam,BRN,Females,2021,1,0.6,0.7,High,HI
+WPRO,Brunei Darussalam,BRN,Males,2021,12,5.2,4.6,High,HI
+WPRO,Cambodia,KHM,Both sexes,2021,764,4.5,5.0,Very low,LMI
+WPRO,Cambodia,KHM,Females,2021,237,2.7,2.9,Very low,LMI
+WPRO,Cambodia,KHM,Males,2021,526,6.3,7.4,Very low,LMI
+WPRO,China,CHN,Both sexes,2021,127601,8.9,6.8,Very low,UMI
+WPRO,China,CHN,Females,2021,52479,7.5,5.3,Very low,UMI
+WPRO,China,CHN,Males,2021,75122,10.3,8.5,Very low,UMI
+WPRO,Fiji,FJI,Both sexes,2021,76,8.3,8.5,Low,UMI
+WPRO,Fiji,FJI,Females,2021,25,5.3,5.4,Low,UMI
+WPRO,Fiji,FJI,Males,2021,51,11.2,11.8,Low,UMI
+WPRO,Japan,JPN,Both sexes,2021,21904,17.4,14.7,High,HI
+WPRO,Japan,JPN,Females,2021,7417,11.5,9.8,High,HI
+WPRO,Japan,JPN,Males,2021,14487,23.6,19.6,High,HI
+WPRO,Kiribati,KIR,Both sexes,2021,22,17.5,18.7,Very low,LMI
+WPRO,Kiribati,KIR,Females,2021,3,4.8,5.2,Very low,LMI
+WPRO,Kiribati,KIR,Males,2021,19,31.0,33.9,Very low,LMI
+WPRO,Lao People's Democratic Republic,LAO,Both sexes,2021,341,4.6,5.0,Very low,LMI
+WPRO,Lao People's Democratic Republic,LAO,Females,2021,96,2.6,2.7,Very low,LMI
+WPRO,Lao People's Democratic Republic,LAO,Males,2021,245,6.5,7.4,Very low,LMI
+WPRO,Malaysia,MYS,Both sexes,2021,1938,5.7,5.6,Low,UMI
+WPRO,Malaysia,MYS,Females,2021,355,2.2,2.2,Low,UMI
+WPRO,Malaysia,MYS,Males,2021,1584,8.8,8.8,Low,UMI
+WPRO,Micronesia (Federated States of),FSM,Both sexes,2021,22,19.8,20.8,Low,LMI
+WPRO,Micronesia (Federated States of),FSM,Females,2021,5,8.6,8.9,Low,LMI
+WPRO,Micronesia (Federated States of),FSM,Males,2021,17,31.1,33.1,Low,LMI
+WPRO,Mongolia,MNG,Both sexes,2021,618,18.5,19.8,High,UMI
+WPRO,Mongolia,MNG,Females,2021,81,4.8,5.4,High,UMI
+WPRO,Mongolia,MNG,Males,2021,537,32.2,34.5,High,UMI
+WPRO,New Zealand,NZL,Both sexes,2021,609,11.9,11.1,High,HI
+WPRO,New Zealand,NZL,Females,2021,156,6.1,5.8,High,HI
+WPRO,New Zealand,NZL,Males,2021,453,17.9,16.5,High,HI
+WPRO,Papua New Guinea,PNG,Both sexes,2021,182,1.8,2.1,Very low,LMI
+WPRO,Papua New Guinea,PNG,Females,2021,68,1.4,1.6,Very low,LMI
+WPRO,Papua New Guinea,PNG,Males,2021,114,2.2,2.7,Very low,LMI
+WPRO,Philippines,PHL,Both sexes,2021,3947,3.5,4.0,Medium,LMI
+WPRO,Philippines,PHL,Females,2021,1000,1.8,2.1,Medium,LMI
+WPRO,Philippines,PHL,Males,2021,2946,5.2,6.1,Medium,LMI
+WPRO,Republic of Korea,KOR,Both sexes,2021,14273,27.5,20.6,High,HI
+WPRO,Republic of Korea,KOR,Females,2021,4399,16.9,13.6,High,HI
+WPRO,Republic of Korea,KOR,Males,2021,9874,38.2,28.2,High,HI
+WPRO,Samoa,WSM,Both sexes,2021,26,12.0,14.3,Very low,LMI
+WPRO,Samoa,WSM,Females,2021,7,7.0,8.0,Very low,LMI
+WPRO,Samoa,WSM,Males,2021,18,17.0,20.8,Very low,LMI
+WPRO,Singapore,SGP,Both sexes,2021,449,8.1,7.0,High,HI
+WPRO,Singapore,SGP,Females,2021,131,4.9,4.3,High,HI
+WPRO,Singapore,SGP,Males,2021,318,11.1,9.6,High,HI
+WPRO,Solomon Islands,SLB,Both sexes,2021,149,19.6,22.5,Low,LMI
+WPRO,Solomon Islands,SLB,Females,2021,36,9.6,10.9,Low,LMI
+WPRO,Solomon Islands,SLB,Males,2021,114,29.2,33.7,Low,LMI
+WPRO,Tonga,TON,Both sexes,2021,5,4.7,5.4,Very low,UMI
+WPRO,Tonga,TON,Females,2021,2,3.5,3.8,Very low,UMI
+WPRO,Tonga,TON,Males,2021,3,6.0,7.3,Very low,UMI
+WPRO,Vanuatu,VUT,Both sexes,2021,48,15.7,18.2,Very low,LMI
+WPRO,Vanuatu,VUT,Females,2021,10,6.6,7.6,Very low,LMI
+WPRO,Vanuatu,VUT,Males,2021,38,24.7,28.9,Very low,LMI
+WPRO,Viet Nam,VNM,Both sexes,2021,7222,7.3,7.0,Very low,LMI
+WPRO,Viet Nam,VNM,Females,2021,2191,4.3,3.9,Very low,LMI
+WPRO,Viet Nam,VNM,Males,2021,5031,10.4,10.5,Very low,LMI

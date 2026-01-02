@@ -1,0 +1,28 @@
+\chapter{Versions du projet}
+\section{v0 : Visualisations statiques}
+La version v0 est une vitrine visuelle. Elle utilise les fichiers bruts avec des transformations minimales et génère des figures PNG/HTML pour couvrir un maximum de types de graphiques (cartes, violons, heatmaps, treemaps, small multiples). Elle sert à démontrer la richesse des sources et la capacité de restitution sans logique applicative complexe.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/fig_v0_who_map.png}
+    \caption{Exemple v0 : carte mondiale du taux de suicide âge-standardisé (OMS 2021).}
+    \label{fig:v0_who_map}
+\end{figure}
+
+\section{v1 : Tableau de bord central (données réelles)}
+La version v1 constitue le cœur analytique. Elle s'appuie sur les données OMS et GBD nettoyées, produit une table ML cohérente, et propose un tableau de bord complet avec pages thématiques (suicide, dépression, addictions, automutilation, contexte). Elle inclut une baseline ML (Ridge, RandomForest) et une documentation BI (modèle en étoile, dictionnaire, qualité).
+
+\section{v2 : Analyses avancées (données synthétiques)}
+La version v2 permet d'explorer des techniques avancées de data mining et de BI à partir d'un jeu synthétique. On y trouve la segmentation, la détection d'anomalies, les forecasts, les intervalles de prédiction, l'explicabilité, les graphes de similarité, les règles d'association, ainsi que des rapports de qualité et des tests. Cette version met l'accent sur l'innovation et la démonstration méthodologique.
+
+\section{v3 : Estimateur de risque}
+La version v3 propose un module interactif d'estimation de risque (probabilité de haut risque) à partir d'inputs utilisateur. Elle intègre la calibration, des explications simplifiées et des scénarios contrefactuels pour illustrer l'usage décisionnel des modèles.
+
+\section{Tableau comparatif}
+\begin{tabular}{p{2.2cm} p{11.5cm}}
+\textbf{Version} & \textbf{Points forts} \\\\
+\hline
+v0 & Visualisations statiques, couverture maximale des jeux bruts, export PNG/HTML. \\\\
+v1 & Tableau de bord principal, données réelles, table ML, BI documentation. \\\\
+v2 & Analytics avancées, data mining, qualité, forecasting, synthetic data. \\\\
+v3 & Module interactif, estimation de risque, calibration et scénarios. \\\\
+\end{tabular}

@@ -1,0 +1,187 @@
+region_name,year,suicide_rate,type,model
+African Region,2000,101.89335423656036,actual,DL
+African Region,2001,102.01224976350446,actual,DL
+African Region,2002,103.05469672021476,actual,DL
+African Region,2003,102.14493502040762,actual,DL
+African Region,2004,102.3698047689512,actual,DL
+African Region,2005,103.10843197307588,actual,DL
+African Region,2006,104.5557732506408,actual,DL
+African Region,2007,103.65920087340466,actual,DL
+African Region,2008,103.52446315864586,actual,DL
+African Region,2009,104.11096183119407,actual,DL
+African Region,2010,105.7225100807608,actual,DL
+African Region,2011,105.52999314403566,actual,DL
+African Region,2012,106.2975873841116,actual,DL
+African Region,2013,105.72885782231684,actual,DL
+African Region,2014,104.6215747441418,actual,DL
+African Region,2015,105.92310934268784,actual,DL
+African Region,2016,106.64999286811867,actual,DL
+African Region,2017,105.94565144553944,actual,DL
+African Region,2018,106.6700365699126,actual,DL
+African Region,2019,105.68856113355102,actual,DL
+African Region,2020,104.86579680217622,actual,DL
+African Region,2021,106.87900466001346,actual,DL
+African Region,2022,105.46090903284896,actual,DL
+African Region,2023,107.69037672379932,actual,DL
+African Region,2024,106.3515395481633,forecast,DL
+African Region,2025,106.49622098062089,forecast,DL
+African Region,2026,106.66851146449054,forecast,DL
+African Region,2027,106.64886826332574,forecast,DL
+African Region,2028,106.76521023811776,forecast,DL
+African Region,2029,106.68132940805452,forecast,DL
+African Region,2030,106.72443100129505,forecast,DL
+Eastern Mediterranean Region,2000,102.1987907283302,actual,DL
+Eastern Mediterranean Region,2001,107.05706566038964,actual,DL
+Eastern Mediterranean Region,2002,103.9828331920088,actual,DL
+Eastern Mediterranean Region,2003,102.95085110311538,actual,DL
+Eastern Mediterranean Region,2004,104.18366513267816,actual,DL
+Eastern Mediterranean Region,2005,106.16996792203358,actual,DL
+Eastern Mediterranean Region,2006,106.47601189815788,actual,DL
+Eastern Mediterranean Region,2007,104.92143239646038,actual,DL
+Eastern Mediterranean Region,2008,105.57479461863176,actual,DL
+Eastern Mediterranean Region,2009,105.21017280519716,actual,DL
+Eastern Mediterranean Region,2010,109.48311086020644,actual,DL
+Eastern Mediterranean Region,2011,101.96560704360122,actual,DL
+Eastern Mediterranean Region,2012,107.52382090963611,actual,DL
+Eastern Mediterranean Region,2013,107.15594178326349,actual,DL
+Eastern Mediterranean Region,2014,105.58215654530795,actual,DL
+Eastern Mediterranean Region,2015,109.0635484897775,actual,DL
+Eastern Mediterranean Region,2016,110.8021644126172,actual,DL
+Eastern Mediterranean Region,2017,107.60708938957067,actual,DL
+Eastern Mediterranean Region,2018,106.80572310101503,actual,DL
+Eastern Mediterranean Region,2019,110.50457411675904,actual,DL
+Eastern Mediterranean Region,2020,101.81827101447313,actual,DL
+Eastern Mediterranean Region,2021,109.32050372681078,actual,DL
+Eastern Mediterranean Region,2022,108.78804158680536,actual,DL
+Eastern Mediterranean Region,2023,110.01432150459212,actual,DL
+Eastern Mediterranean Region,2024,107.76939684819965,forecast,DL
+Eastern Mediterranean Region,2025,107.61094901144801,forecast,DL
+Eastern Mediterranean Region,2026,108.10418366277315,forecast,DL
+Eastern Mediterranean Region,2027,107.91680319918555,forecast,DL
+Eastern Mediterranean Region,2028,107.79871373886837,forecast,DL
+Eastern Mediterranean Region,2029,107.57539088321,forecast,DL
+Eastern Mediterranean Region,2030,107.53911302271382,forecast,DL
+European Region,2000,86.75242839188144,actual,DL
+European Region,2001,86.34037466095292,actual,DL
+European Region,2002,85.01443242227285,actual,DL
+European Region,2003,87.69604521478315,actual,DL
+European Region,2004,86.91717086701834,actual,DL
+European Region,2005,87.82117307489045,actual,DL
+European Region,2006,85.94746091474109,actual,DL
+European Region,2007,87.4681298344098,actual,DL
+European Region,2008,88.29568195065326,actual,DL
+European Region,2009,88.75657443518399,actual,DL
+European Region,2010,86.42892654159046,actual,DL
+European Region,2011,88.57962995420375,actual,DL
+European Region,2012,89.43951656229335,actual,DL
+European Region,2013,90.38395202363834,actual,DL
+European Region,2014,89.92800521018448,actual,DL
+European Region,2015,90.4485069459122,actual,DL
+European Region,2016,91.46075223118176,actual,DL
+European Region,2017,90.03626981426025,actual,DL
+European Region,2018,91.58562701766844,actual,DL
+European Region,2019,92.1650456243478,actual,DL
+European Region,2020,93.28223235522968,actual,DL
+European Region,2021,91.92960423004504,actual,DL
+European Region,2022,91.99965163833085,actual,DL
+European Region,2023,91.99502010764122,actual,DL
+European Region,2024,93.35697986368547,forecast,DL
+European Region,2025,93.58287743950893,forecast,DL
+European Region,2026,93.76982103171527,forecast,DL
+European Region,2027,94.20056020266944,forecast,DL
+European Region,2028,94.66744419039199,forecast,DL
+European Region,2029,95.18571660389117,forecast,DL
+European Region,2030,95.58699745373816,forecast,DL
+Region of the Americas,2000,94.56085880195728,actual,DL
+Region of the Americas,2001,93.52676138234484,actual,DL
+Region of the Americas,2002,94.64300028294204,actual,DL
+Region of the Americas,2003,93.69361113981758,actual,DL
+Region of the Americas,2004,94.1510326096651,actual,DL
+Region of the Americas,2005,91.36890908000414,actual,DL
+Region of the Americas,2006,93.75820704112758,actual,DL
+Region of the Americas,2007,94.52844851993088,actual,DL
+Region of the Americas,2008,95.84175511099214,actual,DL
+Region of the Americas,2009,95.72809009817304,actual,DL
+Region of the Americas,2010,97.37043902023298,actual,DL
+Region of the Americas,2011,96.81742893544904,actual,DL
+Region of the Americas,2012,96.60255705072306,actual,DL
+Region of the Americas,2013,93.81791081422296,actual,DL
+Region of the Americas,2014,96.47729050230782,actual,DL
+Region of the Americas,2015,95.78931551598988,actual,DL
+Region of the Americas,2016,97.88948938480767,actual,DL
+Region of the Americas,2017,97.23556975924151,actual,DL
+Region of the Americas,2018,98.84522140375404,actual,DL
+Region of the Americas,2019,99.73665915854936,actual,DL
+Region of the Americas,2020,97.7337267068176,actual,DL
+Region of the Americas,2021,98.0656996668573,actual,DL
+Region of the Americas,2022,98.47634937538952,actual,DL
+Region of the Americas,2023,98.77841649542766,actual,DL
+Region of the Americas,2024,99.78910163553371,forecast,DL
+Region of the Americas,2025,99.91433123631464,forecast,DL
+Region of the Americas,2026,100.3526077728454,forecast,DL
+Region of the Americas,2027,100.7857874765945,forecast,DL
+Region of the Americas,2028,101.20806445651746,forecast,DL
+Region of the Americas,2029,101.63227647931251,forecast,DL
+Region of the Americas,2030,101.97944131635576,forecast,DL
+South-East Asia Region,2000,70.23747278804187,actual,DL
+South-East Asia Region,2001,69.78865786347838,actual,DL
+South-East Asia Region,2002,70.4810373700435,actual,DL
+South-East Asia Region,2003,71.33722056426039,actual,DL
+South-East Asia Region,2004,68.26526897210869,actual,DL
+South-East Asia Region,2005,71.47644257537452,actual,DL
+South-East Asia Region,2006,72.33650969437164,actual,DL
+South-East Asia Region,2007,72.27332730301099,actual,DL
+South-East Asia Region,2008,72.02093322510112,actual,DL
+South-East Asia Region,2009,74.12477814382909,actual,DL
+South-East Asia Region,2010,73.40011870223013,actual,DL
+South-East Asia Region,2011,70.93702279499094,actual,DL
+South-East Asia Region,2012,72.4303390722875,actual,DL
+South-East Asia Region,2013,73.3860037848921,actual,DL
+South-East Asia Region,2014,78.62498156331228,actual,DL
+South-East Asia Region,2015,73.25084671626284,actual,DL
+South-East Asia Region,2016,72.48963258989178,actual,DL
+South-East Asia Region,2017,74.27044681102097,actual,DL
+South-East Asia Region,2018,77.80572649313612,actual,DL
+South-East Asia Region,2019,74.71846997876894,actual,DL
+South-East Asia Region,2020,75.27456994393111,actual,DL
+South-East Asia Region,2021,75.93593161641037,actual,DL
+South-East Asia Region,2022,75.25108280946476,actual,DL
+South-East Asia Region,2023,76.06835794883455,actual,DL
+South-East Asia Region,2024,76.1584709210723,forecast,DL
+South-East Asia Region,2025,76.38584074582641,forecast,DL
+South-East Asia Region,2026,76.57234289208202,forecast,DL
+South-East Asia Region,2027,76.71026616062389,forecast,DL
+South-East Asia Region,2028,76.93791350925721,forecast,DL
+South-East Asia Region,2029,77.09281910440772,forecast,DL
+South-East Asia Region,2030,77.25557923528248,forecast,DL
+Western Pacific Region,2000,77.03380151391659,actual,DL
+Western Pacific Region,2001,76.22016951046444,actual,DL
+Western Pacific Region,2002,76.30622396082413,actual,DL
+Western Pacific Region,2003,76.59159857100228,actual,DL
+Western Pacific Region,2004,75.37747046451135,actual,DL
+Western Pacific Region,2005,76.35835591012837,actual,DL
+Western Pacific Region,2006,78.80372848062949,actual,DL
+Western Pacific Region,2007,76.10072471287347,actual,DL
+Western Pacific Region,2008,78.04011866179243,actual,DL
+Western Pacific Region,2009,77.73997362451865,actual,DL
+Western Pacific Region,2010,74.51366390777221,actual,DL
+Western Pacific Region,2011,78.24400784042744,actual,DL
+Western Pacific Region,2012,76.26786753540742,actual,DL
+Western Pacific Region,2013,78.65681839221304,actual,DL
+Western Pacific Region,2014,78.67582378355758,actual,DL
+Western Pacific Region,2015,78.26195543582618,actual,DL
+Western Pacific Region,2016,79.24583974733495,actual,DL
+Western Pacific Region,2017,79.68556330820215,actual,DL
+Western Pacific Region,2018,79.60096268435068,actual,DL
+Western Pacific Region,2019,80.1341642119218,actual,DL
+Western Pacific Region,2020,80.2505862873646,actual,DL
+Western Pacific Region,2021,81.77460256701383,actual,DL
+Western Pacific Region,2022,77.87489381464736,actual,DL
+Western Pacific Region,2023,79.72763905321125,actual,DL
+Western Pacific Region,2024,80.17534392448763,forecast,DL
+Western Pacific Region,2025,80.15504503503678,forecast,DL
+Western Pacific Region,2026,80.15548876827222,forecast,DL
+Western Pacific Region,2027,80.00368168148741,forecast,DL
+Western Pacific Region,2028,80.3260546394639,forecast,DL
+Western Pacific Region,2029,80.4215510637573,forecast,DL
+Western Pacific Region,2030,80.47918225195968,forecast,DL

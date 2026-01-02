@@ -1,0 +1,575 @@
+source_type,name,reason
+GBD,Abia,unmatched
+GBD,Abra,unmatched
+GBD,Abruzzo,unmatched
+GBD,Aceh,unmatched
+GBD,Acre,unmatched
+GBD,Adamawa,unmatched
+GBD,Addis Ababa,unmatched
+GBD,Afar,unmatched
+GBD,African Union,unmatched
+GBD,Agder,unmatched
+GBD,Aguascalientes,unmatched
+GBD,Agusan Del Norte,unmatched
+GBD,Agusan Del Sur,unmatched
+GBD,Aichi,unmatched
+GBD,Akita,unmatched
+GBD,Aklan,unmatched
+GBD,Akwa Ibom,unmatched
+GBD,Alabama,unmatched
+GBD,Alagoas,unmatched
+GBD,Alaska,unmatched
+GBD,Albay,unmatched
+GBD,Alborz,unmatched
+GBD,Amapá,unmatched
+GBD,Amazonas,unmatched
+GBD,Amhara,unmatched
+GBD,Anambra,unmatched
+GBD,Andean Latin America,unmatched
+GBD,Andhra Pradesh,unmatched
+GBD,Antique,unmatched
+GBD,Aomori,unmatched
+GBD,Apayao,unmatched
+GBD,Ardebil,unmatched
+GBD,Arizona,unmatched
+GBD,Arkansas,unmatched
+GBD,Arunachal Pradesh,unmatched
+GBD,Assam,unmatched
+GBD,Aurora,unmatched
+GBD,Australasia,unmatched
+GBD,Azad Jammu & Kashmir,unmatched
+GBD,Bahia,unmatched
+GBD,Baja California,unmatched
+GBD,Baja California Sur,unmatched
+GBD,Bali,unmatched
+GBD,Balochistan,unmatched
+GBD,Bangka-Belitung Islands,unmatched
+GBD,Banten,unmatched
+GBD,Baringo,unmatched
+GBD,Basilan,unmatched
+GBD,Basilicata,unmatched
+GBD,Bataan,unmatched
+GBD,Batanes,unmatched
+GBD,Batangas,unmatched
+GBD,Bauchi,unmatched
+GBD,Bayelsa,unmatched
+GBD,Bengkulu,unmatched
+GBD,Benguet,unmatched
+GBD,Benishangul-Gumuz,unmatched
+GBD,Benue,unmatched
+GBD,Bihar,unmatched
+GBD,Biliran,unmatched
+GBD,Bohol,unmatched
+GBD,Bomet,unmatched
+GBD,Borno,unmatched
+GBD,Brazil Central-West,unmatched
+GBD,Brazil North,unmatched
+GBD,Brazil Northeast,unmatched
+GBD,Brazil South,unmatched
+GBD,Brazil Southeast,unmatched
+GBD,Bukidnon,unmatched
+GBD,Bulacan,unmatched
+GBD,Bungoma,unmatched
+GBD,Bushehr,unmatched
+GBD,Busia,unmatched
+GBD,Cagayan,unmatched
+GBD,Calabria,unmatched
+GBD,California,unmatched
+GBD,Camarines Norte,unmatched
+GBD,Camarines Sur,unmatched
+GBD,Camiguin,unmatched
+GBD,Campania,unmatched
+GBD,Campeche,unmatched
+GBD,Capiz,unmatched
+GBD,Caribbean,unmatched
+GBD,Catanduanes,unmatched
+GBD,Cavite,unmatched
+GBD,Ceará,unmatched
+GBD,Cebu,unmatched
+GBD,Central Africa,unmatched
+GBD,Central Asia,unmatched
+GBD,Central Europe,unmatched
+GBD,"Central Europe, Eastern Europe, and Central Asia",unmatched
+GBD,Central Java,unmatched
+GBD,Central Kalimantan,unmatched
+GBD,Central Latin America,unmatched
+GBD,Central Sub-Saharan Africa,unmatched
+GBD,Central Sulawesi,unmatched
+GBD,Chahar Mahaal and Bakhtiari,unmatched
+GBD,Chhattisgarh,unmatched
+GBD,Chiapas,unmatched
+GBD,Chiba,unmatched
+GBD,Chihuahua,unmatched
+GBD,Coahuila,unmatched
+GBD,Colima,unmatched
+GBD,Colorado,unmatched
+GBD,Commonwealth,unmatched
+GBD,Commonwealth High Income,unmatched
+GBD,Commonwealth Low Income,unmatched
+GBD,Commonwealth Middle Income,unmatched
+GBD,Connecticut,unmatched
+GBD,Cotabato (North Cotabato),unmatched
+GBD,Cross River,unmatched
+GBD,Davao Del Norte,unmatched
+GBD,Davao Del Sur,unmatched
+GBD,Davao Occidental,unmatched
+GBD,Davao Oriental,unmatched
+GBD,Davao de Oro,unmatched
+GBD,Delaware,unmatched
+GBD,Delhi,unmatched
+GBD,Delta,unmatched
+GBD,Dinagat Islands,unmatched
+GBD,Dire Dawa,unmatched
+GBD,District of Columbia,unmatched
+GBD,Distrito Federal,unmatched
+GBD,Dolnośląskie,unmatched
+GBD,Durango,unmatched
+GBD,East Asia,unmatched
+GBD,East Asia & Pacific - WB,unmatched
+GBD,East Azarbayejan,unmatched
+GBD,East Java,unmatched
+GBD,East Kalimantan,unmatched
+GBD,East Midlands,unmatched
+GBD,East Nusa Tenggara,unmatched
+GBD,East of England,unmatched
+GBD,Eastern Africa,unmatched
+GBD,Eastern Cape,unmatched
+GBD,Eastern Europe,unmatched
+GBD,Eastern Samar,unmatched
+GBD,Eastern Sub-Saharan Africa,unmatched
+GBD,Ebonyi,unmatched
+GBD,Edo,unmatched
+GBD,Ehime,unmatched
+GBD,Ekiti,unmatched
+GBD,Elgeyo-Marakwet,unmatched
+GBD,Embu,unmatched
+GBD,Emilia-Romagna,unmatched
+GBD,England,unmatched
+GBD,Enugu,unmatched
+GBD,Espírito Santo,unmatched
+GBD,Europe & Central Asia - WB,unmatched
+GBD,European Union,unmatched
+GBD,FCT (Abuja),unmatched
+GBD,Fars,unmatched
+GBD,Florida,unmatched
+GBD,Free State,unmatched
+GBD,Friuli-Venezia Giulia,unmatched
+GBD,Fukui,unmatched
+GBD,Fukuoka,unmatched
+GBD,Fukushima,unmatched
+GBD,G20,unmatched
+GBD,Gambella,unmatched
+GBD,Garissa,unmatched
+GBD,Gauteng,unmatched
+GBD,Gifu,unmatched
+GBD,Gilan,unmatched
+GBD,Gilgit-Baltistan,unmatched
+GBD,Global,unmatched
+GBD,Goa,unmatched
+GBD,Goiás,unmatched
+GBD,Golestan,unmatched
+GBD,Gombe,unmatched
+GBD,Gorontalo,unmatched
+GBD,Greater London,unmatched
+GBD,Guanajuato,unmatched
+GBD,Guerrero,unmatched
+GBD,Guimaras,unmatched
+GBD,Gujarat,unmatched
+GBD,Gulf Cooperation Council,unmatched
+GBD,Gunma,unmatched
+GBD,Hamadan,unmatched
+GBD,Harari,unmatched
+GBD,Haryana,unmatched
+GBD,Hawaii,unmatched
+GBD,Hidalgo,unmatched
+GBD,High-income,unmatched
+GBD,High-income Asia Pacific,unmatched
+GBD,High-income North America,unmatched
+GBD,High-middle SDI,unmatched
+GBD,Himachal Pradesh,unmatched
+GBD,Hiroshima,unmatched
+GBD,Hokkaidō,unmatched
+GBD,Homa Bay,unmatched
+GBD,Hormozgan,unmatched
+GBD,Hyōgo,unmatched
+GBD,Ibaraki,unmatched
+GBD,Idaho,unmatched
+GBD,Ifugao,unmatched
+GBD,Ilam,unmatched
+GBD,Illinois,unmatched
+GBD,Ilocos Norte,unmatched
+GBD,Ilocos Sur,unmatched
+GBD,Iloilo,unmatched
+GBD,Imo,unmatched
+GBD,Indiana,unmatched
+GBD,Innlandet,unmatched
+GBD,Iowa,unmatched
+GBD,Isabela,unmatched
+GBD,Isfahan,unmatched
+GBD,Ishikawa,unmatched
+GBD,Isiolo,unmatched
+GBD,Islamabad Capital Territory,unmatched
+GBD,Iwate,unmatched
+GBD,Jakarta,unmatched
+GBD,Jalisco,unmatched
+GBD,Jambi,unmatched
+GBD,Jammu and Kashmir,unmatched
+GBD,Jharkhand,unmatched
+GBD,Jigawa,unmatched
+GBD,Kaduna,unmatched
+GBD,Kagawa,unmatched
+GBD,Kagoshima,unmatched
+GBD,Kajiado,unmatched
+GBD,Kakamega,unmatched
+GBD,Kalinga,unmatched
+GBD,Kanagawa,unmatched
+GBD,Kano,unmatched
+GBD,Kansas,unmatched
+GBD,Karnataka,unmatched
+GBD,Katsina,unmatched
+GBD,Kebbi,unmatched
+GBD,Kentucky,unmatched
+GBD,Kerala,unmatched
+GBD,Kericho,unmatched
+GBD,Kerman,unmatched
+GBD,Kermanshah,unmatched
+GBD,Khorasan-e-Razavi,unmatched
+GBD,Khuzestan,unmatched
+GBD,Khyber Pakhtunkhwa,unmatched
+GBD,Kiambu,unmatched
+GBD,Kilifi,unmatched
+GBD,Kirinyaga,unmatched
+GBD,Kisii,unmatched
+GBD,Kisumu,unmatched
+GBD,Kitui,unmatched
+GBD,Kogi,unmatched
+GBD,Kohgiluyeh and Boyer-Ahmad,unmatched
+GBD,Kujawsko-Pomorskie,unmatched
+GBD,Kumamoto,unmatched
+GBD,Kurdistan,unmatched
+GBD,KwaZulu-Natal,unmatched
+GBD,Kwale,unmatched
+GBD,Kwara,unmatched
+GBD,Kyōto,unmatched
+GBD,Kōchi,unmatched
+GBD,La Union,unmatched
+GBD,Lagos,unmatched
+GBD,Laguna,unmatched
+GBD,Laikipia,unmatched
+GBD,Lampung,unmatched
+GBD,Lamu,unmatched
+GBD,Lanao Del Norte,unmatched
+GBD,Lanao Del Sur,unmatched
+GBD,Latin America & Caribbean - WB,unmatched
+GBD,Latin America and Caribbean,unmatched
+GBD,Lazio,unmatched
+GBD,League of Arab States,unmatched
+GBD,Leyte,unmatched
+GBD,Liguria,unmatched
+GBD,Limpopo,unmatched
+GBD,Lombardia,unmatched
+GBD,Lorestan,unmatched
+GBD,Louisiana,unmatched
+GBD,Low SDI,unmatched
+GBD,Low-middle SDI,unmatched
+GBD,Lubelskie,unmatched
+GBD,Lubuskie,unmatched
+GBD,Machakos,unmatched
+GBD,Madhya Pradesh,unmatched
+GBD,Maguindanao,unmatched
+GBD,Maharashtra,unmatched
+GBD,Maine,unmatched
+GBD,Makueni,unmatched
+GBD,Maluku,unmatched
+GBD,Mandera,unmatched
+GBD,Manipur,unmatched
+GBD,Maranhão,unmatched
+GBD,Marche,unmatched
+GBD,Marinduque,unmatched
+GBD,Markazi,unmatched
+GBD,Marsabit,unmatched
+GBD,Maryland,unmatched
+GBD,Masbate,unmatched
+GBD,Massachusetts,unmatched
+GBD,Mato Grosso,unmatched
+GBD,Mato Grosso do Sul,unmatched
+GBD,Mazandaran,unmatched
+GBD,Mazowieckie,unmatched
+GBD,Małopolskie,unmatched
+GBD,Meghalaya,unmatched
+GBD,Melanesia,unmatched
+GBD,Meru,unmatched
+GBD,Mexico City,unmatched
+GBD,Michigan,unmatched
+GBD,Michoacán de Ocampo,unmatched
+GBD,Middle East & North Africa - WB,unmatched
+GBD,Middle SDI,unmatched
+GBD,Mie,unmatched
+GBD,Migori,unmatched
+GBD,Minas Gerais,unmatched
+GBD,Minnesota,unmatched
+GBD,Misamis Occidental,unmatched
+GBD,Misamis Oriental,unmatched
+GBD,Mississippi,unmatched
+GBD,Missouri,unmatched
+GBD,Miyagi,unmatched
+GBD,Miyazaki,unmatched
+GBD,Mizoram,unmatched
+GBD,Molise,unmatched
+GBD,Mombasa,unmatched
+GBD,Montana,unmatched
+GBD,Morelos,unmatched
+GBD,Mountain Province,unmatched
+GBD,Mpumalanga,unmatched
+GBD,Murang'a,unmatched
+GBD,Møre og Romsdal,unmatched
+GBD,Nagaland,unmatched
+GBD,Nagano,unmatched
+GBD,Nagasaki,unmatched
+GBD,Nairobi,unmatched
+GBD,Nakuru,unmatched
+GBD,Nandi,unmatched
+GBD,Nara,unmatched
+GBD,Narok,unmatched
+GBD,Nasarawa,unmatched
+GBD,National Capital Region,unmatched
+GBD,Nayarit,unmatched
+GBD,Nebraska,unmatched
+GBD,Negros Occidental,unmatched
+GBD,Negros Oriental,unmatched
+GBD,Nevada,unmatched
+GBD,New Hampshire,unmatched
+GBD,New Jersey,unmatched
+GBD,New Mexico,unmatched
+GBD,New York,unmatched
+GBD,Niigata,unmatched
+GBD,Nordic Region,unmatched
+GBD,Nordland,unmatched
+GBD,North Africa and Middle East,unmatched
+GBD,North America,unmatched
+GBD,North Carolina,unmatched
+GBD,North Dakota,unmatched
+GBD,North East England,unmatched
+GBD,North Kalimantan,unmatched
+GBD,North Khorasan,unmatched
+GBD,North Maluku,unmatched
+GBD,North Sulawesi,unmatched
+GBD,North Sumatra,unmatched
+GBD,North West England,unmatched
+GBD,North-West,unmatched
+GBD,Northern Africa,unmatched
+GBD,Northern Cape,unmatched
+GBD,Northern Ireland,unmatched
+GBD,Northern Samar,unmatched
+GBD,Nueva Ecija,unmatched
+GBD,Nueva Vizcaya,unmatched
+GBD,Nuevo León,unmatched
+GBD,Nyamira,unmatched
+GBD,Nyandarua,unmatched
+GBD,Nyeri,unmatched
+GBD,OECD Countries,unmatched
+GBD,Oaxaca,unmatched
+GBD,Occidental Mindoro,unmatched
+GBD,Oceania,unmatched
+GBD,Odisha,unmatched
+GBD,Ogun,unmatched
+GBD,Ohio,unmatched
+GBD,Okayama,unmatched
+GBD,Okinawa,unmatched
+GBD,Oklahoma,unmatched
+GBD,Ondo,unmatched
+GBD,Opolskie,unmatched
+GBD,Oregon,unmatched
+GBD,Organization of Islamic Cooperation,unmatched
+GBD,Oriental Mindoro,unmatched
+GBD,Oromia,unmatched
+GBD,Oslo,unmatched
+GBD,Osun,unmatched
+GBD,Other Union Territories,unmatched
+GBD,Oyo,unmatched
+GBD,Palawan,unmatched
+GBD,Pampanga,unmatched
+GBD,Pangasinan,unmatched
+GBD,Papua,unmatched
+GBD,Paraná,unmatched
+GBD,Paraíba,unmatched
+GBD,Pará,unmatched
+GBD,Pennsylvania,unmatched
+GBD,Pernambuco,unmatched
+GBD,Piaui,unmatched
+GBD,Piemonte,unmatched
+GBD,Plateau,unmatched
+GBD,Podkarpackie,unmatched
+GBD,Podlaskie,unmatched
+GBD,Polynesia,unmatched
+GBD,Pomorskie,unmatched
+GBD,Provincia autonoma di Bolzano,unmatched
+GBD,Provincia autonoma di Trento,unmatched
+GBD,Puebla,unmatched
+GBD,Puglia,unmatched
+GBD,Punjab,unmatched
+GBD,Qazvin,unmatched
+GBD,Qom,unmatched
+GBD,Querétaro,unmatched
+GBD,Quezon,unmatched
+GBD,Quintana Roo,unmatched
+GBD,Quirino,unmatched
+GBD,Rajasthan,unmatched
+GBD,Rhode Island,unmatched
+GBD,Riau,unmatched
+GBD,Riau Islands,unmatched
+GBD,Rio Grande do Norte,unmatched
+GBD,Rio Grande do Sul,unmatched
+GBD,Rio de Janeiro,unmatched
+GBD,Rivers,unmatched
+GBD,Rizal,unmatched
+GBD,Rogaland,unmatched
+GBD,Romblon,unmatched
+GBD,Rondônia,unmatched
+GBD,Roraima,unmatched
+GBD,Saga,unmatched
+GBD,Sahel Region,unmatched
+GBD,Saitama,unmatched
+GBD,Samar (Western Samar),unmatched
+GBD,Samburu,unmatched
+GBD,San Luis Potosí,unmatched
+GBD,Santa Catarina,unmatched
+GBD,Sarangani,unmatched
+GBD,Sardegna,unmatched
+GBD,Scotland,unmatched
+GBD,Semnan,unmatched
+GBD,Sergipe,unmatched
+GBD,Shiga,unmatched
+GBD,Shimane,unmatched
+GBD,Shizuoka,unmatched
+GBD,Siaya,unmatched
+GBD,Sicilia,unmatched
+GBD,Sidama,unmatched
+GBD,Sikkim,unmatched
+GBD,Sinaloa,unmatched
+GBD,Sindh,unmatched
+GBD,Siquijor,unmatched
+GBD,Sistan and Baluchistan,unmatched
+GBD,Sokoto,unmatched
+GBD,Somali,unmatched
+GBD,Sonora,unmatched
+GBD,Sorsogon,unmatched
+GBD,South Asia,unmatched
+GBD,South Asia - WB,unmatched
+GBD,South Carolina,unmatched
+GBD,South Cotabato,unmatched
+GBD,South Dakota,unmatched
+GBD,South East England,unmatched
+GBD,South Kalimantan,unmatched
+GBD,South Khorasan,unmatched
+GBD,South Sulawesi,unmatched
+GBD,South Sumatra,unmatched
+GBD,South West,unmatched
+GBD,South West England,unmatched
+GBD,Southeast Asia,unmatched
+GBD,"Southeast Asia, East Asia, and Oceania",unmatched
+GBD,Southeast Sulawesi,unmatched
+GBD,Southern Africa,unmatched
+GBD,Southern Latin America,unmatched
+GBD,Southern Leyte,unmatched
+GBD,"Southern Nations, Nationalities, and Peoples",unmatched
+GBD,Southern Sub-Saharan Africa,unmatched
+GBD,Sub-Saharan Africa,unmatched
+GBD,Sub-Saharan Africa - WB,unmatched
+GBD,Sultan Kudarat,unmatched
+GBD,Sulu,unmatched
+GBD,Surigao Del Norte,unmatched
+GBD,Surigao Del Sur,unmatched
+GBD,São Paulo,unmatched
+GBD,Tabasco,unmatched
+GBD,Taita Taveta,unmatched
+GBD,Tamaulipas,unmatched
+GBD,Tamil Nadu,unmatched
+GBD,Tana River,unmatched
+GBD,Taraba,unmatched
+GBD,Tarlac,unmatched
+GBD,Tawi-Tawi,unmatched
+GBD,Tehran,unmatched
+GBD,Telangana,unmatched
+GBD,Tennessee,unmatched
+GBD,Texas,unmatched
+GBD,Tharaka Nithi,unmatched
+GBD,Tigray,unmatched
+GBD,Tlaxcala,unmatched
+GBD,Tocantins,unmatched
+GBD,Tochigi,unmatched
+GBD,Tokushima,unmatched
+GBD,Toscana,unmatched
+GBD,Tottori,unmatched
+GBD,Toyama,unmatched
+GBD,Trans Nzoia,unmatched
+GBD,Tripura,unmatched
+GBD,Troms og Finnmark,unmatched
+GBD,Tropical Latin America,unmatched
+GBD,Trøndelag,unmatched
+GBD,Turkana,unmatched
+GBD,Tōkyō,unmatched
+GBD,Uasin Gishu,unmatched
+GBD,Umbria,unmatched
+GBD,Utah,unmatched
+GBD,Uttar Pradesh,unmatched
+GBD,Uttarakhand,unmatched
+GBD,Valle d'Aosta,unmatched
+GBD,Veneto,unmatched
+GBD,Veracruz de Ignacio de la Llave,unmatched
+GBD,Vermont,unmatched
+GBD,Vestfold og Telemark,unmatched
+GBD,Vestland,unmatched
+GBD,Vihiga,unmatched
+GBD,Viken,unmatched
+GBD,Virginia,unmatched
+GBD,Wajir,unmatched
+GBD,Wakayama,unmatched
+GBD,Wales,unmatched
+GBD,Warmińsko-Mazurskie,unmatched
+GBD,Washington,unmatched
+GBD,West Azarbayejan,unmatched
+GBD,West Bengal,unmatched
+GBD,West Java,unmatched
+GBD,West Kalimantan,unmatched
+GBD,West Midlands,unmatched
+GBD,West Nusa Tenggara,unmatched
+GBD,West Papua,unmatched
+GBD,West Pokot,unmatched
+GBD,West Sulawesi,unmatched
+GBD,West Sumatra,unmatched
+GBD,West Virginia,unmatched
+GBD,Western Africa,unmatched
+GBD,Western Cape,unmatched
+GBD,Western Europe,unmatched
+GBD,Western Sub-Saharan Africa,unmatched
+GBD,Wielkopolskie,unmatched
+GBD,Wisconsin,unmatched
+GBD,World Bank High Income,unmatched
+GBD,World Bank Income Levels,unmatched
+GBD,World Bank Low Income,unmatched
+GBD,World Bank Lower Middle Income,unmatched
+GBD,World Bank Regions,unmatched
+GBD,World Bank Upper Middle Income,unmatched
+GBD,Wyoming,unmatched
+GBD,Yamagata,unmatched
+GBD,Yamaguchi,unmatched
+GBD,Yamanashi,unmatched
+GBD,Yazd,unmatched
+GBD,Yobe,unmatched
+GBD,Yogyakarta,unmatched
+GBD,Yorkshire and the Humber,unmatched
+GBD,Yucatán,unmatched
+GBD,Zacatecas,unmatched
+GBD,Zachodniopomorskie,unmatched
+GBD,Zambales,unmatched
+GBD,Zamboanga Del Norte,unmatched
+GBD,Zamboanga Del Sur,unmatched
+GBD,Zamboanga Sibugay,unmatched
+GBD,Zamfara,unmatched
+GBD,Zanjan,unmatched
+GBD,Łódzkie,unmatched
+GBD,Ōita,unmatched
+GBD,Ōsaka,unmatched
+GBD,Śląskie,unmatched
+GBD,Świętokrzyskie,unmatched

@@ -1,0 +1,16 @@
+iso3,location_name,region_name,income_group,outlier_score,outlier_reason,age_standardized_suicide_rate_2021,gbd_depression_dalys_rate_both,gbd_addiction_death_rate_both,gbd_selfharm_death_rate_both
+USA,United States of America,Region of the Americas,HI,6.144839558745948,addiction_death_rate (high),14.199999999999998,881.1385999438447,31.533030729091788,13.113158425149658
+MNG,Mongolia,Western Pacific Region,UMI,4.763007266383626,addiction_death_rate (high),19.8,533.0892780916043,25.308557323152144,14.742607328791246
+SYR,Syrian Arab Republic,Eastern Mediterranean Region,LI,4.676523294723736,depression_dalys_rate (high),0.6999999999999998,1640.342906236505,1.1115368254022369,1.028839173181798
+LSO,Lesotho,African Region,LMI,4.522937934699227,suicide_rate (high); selfharm_death_rate (high),36.7,628.6992284267562,1.890109657224259,21.53539356911747
+SUR,Suriname,Region of the Americas,UMI,4.133725906466936,selfharm_death_rate (high),22.5,668.9158179764389,2.710965068760666,27.912768862275023
+GBR,United Kingdom of Great Britain and Northern Ireland,European Region,HI,4.034296141073804,depression_dalys_rate (high),8.8,1511.7679436163646,9.08750058845848,7.878772493787285
+BLR,Belarus,European Region,UMI,4.004149530585417,addiction_death_rate (high),11.699999999999998,604.2224817865758,21.89027724569611,13.827894186444226
+SWZ,Eswatini,African Region,LMI,3.7195867519628107,suicide_rate (high); selfharm_death_rate (high),31.8,808.1944397551989,1.621376140062375,20.615835385926555
+GUY,Guyana,Region of the Americas,HI,3.397652255560771,suicide_rate (high); selfharm_death_rate (high),26.3,674.5042935933959,3.297470451787755,24.477966007025213
+CAN,Canada,Region of the Americas,HI,3.1355336961725575,addiction_death_rate (high),8.1,671.7304876776519,17.977591031048537,11.296988219235798
+MMR,Myanmar,South-East Asia Region,LMI,3.017177802930433,addiction_death_rate (high),2.9,544.771140410972,17.444456066701743,5.439356757713742
+NLD,Netherlands (Kingdom of the),European Region,HI,2.7417325105092036,depression_dalys_rate (high),9.1,1252.994518139894,3.382189908761968,8.967907383940323
+SLV,El Salvador,Region of the Americas,UMI,2.686595397848618,addiction_death_rate (high),7.8,589.1534579420719,15.955345267745408,9.067788884389437
+ZWE,Zimbabwe,African Region,LMI,2.6703117377764705,suicide_rate (high),25.399999999999995,681.534746756597,1.0047149107408115,6.274115908730806
+RUS,Russian Federation,European Region,HI,2.62681500237285,addiction_death_rate (high),17.9,693.092541457849,15.686064050413783,17.726679169575107

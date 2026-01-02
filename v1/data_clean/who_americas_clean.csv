@@ -1,0 +1,100 @@
+region_name,location_name,iso3,sex_name,year,number_suicides_2021,crude_suicide_rate_2021,age_standardized_suicide_rate_2021,data_quality,income_group
+Americas,Antigua and Barbuda,ATG,Both sexes,2021,1,1.5,1.4,Medium,HI
+Americas,Antigua and Barbuda,ATG,Females,2021,1,1.3,1.0,Medium,HI
+Americas,Antigua and Barbuda,ATG,Males,2021,1,1.6,1.6,Medium,HI
+Americas,Argentina,ARG,Both sexes,2021,3594,7.9,7.7,Medium,UMI
+Americas,Argentina,ARG,Females,2021,770,3.4,3.4,Medium,UMI
+Americas,Argentina,ARG,Males,2021,2823,12.6,12.2,Medium,UMI
+Americas,Bahamas,BHS,Both sexes,2021,13,3.3,2.9,Medium,HI
+Americas,Bahamas,BHS,Females,2021,2,0.8,0.7,Medium,HI
+Americas,Bahamas,BHS,Males,2021,11,5.9,5.4,Medium,HI
+Americas,Barbados,BRB,Both sexes,2021,10,3.5,2.8,Low,HI
+Americas,Barbados,BRB,Females,2021,2,1.0,0.9,Low,HI
+Americas,Barbados,BRB,Males,2021,8,6.2,5.1,Low,HI
+Americas,Belize,BLZ,Both sexes,2021,17,4.2,4.6,High,UMI
+Americas,Belize,BLZ,Females,2021,3,1.5,1.6,High,UMI
+Americas,Belize,BLZ,Males,2021,14,6.8,7.7,High,UMI
+Americas,Bolivia,BOL,Both sexes,2021,501,4.2,5.1,Very low,LMI
+Americas,Bolivia,BOL,Females,2021,140,2.4,2.6,Very low,LMI
+Americas,Bolivia,BOL,Males,2021,361,6.0,7.8,Very low,LMI
+Americas,Brazil,BRA,Both sexes,2021,15907,7.6,6.9,High,UMI
+Americas,Brazil,BRA,Females,2021,4141,3.9,3.6,High,UMI
+Americas,Brazil,BRA,Males,2021,11766,11.4,10.6,High,UMI
+Americas,Canada,CAN,Both sexes,2021,3631,9.4,8.1,High,HI
+Americas,Canada,CAN,Females,2021,919,4.7,4.1,High,HI
+Americas,Canada,CAN,Males,2021,2712,14.2,12.1,High,HI
+Americas,Chile,CHL,Both sexes,2021,1496,7.7,6.8,High,HI
+Americas,Chile,CHL,Females,2021,306,3.1,2.9,High,HI
+Americas,Chile,CHL,Males,2021,1189,12.3,10.8,High,HI
+Americas,Colombia,COL,Both sexes,2021,2534,5.0,4.7,High,UMI
+Americas,Colombia,COL,Females,2021,540,2.1,2.0,High,UMI
+Americas,Colombia,COL,Males,2021,1994,7.9,7.7,High,UMI
+Americas,Costa Rica,CRI,Both sexes,2021,408,8.1,7.6,High,UMI
+Americas,Costa Rica,CRI,Females,2021,71,2.8,2.7,High,UMI
+Americas,Costa Rica,CRI,Males,2021,337,13.5,12.5,High,UMI
+Americas,Cuba,CUB,Both sexes,2021,1534,13.8,9.2,High,UMI
+Americas,Cuba,CUB,Females,2021,243,4.3,2.8,High,UMI
+Americas,Cuba,CUB,Males,2021,1291,23.5,16.2,High,UMI
+Americas,Dominican Republic,DOM,Both sexes,2021,467,4.2,4.3,Low,UMI
+Americas,Dominican Republic,DOM,Females,2021,83,1.5,1.5,Low,UMI
+Americas,Dominican Republic,DOM,Males,2021,384,6.9,7.4,Low,UMI
+Americas,Ecuador,ECU,Both sexes,2021,1336,7.6,7.4,Medium,UMI
+Americas,Ecuador,ECU,Females,2021,233,2.6,2.6,Medium,UMI
+Americas,Ecuador,ECU,Males,2021,1102,12.5,12.4,Medium,UMI
+Americas,El Salvador,SLV,Both sexes,2021,478,7.6,7.8,Low,UMI
+Americas,El Salvador,SLV,Females,2021,103,3.2,3.1,Low,UMI
+Americas,El Salvador,SLV,Males,2021,374,12.6,14.0,Low,UMI
+Americas,Grenada,GRD,Both sexes,2021,2,1.3,1.2,Medium,UMI
+Americas,Grenada,GRD,Females,2021,0,0.7,0.5,Medium,UMI
+Americas,Grenada,GRD,Males,2021,1,1.9,1.7,Medium,UMI
+Americas,Guatemala,GTM,Both sexes,2021,869,4.9,5.3,High,UMI
+Americas,Guatemala,GTM,Females,2021,249,2.8,2.8,High,UMI
+Americas,Guatemala,GTM,Males,2021,620,7.1,7.9,High,UMI
+Americas,Guyana,GUY,Both sexes,2021,202,24.8,26.3,Medium,HI
+Americas,Guyana,GUY,Females,2021,43,10.4,10.6,Medium,HI
+Americas,Guyana,GUY,Males,2021,159,39.9,44.0,Medium,HI
+Americas,Haiti,HTI,Both sexes,2021,889,7.8,9.3,Very low,LMI
+Americas,Haiti,HTI,Females,2021,291,5.1,5.5,Very low,LMI
+Americas,Haiti,HTI,Males,2021,598,10.6,13.6,Very low,LMI
+Americas,Honduras,HND,Both sexes,2021,306,3.0,3.7,Very low,LMI
+Americas,Honduras,HND,Females,2021,49,0.9,1.1,Very low,LMI
+Americas,Honduras,HND,Males,2021,257,5.0,6.6,Very low,LMI
+Americas,Jamaica,JAM,Both sexes,2021,48,1.7,1.7,High,UMI
+Americas,Jamaica,JAM,Females,2021,6,0.4,0.4,High,UMI
+Americas,Jamaica,JAM,Males,2021,42,3.0,3.1,High,UMI
+Americas,Mexico,MEX,Both sexes,2021,8872,7.0,6.9,High,UMI
+Americas,Mexico,MEX,Females,2021,1706,2.6,2.6,High,UMI
+Americas,Mexico,MEX,Males,2021,7165,11.6,11.5,High,UMI
+Americas,Nicaragua,NIC,Both sexes,2021,282,4.2,4.2,High,LMI
+Americas,Nicaragua,NIC,Females,2021,57,1.7,1.6,High,LMI
+Americas,Nicaragua,NIC,Males,2021,225,6.9,6.9,High,LMI
+Americas,Panama,PAN,Both sexes,2021,143,3.3,3.3,High,HI
+Americas,Panama,PAN,Females,2021,21,1.0,1.0,High,HI
+Americas,Panama,PAN,Males,2021,121,5.6,5.6,High,HI
+Americas,Paraguay,PRY,Both sexes,2021,424,6.4,6.5,Medium,UMI
+Americas,Paraguay,PRY,Females,2021,156,4.7,4.7,Medium,UMI
+Americas,Paraguay,PRY,Males,2021,268,8.0,8.5,Medium,UMI
+Americas,Peru,PER,Both sexes,2021,510,1.5,1.5,Medium,UMI
+Americas,Peru,PER,Females,2021,134,0.8,0.8,Medium,UMI
+Americas,Peru,PER,Males,2021,376,2.3,2.3,Medium,UMI
+Americas,Saint Lucia,LCA,Both sexes,2021,9,5.3,4.7,High,UMI
+Americas,Saint Lucia,LCA,Females,2021,1,1.3,1.1,High,UMI
+Americas,Saint Lucia,LCA,Males,2021,8,9.3,8.6,High,UMI
+Americas,Saint Vincent and the Grenadines,VCT,Both sexes,2021,0,0.4,0.3,High,UMI
+Americas,Saint Vincent and the Grenadines,VCT,Females,2021,0,0.0,0.0,High,UMI
+Americas,Saint Vincent and the Grenadines,VCT,Males,2021,0,0.8,0.6,High,UMI
+Americas,Suriname,SUR,Both sexes,2021,138,22.3,22.5,Medium,UMI
+Americas,Suriname,SUR,Females,2021,43,14.0,14.2,Medium,UMI
+Americas,Suriname,SUR,Males,2021,94,30.5,31.4,Medium,UMI
+Americas,Trinidad and Tobago,TTO,Both sexes,2021,199,13.3,11.6,Low,HI
+Americas,Trinidad and Tobago,TTO,Females,2021,35,4.6,4.1,Low,HI
+Americas,Trinidad and Tobago,TTO,Males,2021,164,22.2,19.6,Low,HI
+Americas,United States of America,USA,Both sexes,2021,53162,15.6,14.2,High,HI
+Americas,United States of America,USA,Females,2021,10938,6.5,5.9,High,HI
+Americas,United States of America,USA,Males,2021,42224,24.7,22.3,High,HI
+Americas,Uruguay,URY,Both sexes,2021,841,24.8,22.0,Medium,HI
+Americas,Uruguay,URY,Females,2021,184,10.5,8.9,Medium,HI
+Americas,Uruguay,URY,Males,2021,657,39.9,36.0,Medium,HI
+Americas,Venezuela (Bolivarian Republic of),VEN,Both sexes,2021,2437,8.6,8.9,High,UMI
+Americas,Venezuela (Bolivarian Republic of),VEN,Females,2021,288,2.0,2.0,High,UMI
+Americas,Venezuela (Bolivarian Republic of),VEN,Males,2021,2148,15.4,16.2,High,UMI

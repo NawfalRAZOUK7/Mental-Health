@@ -1,0 +1,184 @@
+iso3,location_name,region_name,income_group,cluster,mean_rate,cluster_label
+AFG,Afghanistan,Eastern Mediterranean Region,LI,1,111.32711817519068,Cluster A
+AGO,Angola,African Region,LMI,4,154.72367832367314,Cluster C
+ALB,Albania,European Region,UMI,1,51.781125809449414,Cluster A
+ARE,United Arab Emirates,Eastern Mediterranean Region,HI,4,94.52205829902015,Cluster C
+ARG,Argentina,Region of the Americas,UMI,0,98.09085212036518,Cluster B
+ARM,Armenia,European Region,UMI,4,78.0131150439925,Cluster C
+ATG,Antigua and Barbuda,Region of the Americas,HI,2,93.57081316725458,Cluster D
+AUS,Australia,Western Pacific Region,HI,4,100.04901650693783,Cluster C
+AUT,Austria,European Region,HI,1,62.53984628317804,Cluster A
+AZE,Azerbaijan,European Region,UMI,1,78.8508995575768,Cluster A
+BDI,Burundi,African Region,LI,4,103.39548235972494,Cluster C
+BEL,Belgium,European Region,HI,1,100.89482477717256,Cluster A
+BEN,Benin,African Region,LMI,1,95.02556898711697,Cluster A
+BFA,Burkina Faso,African Region,LI,0,116.4704836392586,Cluster B
+BGD,Bangladesh,South-East Asia Region,LMI,4,117.45320643856432,Cluster C
+BGR,Bulgaria,European Region,HI,0,68.82960480547312,Cluster B
+BHR,Bahrain,Eastern Mediterranean Region,HI,2,94.97293740573473,Cluster D
+BHS,Bahamas,Region of the Americas,HI,0,89.66471430754325,Cluster B
+BIH,Bosnia and Herzegovina,European Region,UMI,4,69.07947210910022,Cluster C
+BLR,Belarus,European Region,UMI,4,87.20164947578911,Cluster C
+BLZ,Belize,Region of the Americas,UMI,2,91.23731053558964,Cluster D
+BOL,Bolivia,Region of the Americas,LMI,4,75.11698314638934,Cluster C
+BRA,Brazil,Region of the Americas,UMI,4,95.0004678749986,Cluster C
+BRB,Barbados,Region of the Americas,HI,1,78.30215521097297,Cluster A
+BRN,Brunei Darussalam,Western Pacific Region,HI,2,53.418771182209376,Cluster D
+BTN,Bhutan,South-East Asia Region,LMI,4,82.60831767453658,Cluster C
+BWA,Botswana,African Region,UMI,3,86.45637134661564,Cluster E
+CAF,Central African Republic,African Region,LI,4,145.6288984126044,Cluster C
+CAN,Canada,Region of the Americas,HI,2,87.82844611126531,Cluster D
+CHE,Switzerland,European Region,HI,4,137.2572322965548,Cluster C
+CHL,Chile,Region of the Americas,HI,2,125.18706305495948,Cluster D
+CHN,China,Western Pacific Region,UMI,4,75.03493013190787,Cluster C
+CIV,Côte d'Ivoire,African Region,LMI,2,97.05405641898885,Cluster D
+CMR,Cameroon,African Region,LMI,1,93.61748988038796,Cluster A
+COD,Democratic Republic of the Congo,African Region,LI,4,155.61362245706513,Cluster C
+COG,Congo,African Region,LMI,0,164.54672383614175,Cluster B
+COL,Colombia,Region of the Americas,UMI,2,64.31488697901385,Cluster D
+COM,Comoros,African Region,LMI,4,103.64013532764834,Cluster C
+CPV,Cabo Verde,African Region,LMI,4,96.31308682789472,Cluster C
+CRI,Costa Rica,Region of the Americas,UMI,0,95.26728795088006,Cluster B
+CUB,Cuba,Region of the Americas,UMI,0,103.85386174117502,Cluster B
+CYP,Cyprus,European Region,HI,3,66.71731082004086,Cluster E
+CZE,Czechia,European Region,HI,0,82.62319736307523,Cluster B
+DEU,Germany,European Region,HI,0,108.42837556960079,Cluster B
+DJI,Djibouti,Eastern Mediterranean Region,LMI,0,100.42447117986718,Cluster B
+DNK,Denmark,European Region,HI,3,94.7286215439234,Cluster E
+DOM,Dominican Republic,Region of the Americas,UMI,2,101.60400802177936,Cluster D
+DZA,Algeria,African Region,UMI,3,108.02191761727282,Cluster E
+ECU,Ecuador,Region of the Americas,UMI,2,93.4981807025813,Cluster D
+EGY,Egypt,Eastern Mediterranean Region,LMI,1,98.36637384794284,Cluster A
+ERI,Eritrea,African Region,LI,0,110.4775235143296,Cluster B
+ESP,Spain,European Region,HI,0,101.23260019077607,Cluster B
+EST,Estonia,European Region,HI,1,70.58030987041023,Cluster A
+ETH,Ethiopia,African Region,LI,3,134.42158094089766,Cluster E
+FIN,Finland,European Region,HI,0,80.11381033324746,Cluster B
+FJI,Fiji,Western Pacific Region,UMI,2,72.78213380532098,Cluster D
+FRA,France,European Region,HI,4,94.23996258037734,Cluster C
+FSM,Micronesia (Federated States of),Western Pacific Region,LMI,3,103.50650620466989,Cluster E
+GAB,Gabon,African Region,UMI,0,143.18223887158518,Cluster B
+GBR,United Kingdom of Great Britain and Northern Ireland,European Region,HI,2,157.7639227245496,Cluster D
+GEO,Georgia,European Region,UMI,1,98.07174027297123,Cluster A
+GHA,Ghana,African Region,LMI,3,114.64769756185432,Cluster E
+GIN,Guinea,African Region,LMI,2,99.47720664831297,Cluster D
+GMB,Gambia,African Region,LI,0,88.85407967552912,Cluster B
+GNB,Guinea-Bissau,African Region,LI,0,92.1187385870948,Cluster B
+GNQ,Equatorial Guinea,African Region,UMI,2,131.8541603631579,Cluster D
+GRC,Greece,European Region,HI,4,126.1412689573019,Cluster C
+GRD,Grenada,Region of the Americas,UMI,4,90.7485065513464,Cluster C
+GTM,Guatemala,Region of the Americas,UMI,2,103.60254313891619,Cluster D
+GUY,Guyana,Region of the Americas,HI,1,106.3982545887449,Cluster A
+HND,Honduras,Region of the Americas,LMI,4,83.34802039014659,Cluster C
+HRV,Croatia,European Region,HI,0,59.07846865219858,Cluster B
+HTI,Haiti,Region of the Americas,LMI,3,129.1471554229172,Cluster E
+HUN,Hungary,European Region,HI,2,82.67417316664215,Cluster D
+IDN,Indonesia,South-East Asia Region,UMI,0,54.678298611022036,Cluster B
+IND,India,South-East Asia Region,LMI,4,103.83566463123822,Cluster C
+IRL,Ireland,European Region,HI,2,92.41789792519626,Cluster D
+IRN,Iran (Islamic Republic of),Eastern Mediterranean Region,UMI,0,90.1932517555265,Cluster B
+IRQ,Iraq,Eastern Mediterranean Region,UMI,4,101.96274089077053,Cluster C
+ISL,Iceland,European Region,HI,4,119.37703463536161,Cluster C
+ISR,Israel,European Region,HI,4,110.29777492691233,Cluster C
+ITA,Italy,European Region,HI,4,54.06540823618305,Cluster C
+JAM,Jamaica,Region of the Americas,UMI,0,95.96216398167604,Cluster B
+JOR,Jordan,Eastern Mediterranean Region,LMI,4,109.38313044821672,Cluster C
+JPN,Japan,Western Pacific Region,HI,1,72.66130602899501,Cluster A
+KAZ,Kazakhstan,European Region,UMI,0,83.09379832509828,Cluster B
+KEN,Kenya,African Region,LMI,2,92.11111165689887,Cluster D
+KGZ,Kyrgyzstan,European Region,LMI,2,81.3048720555423,Cluster D
+KHM,Cambodia,Western Pacific Region,LMI,4,68.5639755367617,Cluster C
+KIR,Kiribati,Western Pacific Region,LMI,2,104.517114836656,Cluster D
+KOR,Republic of Korea,Western Pacific Region,HI,2,73.47925782764479,Cluster D
+KWT,Kuwait,Eastern Mediterranean Region,HI,4,99.361394438163,Cluster C
+LAO,Lao People's Democratic Republic,Western Pacific Region,LMI,1,58.80260509664779,Cluster A
+LBN,Lebanon,Eastern Mediterranean Region,LMI,0,144.04679484187912,Cluster B
+LBR,Liberia,African Region,LI,0,95.22330614700873,Cluster B
+LBY,Libya,Eastern Mediterranean Region,UMI,1,114.3502180870832,Cluster A
+LCA,Saint Lucia,Region of the Americas,UMI,3,97.43250062696744,Cluster E
+LKA,Sri Lanka,South-East Asia Region,LMI,2,77.84930166080356,Cluster D
+LSO,Lesotho,African Region,LMI,0,130.5238741401539,Cluster B
+LTU,Lithuania,European Region,HI,1,100.46314548184831,Cluster A
+LUX,Luxembourg,European Region,HI,3,103.004607802194,Cluster E
+LVA,Latvia,European Region,HI,0,89.08454639282162,Cluster B
+MAR,Morocco,Eastern Mediterranean Region,LMI,0,113.17185330762442,Cluster B
+MDA,Republic of Moldova,European Region,UMI,4,81.7886006576816,Cluster C
+MDG,Madagascar,African Region,LI,4,106.51138037349908,Cluster C
+MDV,Maldives,South-East Asia Region,UMI,4,53.56607544288422,Cluster C
+MEX,Mexico,Region of the Americas,UMI,4,81.5724888084304,Cluster C
+MKD,North Macedonia,European Region,UMI,2,55.594657757643965,Cluster D
+MLI,Mali,African Region,LI,2,85.80688295949449,Cluster D
+MLT,Malta,European Region,HI,3,56.682343323955195,Cluster E
+MMR,Myanmar,South-East Asia Region,LMI,1,71.62490879767809,Cluster A
+MNE,Montenegro,European Region,UMI,1,64.02425979476452,Cluster A
+MNG,Mongolia,Western Pacific Region,UMI,4,98.98688889319834,Cluster C
+MOZ,Mozambique,African Region,LI,0,105.34904958064065,Cluster B
+MRT,Mauritania,African Region,LMI,0,82.48688314645331,Cluster B
+MUS,Mauritius,African Region,UMI,2,118.89479133732841,Cluster D
+MWI,Malawi,African Region,LI,4,102.41232767847356,Cluster C
+MYS,Malaysia,Western Pacific Region,UMI,4,92.97241736657043,Cluster C
+NAM,Namibia,African Region,UMI,1,75.69061062212272,Cluster A
+NER,Niger,African Region,LI,4,88.19311206804934,Cluster C
+NGA,Nigeria,African Region,LMI,2,113.4771738602097,Cluster D
+NIC,Nicaragua,Region of the Americas,LMI,2,75.91929660468872,Cluster D
+NLD,Netherlands (Kingdom of the),European Region,HI,2,141.55371568181872,Cluster D
+NOR,Norway,European Region,HI,2,76.92211749815858,Cluster D
+NPL,Nepal,South-East Asia Region,LMI,0,80.09580235539681,Cluster B
+NZL,New Zealand,Western Pacific Region,HI,4,84.09599901725103,Cluster C
+OMN,Oman,Eastern Mediterranean Region,HI,0,91.46320870495857,Cluster B
+PAK,Pakistan,Eastern Mediterranean Region,LMI,4,114.62854595563635,Cluster C
+PAN,Panama,Region of the Americas,HI,4,69.37361191590689,Cluster C
+PER,Peru,Region of the Americas,UMI,4,77.28040461207907,Cluster C
+PHL,Philippines,Western Pacific Region,LMI,0,63.2045474493443,Cluster B
+PNG,Papua New Guinea,Western Pacific Region,LMI,2,78.23626116680582,Cluster D
+POL,Poland,European Region,HI,0,71.75432214307916,Cluster B
+PRK,Democratic People's Republic of Korea,South-East Asia Region,LI,1,83.35797577650521,Cluster A
+PRT,Portugal,European Region,HI,1,106.32737713739293,Cluster A
+PRY,Paraguay,Region of the Americas,UMI,0,87.87527683934103,Cluster B
+QAT,Qatar,Eastern Mediterranean Region,HI,1,84.74034905861764,Cluster A
+ROU,Romania,European Region,HI,2,52.22164830500076,Cluster D
+RUS,Russian Federation,European Region,HI,0,110.67049123800187,Cluster B
+RWA,Rwanda,African Region,LI,3,103.0760421561702,Cluster E
+SAU,Saudi Arabia,Eastern Mediterranean Region,HI,4,97.24326042187045,Cluster C
+SDN,Sudan,Eastern Mediterranean Region,LI,2,116.7999730318593,Cluster D
+SEN,Senegal,African Region,LMI,2,85.07432242666356,Cluster D
+SGP,Singapore,Western Pacific Region,HI,0,44.23297725304236,Cluster B
+SLB,Solomon Islands,Western Pacific Region,LMI,1,103.27431736590164,Cluster A
+SLE,Sierra Leone,African Region,LI,4,90.19479503206004,Cluster C
+SLV,El Salvador,Region of the Americas,UMI,3,92.04630560295301,Cluster E
+SOM,Somalia,Eastern Mediterranean Region,LI,2,112.20014297098253,Cluster D
+SRB,Serbia,European Region,UMI,1,64.75090864641099,Cluster A
+SSD,South Sudan,African Region,LI,2,109.20249062512937,Cluster D
+STP,Sao Tome and Principe,African Region,LMI,2,74.6798531085286,Cluster D
+SUR,Suriname,Region of the Americas,UMI,4,107.29074950696446,Cluster C
+SVK,Slovakia,European Region,HI,0,67.75941214607131,Cluster B
+SVN,Slovenia,European Region,HI,2,70.03789806362089,Cluster D
+SWE,Sweden,European Region,HI,0,108.0394516249511,Cluster B
+SWZ,Eswatini,African Region,LMI,4,130.10626227847965,Cluster C
+SYC,Seychelles,African Region,HI,2,60.92368530604475,Cluster D
+SYR,Syrian Arab Republic,Eastern Mediterranean Region,LI,2,179.23324115661708,Cluster D
+TCD,Chad,African Region,LI,0,131.07070214906824,Cluster B
+TGO,Togo,African Region,LI,0,113.25605572565102,Cluster B
+THA,Thailand,South-East Asia Region,UMI,4,61.65808433907663,Cluster C
+TJK,Tajikistan,European Region,LMI,4,76.59974653263433,Cluster C
+TKM,Turkmenistan,European Region,UMI,3,87.07547049825136,Cluster E
+TLS,Timor-Leste,South-East Asia Region,LMI,1,63.84730158456751,Cluster A
+TON,Tonga,Western Pacific Region,UMI,1,98.26035333236143,Cluster A
+TTO,Trinidad and Tobago,Region of the Americas,HI,0,105.17976765152169,Cluster B
+TUN,Tunisia,Eastern Mediterranean Region,LMI,4,116.00911348284556,Cluster C
+TUR,Türkiye,European Region,UMI,4,116.23573660752464,Cluster C
+TZA,United Republic of Tanzania,African Region,LMI,4,93.01025470685617,Cluster C
+UGA,Uganda,African Region,LI,2,90.89706662240265,Cluster D
+UKR,Ukraine,European Region,UMI,2,138.1006771970344,Cluster D
+URY,Uruguay,Region of the Americas,HI,2,109.38607460320331,Cluster D
+USA,United States of America,Region of the Americas,HI,2,113.51130286813991,Cluster D
+UZB,Uzbekistan,European Region,LMI,2,80.97632660048994,Cluster D
+VCT,Saint Vincent and the Grenadines,Region of the Americas,UMI,1,83.77103425853117,Cluster A
+VEN,Venezuela (Bolivarian Republic of),Region of the Americas,UMI,0,92.46949690161262,Cluster B
+VNM,Viet Nam,Western Pacific Region,LMI,0,65.7644437220947,Cluster B
+VUT,Vanuatu,Western Pacific Region,LMI,4,86.59130294501443,Cluster C
+WSM,Samoa,Western Pacific Region,LMI,4,76.72957425550355,Cluster C
+YEM,Yemen,Eastern Mediterranean Region,LI,2,128.5911195207892,Cluster D
+ZAF,South Africa,African Region,UMI,0,112.05978390929924,Cluster B
+ZMB,Zambia,African Region,LMI,0,97.67869920090338,Cluster B
+ZWE,Zimbabwe,African Region,LMI,2,113.35791495037176,Cluster D

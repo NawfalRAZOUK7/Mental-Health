@@ -1,0 +1,51 @@
+\chapter{Préparation des données et pipeline}
+\section{Inventaire et profilage}
+Le script \texttt{src/00\_inventory.py} parcourt \texttt{data\_raw/} et produit un catalogue complet des fichiers avec le nombre de lignes, la liste des colonnes et les valeurs uniques pour \texttt{year}, \texttt{sex\_name}, \texttt{age\_name}, \texttt{cause\_name}, \texttt{metric\_name} et \texttt{measure\_name}. Le résultat est écrit dans \texttt{v1/data\_clean/dataset\_catalog.csv} et sert de base à l'audit des sources.
+
+\section{Cartographie des pays et ISO3}
+Le script \texttt{src/01\_country\_mapping.py} harmonise les noms de pays OMS et GBD vers un code ISO3 unique, en combinant un mapping automatique (\texttt{pycountry}) et des exceptions manuelles. Deux fichiers sont générés :
+\begin{itemize}
+    \item \texttt{data\_clean/country\_iso3\_mapping.csv} : mapping final (source OMS/GBD, type de match).
+    \item \texttt{data\_clean/country\_iso3\_unmatched.csv} : liste des pays non résolus pour correction.
+\end{itemize}
+
+\section{Nettoyage OMS}
+Le script \texttt{src/02\_clean\_who.py} lit \texttt{who\_global\_master.xlsx} ou \texttt{who\_global\_master.csv}, normalise les noms de colonnes, ajoute \texttt{iso3} et fixe l'année à 2021. Les sorties principales sont :
+\begin{itemize}
+    \item \texttt{data\_clean/who\_2021\_clean.csv} (global).
+    \item \texttt{data\_clean/who\_\*\_clean.csv} (régions, si présentes).
+\end{itemize}
+
+\section{Nettoyage GBD}
+Le script \texttt{src/03\_clean\_gbd.py} applique des filtres par fichier (cause, mesure, métrique) et insère le code ISO3. Les sorties standardisées sont :
+\begin{itemize}
+    \item \texttt{data\_clean/gbd\_addiction\_clean.csv}
+    \item \texttt{data\_clean/gbd\_selfharm\_clean.csv}
+    \item \texttt{data\_clean/gbd\_depression\_dalys\_clean.csv}
+    \item \texttt{data\_clean/gbd\_prob\_death\_clean.csv}
+    \item \texttt{data\_clean/gbd\_allcauses\_clean.csv}
+    \item \texttt{data\_clean/gbd\_big\_categories\_clean.csv}
+\end{itemize}
+
+\section{Fusions et tables analytiques}
+Le script \texttt{src/04\_merge\_ml.py} fusionne OMS et GBD sur \texttt{iso3} pour construire la table ML (suicide 2021 + indicateurs GBD). Le script \texttt{src/05\_merge\_context.py} produit des tables de contexte prêtes à visualiser (tendances toutes causes, grandes catégories, probabilité de décès) dans \texttt{data\_clean/context\_tables/}.
+
+\section{Table ML et rapport de baseline}
+Le script \texttt{src/06\_ml\_baseline.py} construit une table de features, entraîne des modèles simples (Ridge, RandomForest) et écrit :
+\begin{itemize}
+    \item \texttt{data\_clean/ml\_baseline\_features.csv}
+    \item \texttt{data\_clean/ml\_baseline\_predictions.csv}
+    \item \texttt{report/ml\_baseline\_results.csv}
+    \item \texttt{report/ml\_baseline\_cv.csv}
+    \item \texttt{report/ml\_feature\_importance.csv}
+    \item \texttt{report/ml\_baseline.md}
+\end{itemize}
+
+\section{Pipelines versionnées}
+La variable d'environnement \texttt{MHP\_VERSION} oriente toutes les sorties vers \texttt{v1/}, \texttt{v2/} ou \texttt{v3/}. Des scripts de pipeline sont fournis :
+\begin{itemize}
+    \item \texttt{scripts/run\_v1\_pipeline.py} (v1, données réelles).
+    \item \texttt{scripts/run\_v2\_pipeline.py} (v2, analytics avancées).
+    \item \texttt{scripts/run\_v3\_pipeline.py} (v3, risk estimator).
+    \item v0 utilise \texttt{src/v0\_visuals.py} pour les exports statiques.
+\end{itemize}

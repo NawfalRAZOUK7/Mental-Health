@@ -1,0 +1,34 @@
+region_name,location_name,iso3,sex_name,year,number_suicides_2021,crude_suicide_rate_2021,age_standardized_suicide_rate_2021,data_quality,income_group
+SEARO,Bangladesh,BGD,Both sexes,2021,4714,2.8,2.9,Very low,LMI
+SEARO,Bangladesh,BGD,Females,2021,1701,2.0,1.9,Very low,LMI
+SEARO,Bangladesh,BGD,Males,2021,3013,3.6,3.9,Very low,LMI
+SEARO,Bhutan,BTN,Both sexes,2021,38,4.9,5.1,Very low,LMI
+SEARO,Bhutan,BTN,Females,2021,12,3.4,3.6,Very low,LMI
+SEARO,Bhutan,BTN,Males,2021,26,6.2,6.5,Very low,LMI
+SEARO,Democratic People's Republic of Korea,PRK,Both sexes,2021,2442,9.3,7.6,Very low,LI
+SEARO,Democratic People's Republic of Korea,PRK,Females,2021,1078,8.1,6.3,Very low,LI
+SEARO,Democratic People's Republic of Korea,PRK,Males,2021,1363,10.5,9.1,Very low,LI
+SEARO,India,IND,Both sexes,2021,177567,12.6,12.6,Very low,LMI
+SEARO,India,IND,Females,2021,76848,11.2,11.1,Very low,LMI
+SEARO,India,IND,Males,2021,100719,13.8,14.1,Very low,LMI
+SEARO,Indonesia,IDN,Both sexes,2021,3333,1.2,1.3,Very low,UMI
+SEARO,Indonesia,IDN,Females,2021,1257,0.9,0.9,Very low,UMI
+SEARO,Indonesia,IDN,Males,2021,2076,1.5,1.7,Very low,UMI
+SEARO,Maldives,MDV,Both sexes,2021,8,1.5,2.0,Low,UMI
+SEARO,Maldives,MDV,Females,2021,1,0.3,0.4,Low,UMI
+SEARO,Maldives,MDV,Males,2021,7,2.2,3.2,Low,UMI
+SEARO,Myanmar,MMR,Both sexes,2021,1545,2.9,2.9,Very low,LMI
+SEARO,Myanmar,MMR,Females,2021,274,1.0,1.0,Very low,LMI
+SEARO,Myanmar,MMR,Males,2021,1271,4.8,4.9,Very low,LMI
+SEARO,Nepal,NPL,Both sexes,2021,2989,10.1,11.1,Very low,LMI
+SEARO,Nepal,NPL,Females,2021,1091,7.2,7.2,Very low,LMI
+SEARO,Nepal,NPL,Males,2021,1898,13.3,15.8,Very low,LMI
+SEARO,Sri Lanka,LKA,Both sexes,2021,3347,14.7,14.0,Medium,LMI
+SEARO,Sri Lanka,LKA,Females,2021,685,5.9,5.6,Medium,LMI
+SEARO,Sri Lanka,LKA,Males,2021,2661,24.2,23.6,Medium,LMI
+SEARO,Thailand,THA,Both sexes,2021,11899,16.6,15.4,Low,UMI
+SEARO,Thailand,THA,Females,2021,2011,5.5,4.8,Low,UMI
+SEARO,Thailand,THA,Males,2021,9887,28.2,26.2,Low,UMI
+SEARO,Timor-Leste,TLS,Both sexes,2021,48,3.6,4.2,Very low,LMI
+SEARO,Timor-Leste,TLS,Females,2021,15,2.3,2.6,Very low,LMI
+SEARO,Timor-Leste,TLS,Males,2021,33,4.8,5.8,Very low,LMI

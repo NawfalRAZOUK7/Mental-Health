@@ -1,0 +1,64 @@
+region_name,location_name,iso3,sex_name,year,number_suicides_2021,crude_suicide_rate_2021,age_standardized_suicide_rate_2021,data_quality,income_group
+EMRO,Afghanistan,AFG,Both sexes,2021,1438,3.6,5.3,Very low,LI
+EMRO,Afghanistan,AFG,Females,2021,468,2.4,3.7,Very low,LI
+EMRO,Afghanistan,AFG,Males,2021,970,4.8,7.0,Very low,LI
+EMRO,Bahrain,BHR,Both sexes,2021,70,4.7,4.2,Low,HI
+EMRO,Bahrain,BHR,Females,2021,8,1.5,1.5,Low,HI
+EMRO,Bahrain,BHR,Males,2021,62,6.6,5.9,Low,HI
+EMRO,Djibouti,DJI,Both sexes,2021,89,8.0,10.1,Very low,LMI
+EMRO,Djibouti,DJI,Females,2021,36,6.4,7.7,Very low,LMI
+EMRO,Djibouti,DJI,Males,2021,53,9.6,13.0,Very low,LMI
+EMRO,Egypt,EGY,Both sexes,2021,699,0.6,0.7,Low,LMI
+EMRO,Egypt,EGY,Females,2021,184,0.3,0.4,Low,LMI
+EMRO,Egypt,EGY,Males,2021,515,0.9,1.1,Low,LMI
+EMRO,Iran (Islamic Republic of),IRN,Both sexes,2021,3603,4.1,4.1,Medium,UMI
+EMRO,Iran (Islamic Republic of),IRN,Females,2021,1007,2.3,2.4,Medium,UMI
+EMRO,Iran (Islamic Republic of),IRN,Males,2021,2596,5.8,5.7,Medium,UMI
+EMRO,Iraq,IRQ,Both sexes,2021,1281,3.0,3.8,Low,UMI
+EMRO,Iraq,IRQ,Females,2021,327,1.5,1.8,Low,UMI
+EMRO,Iraq,IRQ,Males,2021,954,4.4,6.1,Low,UMI
+EMRO,Jordan,JOR,Both sexes,2021,67,0.6,0.7,Medium,LMI
+EMRO,Jordan,JOR,Females,2021,15,0.3,0.3,Medium,LMI
+EMRO,Jordan,JOR,Males,2021,52,0.9,1.0,Medium,LMI
+EMRO,Kuwait,KWT,Both sexes,2021,101,2.3,2.2,Low,HI
+EMRO,Kuwait,KWT,Females,2021,6,0.3,0.4,Low,HI
+EMRO,Kuwait,KWT,Males,2021,95,3.6,3.3,Low,HI
+EMRO,Lebanon,LBN,Both sexes,2021,40,0.7,0.7,Low,LMI
+EMRO,Lebanon,LBN,Females,2021,16,0.6,0.6,Low,LMI
+EMRO,Lebanon,LBN,Males,2021,24,0.9,0.9,Low,LMI
+EMRO,Libya,LBY,Both sexes,2021,357,5.0,5.1,Very low,UMI
+EMRO,Libya,LBY,Females,2021,95,2.7,2.8,Very low,UMI
+EMRO,Libya,LBY,Males,2021,262,7.2,7.4,Very low,UMI
+EMRO,Morocco,MAR,Both sexes,2021,1076,2.9,3.0,Very low,LMI
+EMRO,Morocco,MAR,Females,2021,444,2.4,2.4,Very low,LMI
+EMRO,Morocco,MAR,Males,2021,633,3.4,3.5,Very low,LMI
+EMRO,Oman,OMN,Both sexes,2021,41,0.9,0.9,Very low,HI
+EMRO,Oman,OMN,Females,2021,4,0.2,0.3,Very low,HI
+EMRO,Oman,OMN,Males,2021,37,1.4,1.4,Very low,HI
+EMRO,Pakistan,PAK,Both sexes,2021,13506,5.6,6.5,Very low,LMI
+EMRO,Pakistan,PAK,Females,2021,3711,3.2,3.4,Very low,LMI
+EMRO,Pakistan,PAK,Males,2021,9794,8.0,9.5,Very low,LMI
+EMRO,Qatar,QAT,Both sexes,2021,132,4.7,4.2,Very low,HI
+EMRO,Qatar,QAT,Females,2021,6,0.8,0.9,Very low,HI
+EMRO,Qatar,QAT,Males,2021,126,6.2,5.6,Very low,HI
+EMRO,Saudi Arabia,SAU,Both sexes,2021,296,0.9,1.6,High,HI
+EMRO,Saudi Arabia,SAU,Females,2021,79,0.7,1.2,High,HI
+EMRO,Saudi Arabia,SAU,Males,2021,217,1.1,2.0,High,HI
+EMRO,Somalia,SOM,Both sexes,2021,1375,8.0,15.3,Very low,LI
+EMRO,Somalia,SOM,Females,2021,525,6.1,11.4,Very low,LI
+EMRO,Somalia,SOM,Males,2021,850,9.8,19.6,Very low,LI
+EMRO,Sudan,SDN,Both sexes,2021,1519,3.2,3.9,Very low,LI
+EMRO,Sudan,SDN,Females,2021,586,2.4,2.8,Very low,LI
+EMRO,Sudan,SDN,Males,2021,933,3.9,5.1,Very low,LI
+EMRO,Syrian Arab Republic,SYR,Both sexes,2021,127,0.6,0.7,Low,LI
+EMRO,Syrian Arab Republic,SYR,Females,2021,28,0.3,0.3,Low,LI
+EMRO,Syrian Arab Republic,SYR,Males,2021,98,0.9,1.1,Low,LI
+EMRO,Tunisia,TUN,Both sexes,2021,222,1.8,1.8,Low,LMI
+EMRO,Tunisia,TUN,Females,2021,74,1.2,1.2,Low,LMI
+EMRO,Tunisia,TUN,Males,2021,148,2.5,2.5,Low,LMI
+EMRO,United Arab Emirates,ARE,Both sexes,2021,167,1.7,1.7,Low,HI
+EMRO,United Arab Emirates,ARE,Females,2021,13,0.4,0.5,Low,HI
+EMRO,United Arab Emirates,ARE,Males,2021,154,2.5,2.3,Low,HI
+EMRO,Yemen,YEM,Both sexes,2021,1564,4.2,5.2,Very low,LI
+EMRO,Yemen,YEM,Females,2021,520,2.8,3.3,Very low,LI
+EMRO,Yemen,YEM,Males,2021,1044,5.6,7.2,Very low,LI

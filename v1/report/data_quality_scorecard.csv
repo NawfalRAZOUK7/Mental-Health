@@ -1,0 +1,13 @@
+dataset,rows,columns,year_min,year_max,iso3_missing_count,iso3_missing_pct,duplicate_rows
+context_allcauses_trend,5589,12,2021.0,2023.0,189,3.38,18
+context_big_categories_2023,29772,13,2023.0,2023.0,29382,98.69,1625
+context_probdeath_2023,615,13,2023.0,2023.0,21,3.41,0
+gbd_addiction_clean,2355,17,2023.0,2023.0,1731,73.5,0
+gbd_allcauses_clean,63585,17,2021.0,2023.0,46737,73.5,0
+gbd_big_categories_clean,51480,19,2023.0,2023.0,50700,98.48,0
+gbd_depression_dalys_clean,1836,17,2023.0,2023.0,0,0.0,0
+gbd_prob_death_clean,93480,17,2023.0,2023.0,456,0.49,0
+gbd_selfharm_clean,1224,17,2023.0,2023.0,0,0.0,0
+merged_ml_country,549,17,2021.0,2021.0,0,0.0,0
+ml_baseline_features,183,9,,,0,0.0,0
+who_2021_clean,549,10,2021.0,2021.0,0,0.0,0

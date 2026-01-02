@@ -1,0 +1,550 @@
+region_name,location_name,iso3,sex_name,year,number_suicides_2021,crude_suicide_rate_2021,age_standardized_suicide_rate_2021,data_quality,income_group
+African Region,Algeria,DZA,Both sexes,2021,976,2.2,2.3,Very low,UMI
+African Region,Algeria,DZA,Females,2021,292,1.3,1.4,Very low,UMI
+African Region,Algeria,DZA,Males,2021,684,3.0,3.2,Very low,UMI
+African Region,Angola,AGO,Both sexes,2021,2802,8.1,14.6,Very low,LMI
+African Region,Angola,AGO,Females,2021,672,3.9,6.3,Very low,LMI
+African Region,Angola,AGO,Males,2021,2130,12.5,24.4,Very low,LMI
+African Region,Benin,BEN,Both sexes,2021,956,7.1,11.8,Very low,LMI
+African Region,Benin,BEN,Females,2021,207,3.1,5.1,Very low,LMI
+African Region,Benin,BEN,Males,2021,749,11.1,19.3,Very low,LMI
+African Region,Botswana,BWA,Both sexes,2021,201,8.4,10.4,Very low,UMI
+African Region,Botswana,BWA,Females,2021,66,5.5,6.8,Very low,UMI
+African Region,Botswana,BWA,Males,2021,134,11.2,14.2,Very low,UMI
+African Region,Burkina Faso,BFA,Both sexes,2021,1869,8.5,15.4,Very low,LI
+African Region,Burkina Faso,BFA,Females,2021,443,4.0,6.7,Very low,LI
+African Region,Burkina Faso,BFA,Males,2021,1426,13.0,26.2,Very low,LI
+African Region,Burundi,BDI,Both sexes,2021,992,7.7,14.8,Very low,LI
+African Region,Burundi,BDI,Females,2021,254,3.9,7.0,Very low,LI
+African Region,Burundi,BDI,Males,2021,738,11.5,24.0,Very low,LI
+African Region,Cabo Verde,CPV,Both sexes,2021,77,14.9,16.6,Low,LMI
+African Region,Cabo Verde,CPV,Females,2021,11,4.2,4.4,Low,LMI
+African Region,Cabo Verde,CPV,Males,2021,66,25.3,30.3,Low,LMI
+African Region,Cameroon,CMR,Both sexes,2021,2287,8.5,13.8,Very low,LMI
+African Region,Cameroon,CMR,Females,2021,477,3.5,6.0,Very low,LMI
+African Region,Cameroon,CMR,Males,2021,1809,13.5,22.4,Very low,LMI
+African Region,Central African Republic,CAF,Both sexes,2021,470,9.2,18.7,Very low,LI
+African Region,Central African Republic,CAF,Females,2021,104,4.0,7.5,Very low,LI
+African Region,Central African Republic,CAF,Males,2021,366,14.7,33.1,Very low,LI
+African Region,Chad,TCD,Both sexes,2021,929,5.2,10.7,Very low,LI
+African Region,Chad,TCD,Females,2021,269,3.0,6.4,Very low,LI
+African Region,Chad,TCD,Males,2021,660,7.4,15.4,Very low,LI
+African Region,Comoros,COM,Both sexes,2021,49,6.0,8.9,Very low,LMI
+African Region,Comoros,COM,Females,2021,18,4.5,6.4,Very low,LMI
+African Region,Comoros,COM,Males,2021,31,7.5,11.5,Very low,LMI
+African Region,Congo,COG,Both sexes,2021,396,6.7,11.2,Very low,LMI
+African Region,Congo,COG,Females,2021,98,3.3,5.5,Very low,LMI
+African Region,Congo,COG,Males,2021,298,10.1,17.5,Very low,LMI
+African Region,Côte d'Ivoire,CIV,Both sexes,2021,2191,7.4,12.7,Very low,LMI
+African Region,Côte d'Ivoire,CIV,Females,2021,376,2.6,4.4,Very low,LMI
+African Region,Côte d'Ivoire,CIV,Males,2021,1815,12.0,20.8,Very low,LMI
+African Region,Democratic Republic of the Congo,COD,Both sexes,2021,8695,8.8,15.8,Very low,LI
+African Region,Democratic Republic of the Congo,COD,Females,2021,1953,3.9,6.8,Very low,LI
+African Region,Democratic Republic of the Congo,COD,Males,2021,6742,13.7,25.8,Very low,LI
+African Region,Equatorial Guinea,GNQ,Both sexes,2021,124,7.0,10.5,Very low,UMI
+African Region,Equatorial Guinea,GNQ,Females,2021,29,3.5,5.0,Very low,UMI
+African Region,Equatorial Guinea,GNQ,Males,2021,95,10.2,15.9,Very low,UMI
+African Region,Eritrea,ERI,Both sexes,2021,443,13.2,20.2,Very low,LI
+African Region,Eritrea,ERI,Females,2021,122,7.2,10.5,Very low,LI
+African Region,Eritrea,ERI,Males,2021,321,19.4,31.7,Very low,LI
+African Region,Eswatini,SWZ,Both sexes,2021,329,27.2,31.8,Very low,LMI
+African Region,Eswatini,SWZ,Females,2021,62,10.1,11.4,Very low,LMI
+African Region,Eswatini,SWZ,Males,2021,266,45.0,54.2,Very low,LMI
+African Region,Ethiopia,ETH,Both sexes,2021,7412,6.1,10.7,Very low,LI
+African Region,Ethiopia,ETH,Females,2021,1864,3.1,5.1,Very low,LI
+African Region,Ethiopia,ETH,Males,2021,5547,9.1,17.1,Very low,LI
+African Region,Gabon,GAB,Both sexes,2021,173,7.3,10.5,Very low,UMI
+African Region,Gabon,GAB,Females,2021,28,2.4,3.5,Very low,UMI
+African Region,Gabon,GAB,Males,2021,145,12.0,17.6,Very low,UMI
+African Region,Gambia,GMB,Both sexes,2021,124,4.8,8.3,Very low,LI
+African Region,Gambia,GMB,Females,2021,40,3.1,5.4,Very low,LI
+African Region,Gambia,GMB,Males,2021,84,6.5,11.4,Very low,LI
+African Region,Ghana,GHA,Both sexes,2021,1729,5.3,8.1,Very low,LMI
+African Region,Ghana,GHA,Females,2021,381,2.3,3.4,Very low,LMI
+African Region,Ghana,GHA,Males,2021,1348,8.3,13.5,Very low,LMI
+African Region,Guinea,GIN,Both sexes,2021,661,4.8,8.2,Very low,LMI
+African Region,Guinea,GIN,Females,2021,246,3.5,5.7,Very low,LMI
+African Region,Guinea,GIN,Males,2021,415,6.1,11.3,Very low,LMI
+African Region,Guinea-Bissau,GNB,Both sexes,2021,158,7.7,12.2,Very low,LI
+African Region,Guinea-Bissau,GNB,Females,2021,40,3.9,6.0,Very low,LI
+African Region,Guinea-Bissau,GNB,Males,2021,118,11.6,19.8,Very low,LI
+African Region,Kenya,KEN,Both sexes,2021,2438,4.6,8.9,Very low,LMI
+African Region,Kenya,KEN,Females,2021,666,2.5,4.6,Very low,LMI
+African Region,Kenya,KEN,Males,2021,1772,6.7,14.2,Very low,LMI
+African Region,Lesotho,LSO,Both sexes,2021,648,28.7,36.7,Very low,LMI
+African Region,Lesotho,LSO,Females,2021,193,16.6,20.3,Very low,LMI
+African Region,Lesotho,LSO,Males,2021,455,41.4,55.8,Very low,LMI
+African Region,Liberia,LBR,Both sexes,2021,314,6.0,9.6,Very low,LI
+African Region,Liberia,LBR,Females,2021,103,3.9,6.3,Very low,LI
+African Region,Liberia,LBR,Males,2021,210,8.0,13.3,Very low,LI
+African Region,Madagascar,MDG,Both sexes,2021,1808,6.1,10.0,Very low,LI
+African Region,Madagascar,MDG,Females,2021,515,3.5,5.5,Very low,LI
+African Region,Madagascar,MDG,Males,2021,1294,8.7,15.0,Very low,LI
+African Region,Malawi,MWI,Both sexes,2021,1517,7.6,14.2,Very low,LI
+African Region,Malawi,MWI,Females,2021,299,2.9,5.3,Very low,LI
+African Region,Malawi,MWI,Males,2021,1219,12.5,25.4,Very low,LI
+African Region,Mali,MLI,Both sexes,2021,931,4.2,8.3,Very low,LI
+African Region,Mali,MLI,Females,2021,309,2.8,5.4,Very low,LI
+African Region,Mali,MLI,Males,2021,621,5.5,11.4,Very low,LI
+African Region,Mauritania,MRT,Both sexes,2021,128,2.7,4.9,Very low,LMI
+African Region,Mauritania,MRT,Females,2021,42,1.7,3.1,Very low,LMI
+African Region,Mauritania,MRT,Males,2021,87,3.7,6.9,Very low,LMI
+African Region,Mauritius,MUS,Both sexes,2021,135,10.5,9.6,High,UMI
+African Region,Mauritius,MUS,Females,2021,19,3.0,2.9,High,UMI
+African Region,Mauritius,MUS,Males,2021,115,18.0,15.9,High,UMI
+African Region,Mozambique,MOZ,Both sexes,2021,3363,10.6,19.0,Very low,LI
+African Region,Mozambique,MOZ,Females,2021,974,6.0,8.8,Very low,LI
+African Region,Mozambique,MOZ,Males,2021,2389,15.6,33.1,Very low,LI
+African Region,Namibia,NAM,Both sexes,2021,241,8.6,11.1,Very low,UMI
+African Region,Namibia,NAM,Females,2021,51,3.6,4.6,Very low,UMI
+African Region,Namibia,NAM,Males,2021,190,13.9,18.4,Very low,UMI
+African Region,Niger,NER,Both sexes,2021,1097,4.5,8.9,Very low,LI
+African Region,Niger,NER,Females,2021,357,3.0,5.8,Very low,LI
+African Region,Niger,NER,Males,2021,740,5.9,12.1,Very low,LI
+African Region,Nigeria,NGA,Both sexes,2021,10912,5.0,8.8,Very low,LMI
+African Region,Nigeria,NGA,Females,2021,1658,1.5,2.9,Very low,LMI
+African Region,Nigeria,NGA,Males,2021,9254,8.4,15.1,Very low,LMI
+African Region,Rwanda,RWA,Both sexes,2021,1159,8.7,13.6,Very low,LI
+African Region,Rwanda,RWA,Females,2021,327,4.8,7.0,Very low,LI
+African Region,Rwanda,RWA,Males,2021,832,12.8,22.4,Very low,LI
+African Region,Sao Tome and Principe,STP,Both sexes,2021,2,0.9,1.3,Very low,LMI
+African Region,Sao Tome and Principe,STP,Females,2021,0,0.4,0.7,Very low,LMI
+African Region,Sao Tome and Principe,STP,Males,2021,1,1.3,1.9,Very low,LMI
+African Region,Senegal,SEN,Both sexes,2021,1164,6.8,11.6,Very low,LMI
+African Region,Senegal,SEN,Females,2021,252,3.0,4.9,Very low,LMI
+African Region,Senegal,SEN,Males,2021,912,10.4,18.4,Very low,LMI
+African Region,Seychelles,SYC,Both sexes,2021,5,4.3,3.9,Medium,HI
+African Region,Seychelles,SYC,Females,2021,1,1.7,1.7,Medium,HI
+African Region,Seychelles,SYC,Males,2021,4,6.3,6.0,Medium,HI
+African Region,Sierra Leone,SLE,Both sexes,2021,497,6.1,9.7,Very low,LI
+African Region,Sierra Leone,SLE,Females,2021,182,4.5,6.9,Very low,LI
+African Region,Sierra Leone,SLE,Males,2021,315,7.8,12.9,Very low,LI
+African Region,South Africa,ZAF,Both sexes,2021,13712,22.3,21.1,Medium,UMI
+African Region,South Africa,ZAF,Females,2021,3145,9.9,9.7,Medium,UMI
+African Region,South Africa,ZAF,Males,2021,10567,35.4,32.9,Medium,UMI
+African Region,South Sudan,SSD,Both sexes,2021,857,7.9,13.4,Very low,LI
+African Region,South Sudan,SSD,Females,2021,213,3.9,6.2,Very low,LI
+African Region,South Sudan,SSD,Males,2021,645,12.1,22.5,Very low,LI
+African Region,Togo,TGO,Both sexes,2021,829,9.3,15.2,Very low,LI
+African Region,Togo,TGO,Females,2021,175,4.0,6.4,Very low,LI
+African Region,Togo,TGO,Males,2021,654,14.6,24.4,Very low,LI
+African Region,Uganda,UGA,Both sexes,2021,2524,5.5,11.6,Very low,LI
+African Region,Uganda,UGA,Females,2021,525,2.3,4.3,Very low,LI
+African Region,Uganda,UGA,Males,2021,1999,8.8,20.9,Very low,LI
+African Region,United Republic of Tanzania,TZA,Both sexes,2021,3207,5.1,9.1,Very low,LMI
+African Region,United Republic of Tanzania,TZA,Females,2021,868,2.7,4.6,Very low,LMI
+African Region,United Republic of Tanzania,TZA,Males,2021,2339,7.5,14.6,Very low,LMI
+African Region,Zambia,ZMB,Both sexes,2021,1397,7.1,13.3,Very low,LMI
+African Region,Zambia,ZMB,Females,2021,305,3.1,5.5,Very low,LMI
+African Region,Zambia,ZMB,Males,2021,1091,11.2,22.6,Very low,LMI
+African Region,Zimbabwe,ZWE,Both sexes,2021,2740,17.3,25.4,Very low,LMI
+African Region,Zimbabwe,ZWE,Females,2021,971,11.7,15.8,Very low,LMI
+African Region,Zimbabwe,ZWE,Males,2021,1769,23.6,38.2,Very low,LMI
+Region of the Americas,Antigua and Barbuda,ATG,Both sexes,2021,1,1.5,1.4,Medium,HI
+Region of the Americas,Antigua and Barbuda,ATG,Females,2021,1,1.3,1.0,Medium,HI
+Region of the Americas,Antigua and Barbuda,ATG,Males,2021,1,1.6,1.6,Medium,HI
+Region of the Americas,Argentina,ARG,Both sexes,2021,3594,7.9,7.7,Medium,UMI
+Region of the Americas,Argentina,ARG,Females,2021,770,3.4,3.4,Medium,UMI
+Region of the Americas,Argentina,ARG,Males,2021,2823,12.6,12.2,Medium,UMI
+Region of the Americas,Bahamas,BHS,Both sexes,2021,13,3.3,2.9,Medium,HI
+Region of the Americas,Bahamas,BHS,Females,2021,2,0.8,0.7,Medium,HI
+Region of the Americas,Bahamas,BHS,Males,2021,11,5.9,5.4,Medium,HI
+Region of the Americas,Barbados,BRB,Both sexes,2021,10,3.5,2.8,Low,HI
+Region of the Americas,Barbados,BRB,Females,2021,2,1.0,0.9,Low,HI
+Region of the Americas,Barbados,BRB,Males,2021,8,6.2,5.1,Low,HI
+Region of the Americas,Belize,BLZ,Both sexes,2021,17,4.2,4.6,High,UMI
+Region of the Americas,Belize,BLZ,Females,2021,3,1.5,1.6,High,UMI
+Region of the Americas,Belize,BLZ,Males,2021,14,6.8,7.7,High,UMI
+Region of the Americas,Bolivia,BOL,Both sexes,2021,501,4.2,5.1,Very low,LMI
+Region of the Americas,Bolivia,BOL,Females,2021,140,2.4,2.6,Very low,LMI
+Region of the Americas,Bolivia,BOL,Males,2021,361,6.0,7.8,Very low,LMI
+Region of the Americas,Brazil,BRA,Both sexes,2021,15907,7.6,6.9,High,UMI
+Region of the Americas,Brazil,BRA,Females,2021,4141,3.9,3.6,High,UMI
+Region of the Americas,Brazil,BRA,Males,2021,11766,11.4,10.6,High,UMI
+Region of the Americas,Canada,CAN,Both sexes,2021,3631,9.4,8.1,High,HI
+Region of the Americas,Canada,CAN,Females,2021,919,4.7,4.1,High,HI
+Region of the Americas,Canada,CAN,Males,2021,2712,14.2,12.1,High,HI
+Region of the Americas,Chile,CHL,Both sexes,2021,1496,7.7,6.8,High,HI
+Region of the Americas,Chile,CHL,Females,2021,306,3.1,2.9,High,HI
+Region of the Americas,Chile,CHL,Males,2021,1189,12.3,10.8,High,HI
+Region of the Americas,Colombia,COL,Both sexes,2021,2534,5.0,4.7,High,UMI
+Region of the Americas,Colombia,COL,Females,2021,540,2.1,2.0,High,UMI
+Region of the Americas,Colombia,COL,Males,2021,1994,7.9,7.7,High,UMI
+Region of the Americas,Costa Rica,CRI,Both sexes,2021,408,8.1,7.6,High,UMI
+Region of the Americas,Costa Rica,CRI,Females,2021,71,2.8,2.7,High,UMI
+Region of the Americas,Costa Rica,CRI,Males,2021,337,13.5,12.5,High,UMI
+Region of the Americas,Cuba,CUB,Both sexes,2021,1534,13.8,9.2,High,UMI
+Region of the Americas,Cuba,CUB,Females,2021,243,4.3,2.8,High,UMI
+Region of the Americas,Cuba,CUB,Males,2021,1291,23.5,16.2,High,UMI
+Region of the Americas,Dominican Republic,DOM,Both sexes,2021,467,4.2,4.3,Low,UMI
+Region of the Americas,Dominican Republic,DOM,Females,2021,83,1.5,1.5,Low,UMI
+Region of the Americas,Dominican Republic,DOM,Males,2021,384,6.9,7.4,Low,UMI
+Region of the Americas,Ecuador,ECU,Both sexes,2021,1336,7.6,7.4,Medium,UMI
+Region of the Americas,Ecuador,ECU,Females,2021,233,2.6,2.6,Medium,UMI
+Region of the Americas,Ecuador,ECU,Males,2021,1102,12.5,12.4,Medium,UMI
+Region of the Americas,El Salvador,SLV,Both sexes,2021,478,7.6,7.8,Low,UMI
+Region of the Americas,El Salvador,SLV,Females,2021,103,3.2,3.1,Low,UMI
+Region of the Americas,El Salvador,SLV,Males,2021,374,12.6,14.0,Low,UMI
+Region of the Americas,Grenada,GRD,Both sexes,2021,2,1.3,1.2,Medium,UMI
+Region of the Americas,Grenada,GRD,Females,2021,0,0.7,0.5,Medium,UMI
+Region of the Americas,Grenada,GRD,Males,2021,1,1.9,1.7,Medium,UMI
+Region of the Americas,Guatemala,GTM,Both sexes,2021,869,4.9,5.3,High,UMI
+Region of the Americas,Guatemala,GTM,Females,2021,249,2.8,2.8,High,UMI
+Region of the Americas,Guatemala,GTM,Males,2021,620,7.1,7.9,High,UMI
+Region of the Americas,Guyana,GUY,Both sexes,2021,202,24.8,26.3,Medium,HI
+Region of the Americas,Guyana,GUY,Females,2021,43,10.4,10.6,Medium,HI
+Region of the Americas,Guyana,GUY,Males,2021,159,39.9,44.0,Medium,HI
+Region of the Americas,Haiti,HTI,Both sexes,2021,889,7.8,9.3,Very low,LMI
+Region of the Americas,Haiti,HTI,Females,2021,291,5.1,5.5,Very low,LMI
+Region of the Americas,Haiti,HTI,Males,2021,598,10.6,13.6,Very low,LMI
+Region of the Americas,Honduras,HND,Both sexes,2021,306,3.0,3.7,Very low,LMI
+Region of the Americas,Honduras,HND,Females,2021,49,0.9,1.1,Very low,LMI
+Region of the Americas,Honduras,HND,Males,2021,257,5.0,6.6,Very low,LMI
+Region of the Americas,Jamaica,JAM,Both sexes,2021,48,1.7,1.7,High,UMI
+Region of the Americas,Jamaica,JAM,Females,2021,6,0.4,0.4,High,UMI
+Region of the Americas,Jamaica,JAM,Males,2021,42,3.0,3.1,High,UMI
+Region of the Americas,Mexico,MEX,Both sexes,2021,8872,7.0,6.9,High,UMI
+Region of the Americas,Mexico,MEX,Females,2021,1706,2.6,2.6,High,UMI
+Region of the Americas,Mexico,MEX,Males,2021,7165,11.6,11.5,High,UMI
+Region of the Americas,Nicaragua,NIC,Both sexes,2021,282,4.2,4.2,High,LMI
+Region of the Americas,Nicaragua,NIC,Females,2021,57,1.7,1.6,High,LMI
+Region of the Americas,Nicaragua,NIC,Males,2021,225,6.9,6.9,High,LMI
+Region of the Americas,Panama,PAN,Both sexes,2021,143,3.3,3.3,High,HI
+Region of the Americas,Panama,PAN,Females,2021,21,1.0,1.0,High,HI
+Region of the Americas,Panama,PAN,Males,2021,121,5.6,5.6,High,HI
+Region of the Americas,Paraguay,PRY,Both sexes,2021,424,6.4,6.5,Medium,UMI
+Region of the Americas,Paraguay,PRY,Females,2021,156,4.7,4.7,Medium,UMI
+Region of the Americas,Paraguay,PRY,Males,2021,268,8.0,8.5,Medium,UMI
+Region of the Americas,Peru,PER,Both sexes,2021,510,1.5,1.5,Medium,UMI
+Region of the Americas,Peru,PER,Females,2021,134,0.8,0.8,Medium,UMI
+Region of the Americas,Peru,PER,Males,2021,376,2.3,2.3,Medium,UMI
+Region of the Americas,Saint Lucia,LCA,Both sexes,2021,9,5.3,4.7,High,UMI
+Region of the Americas,Saint Lucia,LCA,Females,2021,1,1.3,1.1,High,UMI
+Region of the Americas,Saint Lucia,LCA,Males,2021,8,9.3,8.6,High,UMI
+Region of the Americas,Saint Vincent and the Grenadines,VCT,Both sexes,2021,0,0.4,0.3,High,UMI
+Region of the Americas,Saint Vincent and the Grenadines,VCT,Females,2021,0,0.0,0.0,High,UMI
+Region of the Americas,Saint Vincent and the Grenadines,VCT,Males,2021,0,0.8,0.6,High,UMI
+Region of the Americas,Suriname,SUR,Both sexes,2021,138,22.3,22.5,Medium,UMI
+Region of the Americas,Suriname,SUR,Females,2021,43,14.0,14.2,Medium,UMI
+Region of the Americas,Suriname,SUR,Males,2021,94,30.5,31.4,Medium,UMI
+Region of the Americas,Trinidad and Tobago,TTO,Both sexes,2021,199,13.3,11.6,Low,HI
+Region of the Americas,Trinidad and Tobago,TTO,Females,2021,35,4.6,4.1,Low,HI
+Region of the Americas,Trinidad and Tobago,TTO,Males,2021,164,22.2,19.6,Low,HI
+Region of the Americas,United States of America,USA,Both sexes,2021,53162,15.6,14.2,High,HI
+Region of the Americas,United States of America,USA,Females,2021,10938,6.5,5.9,High,HI
+Region of the Americas,United States of America,USA,Males,2021,42224,24.7,22.3,High,HI
+Region of the Americas,Uruguay,URY,Both sexes,2021,841,24.8,22.0,Medium,HI
+Region of the Americas,Uruguay,URY,Females,2021,184,10.5,8.9,Medium,HI
+Region of the Americas,Uruguay,URY,Males,2021,657,39.9,36.0,Medium,HI
+Region of the Americas,Venezuela (Bolivarian Republic of),VEN,Both sexes,2021,2437,8.6,8.9,High,UMI
+Region of the Americas,Venezuela (Bolivarian Republic of),VEN,Females,2021,288,2.0,2.0,High,UMI
+Region of the Americas,Venezuela (Bolivarian Republic of),VEN,Males,2021,2148,15.4,16.2,High,UMI
+Eastern Mediterranean Region,Afghanistan,AFG,Both sexes,2021,1438,3.6,5.3,Very low,LI
+Eastern Mediterranean Region,Afghanistan,AFG,Females,2021,468,2.4,3.7,Very low,LI
+Eastern Mediterranean Region,Afghanistan,AFG,Males,2021,970,4.8,7.0,Very low,LI
+Eastern Mediterranean Region,Bahrain,BHR,Both sexes,2021,70,4.7,4.2,Low,HI
+Eastern Mediterranean Region,Bahrain,BHR,Females,2021,8,1.5,1.5,Low,HI
+Eastern Mediterranean Region,Bahrain,BHR,Males,2021,62,6.6,5.9,Low,HI
+Eastern Mediterranean Region,Djibouti,DJI,Both sexes,2021,89,8.0,10.1,Very low,LMI
+Eastern Mediterranean Region,Djibouti,DJI,Females,2021,36,6.4,7.7,Very low,LMI
+Eastern Mediterranean Region,Djibouti,DJI,Males,2021,53,9.6,13.0,Very low,LMI
+Eastern Mediterranean Region,Egypt,EGY,Both sexes,2021,699,0.6,0.7,Low,LMI
+Eastern Mediterranean Region,Egypt,EGY,Females,2021,184,0.3,0.4,Low,LMI
+Eastern Mediterranean Region,Egypt,EGY,Males,2021,515,0.9,1.1,Low,LMI
+Eastern Mediterranean Region,Iran (Islamic Republic of),IRN,Both sexes,2021,3603,4.1,4.1,Medium,UMI
+Eastern Mediterranean Region,Iran (Islamic Republic of),IRN,Females,2021,1007,2.3,2.4,Medium,UMI
+Eastern Mediterranean Region,Iran (Islamic Republic of),IRN,Males,2021,2596,5.8,5.7,Medium,UMI
+Eastern Mediterranean Region,Iraq,IRQ,Both sexes,2021,1281,3.0,3.8,Low,UMI
+Eastern Mediterranean Region,Iraq,IRQ,Females,2021,327,1.5,1.8,Low,UMI
+Eastern Mediterranean Region,Iraq,IRQ,Males,2021,954,4.4,6.1,Low,UMI
+Eastern Mediterranean Region,Jordan,JOR,Both sexes,2021,67,0.6,0.7,Medium,LMI
+Eastern Mediterranean Region,Jordan,JOR,Females,2021,15,0.3,0.3,Medium,LMI
+Eastern Mediterranean Region,Jordan,JOR,Males,2021,52,0.9,1.0,Medium,LMI
+Eastern Mediterranean Region,Kuwait,KWT,Both sexes,2021,101,2.3,2.2,Low,HI
+Eastern Mediterranean Region,Kuwait,KWT,Females,2021,6,0.3,0.4,Low,HI
+Eastern Mediterranean Region,Kuwait,KWT,Males,2021,95,3.6,3.3,Low,HI
+Eastern Mediterranean Region,Lebanon,LBN,Both sexes,2021,40,0.7,0.7,Low,LMI
+Eastern Mediterranean Region,Lebanon,LBN,Females,2021,16,0.6,0.6,Low,LMI
+Eastern Mediterranean Region,Lebanon,LBN,Males,2021,24,0.9,0.9,Low,LMI
+Eastern Mediterranean Region,Libya,LBY,Both sexes,2021,357,5.0,5.1,Very low,UMI
+Eastern Mediterranean Region,Libya,LBY,Females,2021,95,2.7,2.8,Very low,UMI
+Eastern Mediterranean Region,Libya,LBY,Males,2021,262,7.2,7.4,Very low,UMI
+Eastern Mediterranean Region,Morocco,MAR,Both sexes,2021,1076,2.9,3.0,Very low,LMI
+Eastern Mediterranean Region,Morocco,MAR,Females,2021,444,2.4,2.4,Very low,LMI
+Eastern Mediterranean Region,Morocco,MAR,Males,2021,633,3.4,3.5,Very low,LMI
+Eastern Mediterranean Region,Oman,OMN,Both sexes,2021,41,0.9,0.9,Very low,HI
+Eastern Mediterranean Region,Oman,OMN,Females,2021,4,0.2,0.3,Very low,HI
+Eastern Mediterranean Region,Oman,OMN,Males,2021,37,1.4,1.4,Very low,HI
+Eastern Mediterranean Region,Pakistan,PAK,Both sexes,2021,13506,5.6,6.5,Very low,LMI
+Eastern Mediterranean Region,Pakistan,PAK,Females,2021,3711,3.2,3.4,Very low,LMI
+Eastern Mediterranean Region,Pakistan,PAK,Males,2021,9794,8.0,9.5,Very low,LMI
+Eastern Mediterranean Region,Qatar,QAT,Both sexes,2021,132,4.7,4.2,Very low,HI
+Eastern Mediterranean Region,Qatar,QAT,Females,2021,6,0.8,0.9,Very low,HI
+Eastern Mediterranean Region,Qatar,QAT,Males,2021,126,6.2,5.6,Very low,HI
+Eastern Mediterranean Region,Saudi Arabia,SAU,Both sexes,2021,296,0.9,1.6,High,HI
+Eastern Mediterranean Region,Saudi Arabia,SAU,Females,2021,79,0.7,1.2,High,HI
+Eastern Mediterranean Region,Saudi Arabia,SAU,Males,2021,217,1.1,2.0,High,HI
+Eastern Mediterranean Region,Somalia,SOM,Both sexes,2021,1375,8.0,15.3,Very low,LI
+Eastern Mediterranean Region,Somalia,SOM,Females,2021,525,6.1,11.4,Very low,LI
+Eastern Mediterranean Region,Somalia,SOM,Males,2021,850,9.8,19.6,Very low,LI
+Eastern Mediterranean Region,Sudan,SDN,Both sexes,2021,1519,3.2,3.9,Very low,LI
+Eastern Mediterranean Region,Sudan,SDN,Females,2021,586,2.4,2.8,Very low,LI
+Eastern Mediterranean Region,Sudan,SDN,Males,2021,933,3.9,5.1,Very low,LI
+Eastern Mediterranean Region,Syrian Arab Republic,SYR,Both sexes,2021,127,0.6,0.7,Low,LI
+Eastern Mediterranean Region,Syrian Arab Republic,SYR,Females,2021,28,0.3,0.3,Low,LI
+Eastern Mediterranean Region,Syrian Arab Republic,SYR,Males,2021,98,0.9,1.1,Low,LI
+Eastern Mediterranean Region,Tunisia,TUN,Both sexes,2021,222,1.8,1.8,Low,LMI
+Eastern Mediterranean Region,Tunisia,TUN,Females,2021,74,1.2,1.2,Low,LMI
+Eastern Mediterranean Region,Tunisia,TUN,Males,2021,148,2.5,2.5,Low,LMI
+Eastern Mediterranean Region,United Arab Emirates,ARE,Both sexes,2021,167,1.7,1.7,Low,HI
+Eastern Mediterranean Region,United Arab Emirates,ARE,Females,2021,13,0.4,0.5,Low,HI
+Eastern Mediterranean Region,United Arab Emirates,ARE,Males,2021,154,2.5,2.3,Low,HI
+Eastern Mediterranean Region,Yemen,YEM,Both sexes,2021,1564,4.2,5.2,Very low,LI
+Eastern Mediterranean Region,Yemen,YEM,Females,2021,520,2.8,3.3,Very low,LI
+Eastern Mediterranean Region,Yemen,YEM,Males,2021,1044,5.6,7.2,Very low,LI
+European Region,Albania,ALB,Both sexes,2021,78,2.8,2.1,Low,UMI
+European Region,Albania,ALB,Females,2021,33,2.3,1.7,Low,UMI
+European Region,Albania,ALB,Males,2021,45,3.2,2.6,Low,UMI
+European Region,Armenia,ARM,Both sexes,2021,69,2.5,1.9,High,UMI
+European Region,Armenia,ARM,Females,2021,14,1.0,0.7,High,UMI
+European Region,Armenia,ARM,Males,2021,55,4.2,3.6,High,UMI
+European Region,Austria,AUT,Both sexes,2021,1301,14.5,10.2,High,HI
+European Region,Austria,AUT,Females,2021,262,5.7,4.1,High,HI
+European Region,Austria,AUT,Males,2021,1040,23.6,16.7,High,HI
+European Region,Azerbaijan,AZE,Both sexes,2021,160,1.6,1.6,Very low,UMI
+European Region,Azerbaijan,AZE,Females,2021,43,0.8,0.8,Very low,UMI
+European Region,Azerbaijan,AZE,Males,2021,117,2.3,2.4,Very low,UMI
+European Region,Belarus,BLR,Both sexes,2021,1444,15.6,11.7,High,UMI
+European Region,Belarus,BLR,Females,2021,250,5.1,3.3,High,UMI
+European Region,Belarus,BLR,Males,2021,1194,27.7,22.1,High,UMI
+European Region,Belgium,BEL,Both sexes,2021,2124,18.4,14.3,High,HI
+European Region,Belgium,BEL,Females,2021,627,10.7,8.0,High,HI
+European Region,Belgium,BEL,Males,2021,1497,26.2,20.8,High,HI
+European Region,Bosnia and Herzegovina,BIH,Both sexes,2021,291,9.0,5.7,Medium,UMI
+European Region,Bosnia and Herzegovina,BIH,Females,2021,80,4.7,2.4,Medium,UMI
+European Region,Bosnia and Herzegovina,BIH,Males,2021,211,13.7,9.5,Medium,UMI
+European Region,Bulgaria,BGR,Both sexes,2021,654,9.5,6.3,Medium,HI
+European Region,Bulgaria,BGR,Females,2021,149,4.2,2.6,Medium,HI
+European Region,Bulgaria,BGR,Males,2021,505,15.2,10.4,Medium,HI
+European Region,Croatia,HRV,Both sexes,2021,615,15.7,10.6,High,HI
+European Region,Croatia,HRV,Females,2021,141,6.9,4.2,High,HI
+European Region,Croatia,HRV,Males,2021,474,25.1,17.6,High,HI
+European Region,Cyprus,CYP,Both sexes,2021,40,3.0,2.7,High,HI
+European Region,Cyprus,CYP,Females,2021,14,2.2,1.6,High,HI
+European Region,Cyprus,CYP,Males,2021,26,3.8,3.7,High,HI
+European Region,Czechia,CZE,Both sexes,2021,1403,13.3,10.3,High,HI
+European Region,Czechia,CZE,Females,2021,303,5.7,4.6,High,HI
+European Region,Czechia,CZE,Males,2021,1100,21.2,16.3,High,HI
+European Region,Denmark,DNK,Both sexes,2021,613,10.5,7.6,High,HI
+European Region,Denmark,DNK,Females,2021,186,6.3,4.3,High,HI
+European Region,Denmark,DNK,Males,2021,427,14.7,11.0,High,HI
+European Region,Estonia,EST,Both sexes,2021,199,14.9,12.5,High,HI
+European Region,Estonia,EST,Females,2021,40,5.8,5.3,High,HI
+European Region,Estonia,EST,Males,2021,159,25.1,20.4,High,HI
+European Region,Finland,FIN,Both sexes,2021,807,14.6,12.6,High,HI
+European Region,Finland,FIN,Females,2021,246,8.8,7.9,High,HI
+European Region,Finland,FIN,Males,2021,562,20.5,17.4,High,HI
+European Region,France,FRA,Both sexes,2021,10957,16.6,11.8,Medium,HI
+European Region,France,FRA,Females,2021,3242,9.5,6.0,Medium,HI
+European Region,France,FRA,Males,2021,7715,24.1,18.0,Medium,HI
+European Region,Georgia,GEO,Both sexes,2021,193,5.1,4.6,Medium,UMI
+European Region,Georgia,GEO,Females,2021,26,1.3,1.0,Medium,UMI
+European Region,Georgia,GEO,Males,2021,167,9.5,8.9,Medium,UMI
+European Region,Germany,DEU,Both sexes,2021,10799,12.9,8.2,High,HI
+European Region,Germany,DEU,Females,2021,3213,7.6,4.2,High,HI
+European Region,Germany,DEU,Males,2021,7587,18.4,12.2,High,HI
+European Region,Greece,GRC,Both sexes,2021,495,4.7,3.4,Medium,HI
+European Region,Greece,GRC,Females,2021,89,1.6,1.2,Medium,HI
+European Region,Greece,GRC,Males,2021,407,7.9,5.8,Medium,HI
+European Region,Hungary,HUN,Both sexes,2021,1597,16.5,11.4,High,HI
+European Region,Hungary,HUN,Females,2021,378,7.5,4.8,High,HI
+European Region,Hungary,HUN,Males,2021,1219,26.2,19.0,High,HI
+European Region,Iceland,ISL,Both sexes,2021,44,11.9,10.8,High,HI
+European Region,Iceland,ISL,Females,2021,17,9.3,8.4,High,HI
+European Region,Iceland,ISL,Males,2021,27,14.4,13.0,High,HI
+European Region,Ireland,IRL,Both sexes,2021,430,8.5,7.7,High,HI
+European Region,Ireland,IRL,Females,2021,116,4.6,4.2,High,HI
+European Region,Ireland,IRL,Males,2021,313,12.6,11.3,High,HI
+European Region,Israel,ISR,Both sexes,2021,391,4.4,4.4,High,HI
+European Region,Israel,ISR,Females,2021,110,2.4,2.3,High,HI
+European Region,Israel,ISR,Males,2021,280,6.3,6.5,High,HI
+European Region,Italy,ITA,Both sexes,2021,4176,7.0,4.6,High,HI
+European Region,Italy,ITA,Females,2021,1108,3.6,2.2,High,HI
+European Region,Italy,ITA,Males,2021,3068,10.5,7.1,High,HI
+European Region,Kazakhstan,KAZ,Both sexes,2021,2882,14.6,15.2,High,UMI
+European Region,Kazakhstan,KAZ,Females,2021,540,5.3,5.5,High,UMI
+European Region,Kazakhstan,KAZ,Males,2021,2343,24.4,26.2,High,UMI
+European Region,Kyrgyzstan,KGZ,Both sexes,2021,464,6.8,7.8,High,LMI
+European Region,Kyrgyzstan,KGZ,Females,2021,108,3.1,3.6,High,LMI
+European Region,Kyrgyzstan,KGZ,Males,2021,355,10.5,12.4,High,LMI
+European Region,Latvia,LVA,Both sexes,2021,287,15.2,12.0,High,HI
+European Region,Latvia,LVA,Females,2021,47,4.6,3.0,High,HI
+European Region,Latvia,LVA,Males,2021,240,27.5,22.1,High,HI
+European Region,Lithuania,LTU,Both sexes,2021,618,22.1,16.8,High,HI
+European Region,Lithuania,LTU,Females,2021,136,9.2,5.9,High,HI
+European Region,Lithuania,LTU,Males,2021,483,36.7,28.8,High,HI
+European Region,Luxembourg,LUX,Both sexes,2021,53,8.2,6.2,High,HI
+European Region,Luxembourg,LUX,Females,2021,14,4.3,2.9,High,HI
+European Region,Luxembourg,LUX,Males,2021,39,12.1,9.6,High,HI
+European Region,Malta,MLT,Both sexes,2021,34,6.5,5.6,High,HI
+European Region,Malta,MLT,Females,2021,11,4.4,3.3,High,HI
+European Region,Malta,MLT,Males,2021,23,8.4,7.5,High,HI
+European Region,Montenegro,MNE,Both sexes,2021,68,11.3,8.9,Low,UMI
+European Region,Montenegro,MNE,Females,2021,19,6.0,4.3,Low,UMI
+European Region,Montenegro,MNE,Males,2021,50,17.1,14.1,Low,UMI
+European Region,Netherlands (Kingdom of the),NLD,Both sexes,2021,2040,11.5,9.1,High,HI
+European Region,Netherlands (Kingdom of the),NLD,Females,2021,680,7.6,5.9,High,HI
+European Region,Netherlands (Kingdom of the),NLD,Males,2021,1359,15.4,12.5,High,HI
+European Region,North Macedonia,MKD,Both sexes,2021,107,5.8,4.6,Medium,UMI
+European Region,North Macedonia,MKD,Females,2021,36,3.8,3.0,Medium,UMI
+European Region,North Macedonia,MKD,Males,2021,71,7.9,6.4,Medium,UMI
+European Region,Norway,NOR,Both sexes,2021,713,13.2,11.4,High,HI
+European Region,Norway,NOR,Females,2021,199,7.4,6.3,High,HI
+European Region,Norway,NOR,Males,2021,515,18.9,16.3,High,HI
+European Region,Poland,POL,Both sexes,2021,5199,13.7,11.5,Medium,HI
+European Region,Poland,POL,Females,2021,753,3.8,3.2,Medium,HI
+European Region,Poland,POL,Males,2021,4446,24.1,20.2,Medium,HI
+European Region,Portugal,PRT,Both sexes,2021,1197,11.5,7.2,High,HI
+European Region,Portugal,PRT,Females,2021,323,5.9,3.5,High,HI
+European Region,Portugal,PRT,Males,2021,874,17.7,11.4,High,HI
+European Region,Republic of Moldova,MDA,Both sexes,2021,428,14.1,11.9,High,UMI
+European Region,Republic of Moldova,MDA,Females,2021,82,5.0,4.0,High,UMI
+European Region,Republic of Moldova,MDA,Males,2021,346,24.8,22.1,High,UMI
+European Region,Romania,ROU,Both sexes,2021,1852,9.6,7.2,High,HI
+European Region,Romania,ROU,Females,2021,327,3.3,2.3,High,HI
+European Region,Romania,ROU,Males,2021,1526,16.4,12.5,High,HI
+European Region,Russian Federation,RUS,Both sexes,2021,31172,21.4,17.9,Medium,HI
+European Region,Russian Federation,RUS,Females,2021,6320,8.1,6.1,Medium,HI
+European Region,Russian Federation,RUS,Males,2021,24852,36.7,31.6,Medium,HI
+European Region,Serbia,SRB,Both sexes,2021,1035,15.1,9.4,Medium,UMI
+European Region,Serbia,SRB,Females,2021,287,8.0,4.4,Medium,UMI
+European Region,Serbia,SRB,Males,2021,748,23.0,15.0,Medium,UMI
+European Region,Slovakia,SVK,Both sexes,2021,539,9.9,7.6,High,HI
+European Region,Slovakia,SVK,Females,2021,84,3.0,2.3,High,HI
+European Region,Slovakia,SVK,Males,2021,455,17.1,13.5,High,HI
+European Region,Slovenia,SVN,Both sexes,2021,398,18.9,13.2,High,HI
+European Region,Slovenia,SVN,Females,2021,81,7.7,5.1,High,HI
+European Region,Slovenia,SVN,Males,2021,318,29.9,21.4,High,HI
+European Region,Spain,ESP,Both sexes,2021,4160,8.7,6.2,High,HI
+European Region,Spain,ESP,Females,2021,1085,4.5,3.2,High,HI
+European Region,Spain,ESP,Males,2021,3075,13.1,9.4,High,HI
+European Region,Sweden,SWE,Both sexes,2021,1442,13.8,11.7,High,HI
+European Region,Sweden,SWE,Females,2021,450,8.7,7.1,High,HI
+European Region,Sweden,SWE,Males,2021,992,18.9,16.2,High,HI
+European Region,Switzerland,CHE,Both sexes,2021,1221,14.0,9.9,High,HI
+European Region,Switzerland,CHE,Females,2021,403,9.2,6.0,High,HI
+European Region,Switzerland,CHE,Males,2021,818,18.9,13.9,High,HI
+European Region,Tajikistan,TJK,Both sexes,2021,242,2.4,3.1,Low,LMI
+European Region,Tajikistan,TJK,Females,2021,68,1.3,1.7,Low,LMI
+European Region,Tajikistan,TJK,Males,2021,174,3.6,4.5,Low,LMI
+European Region,Türkiye,TUR,Both sexes,2021,2332,2.7,2.6,Medium,UMI
+European Region,Türkiye,TUR,Females,2021,473,1.1,1.0,Medium,UMI
+European Region,Türkiye,TUR,Males,2021,1859,4.3,4.2,Medium,UMI
+European Region,Turkmenistan,TKM,Both sexes,2021,484,6.8,7.5,Very low,UMI
+European Region,Turkmenistan,TKM,Females,2021,126,3.5,3.9,Very low,UMI
+European Region,Turkmenistan,TKM,Males,2021,358,10.3,11.7,Very low,UMI
+European Region,Ukraine,UKR,Both sexes,2021,9397,21.2,17.0,Medium,UMI
+European Region,Ukraine,UKR,Females,2021,1625,6.9,4.7,Medium,UMI
+European Region,Ukraine,UKR,Males,2021,7773,37.7,30.9,Medium,UMI
+European Region,United Kingdom of Great Britain and Northern Ireland,GBR,Both sexes,2021,6461,9.5,8.8,High,HI
+European Region,United Kingdom of Great Britain and Northern Ireland,GBR,Females,2021,1581,4.6,4.1,High,HI
+European Region,United Kingdom of Great Britain and Northern Ireland,GBR,Males,2021,4880,14.7,13.5,High,HI
+European Region,Uzbekistan,UZB,Both sexes,2021,2857,8.3,9.1,Medium,LMI
+European Region,Uzbekistan,UZB,Females,2021,1029,6.1,6.5,Medium,LMI
+European Region,Uzbekistan,UZB,Males,2021,1828,10.6,11.8,Medium,LMI
+South-East Asia Region,Bangladesh,BGD,Both sexes,2021,4714,2.8,2.9,Very low,LMI
+South-East Asia Region,Bangladesh,BGD,Females,2021,1701,2.0,1.9,Very low,LMI
+South-East Asia Region,Bangladesh,BGD,Males,2021,3013,3.6,3.9,Very low,LMI
+South-East Asia Region,Bhutan,BTN,Both sexes,2021,38,4.9,5.1,Very low,LMI
+South-East Asia Region,Bhutan,BTN,Females,2021,12,3.4,3.6,Very low,LMI
+South-East Asia Region,Bhutan,BTN,Males,2021,26,6.2,6.5,Very low,LMI
+South-East Asia Region,Democratic People's Republic of Korea,PRK,Both sexes,2021,2442,9.3,7.6,Very low,LI
+South-East Asia Region,Democratic People's Republic of Korea,PRK,Females,2021,1078,8.1,6.3,Very low,LI
+South-East Asia Region,Democratic People's Republic of Korea,PRK,Males,2021,1363,10.5,9.1,Very low,LI
+South-East Asia Region,India,IND,Both sexes,2021,177567,12.6,12.6,Very low,LMI
+South-East Asia Region,India,IND,Females,2021,76848,11.2,11.1,Very low,LMI
+South-East Asia Region,India,IND,Males,2021,100719,13.8,14.1,Very low,LMI
+South-East Asia Region,Indonesia,IDN,Both sexes,2021,3333,1.2,1.3,Very low,UMI
+South-East Asia Region,Indonesia,IDN,Females,2021,1257,0.9,0.9,Very low,UMI
+South-East Asia Region,Indonesia,IDN,Males,2021,2076,1.5,1.7,Very low,UMI
+South-East Asia Region,Maldives,MDV,Both sexes,2021,8,1.5,2.0,Low,UMI
+South-East Asia Region,Maldives,MDV,Females,2021,1,0.3,0.4,Low,UMI
+South-East Asia Region,Maldives,MDV,Males,2021,7,2.2,3.2,Low,UMI
+South-East Asia Region,Myanmar,MMR,Both sexes,2021,1545,2.9,2.9,Very low,LMI
+South-East Asia Region,Myanmar,MMR,Females,2021,274,1.0,1.0,Very low,LMI
+South-East Asia Region,Myanmar,MMR,Males,2021,1271,4.8,4.9,Very low,LMI
+South-East Asia Region,Nepal,NPL,Both sexes,2021,2989,10.1,11.1,Very low,LMI
+South-East Asia Region,Nepal,NPL,Females,2021,1091,7.2,7.2,Very low,LMI
+South-East Asia Region,Nepal,NPL,Males,2021,1898,13.3,15.8,Very low,LMI
+South-East Asia Region,Sri Lanka,LKA,Both sexes,2021,3347,14.7,14.0,Medium,LMI
+South-East Asia Region,Sri Lanka,LKA,Females,2021,685,5.9,5.6,Medium,LMI
+South-East Asia Region,Sri Lanka,LKA,Males,2021,2661,24.2,23.6,Medium,LMI
+South-East Asia Region,Thailand,THA,Both sexes,2021,11899,16.6,15.4,Low,UMI
+South-East Asia Region,Thailand,THA,Females,2021,2011,5.5,4.8,Low,UMI
+South-East Asia Region,Thailand,THA,Males,2021,9887,28.2,26.2,Low,UMI
+South-East Asia Region,Timor-Leste,TLS,Both sexes,2021,48,3.6,4.2,Very low,LMI
+South-East Asia Region,Timor-Leste,TLS,Females,2021,15,2.3,2.6,Very low,LMI
+South-East Asia Region,Timor-Leste,TLS,Males,2021,33,4.8,5.8,Very low,LMI
+Western Pacific Region,Australia,AUS,Both sexes,2021,3394,13.1,11.7,High,HI
+Western Pacific Region,Australia,AUS,Females,2021,880,6.7,6.1,High,HI
+Western Pacific Region,Australia,AUS,Males,2021,2514,19.5,17.5,High,HI
+Western Pacific Region,Brunei Darussalam,BRN,Both sexes,2021,14,3.0,2.8,High,HI
+Western Pacific Region,Brunei Darussalam,BRN,Females,2021,1,0.6,0.7,High,HI
+Western Pacific Region,Brunei Darussalam,BRN,Males,2021,12,5.2,4.6,High,HI
+Western Pacific Region,Cambodia,KHM,Both sexes,2021,764,4.5,5.0,Very low,LMI
+Western Pacific Region,Cambodia,KHM,Females,2021,237,2.7,2.9,Very low,LMI
+Western Pacific Region,Cambodia,KHM,Males,2021,526,6.3,7.4,Very low,LMI
+Western Pacific Region,China,CHN,Both sexes,2021,127601,8.9,6.8,Very low,UMI
+Western Pacific Region,China,CHN,Females,2021,52479,7.5,5.3,Very low,UMI
+Western Pacific Region,China,CHN,Males,2021,75122,10.3,8.5,Very low,UMI
+Western Pacific Region,Fiji,FJI,Both sexes,2021,76,8.3,8.5,Low,UMI
+Western Pacific Region,Fiji,FJI,Females,2021,25,5.3,5.4,Low,UMI
+Western Pacific Region,Fiji,FJI,Males,2021,51,11.2,11.8,Low,UMI
+Western Pacific Region,Japan,JPN,Both sexes,2021,21904,17.4,14.7,High,HI
+Western Pacific Region,Japan,JPN,Females,2021,7417,11.5,9.8,High,HI
+Western Pacific Region,Japan,JPN,Males,2021,14487,23.6,19.6,High,HI
+Western Pacific Region,Kiribati,KIR,Both sexes,2021,22,17.5,18.7,Very low,LMI
+Western Pacific Region,Kiribati,KIR,Females,2021,3,4.8,5.2,Very low,LMI
+Western Pacific Region,Kiribati,KIR,Males,2021,19,31.0,33.9,Very low,LMI
+Western Pacific Region,Lao People's Democratic Republic,LAO,Both sexes,2021,341,4.6,5.0,Very low,LMI
+Western Pacific Region,Lao People's Democratic Republic,LAO,Females,2021,96,2.6,2.7,Very low,LMI
+Western Pacific Region,Lao People's Democratic Republic,LAO,Males,2021,245,6.5,7.4,Very low,LMI
+Western Pacific Region,Malaysia,MYS,Both sexes,2021,1938,5.7,5.6,Low,UMI
+Western Pacific Region,Malaysia,MYS,Females,2021,355,2.2,2.2,Low,UMI
+Western Pacific Region,Malaysia,MYS,Males,2021,1584,8.8,8.8,Low,UMI
+Western Pacific Region,Micronesia (Federated States of),FSM,Both sexes,2021,22,19.8,20.8,Low,LMI
+Western Pacific Region,Micronesia (Federated States of),FSM,Females,2021,5,8.6,8.9,Low,LMI
+Western Pacific Region,Micronesia (Federated States of),FSM,Males,2021,17,31.1,33.1,Low,LMI
+Western Pacific Region,Mongolia,MNG,Both sexes,2021,618,18.5,19.8,High,UMI
+Western Pacific Region,Mongolia,MNG,Females,2021,81,4.8,5.4,High,UMI
+Western Pacific Region,Mongolia,MNG,Males,2021,537,32.2,34.5,High,UMI
+Western Pacific Region,New Zealand,NZL,Both sexes,2021,609,11.9,11.1,High,HI
+Western Pacific Region,New Zealand,NZL,Females,2021,156,6.1,5.8,High,HI
+Western Pacific Region,New Zealand,NZL,Males,2021,453,17.9,16.5,High,HI
+Western Pacific Region,Papua New Guinea,PNG,Both sexes,2021,182,1.8,2.1,Very low,LMI
+Western Pacific Region,Papua New Guinea,PNG,Females,2021,68,1.4,1.6,Very low,LMI
+Western Pacific Region,Papua New Guinea,PNG,Males,2021,114,2.2,2.7,Very low,LMI
+Western Pacific Region,Philippines,PHL,Both sexes,2021,3947,3.5,4.0,Medium,LMI
+Western Pacific Region,Philippines,PHL,Females,2021,1000,1.8,2.1,Medium,LMI
+Western Pacific Region,Philippines,PHL,Males,2021,2946,5.2,6.1,Medium,LMI
+Western Pacific Region,Republic of Korea,KOR,Both sexes,2021,14273,27.5,20.6,High,HI
+Western Pacific Region,Republic of Korea,KOR,Females,2021,4399,16.9,13.6,High,HI
+Western Pacific Region,Republic of Korea,KOR,Males,2021,9874,38.2,28.2,High,HI
+Western Pacific Region,Samoa,WSM,Both sexes,2021,26,12.0,14.3,Very low,LMI
+Western Pacific Region,Samoa,WSM,Females,2021,7,7.0,8.0,Very low,LMI
+Western Pacific Region,Samoa,WSM,Males,2021,18,17.0,20.8,Very low,LMI
+Western Pacific Region,Singapore,SGP,Both sexes,2021,449,8.1,7.0,High,HI
+Western Pacific Region,Singapore,SGP,Females,2021,131,4.9,4.3,High,HI
+Western Pacific Region,Singapore,SGP,Males,2021,318,11.1,9.6,High,HI
+Western Pacific Region,Solomon Islands,SLB,Both sexes,2021,149,19.6,22.5,Low,LMI
+Western Pacific Region,Solomon Islands,SLB,Females,2021,36,9.6,10.9,Low,LMI
+Western Pacific Region,Solomon Islands,SLB,Males,2021,114,29.2,33.7,Low,LMI
+Western Pacific Region,Tonga,TON,Both sexes,2021,5,4.7,5.4,Very low,UMI
+Western Pacific Region,Tonga,TON,Females,2021,2,3.5,3.8,Very low,UMI
+Western Pacific Region,Tonga,TON,Males,2021,3,6.0,7.3,Very low,UMI
+Western Pacific Region,Vanuatu,VUT,Both sexes,2021,48,15.7,18.2,Very low,LMI
+Western Pacific Region,Vanuatu,VUT,Females,2021,10,6.6,7.6,Very low,LMI
+Western Pacific Region,Vanuatu,VUT,Males,2021,38,24.7,28.9,Very low,LMI
+Western Pacific Region,Viet Nam,VNM,Both sexes,2021,7222,7.3,7.0,Very low,LMI
+Western Pacific Region,Viet Nam,VNM,Females,2021,2191,4.3,3.9,Very low,LMI
+Western Pacific Region,Viet Nam,VNM,Males,2021,5031,10.4,10.5,Very low,LMI

@@ -1,0 +1,36 @@
+\chapter{Sources de données et couverture}
+\section{Catalogue des jeux de données}
+Le catalogue automatique \texttt{v1/data\_clean/dataset\_catalog.csv} recense 14 fichiers bruts : 7 fichiers OMS (suicide global + régions) et 7 fichiers IHME GBD. Pour chaque fichier, le catalogue fournit le nombre de lignes, les colonnes disponibles, les années, les sexes, les âges, les causes, ainsi que les mesures et métriques associées. La matrice d'usage \texttt{v1/report/dataset\_usage\_matrix.md} documente l'utilisation de chaque fichier dans les pages du tableau de bord et dans la table ML.
+
+\section{Données OMS sur le suicide (2021)}
+La source OMS fournit une vue 2021 du suicide par pays \cite{who_suicide_2021}.
+\begin{itemize}
+    \item \texttt{who\_global\_master.csv} (549 lignes) : variables de base (pays, sexe, groupe de revenu, région), taux brut et taux standardisé par âge (2021), et nombre total de suicides.
+    \item Fichiers régionaux (drilldown) : \texttt{who\_africa\_region\_full.csv} (141), \texttt{who\_americas\_region\_full.csv} (99), \texttt{who\_emro\_region\_full.csv} (63), \texttt{who\_europe\_region\_full.csv} (150), \texttt{who\_searo\_region\_full.csv} (33), \texttt{who\_wpro\_region\_full.csv} (63).
+\end{itemize}
+
+\section{Jeux de données GBD centraux (v1)}
+La version v1 s'appuie sur un noyau de fichiers GBD pour la partie analytique et la table ML \cite{ihme_gbd_2023} :
+\begin{itemize}
+    \item \texttt{IHME-GBD\_2023\_DATA-dalys-causes-1.csv} (69\,768 lignes) : DALYs, métrique Rate/Number/Percent, année 2023, sexe Both, âges \texttt{<20}, \texttt{20-24}, \texttt{25+}. Utilisé pour la dépression.
+    \item \texttt{IHME-GBD\_2023\_DATA-deaths-mental-substance-violence-1.csv} (88\,128 lignes) : Deaths, métrique Rate/Number/Percent, année 2023, sexes Male/Female, âges \texttt{<20}, \texttt{20-24}, \texttt{25+}. Utilisé pour l'automutilation et les addictions.
+    \item \texttt{IHME-GBD\_2023\_DATA-age-standardized-death-rate-1.csv} (30\,615 lignes) : Deaths, métrique Rate, année 2023, âge standardisé. Utilisé pour les comparaisons par cause (addictions).
+\end{itemize}
+Ces fichiers sont combinés avec \texttt{who\_global\_master.csv} pour constituer la table ML (taux de suicide + indicateurs GBD).
+
+\section{Jeux de données GBD de contexte}
+Des jeux de données additionnels enrichissent les pages de contexte :
+\begin{itemize}
+    \item \texttt{IHME-GBD\_2023\_DATA-all-cause-burden-all-ages-1.csv} (63\,585 lignes) : 2021--2023, mesures Deaths/DALYs/YLLs, métriques Number/Percent/Rate, âge \texttt{All ages}, cause \texttt{All causes}.
+    \item \texttt{IHME-GBD\_2023\_DATA-probability-of-death-1.csv} (93\,480 lignes) : métrique \texttt{Probability of death}, année 2023, sexes Both/Female/Male, âges \texttt{<20}, \texttt{20-24}, \texttt{25+}, \texttt{All ages}.
+    \item \texttt{IHME-GBD\_2023\_DATA-risk-factor-burden-1.csv} (51\,480 lignes) : mesures Deaths/DALYs, métriques Number/Percent/Rate, année 2023, détail par facteurs de risque.
+\end{itemize}
+
+\section{Jeux de données additionnels pour v0}
+La version v0 (visualisations statiques) exploite l'ensemble des fichiers bruts pour maximiser la variété de graphiques. Un fichier supplémentaire est spécifique à v0 :
+\begin{itemize}
+    \item \texttt{IHME-GBD\_2023\_DATA-anemia-prevalence-ylds-1.csv} (56\,520 lignes) : 2020--2023, mesures Prevalence/YLDs, métriques Number/Percent/Rate, âge \texttt{All ages}.
+\end{itemize}
+
+\section{Notes de couverture}
+La couverture temporelle est hétérogène : OMS est figée sur 2021, tandis que GBD est principalement 2023, avec des séries courtes pour les tendances (2021--2023) et l'anémie (2020--2023). Les métriques \texttt{Rate} sont des taux (par 100\,000 habitants), \texttt{Number} des volumes bruts, \texttt{Percent} des parts relatives, et \texttt{Probability of death} une probabilité entre 0 et 1. Les variables de sexe (Both/Male/Female) et d'âge (\texttt{<20}, \texttt{20-24}, \texttt{25+}, \texttt{All ages}, \texttt{Age-standardized}) sont harmonisées dans la phase de nettoyage pour assurer la cohérence des comparaisons.

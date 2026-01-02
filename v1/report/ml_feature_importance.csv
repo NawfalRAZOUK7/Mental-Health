@@ -1,0 +1,18 @@
+feature,importance
+num__gbd_selfharm_death_rate_both,0.8116390618502651
+num__gbd_addiction_death_rate_both,0.05940560764073061
+num__gbd_depression_dalys_rate_both,0.03261052901278574
+cat__region_name_African Region,0.027839889171103995
+cat__region_name_Region of the Americas,0.015405584236082633
+cat__income_group_LI,0.009436316432230505
+cat__income_group_UMI,0.0077685541507027936
+cat__income_group_LMI,0.006214705859788802
+cat__data_quality_Very low,0.005688715620551991
+cat__data_quality_Medium,0.004414358410044338
+cat__region_name_European Region,0.004246292365055483
+cat__data_quality_Low,0.004167086725839127
+cat__data_quality_High,0.0031988403585700206
+cat__region_name_Western Pacific Region,0.002817840799502129
+cat__income_group_HI,0.002615395650726008
+cat__region_name_South-East Asia Region,0.001323689176336103
+cat__region_name_Eastern Mediterranean Region,0.0012075325396844762

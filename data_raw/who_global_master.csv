@@ -1,0 +1,550 @@
+region,country,data_quality,income_group,sex,number_suicides_2021,crude_suicide_rate_2021,age_standardized_suicide_rate_2021
+African Region,Algeria,Very low,UMI,Both sexes,976,2.2,2.3
+African Region,Algeria,Very low,UMI,Females,292,1.3,1.4
+African Region,Algeria,Very low,UMI,Males,684,3.0,3.2
+African Region,Angola,Very low,LMI,Both sexes,2802,8.1,14.6
+African Region,Angola,Very low,LMI,Females,672,3.9,6.3
+African Region,Angola,Very low,LMI,Males,2130,12.5,24.4
+African Region,Benin,Very low,LMI,Both sexes,956,7.1,11.8
+African Region,Benin,Very low,LMI,Females,207,3.1,5.1
+African Region,Benin,Very low,LMI,Males,749,11.1,19.3
+African Region,Botswana,Very low,UMI,Both sexes,201,8.4,10.4
+African Region,Botswana,Very low,UMI,Females,66,5.5,6.8
+African Region,Botswana,Very low,UMI,Males,134,11.2,14.2
+African Region,Burkina Faso,Very low,LI,Both sexes,1869,8.5,15.4
+African Region,Burkina Faso,Very low,LI,Females,443,4.0,6.7
+African Region,Burkina Faso,Very low,LI,Males,1426,13.0,26.2
+African Region,Burundi,Very low,LI,Both sexes,992,7.7,14.8
+African Region,Burundi,Very low,LI,Females,254,3.9,7.0
+African Region,Burundi,Very low,LI,Males,738,11.5,24.0
+African Region,Cabo Verde,Low,LMI,Both sexes,77,14.9,16.6
+African Region,Cabo Verde,Low,LMI,Females,11,4.2,4.4
+African Region,Cabo Verde,Low,LMI,Males,66,25.3,30.3
+African Region,Cameroon,Very low,LMI,Both sexes,2287,8.5,13.8
+African Region,Cameroon,Very low,LMI,Females,477,3.5,6.0
+African Region,Cameroon,Very low,LMI,Males,1809,13.5,22.4
+African Region,Central African Republic,Very low,LI,Both sexes,470,9.2,18.7
+African Region,Central African Republic,Very low,LI,Females,104,4.0,7.5
+African Region,Central African Republic,Very low,LI,Males,366,14.7,33.1
+African Region,Chad,Very low,LI,Both sexes,929,5.2,10.7
+African Region,Chad,Very low,LI,Females,269,3.0,6.4
+African Region,Chad,Very low,LI,Males,660,7.4,15.4
+African Region,Comoros,Very low,LMI,Both sexes,49,6.0,8.9
+African Region,Comoros,Very low,LMI,Females,18,4.5,6.4
+African Region,Comoros,Very low,LMI,Males,31,7.5,11.5
+African Region,Congo,Very low,LMI,Both sexes,396,6.7,11.2
+African Region,Congo,Very low,LMI,Females,98,3.3,5.5
+African Region,Congo,Very low,LMI,Males,298,10.1,17.5
+African Region,Côte d'Ivoire,Very low,LMI,Both sexes,2191,7.4,12.7
+African Region,Côte d'Ivoire,Very low,LMI,Females,376,2.6,4.4
+African Region,Côte d'Ivoire,Very low,LMI,Males,1815,12.0,20.8
+African Region,Democratic Republic of the Congo,Very low,LI,Both sexes,8695,8.8,15.8
+African Region,Democratic Republic of the Congo,Very low,LI,Females,1953,3.9,6.8
+African Region,Democratic Republic of the Congo,Very low,LI,Males,6742,13.7,25.8
+African Region,Equatorial Guinea,Very low,UMI,Both sexes,124,7.0,10.5
+African Region,Equatorial Guinea,Very low,UMI,Females,29,3.5,5.0
+African Region,Equatorial Guinea,Very low,UMI,Males,95,10.2,15.9
+African Region,Eritrea,Very low,LI,Both sexes,443,13.2,20.2
+African Region,Eritrea,Very low,LI,Females,122,7.2,10.5
+African Region,Eritrea,Very low,LI,Males,321,19.4,31.7
+African Region,Eswatini,Very low,LMI,Both sexes,329,27.2,31.8
+African Region,Eswatini,Very low,LMI,Females,62,10.1,11.4
+African Region,Eswatini,Very low,LMI,Males,266,45.0,54.2
+African Region,Ethiopia,Very low,LI,Both sexes,7412,6.1,10.7
+African Region,Ethiopia,Very low,LI,Females,1864,3.1,5.1
+African Region,Ethiopia,Very low,LI,Males,5547,9.1,17.1
+African Region,Gabon,Very low,UMI,Both sexes,173,7.3,10.5
+African Region,Gabon,Very low,UMI,Females,28,2.4,3.5
+African Region,Gabon,Very low,UMI,Males,145,12.0,17.6
+African Region,Gambia,Very low,LI,Both sexes,124,4.8,8.3
+African Region,Gambia,Very low,LI,Females,40,3.1,5.4
+African Region,Gambia,Very low,LI,Males,84,6.5,11.4
+African Region,Ghana,Very low,LMI,Both sexes,1729,5.3,8.1
+African Region,Ghana,Very low,LMI,Females,381,2.3,3.4
+African Region,Ghana,Very low,LMI,Males,1348,8.3,13.5
+African Region,Guinea,Very low,LMI,Both sexes,661,4.8,8.2
+African Region,Guinea,Very low,LMI,Females,246,3.5,5.7
+African Region,Guinea,Very low,LMI,Males,415,6.1,11.3
+African Region,Guinea-Bissau,Very low,LI,Both sexes,158,7.7,12.2
+African Region,Guinea-Bissau,Very low,LI,Females,40,3.9,6.0
+African Region,Guinea-Bissau,Very low,LI,Males,118,11.6,19.8
+African Region,Kenya,Very low,LMI,Both sexes,2438,4.6,8.9
+African Region,Kenya,Very low,LMI,Females,666,2.5,4.6
+African Region,Kenya,Very low,LMI,Males,1772,6.7,14.2
+African Region,Lesotho,Very low,LMI,Both sexes,648,28.7,36.7
+African Region,Lesotho,Very low,LMI,Females,193,16.6,20.3
+African Region,Lesotho,Very low,LMI,Males,455,41.4,55.8
+African Region,Liberia,Very low,LI,Both sexes,314,6.0,9.6
+African Region,Liberia,Very low,LI,Females,103,3.9,6.3
+African Region,Liberia,Very low,LI,Males,210,8.0,13.3
+African Region,Madagascar,Very low,LI,Both sexes,1808,6.1,10.0
+African Region,Madagascar,Very low,LI,Females,515,3.5,5.5
+African Region,Madagascar,Very low,LI,Males,1294,8.7,15.0
+African Region,Malawi,Very low,LI,Both sexes,1517,7.6,14.2
+African Region,Malawi,Very low,LI,Females,299,2.9,5.3
+African Region,Malawi,Very low,LI,Males,1219,12.5,25.4
+African Region,Mali,Very low,LI,Both sexes,931,4.2,8.3
+African Region,Mali,Very low,LI,Females,309,2.8,5.4
+African Region,Mali,Very low,LI,Males,621,5.5,11.4
+African Region,Mauritania,Very low,LMI,Both sexes,128,2.7,4.9
+African Region,Mauritania,Very low,LMI,Females,42,1.7,3.1
+African Region,Mauritania,Very low,LMI,Males,87,3.7,6.9
+African Region,Mauritius,High,UMI,Both sexes,135,10.5,9.6
+African Region,Mauritius,High,UMI,Females,19,3.0,2.9
+African Region,Mauritius,High,UMI,Males,115,18.0,15.9
+African Region,Mozambique,Very low,LI,Both sexes,3363,10.6,19.0
+African Region,Mozambique,Very low,LI,Females,974,6.0,8.8
+African Region,Mozambique,Very low,LI,Males,2389,15.6,33.1
+African Region,Namibia,Very low,UMI,Both sexes,241,8.6,11.1
+African Region,Namibia,Very low,UMI,Females,51,3.6,4.6
+African Region,Namibia,Very low,UMI,Males,190,13.9,18.4
+African Region,Niger,Very low,LI,Both sexes,1097,4.5,8.9
+African Region,Niger,Very low,LI,Females,357,3.0,5.8
+African Region,Niger,Very low,LI,Males,740,5.9,12.1
+African Region,Nigeria,Very low,LMI,Both sexes,10912,5.0,8.8
+African Region,Nigeria,Very low,LMI,Females,1658,1.5,2.9
+African Region,Nigeria,Very low,LMI,Males,9254,8.4,15.1
+African Region,Rwanda,Very low,LI,Both sexes,1159,8.7,13.6
+African Region,Rwanda,Very low,LI,Females,327,4.8,7.0
+African Region,Rwanda,Very low,LI,Males,832,12.8,22.4
+African Region,Sao Tome and Principe,Very low,LMI,Both sexes,2,0.9,1.3
+African Region,Sao Tome and Principe,Very low,LMI,Females,0,0.4,0.7
+African Region,Sao Tome and Principe,Very low,LMI,Males,1,1.3,1.9
+African Region,Senegal,Very low,LMI,Both sexes,1164,6.8,11.6
+African Region,Senegal,Very low,LMI,Females,252,3.0,4.9
+African Region,Senegal,Very low,LMI,Males,912,10.4,18.4
+African Region,Seychelles,Medium,HI,Both sexes,5,4.3,3.9
+African Region,Seychelles,Medium,HI,Females,1,1.7,1.7
+African Region,Seychelles,Medium,HI,Males,4,6.3,6.0
+African Region,Sierra Leone,Very low,LI,Both sexes,497,6.1,9.7
+African Region,Sierra Leone,Very low,LI,Females,182,4.5,6.9
+African Region,Sierra Leone,Very low,LI,Males,315,7.8,12.9
+African Region,South Africa,Medium,UMI,Both sexes,13712,22.3,21.1
+African Region,South Africa,Medium,UMI,Females,3145,9.9,9.7
+African Region,South Africa,Medium,UMI,Males,10567,35.4,32.9
+African Region,South Sudan,Very low,LI,Both sexes,857,7.9,13.4
+African Region,South Sudan,Very low,LI,Females,213,3.9,6.2
+African Region,South Sudan,Very low,LI,Males,645,12.1,22.5
+African Region,Togo,Very low,LI,Both sexes,829,9.3,15.2
+African Region,Togo,Very low,LI,Females,175,4.0,6.4
+African Region,Togo,Very low,LI,Males,654,14.6,24.4
+African Region,Uganda,Very low,LI,Both sexes,2524,5.5,11.6
+African Region,Uganda,Very low,LI,Females,525,2.3,4.3
+African Region,Uganda,Very low,LI,Males,1999,8.8,20.9
+African Region,United Republic of Tanzania,Very low,LMI,Both sexes,3207,5.1,9.1
+African Region,United Republic of Tanzania,Very low,LMI,Females,868,2.7,4.6
+African Region,United Republic of Tanzania,Very low,LMI,Males,2339,7.5,14.6
+African Region,Zambia,Very low,LMI,Both sexes,1397,7.1,13.3
+African Region,Zambia,Very low,LMI,Females,305,3.1,5.5
+African Region,Zambia,Very low,LMI,Males,1091,11.2,22.6
+African Region,Zimbabwe,Very low,LMI,Both sexes,2740,17.3,25.4
+African Region,Zimbabwe,Very low,LMI,Females,971,11.7,15.8
+African Region,Zimbabwe,Very low,LMI,Males,1769,23.6,38.2
+Region of the Americas,Antigua and Barbuda,Medium,HI,Both sexes,1,1.5,1.4
+Region of the Americas,Antigua and Barbuda,Medium,HI,Females,1,1.3,1.0
+Region of the Americas,Antigua and Barbuda,Medium,HI,Males,1,1.6,1.6
+Region of the Americas,Argentina,Medium,UMI,Both sexes,3594,7.9,7.7
+Region of the Americas,Argentina,Medium,UMI,Females,770,3.4,3.4
+Region of the Americas,Argentina,Medium,UMI,Males,2823,12.6,12.2
+Region of the Americas,Bahamas,Medium,HI,Both sexes,13,3.3,2.9
+Region of the Americas,Bahamas,Medium,HI,Females,2,0.8,0.7
+Region of the Americas,Bahamas,Medium,HI,Males,11,5.9,5.4
+Region of the Americas,Barbados,Low,HI,Both sexes,10,3.5,2.8
+Region of the Americas,Barbados,Low,HI,Females,2,1.0,0.9
+Region of the Americas,Barbados,Low,HI,Males,8,6.2,5.1
+Region of the Americas,Belize,High,UMI,Both sexes,17,4.2,4.6
+Region of the Americas,Belize,High,UMI,Females,3,1.5,1.6
+Region of the Americas,Belize,High,UMI,Males,14,6.8,7.7
+Region of the Americas,Bolivia,Very low,LMI,Both sexes,501,4.2,5.1
+Region of the Americas,Bolivia,Very low,LMI,Females,140,2.4,2.6
+Region of the Americas,Bolivia,Very low,LMI,Males,361,6.0,7.8
+Region of the Americas,Brazil,High,UMI,Both sexes,15907,7.6,6.9
+Region of the Americas,Brazil,High,UMI,Females,4141,3.9,3.6
+Region of the Americas,Brazil,High,UMI,Males,11766,11.4,10.6
+Region of the Americas,Canada,High,HI,Both sexes,3631,9.4,8.1
+Region of the Americas,Canada,High,HI,Females,919,4.7,4.1
+Region of the Americas,Canada,High,HI,Males,2712,14.2,12.1
+Region of the Americas,Chile,High,HI,Both sexes,1496,7.7,6.8
+Region of the Americas,Chile,High,HI,Females,306,3.1,2.9
+Region of the Americas,Chile,High,HI,Males,1189,12.3,10.8
+Region of the Americas,Colombia,High,UMI,Both sexes,2534,5.0,4.7
+Region of the Americas,Colombia,High,UMI,Females,540,2.1,2.0
+Region of the Americas,Colombia,High,UMI,Males,1994,7.9,7.7
+Region of the Americas,Costa Rica,High,UMI,Both sexes,408,8.1,7.6
+Region of the Americas,Costa Rica,High,UMI,Females,71,2.8,2.7
+Region of the Americas,Costa Rica,High,UMI,Males,337,13.5,12.5
+Region of the Americas,Cuba,High,UMI,Both sexes,1534,13.8,9.2
+Region of the Americas,Cuba,High,UMI,Females,243,4.3,2.8
+Region of the Americas,Cuba,High,UMI,Males,1291,23.5,16.2
+Region of the Americas,Dominican Republic,Low,UMI,Both sexes,467,4.2,4.3
+Region of the Americas,Dominican Republic,Low,UMI,Females,83,1.5,1.5
+Region of the Americas,Dominican Republic,Low,UMI,Males,384,6.9,7.4
+Region of the Americas,Ecuador,Medium,UMI,Both sexes,1336,7.6,7.4
+Region of the Americas,Ecuador,Medium,UMI,Females,233,2.6,2.6
+Region of the Americas,Ecuador,Medium,UMI,Males,1102,12.5,12.4
+Region of the Americas,El Salvador,Low,UMI,Both sexes,478,7.6,7.8
+Region of the Americas,El Salvador,Low,UMI,Females,103,3.2,3.1
+Region of the Americas,El Salvador,Low,UMI,Males,374,12.6,14.0
+Region of the Americas,Grenada,Medium,UMI,Both sexes,2,1.3,1.2
+Region of the Americas,Grenada,Medium,UMI,Females,0,0.7,0.5
+Region of the Americas,Grenada,Medium,UMI,Males,1,1.9,1.7
+Region of the Americas,Guatemala,High,UMI,Both sexes,869,4.9,5.3
+Region of the Americas,Guatemala,High,UMI,Females,249,2.8,2.8
+Region of the Americas,Guatemala,High,UMI,Males,620,7.1,7.9
+Region of the Americas,Guyana,Medium,HI,Both sexes,202,24.8,26.3
+Region of the Americas,Guyana,Medium,HI,Females,43,10.4,10.6
+Region of the Americas,Guyana,Medium,HI,Males,159,39.9,44.0
+Region of the Americas,Haiti,Very low,LMI,Both sexes,889,7.8,9.3
+Region of the Americas,Haiti,Very low,LMI,Females,291,5.1,5.5
+Region of the Americas,Haiti,Very low,LMI,Males,598,10.6,13.6
+Region of the Americas,Honduras,Very low,LMI,Both sexes,306,3.0,3.7
+Region of the Americas,Honduras,Very low,LMI,Females,49,0.9,1.1
+Region of the Americas,Honduras,Very low,LMI,Males,257,5.0,6.6
+Region of the Americas,Jamaica,High,UMI,Both sexes,48,1.7,1.7
+Region of the Americas,Jamaica,High,UMI,Females,6,0.4,0.4
+Region of the Americas,Jamaica,High,UMI,Males,42,3.0,3.1
+Region of the Americas,Mexico,High,UMI,Both sexes,8872,7.0,6.9
+Region of the Americas,Mexico,High,UMI,Females,1706,2.6,2.6
+Region of the Americas,Mexico,High,UMI,Males,7165,11.6,11.5
+Region of the Americas,Nicaragua,High,LMI,Both sexes,282,4.2,4.2
+Region of the Americas,Nicaragua,High,LMI,Females,57,1.7,1.6
+Region of the Americas,Nicaragua,High,LMI,Males,225,6.9,6.9
+Region of the Americas,Panama,High,HI,Both sexes,143,3.3,3.3
+Region of the Americas,Panama,High,HI,Females,21,1.0,1.0
+Region of the Americas,Panama,High,HI,Males,121,5.6,5.6
+Region of the Americas,Paraguay,Medium,UMI,Both sexes,424,6.4,6.5
+Region of the Americas,Paraguay,Medium,UMI,Females,156,4.7,4.7
+Region of the Americas,Paraguay,Medium,UMI,Males,268,8.0,8.5
+Region of the Americas,Peru,Medium,UMI,Both sexes,510,1.5,1.5
+Region of the Americas,Peru,Medium,UMI,Females,134,0.8,0.8
+Region of the Americas,Peru,Medium,UMI,Males,376,2.3,2.3
+Region of the Americas,Saint Lucia,High,UMI,Both sexes,9,5.3,4.7
+Region of the Americas,Saint Lucia,High,UMI,Females,1,1.3,1.1
+Region of the Americas,Saint Lucia,High,UMI,Males,8,9.3,8.6
+Region of the Americas,Saint Vincent and the Grenadines,High,UMI,Both sexes,0,0.4,0.3
+Region of the Americas,Saint Vincent and the Grenadines,High,UMI,Females,0,0.0,0.0
+Region of the Americas,Saint Vincent and the Grenadines,High,UMI,Males,0,0.8,0.6
+Region of the Americas,Suriname,Medium,UMI,Both sexes,138,22.3,22.5
+Region of the Americas,Suriname,Medium,UMI,Females,43,14.0,14.2
+Region of the Americas,Suriname,Medium,UMI,Males,94,30.5,31.4
+Region of the Americas,Trinidad and Tobago,Low,HI,Both sexes,199,13.3,11.6
+Region of the Americas,Trinidad and Tobago,Low,HI,Females,35,4.6,4.1
+Region of the Americas,Trinidad and Tobago,Low,HI,Males,164,22.2,19.6
+Region of the Americas,United States of America,High,HI,Both sexes,53162,15.6,14.2
+Region of the Americas,United States of America,High,HI,Females,10938,6.5,5.9
+Region of the Americas,United States of America,High,HI,Males,42224,24.7,22.3
+Region of the Americas,Uruguay,Medium,HI,Both sexes,841,24.8,22.0
+Region of the Americas,Uruguay,Medium,HI,Females,184,10.5,8.9
+Region of the Americas,Uruguay,Medium,HI,Males,657,39.9,36.0
+Region of the Americas,Venezuela (Bolivarian Republic of),High,UMI,Both sexes,2437,8.6,8.9
+Region of the Americas,Venezuela (Bolivarian Republic of),High,UMI,Females,288,2.0,2.0
+Region of the Americas,Venezuela (Bolivarian Republic of),High,UMI,Males,2148,15.4,16.2
+Eastern Mediterranean Region,Afghanistan,Very low,LI,Both sexes,1438,3.6,5.3
+Eastern Mediterranean Region,Afghanistan,Very low,LI,Females,468,2.4,3.7
+Eastern Mediterranean Region,Afghanistan,Very low,LI,Males,970,4.8,7.0
+Eastern Mediterranean Region,Bahrain,Low,HI,Both sexes,70,4.7,4.2
+Eastern Mediterranean Region,Bahrain,Low,HI,Females,8,1.5,1.5
+Eastern Mediterranean Region,Bahrain,Low,HI,Males,62,6.6,5.9
+Eastern Mediterranean Region,Djibouti,Very low,LMI,Both sexes,89,8.0,10.1
+Eastern Mediterranean Region,Djibouti,Very low,LMI,Females,36,6.4,7.7
+Eastern Mediterranean Region,Djibouti,Very low,LMI,Males,53,9.6,13.0
+Eastern Mediterranean Region,Egypt,Low,LMI,Both sexes,699,0.6,0.7
+Eastern Mediterranean Region,Egypt,Low,LMI,Females,184,0.3,0.4
+Eastern Mediterranean Region,Egypt,Low,LMI,Males,515,0.9,1.1
+Eastern Mediterranean Region,Iran (Islamic Republic of),Medium,UMI,Both sexes,3603,4.1,4.1
+Eastern Mediterranean Region,Iran (Islamic Republic of),Medium,UMI,Females,1007,2.3,2.4
+Eastern Mediterranean Region,Iran (Islamic Republic of),Medium,UMI,Males,2596,5.8,5.7
+Eastern Mediterranean Region,Iraq,Low,UMI,Both sexes,1281,3.0,3.8
+Eastern Mediterranean Region,Iraq,Low,UMI,Females,327,1.5,1.8
+Eastern Mediterranean Region,Iraq,Low,UMI,Males,954,4.4,6.1
+Eastern Mediterranean Region,Jordan,Medium,LMI,Both sexes,67,0.6,0.7
+Eastern Mediterranean Region,Jordan,Medium,LMI,Females,15,0.3,0.3
+Eastern Mediterranean Region,Jordan,Medium,LMI,Males,52,0.9,1.0
+Eastern Mediterranean Region,Kuwait,Low,HI,Both sexes,101,2.3,2.2
+Eastern Mediterranean Region,Kuwait,Low,HI,Females,6,0.3,0.4
+Eastern Mediterranean Region,Kuwait,Low,HI,Males,95,3.6,3.3
+Eastern Mediterranean Region,Lebanon,Low,LMI,Both sexes,40,0.7,0.7
+Eastern Mediterranean Region,Lebanon,Low,LMI,Females,16,0.6,0.6
+Eastern Mediterranean Region,Lebanon,Low,LMI,Males,24,0.9,0.9
+Eastern Mediterranean Region,Libya,Very low,UMI,Both sexes,357,5.0,5.1
+Eastern Mediterranean Region,Libya,Very low,UMI,Females,95,2.7,2.8
+Eastern Mediterranean Region,Libya,Very low,UMI,Males,262,7.2,7.4
+Eastern Mediterranean Region,Morocco,Very low,LMI,Both sexes,1076,2.9,3.0
+Eastern Mediterranean Region,Morocco,Very low,LMI,Females,444,2.4,2.4
+Eastern Mediterranean Region,Morocco,Very low,LMI,Males,633,3.4,3.5
+Eastern Mediterranean Region,Oman,Very low,HI,Both sexes,41,0.9,0.9
+Eastern Mediterranean Region,Oman,Very low,HI,Females,4,0.2,0.3
+Eastern Mediterranean Region,Oman,Very low,HI,Males,37,1.4,1.4
+Eastern Mediterranean Region,Pakistan,Very low,LMI,Both sexes,13506,5.6,6.5
+Eastern Mediterranean Region,Pakistan,Very low,LMI,Females,3711,3.2,3.4
+Eastern Mediterranean Region,Pakistan,Very low,LMI,Males,9794,8.0,9.5
+Eastern Mediterranean Region,Qatar,Very low,HI,Both sexes,132,4.7,4.2
+Eastern Mediterranean Region,Qatar,Very low,HI,Females,6,0.8,0.9
+Eastern Mediterranean Region,Qatar,Very low,HI,Males,126,6.2,5.6
+Eastern Mediterranean Region,Saudi Arabia,High,HI,Both sexes,296,0.9,1.6
+Eastern Mediterranean Region,Saudi Arabia,High,HI,Females,79,0.7,1.2
+Eastern Mediterranean Region,Saudi Arabia,High,HI,Males,217,1.1,2.0
+Eastern Mediterranean Region,Somalia,Very low,LI,Both sexes,1375,8.0,15.3
+Eastern Mediterranean Region,Somalia,Very low,LI,Females,525,6.1,11.4
+Eastern Mediterranean Region,Somalia,Very low,LI,Males,850,9.8,19.6
+Eastern Mediterranean Region,Sudan,Very low,LI,Both sexes,1519,3.2,3.9
+Eastern Mediterranean Region,Sudan,Very low,LI,Females,586,2.4,2.8
+Eastern Mediterranean Region,Sudan,Very low,LI,Males,933,3.9,5.1
+Eastern Mediterranean Region,Syrian Arab Republic,Low,LI,Both sexes,127,0.6,0.7
+Eastern Mediterranean Region,Syrian Arab Republic,Low,LI,Females,28,0.3,0.3
+Eastern Mediterranean Region,Syrian Arab Republic,Low,LI,Males,98,0.9,1.1
+Eastern Mediterranean Region,Tunisia,Low,LMI,Both sexes,222,1.8,1.8
+Eastern Mediterranean Region,Tunisia,Low,LMI,Females,74,1.2,1.2
+Eastern Mediterranean Region,Tunisia,Low,LMI,Males,148,2.5,2.5
+Eastern Mediterranean Region,United Arab Emirates,Low,HI,Both sexes,167,1.7,1.7
+Eastern Mediterranean Region,United Arab Emirates,Low,HI,Females,13,0.4,0.5
+Eastern Mediterranean Region,United Arab Emirates,Low,HI,Males,154,2.5,2.3
+Eastern Mediterranean Region,Yemen,Very low,LI,Both sexes,1564,4.2,5.2
+Eastern Mediterranean Region,Yemen,Very low,LI,Females,520,2.8,3.3
+Eastern Mediterranean Region,Yemen,Very low,LI,Males,1044,5.6,7.2
+European Region,Albania,Low,UMI,Both sexes,78,2.8,2.1
+European Region,Albania,Low,UMI,Females,33,2.3,1.7
+European Region,Albania,Low,UMI,Males,45,3.2,2.6
+European Region,Armenia,High,UMI,Both sexes,69,2.5,1.9
+European Region,Armenia,High,UMI,Females,14,1.0,0.7
+European Region,Armenia,High,UMI,Males,55,4.2,3.6
+European Region,Austria,High,HI,Both sexes,1301,14.5,10.2
+European Region,Austria,High,HI,Females,262,5.7,4.1
+European Region,Austria,High,HI,Males,1040,23.6,16.7
+European Region,Azerbaijan,Very low,UMI,Both sexes,160,1.6,1.6
+European Region,Azerbaijan,Very low,UMI,Females,43,0.8,0.8
+European Region,Azerbaijan,Very low,UMI,Males,117,2.3,2.4
+European Region,Belarus,High,UMI,Both sexes,1444,15.6,11.7
+European Region,Belarus,High,UMI,Females,250,5.1,3.3
+European Region,Belarus,High,UMI,Males,1194,27.7,22.1
+European Region,Belgium,High,HI,Both sexes,2124,18.4,14.3
+European Region,Belgium,High,HI,Females,627,10.7,8.0
+European Region,Belgium,High,HI,Males,1497,26.2,20.8
+European Region,Bosnia and Herzegovina,Medium,UMI,Both sexes,291,9.0,5.7
+European Region,Bosnia and Herzegovina,Medium,UMI,Females,80,4.7,2.4
+European Region,Bosnia and Herzegovina,Medium,UMI,Males,211,13.7,9.5
+European Region,Bulgaria,Medium,HI,Both sexes,654,9.5,6.3
+European Region,Bulgaria,Medium,HI,Females,149,4.2,2.6
+European Region,Bulgaria,Medium,HI,Males,505,15.2,10.4
+European Region,Croatia,High,HI,Both sexes,615,15.7,10.6
+European Region,Croatia,High,HI,Females,141,6.9,4.2
+European Region,Croatia,High,HI,Males,474,25.1,17.6
+European Region,Cyprus,High,HI,Both sexes,40,3.0,2.7
+European Region,Cyprus,High,HI,Females,14,2.2,1.6
+European Region,Cyprus,High,HI,Males,26,3.8,3.7
+European Region,Czechia,High,HI,Both sexes,1403,13.3,10.3
+European Region,Czechia,High,HI,Females,303,5.7,4.6
+European Region,Czechia,High,HI,Males,1100,21.2,16.3
+European Region,Denmark,High,HI,Both sexes,613,10.5,7.6
+European Region,Denmark,High,HI,Females,186,6.3,4.3
+European Region,Denmark,High,HI,Males,427,14.7,11.0
+European Region,Estonia,High,HI,Both sexes,199,14.9,12.5
+European Region,Estonia,High,HI,Females,40,5.8,5.3
+European Region,Estonia,High,HI,Males,159,25.1,20.4
+European Region,Finland,High,HI,Both sexes,807,14.6,12.6
+European Region,Finland,High,HI,Females,246,8.8,7.9
+European Region,Finland,High,HI,Males,562,20.5,17.4
+European Region,France,Medium,HI,Both sexes,10957,16.6,11.8
+European Region,France,Medium,HI,Females,3242,9.5,6.0
+European Region,France,Medium,HI,Males,7715,24.1,18.0
+European Region,Georgia,Medium,UMI,Both sexes,193,5.1,4.6
+European Region,Georgia,Medium,UMI,Females,26,1.3,1.0
+European Region,Georgia,Medium,UMI,Males,167,9.5,8.9
+European Region,Germany,High,HI,Both sexes,10799,12.9,8.2
+European Region,Germany,High,HI,Females,3213,7.6,4.2
+European Region,Germany,High,HI,Males,7587,18.4,12.2
+European Region,Greece,Medium,HI,Both sexes,495,4.7,3.4
+European Region,Greece,Medium,HI,Females,89,1.6,1.2
+European Region,Greece,Medium,HI,Males,407,7.9,5.8
+European Region,Hungary,High,HI,Both sexes,1597,16.5,11.4
+European Region,Hungary,High,HI,Females,378,7.5,4.8
+European Region,Hungary,High,HI,Males,1219,26.2,19.0
+European Region,Iceland,High,HI,Both sexes,44,11.9,10.8
+European Region,Iceland,High,HI,Females,17,9.3,8.4
+European Region,Iceland,High,HI,Males,27,14.4,13.0
+European Region,Ireland,High,HI,Both sexes,430,8.5,7.7
+European Region,Ireland,High,HI,Females,116,4.6,4.2
+European Region,Ireland,High,HI,Males,313,12.6,11.3
+European Region,Israel,High,HI,Both sexes,391,4.4,4.4
+European Region,Israel,High,HI,Females,110,2.4,2.3
+European Region,Israel,High,HI,Males,280,6.3,6.5
+European Region,Italy,High,HI,Both sexes,4176,7.0,4.6
+European Region,Italy,High,HI,Females,1108,3.6,2.2
+European Region,Italy,High,HI,Males,3068,10.5,7.1
+European Region,Kazakhstan,High,UMI,Both sexes,2882,14.6,15.2
+European Region,Kazakhstan,High,UMI,Females,540,5.3,5.5
+European Region,Kazakhstan,High,UMI,Males,2343,24.4,26.2
+European Region,Kyrgyzstan,High,LMI,Both sexes,464,6.8,7.8
+European Region,Kyrgyzstan,High,LMI,Females,108,3.1,3.6
+European Region,Kyrgyzstan,High,LMI,Males,355,10.5,12.4
+European Region,Latvia,High,HI,Both sexes,287,15.2,12.0
+European Region,Latvia,High,HI,Females,47,4.6,3.0
+European Region,Latvia,High,HI,Males,240,27.5,22.1
+European Region,Lithuania,High,HI,Both sexes,618,22.1,16.8
+European Region,Lithuania,High,HI,Females,136,9.2,5.9
+European Region,Lithuania,High,HI,Males,483,36.7,28.8
+European Region,Luxembourg,High,HI,Both sexes,53,8.2,6.2
+European Region,Luxembourg,High,HI,Females,14,4.3,2.9
+European Region,Luxembourg,High,HI,Males,39,12.1,9.6
+European Region,Malta,High,HI,Both sexes,34,6.5,5.6
+European Region,Malta,High,HI,Females,11,4.4,3.3
+European Region,Malta,High,HI,Males,23,8.4,7.5
+European Region,Montenegro,Low,UMI,Both sexes,68,11.3,8.9
+European Region,Montenegro,Low,UMI,Females,19,6.0,4.3
+European Region,Montenegro,Low,UMI,Males,50,17.1,14.1
+European Region,Netherlands (Kingdom of the),High,HI,Both sexes,2040,11.5,9.1
+European Region,Netherlands (Kingdom of the),High,HI,Females,680,7.6,5.9
+European Region,Netherlands (Kingdom of the),High,HI,Males,1359,15.4,12.5
+European Region,North Macedonia,Medium,UMI,Both sexes,107,5.8,4.6
+European Region,North Macedonia,Medium,UMI,Females,36,3.8,3.0
+European Region,North Macedonia,Medium,UMI,Males,71,7.9,6.4
+European Region,Norway,High,HI,Both sexes,713,13.2,11.4
+European Region,Norway,High,HI,Females,199,7.4,6.3
+European Region,Norway,High,HI,Males,515,18.9,16.3
+European Region,Poland,Medium,HI,Both sexes,5199,13.7,11.5
+European Region,Poland,Medium,HI,Females,753,3.8,3.2
+European Region,Poland,Medium,HI,Males,4446,24.1,20.2
+European Region,Portugal,High,HI,Both sexes,1197,11.5,7.2
+European Region,Portugal,High,HI,Females,323,5.9,3.5
+European Region,Portugal,High,HI,Males,874,17.7,11.4
+European Region,Republic of Moldova,High,UMI,Both sexes,428,14.1,11.9
+European Region,Republic of Moldova,High,UMI,Females,82,5.0,4.0
+European Region,Republic of Moldova,High,UMI,Males,346,24.8,22.1
+European Region,Romania,High,HI,Both sexes,1852,9.6,7.2
+European Region,Romania,High,HI,Females,327,3.3,2.3
+European Region,Romania,High,HI,Males,1526,16.4,12.5
+European Region,Russian Federation,Medium,HI,Both sexes,31172,21.4,17.9
+European Region,Russian Federation,Medium,HI,Females,6320,8.1,6.1
+European Region,Russian Federation,Medium,HI,Males,24852,36.7,31.6
+European Region,Serbia,Medium,UMI,Both sexes,1035,15.1,9.4
+European Region,Serbia,Medium,UMI,Females,287,8.0,4.4
+European Region,Serbia,Medium,UMI,Males,748,23.0,15.0
+European Region,Slovakia,High,HI,Both sexes,539,9.9,7.6
+European Region,Slovakia,High,HI,Females,84,3.0,2.3
+European Region,Slovakia,High,HI,Males,455,17.1,13.5
+European Region,Slovenia,High,HI,Both sexes,398,18.9,13.2
+European Region,Slovenia,High,HI,Females,81,7.7,5.1
+European Region,Slovenia,High,HI,Males,318,29.9,21.4
+European Region,Spain,High,HI,Both sexes,4160,8.7,6.2
+European Region,Spain,High,HI,Females,1085,4.5,3.2
+European Region,Spain,High,HI,Males,3075,13.1,9.4
+European Region,Sweden,High,HI,Both sexes,1442,13.8,11.7
+European Region,Sweden,High,HI,Females,450,8.7,7.1
+European Region,Sweden,High,HI,Males,992,18.9,16.2
+European Region,Switzerland,High,HI,Both sexes,1221,14.0,9.9
+European Region,Switzerland,High,HI,Females,403,9.2,6.0
+European Region,Switzerland,High,HI,Males,818,18.9,13.9
+European Region,Tajikistan,Low,LMI,Both sexes,242,2.4,3.1
+European Region,Tajikistan,Low,LMI,Females,68,1.3,1.7
+European Region,Tajikistan,Low,LMI,Males,174,3.6,4.5
+European Region,Türkiye,Medium,UMI,Both sexes,2332,2.7,2.6
+European Region,Türkiye,Medium,UMI,Females,473,1.1,1.0
+European Region,Türkiye,Medium,UMI,Males,1859,4.3,4.2
+European Region,Turkmenistan,Very low,UMI,Both sexes,484,6.8,7.5
+European Region,Turkmenistan,Very low,UMI,Females,126,3.5,3.9
+European Region,Turkmenistan,Very low,UMI,Males,358,10.3,11.7
+European Region,Ukraine,Medium,UMI,Both sexes,9397,21.2,17.0
+European Region,Ukraine,Medium,UMI,Females,1625,6.9,4.7
+European Region,Ukraine,Medium,UMI,Males,7773,37.7,30.9
+European Region,United Kingdom of Great Britain and Northern Ireland,High,HI,Both sexes,6461,9.5,8.8
+European Region,United Kingdom of Great Britain and Northern Ireland,High,HI,Females,1581,4.6,4.1
+European Region,United Kingdom of Great Britain and Northern Ireland,High,HI,Males,4880,14.7,13.5
+European Region,Uzbekistan,Medium,LMI,Both sexes,2857,8.3,9.1
+European Region,Uzbekistan,Medium,LMI,Females,1029,6.1,6.5
+European Region,Uzbekistan,Medium,LMI,Males,1828,10.6,11.8
+South-East Asia Region,Bangladesh,Very low,LMI,Both sexes,4714,2.8,2.9
+South-East Asia Region,Bangladesh,Very low,LMI,Females,1701,2.0,1.9
+South-East Asia Region,Bangladesh,Very low,LMI,Males,3013,3.6,3.9
+South-East Asia Region,Bhutan,Very low,LMI,Both sexes,38,4.9,5.1
+South-East Asia Region,Bhutan,Very low,LMI,Females,12,3.4,3.6
+South-East Asia Region,Bhutan,Very low,LMI,Males,26,6.2,6.5
+South-East Asia Region,Democratic People's Republic of Korea,Very low,LI,Both sexes,2442,9.3,7.6
+South-East Asia Region,Democratic People's Republic of Korea,Very low,LI,Females,1078,8.1,6.3
+South-East Asia Region,Democratic People's Republic of Korea,Very low,LI,Males,1363,10.5,9.1
+South-East Asia Region,India,Very low,LMI,Both sexes,177567,12.6,12.6
+South-East Asia Region,India,Very low,LMI,Females,76848,11.2,11.1
+South-East Asia Region,India,Very low,LMI,Males,100719,13.8,14.1
+South-East Asia Region,Indonesia,Very low,UMI,Both sexes,3333,1.2,1.3
+South-East Asia Region,Indonesia,Very low,UMI,Females,1257,0.9,0.9
+South-East Asia Region,Indonesia,Very low,UMI,Males,2076,1.5,1.7
+South-East Asia Region,Maldives,Low,UMI,Both sexes,8,1.5,2.0
+South-East Asia Region,Maldives,Low,UMI,Females,1,0.3,0.4
+South-East Asia Region,Maldives,Low,UMI,Males,7,2.2,3.2
+South-East Asia Region,Myanmar,Very low,LMI,Both sexes,1545,2.9,2.9
+South-East Asia Region,Myanmar,Very low,LMI,Females,274,1.0,1.0
+South-East Asia Region,Myanmar,Very low,LMI,Males,1271,4.8,4.9
+South-East Asia Region,Nepal,Very low,LMI,Both sexes,2989,10.1,11.1
+South-East Asia Region,Nepal,Very low,LMI,Females,1091,7.2,7.2
+South-East Asia Region,Nepal,Very low,LMI,Males,1898,13.3,15.8
+South-East Asia Region,Sri Lanka,Medium,LMI,Both sexes,3347,14.7,14.0
+South-East Asia Region,Sri Lanka,Medium,LMI,Females,685,5.9,5.6
+South-East Asia Region,Sri Lanka,Medium,LMI,Males,2661,24.2,23.6
+South-East Asia Region,Thailand,Low,UMI,Both sexes,11899,16.6,15.4
+South-East Asia Region,Thailand,Low,UMI,Females,2011,5.5,4.8
+South-East Asia Region,Thailand,Low,UMI,Males,9887,28.2,26.2
+South-East Asia Region,Timor-Leste,Very low,LMI,Both sexes,48,3.6,4.2
+South-East Asia Region,Timor-Leste,Very low,LMI,Females,15,2.3,2.6
+South-East Asia Region,Timor-Leste,Very low,LMI,Males,33,4.8,5.8
+Western Pacific Region,Australia,High,HI,Both sexes,3394,13.1,11.7
+Western Pacific Region,Australia,High,HI,Females,880,6.7,6.1
+Western Pacific Region,Australia,High,HI,Males,2514,19.5,17.5
+Western Pacific Region,Brunei Darussalam,High,HI,Both sexes,14,3.0,2.8
+Western Pacific Region,Brunei Darussalam,High,HI,Females,1,0.6,0.7
+Western Pacific Region,Brunei Darussalam,High,HI,Males,12,5.2,4.6
+Western Pacific Region,Cambodia,Very low,LMI,Both sexes,764,4.5,5.0
+Western Pacific Region,Cambodia,Very low,LMI,Females,237,2.7,2.9
+Western Pacific Region,Cambodia,Very low,LMI,Males,526,6.3,7.4
+Western Pacific Region,China,Very low,UMI,Both sexes,127601,8.9,6.8
+Western Pacific Region,China,Very low,UMI,Females,52479,7.5,5.3
+Western Pacific Region,China,Very low,UMI,Males,75122,10.3,8.5
+Western Pacific Region,Fiji,Low,UMI,Both sexes,76,8.3,8.5
+Western Pacific Region,Fiji,Low,UMI,Females,25,5.3,5.4
+Western Pacific Region,Fiji,Low,UMI,Males,51,11.2,11.8
+Western Pacific Region,Japan,High,HI,Both sexes,21904,17.4,14.7
+Western Pacific Region,Japan,High,HI,Females,7417,11.5,9.8
+Western Pacific Region,Japan,High,HI,Males,14487,23.6,19.6
+Western Pacific Region,Kiribati,Very low,LMI,Both sexes,22,17.5,18.7
+Western Pacific Region,Kiribati,Very low,LMI,Females,3,4.8,5.2
+Western Pacific Region,Kiribati,Very low,LMI,Males,19,31.0,33.9
+Western Pacific Region,Lao People's Democratic Republic,Very low,LMI,Both sexes,341,4.6,5.0
+Western Pacific Region,Lao People's Democratic Republic,Very low,LMI,Females,96,2.6,2.7
+Western Pacific Region,Lao People's Democratic Republic,Very low,LMI,Males,245,6.5,7.4
+Western Pacific Region,Malaysia,Low,UMI,Both sexes,1938,5.7,5.6
+Western Pacific Region,Malaysia,Low,UMI,Females,355,2.2,2.2
+Western Pacific Region,Malaysia,Low,UMI,Males,1584,8.8,8.8
+Western Pacific Region,Micronesia (Federated States of),Low,LMI,Both sexes,22,19.8,20.8
+Western Pacific Region,Micronesia (Federated States of),Low,LMI,Females,5,8.6,8.9
+Western Pacific Region,Micronesia (Federated States of),Low,LMI,Males,17,31.1,33.1
+Western Pacific Region,Mongolia,High,UMI,Both sexes,618,18.5,19.8
+Western Pacific Region,Mongolia,High,UMI,Females,81,4.8,5.4
+Western Pacific Region,Mongolia,High,UMI,Males,537,32.2,34.5
+Western Pacific Region,New Zealand,High,HI,Both sexes,609,11.9,11.1
+Western Pacific Region,New Zealand,High,HI,Females,156,6.1,5.8
+Western Pacific Region,New Zealand,High,HI,Males,453,17.9,16.5
+Western Pacific Region,Papua New Guinea,Very low,LMI,Both sexes,182,1.8,2.1
+Western Pacific Region,Papua New Guinea,Very low,LMI,Females,68,1.4,1.6
+Western Pacific Region,Papua New Guinea,Very low,LMI,Males,114,2.2,2.7
+Western Pacific Region,Philippines,Medium,LMI,Both sexes,3947,3.5,4.0
+Western Pacific Region,Philippines,Medium,LMI,Females,1000,1.8,2.1
+Western Pacific Region,Philippines,Medium,LMI,Males,2946,5.2,6.1
+Western Pacific Region,Republic of Korea,High,HI,Both sexes,14273,27.5,20.6
+Western Pacific Region,Republic of Korea,High,HI,Females,4399,16.9,13.6
+Western Pacific Region,Republic of Korea,High,HI,Males,9874,38.2,28.2
+Western Pacific Region,Samoa,Very low,LMI,Both sexes,26,12.0,14.3
+Western Pacific Region,Samoa,Very low,LMI,Females,7,7.0,8.0
+Western Pacific Region,Samoa,Very low,LMI,Males,18,17.0,20.8
+Western Pacific Region,Singapore,High,HI,Both sexes,449,8.1,7.0
+Western Pacific Region,Singapore,High,HI,Females,131,4.9,4.3
+Western Pacific Region,Singapore,High,HI,Males,318,11.1,9.6
+Western Pacific Region,Solomon Islands,Low,LMI,Both sexes,149,19.6,22.5
+Western Pacific Region,Solomon Islands,Low,LMI,Females,36,9.6,10.9
+Western Pacific Region,Solomon Islands,Low,LMI,Males,114,29.2,33.7
+Western Pacific Region,Tonga,Very low,UMI,Both sexes,5,4.7,5.4
+Western Pacific Region,Tonga,Very low,UMI,Females,2,3.5,3.8
+Western Pacific Region,Tonga,Very low,UMI,Males,3,6.0,7.3
+Western Pacific Region,Vanuatu,Very low,LMI,Both sexes,48,15.7,18.2
+Western Pacific Region,Vanuatu,Very low,LMI,Females,10,6.6,7.6
+Western Pacific Region,Vanuatu,Very low,LMI,Males,38,24.7,28.9
+Western Pacific Region,Viet Nam,Very low,LMI,Both sexes,7222,7.3,7.0
+Western Pacific Region,Viet Nam,Very low,LMI,Females,2191,4.3,3.9
+Western Pacific Region,Viet Nam,Very low,LMI,Males,5031,10.4,10.5

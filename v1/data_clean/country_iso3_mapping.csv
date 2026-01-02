@@ -1,0 +1,545 @@
+source_type,name,iso3,match_type
+WHO,Afghanistan,AFG,lookup
+WHO,Albania,ALB,lookup
+WHO,Algeria,DZA,lookup
+WHO,Angola,AGO,lookup
+WHO,Antigua and Barbuda,ATG,lookup
+WHO,Argentina,ARG,lookup
+WHO,Armenia,ARM,lookup
+WHO,Australia,AUS,lookup
+WHO,Austria,AUT,lookup
+WHO,Azerbaijan,AZE,lookup
+WHO,Bahamas,BHS,override
+WHO,Bahrain,BHR,lookup
+WHO,Bangladesh,BGD,lookup
+WHO,Barbados,BRB,lookup
+WHO,Belarus,BLR,lookup
+WHO,Belgium,BEL,lookup
+WHO,Belize,BLZ,lookup
+WHO,Benin,BEN,lookup
+WHO,Bhutan,BTN,lookup
+WHO,Bolivia,BOL,override
+WHO,Bosnia and Herzegovina,BIH,lookup
+WHO,Botswana,BWA,lookup
+WHO,Brazil,BRA,lookup
+WHO,Brunei Darussalam,BRN,override
+WHO,Bulgaria,BGR,lookup
+WHO,Burkina Faso,BFA,lookup
+WHO,Burundi,BDI,lookup
+WHO,Cabo Verde,CPV,override
+WHO,Cambodia,KHM,lookup
+WHO,Cameroon,CMR,lookup
+WHO,Canada,CAN,lookup
+WHO,Central African Republic,CAF,lookup
+WHO,Chad,TCD,lookup
+WHO,Chile,CHL,lookup
+WHO,China,CHN,lookup
+WHO,Colombia,COL,lookup
+WHO,Comoros,COM,lookup
+WHO,Congo,COG,lookup
+WHO,Costa Rica,CRI,lookup
+WHO,Croatia,HRV,lookup
+WHO,Cuba,CUB,lookup
+WHO,Cyprus,CYP,lookup
+WHO,Czechia,CZE,override
+WHO,Côte d'Ivoire,CIV,override
+WHO,Democratic People's Republic of Korea,PRK,override
+WHO,Democratic Republic of the Congo,COD,override
+WHO,Denmark,DNK,lookup
+WHO,Djibouti,DJI,lookup
+WHO,Dominican Republic,DOM,lookup
+WHO,Ecuador,ECU,lookup
+WHO,Egypt,EGY,lookup
+WHO,El Salvador,SLV,lookup
+WHO,Equatorial Guinea,GNQ,lookup
+WHO,Eritrea,ERI,lookup
+WHO,Estonia,EST,lookup
+WHO,Eswatini,SWZ,override
+WHO,Ethiopia,ETH,lookup
+WHO,Fiji,FJI,lookup
+WHO,Finland,FIN,lookup
+WHO,France,FRA,lookup
+WHO,Gabon,GAB,lookup
+WHO,Gambia,GMB,override
+WHO,Georgia,GEO,lookup
+WHO,Germany,DEU,lookup
+WHO,Ghana,GHA,lookup
+WHO,Greece,GRC,lookup
+WHO,Grenada,GRD,lookup
+WHO,Guatemala,GTM,lookup
+WHO,Guinea,GIN,lookup
+WHO,Guinea-Bissau,GNB,lookup
+WHO,Guyana,GUY,lookup
+WHO,Haiti,HTI,lookup
+WHO,Honduras,HND,lookup
+WHO,Hungary,HUN,lookup
+WHO,Iceland,ISL,lookup
+WHO,India,IND,lookup
+WHO,Indonesia,IDN,lookup
+WHO,Iran (Islamic Republic of),IRN,override
+WHO,Iraq,IRQ,lookup
+WHO,Ireland,IRL,lookup
+WHO,Israel,ISR,lookup
+WHO,Italy,ITA,lookup
+WHO,Jamaica,JAM,lookup
+WHO,Japan,JPN,lookup
+WHO,Jordan,JOR,lookup
+WHO,Kazakhstan,KAZ,lookup
+WHO,Kenya,KEN,lookup
+WHO,Kiribati,KIR,lookup
+WHO,Kuwait,KWT,lookup
+WHO,Kyrgyzstan,KGZ,lookup
+WHO,Lao People's Democratic Republic,LAO,override
+WHO,Latvia,LVA,lookup
+WHO,Lebanon,LBN,lookup
+WHO,Lesotho,LSO,lookup
+WHO,Liberia,LBR,lookup
+WHO,Libya,LBY,lookup
+WHO,Lithuania,LTU,lookup
+WHO,Luxembourg,LUX,lookup
+WHO,Madagascar,MDG,lookup
+WHO,Malawi,MWI,lookup
+WHO,Malaysia,MYS,lookup
+WHO,Maldives,MDV,lookup
+WHO,Mali,MLI,lookup
+WHO,Malta,MLT,lookup
+WHO,Mauritania,MRT,lookup
+WHO,Mauritius,MUS,lookup
+WHO,Mexico,MEX,override
+WHO,Micronesia (Federated States of),FSM,override
+WHO,Mongolia,MNG,lookup
+WHO,Montenegro,MNE,lookup
+WHO,Morocco,MAR,lookup
+WHO,Mozambique,MOZ,lookup
+WHO,Myanmar,MMR,lookup
+WHO,Namibia,NAM,lookup
+WHO,Nepal,NPL,lookup
+WHO,Netherlands (Kingdom of the),NLD,override
+WHO,New Zealand,NZL,lookup
+WHO,Nicaragua,NIC,lookup
+WHO,Niger,NER,lookup
+WHO,Nigeria,NGA,lookup
+WHO,North Macedonia,MKD,override
+WHO,Norway,NOR,lookup
+WHO,Oman,OMN,lookup
+WHO,Pakistan,PAK,lookup
+WHO,Panama,PAN,lookup
+WHO,Papua New Guinea,PNG,lookup
+WHO,Paraguay,PRY,lookup
+WHO,Peru,PER,lookup
+WHO,Philippines,PHL,lookup
+WHO,Poland,POL,lookup
+WHO,Portugal,PRT,lookup
+WHO,Qatar,QAT,lookup
+WHO,Republic of Korea,KOR,override
+WHO,Republic of Moldova,MDA,override
+WHO,Romania,ROU,lookup
+WHO,Russian Federation,RUS,override
+WHO,Rwanda,RWA,lookup
+WHO,Saint Lucia,LCA,lookup
+WHO,Saint Vincent and the Grenadines,VCT,lookup
+WHO,Samoa,WSM,lookup
+WHO,Sao Tome and Principe,STP,override
+WHO,Saudi Arabia,SAU,lookup
+WHO,Senegal,SEN,lookup
+WHO,Serbia,SRB,lookup
+WHO,Seychelles,SYC,lookup
+WHO,Sierra Leone,SLE,lookup
+WHO,Singapore,SGP,lookup
+WHO,Slovakia,SVK,lookup
+WHO,Slovenia,SVN,lookup
+WHO,Solomon Islands,SLB,lookup
+WHO,Somalia,SOM,lookup
+WHO,South Africa,ZAF,lookup
+WHO,South Sudan,SSD,lookup
+WHO,Spain,ESP,lookup
+WHO,Sri Lanka,LKA,lookup
+WHO,Sudan,SDN,lookup
+WHO,Suriname,SUR,lookup
+WHO,Sweden,SWE,lookup
+WHO,Switzerland,CHE,lookup
+WHO,Syrian Arab Republic,SYR,override
+WHO,Tajikistan,TJK,lookup
+WHO,Thailand,THA,lookup
+WHO,Timor-Leste,TLS,override
+WHO,Togo,TGO,lookup
+WHO,Tonga,TON,lookup
+WHO,Trinidad and Tobago,TTO,lookup
+WHO,Tunisia,TUN,lookup
+WHO,Turkmenistan,TKM,lookup
+WHO,Türkiye,TUR,override
+WHO,Uganda,UGA,lookup
+WHO,Ukraine,UKR,lookup
+WHO,United Arab Emirates,ARE,lookup
+WHO,United Kingdom of Great Britain and Northern Ireland,GBR,lookup
+WHO,United Republic of Tanzania,TZA,override
+WHO,United States of America,USA,override
+WHO,Uruguay,URY,lookup
+WHO,Uzbekistan,UZB,lookup
+WHO,Vanuatu,VUT,lookup
+WHO,Venezuela (Bolivarian Republic of),VEN,override
+WHO,Viet Nam,VNM,override
+WHO,Yemen,YEM,lookup
+WHO,Zambia,ZMB,lookup
+WHO,Zimbabwe,ZWE,lookup
+GBD,Afghanistan,AFG,lookup
+GBD,Albania,ALB,lookup
+GBD,Algeria,DZA,lookup
+GBD,American Samoa,ASM,lookup
+GBD,Andorra,AND,lookup
+GBD,Angola,AGO,lookup
+GBD,Antigua and Barbuda,ATG,lookup
+GBD,Arab Republic of Egypt,EGY,lookup
+GBD,Argentina,ARG,lookup
+GBD,Argentine Republic,ARG,lookup
+GBD,Armenia,ARM,lookup
+GBD,Australia,AUS,lookup
+GBD,Austria,AUT,lookup
+GBD,Azerbaijan,AZE,lookup
+GBD,Bahamas,BHS,override
+GBD,Bahrain,BHR,lookup
+GBD,Bangladesh,BGD,lookup
+GBD,Barbados,BRB,lookup
+GBD,Belarus,BLR,lookup
+GBD,Belgium,BEL,lookup
+GBD,Belize,BLZ,lookup
+GBD,Benin,BEN,lookup
+GBD,Bermuda,BMU,lookup
+GBD,Bhutan,BTN,lookup
+GBD,Bolivarian Republic of Venezuela,VEN,lookup
+GBD,Bolivia (Plurinational State of),BOL,override
+GBD,Bosnia and Herzegovina,BIH,lookup
+GBD,Botswana,BWA,lookup
+GBD,Brazil,BRA,lookup
+GBD,Brunei Darussalam,BRN,override
+GBD,Bulgaria,BGR,lookup
+GBD,Burkina Faso,BFA,lookup
+GBD,Burundi,BDI,lookup
+GBD,Cabo Verde,CPV,override
+GBD,Cambodia,KHM,lookup
+GBD,Cameroon,CMR,lookup
+GBD,Canada,CAN,lookup
+GBD,Central African Republic,CAF,lookup
+GBD,Chad,TCD,lookup
+GBD,Chile,CHL,lookup
+GBD,China,CHN,lookup
+GBD,Colombia,COL,lookup
+GBD,Commonwealth of Dominica,DMA,lookup
+GBD,Commonwealth of the Bahamas,BHS,lookup
+GBD,Comoros,COM,lookup
+GBD,Congo,COG,lookup
+GBD,Cook Islands,COK,lookup
+GBD,Costa Rica,CRI,lookup
+GBD,Croatia,HRV,lookup
+GBD,Cuba,CUB,lookup
+GBD,Cyprus,CYP,lookup
+GBD,Czech Republic,CZE,override
+GBD,Czechia,CZE,override
+GBD,Côte d'Ivoire,CIV,override
+GBD,Democratic People's Republic of Korea,PRK,override
+GBD,Democratic Republic of Sao Tome and Principe,STP,lookup
+GBD,Democratic Republic of Timor-Leste,TLS,lookup
+GBD,Democratic Republic of the Congo,COD,override
+GBD,Democratic Socialist Republic of Sri Lanka,LKA,lookup
+GBD,Denmark,DNK,lookup
+GBD,Djibouti,DJI,lookup
+GBD,Dominica,DMA,lookup
+GBD,Dominican Republic,DOM,lookup
+GBD,Eastern Republic of Uruguay,URY,lookup
+GBD,Ecuador,ECU,lookup
+GBD,Egypt,EGY,lookup
+GBD,El Salvador,SLV,lookup
+GBD,Equatorial Guinea,GNQ,lookup
+GBD,Eritrea,ERI,lookup
+GBD,Estonia,EST,lookup
+GBD,Eswatini,SWZ,override
+GBD,Ethiopia,ETH,lookup
+GBD,Federal Democratic Republic of Ethiopia,ETH,lookup
+GBD,Federal Democratic Republic of Nepal,NPL,lookup
+GBD,Federal Republic of Germany,DEU,lookup
+GBD,Federal Republic of Nigeria,NGA,lookup
+GBD,Federal Republic of Somalia,SOM,lookup
+GBD,Federated States of Micronesia,FSM,lookup
+GBD,Federative Republic of Brazil,BRA,lookup
+GBD,Fiji,FJI,lookup
+GBD,Finland,FIN,lookup
+GBD,France,FRA,lookup
+GBD,French Republic,FRA,lookup
+GBD,Gabon,GAB,lookup
+GBD,Gabonese Republic,GAB,lookup
+GBD,Gambia,GMB,override
+GBD,Georgia,GEO,lookup
+GBD,Germany,DEU,lookup
+GBD,Ghana,GHA,lookup
+GBD,Grand Duchy of Luxembourg,LUX,lookup
+GBD,Greece,GRC,lookup
+GBD,Greenland,GRL,lookup
+GBD,Grenada,GRD,lookup
+GBD,Guam,GUM,lookup
+GBD,Guatemala,GTM,lookup
+GBD,Guinea,GIN,lookup
+GBD,Guinea-Bissau,GNB,lookup
+GBD,Guyana,GUY,lookup
+GBD,Haiti,HTI,lookup
+GBD,Hashemite Kingdom of Jordan,JOR,lookup
+GBD,Hellenic Republic,GRC,lookup
+GBD,Honduras,HND,lookup
+GBD,Hungary,HUN,lookup
+GBD,Iceland,ISL,lookup
+GBD,Independent State of Papua New Guinea,PNG,lookup
+GBD,Independent State of Samoa,WSM,lookup
+GBD,India,IND,lookup
+GBD,Indonesia,IDN,lookup
+GBD,Iran (Islamic Republic of),IRN,override
+GBD,Iraq,IRQ,lookup
+GBD,Ireland,IRL,lookup
+GBD,Islamic Republic of Afghanistan,AFG,lookup
+GBD,Islamic Republic of Iran,IRN,lookup
+GBD,Islamic Republic of Mauritania,MRT,lookup
+GBD,Islamic Republic of Pakistan,PAK,lookup
+GBD,Israel,ISR,lookup
+GBD,Italy,ITA,lookup
+GBD,Jamaica,JAM,lookup
+GBD,Japan,JPN,lookup
+GBD,Jordan,JOR,lookup
+GBD,Kazakhstan,KAZ,lookup
+GBD,Kenya,KEN,lookup
+GBD,Kingdom of Bahrain,BHR,lookup
+GBD,Kingdom of Belgium,BEL,lookup
+GBD,Kingdom of Bhutan,BTN,lookup
+GBD,Kingdom of Cambodia,KHM,lookup
+GBD,Kingdom of Denmark,DNK,lookup
+GBD,Kingdom of Eswatini,SWZ,lookup
+GBD,Kingdom of Lesotho,LSO,lookup
+GBD,Kingdom of Morocco,MAR,lookup
+GBD,Kingdom of Norway,NOR,lookup
+GBD,Kingdom of Saudi Arabia,SAU,lookup
+GBD,Kingdom of Spain,ESP,lookup
+GBD,Kingdom of Sweden,SWE,lookup
+GBD,Kingdom of Thailand,THA,lookup
+GBD,Kingdom of Tonga,TON,lookup
+GBD,Kingdom of the Netherlands,NLD,lookup
+GBD,Kiribati,KIR,lookup
+GBD,Kuwait,KWT,lookup
+GBD,Kyrgyz Republic,KGZ,lookup
+GBD,Kyrgyzstan,KGZ,lookup
+GBD,Lao People's Democratic Republic,LAO,override
+GBD,Latvia,LVA,lookup
+GBD,Lebanese Republic,LBN,lookup
+GBD,Lebanon,LBN,lookup
+GBD,Lesotho,LSO,lookup
+GBD,Liberia,LBR,lookup
+GBD,Libya,LBY,lookup
+GBD,Lithuania,LTU,lookup
+GBD,Luxembourg,LUX,lookup
+GBD,Madagascar,MDG,lookup
+GBD,Malawi,MWI,lookup
+GBD,Malaysia,MYS,lookup
+GBD,Maldives,MDV,lookup
+GBD,Mali,MLI,lookup
+GBD,Malta,MLT,lookup
+GBD,Marshall Islands,MHL,lookup
+GBD,Mauritania,MRT,lookup
+GBD,Mauritius,MUS,lookup
+GBD,Mexico,MEX,override
+GBD,Micronesia,FSM,override
+GBD,Micronesia (Federated States of),FSM,override
+GBD,Monaco,MCO,lookup
+GBD,Mongolia,MNG,lookup
+GBD,Montenegro,MNE,lookup
+GBD,Morocco,MAR,lookup
+GBD,Mozambique,MOZ,lookup
+GBD,Myanmar,MMR,lookup
+GBD,México,MEX,override
+GBD,Namibia,NAM,lookup
+GBD,Nauru,NRU,lookup
+GBD,Nepal,NPL,lookup
+GBD,Netherlands,NLD,override
+GBD,New Zealand,NZL,lookup
+GBD,Nicaragua,NIC,lookup
+GBD,Niger,NER,lookup
+GBD,Nigeria,NGA,lookup
+GBD,Niue,NIU,lookup
+GBD,North Macedonia,MKD,override
+GBD,Northern Mariana Islands,MNP,lookup
+GBD,Norway,NOR,lookup
+GBD,Oman,OMN,lookup
+GBD,Pakistan,PAK,lookup
+GBD,Palau,PLW,lookup
+GBD,Palestine,PSE,override
+GBD,Panama,PAN,lookup
+GBD,Papua New Guinea,PNG,lookup
+GBD,Paraguay,PRY,lookup
+GBD,People's Democratic Republic of Algeria,DZA,lookup
+GBD,People's Republic of Bangladesh,BGD,lookup
+GBD,People's Republic of China,CHN,lookup
+GBD,Peru,PER,lookup
+GBD,Philippines,PHL,lookup
+GBD,Plurinational State of Bolivia,BOL,lookup
+GBD,Poland,POL,lookup
+GBD,Portugal,PRT,lookup
+GBD,Portuguese Republic,PRT,lookup
+GBD,Principality of Andorra,AND,lookup
+GBD,Principality of Monaco,MCO,lookup
+GBD,Puerto Rico,PRI,lookup
+GBD,Qatar,QAT,lookup
+GBD,Republic of Albania,ALB,lookup
+GBD,Republic of Angola,AGO,lookup
+GBD,Republic of Armenia,ARM,lookup
+GBD,Republic of Austria,AUT,lookup
+GBD,Republic of Azerbaijan,AZE,lookup
+GBD,Republic of Belarus,BLR,lookup
+GBD,Republic of Benin,BEN,lookup
+GBD,Republic of Botswana,BWA,lookup
+GBD,Republic of Bulgaria,BGR,lookup
+GBD,Republic of Burundi,BDI,lookup
+GBD,Republic of Cabo Verde,CPV,lookup
+GBD,Republic of Cameroon,CMR,lookup
+GBD,Republic of Chad,TCD,lookup
+GBD,Republic of Chile,CHL,lookup
+GBD,Republic of Colombia,COL,lookup
+GBD,Republic of Costa Rica,CRI,lookup
+GBD,Republic of Croatia,HRV,lookup
+GBD,Republic of Cuba,CUB,lookup
+GBD,Republic of Cyprus,CYP,lookup
+GBD,Republic of Côte d'Ivoire,CIV,lookup
+GBD,Republic of Djibouti,DJI,lookup
+GBD,Republic of Ecuador,ECU,lookup
+GBD,Republic of El Salvador,SLV,lookup
+GBD,Republic of Equatorial Guinea,GNQ,lookup
+GBD,Republic of Estonia,EST,lookup
+GBD,Republic of Fiji,FJI,lookup
+GBD,Republic of Finland,FIN,lookup
+GBD,Republic of Ghana,GHA,lookup
+GBD,Republic of Guatemala,GTM,lookup
+GBD,Republic of Guinea,GIN,lookup
+GBD,Republic of Guinea-Bissau,GNB,lookup
+GBD,Republic of Guyana,GUY,lookup
+GBD,Republic of Haiti,HTI,lookup
+GBD,Republic of Honduras,HND,lookup
+GBD,Republic of Iceland,ISL,lookup
+GBD,Republic of India,IND,lookup
+GBD,Republic of Indonesia,IDN,lookup
+GBD,Republic of Iraq,IRQ,lookup
+GBD,Republic of Italy,ITA,override
+GBD,Republic of Kazakhstan,KAZ,lookup
+GBD,Republic of Kenya,KEN,lookup
+GBD,Republic of Kiribati,KIR,lookup
+GBD,Republic of Korea,KOR,override
+GBD,Republic of Latvia,LVA,lookup
+GBD,Republic of Liberia,LBR,lookup
+GBD,Republic of Lithuania,LTU,lookup
+GBD,Republic of Madagascar,MDG,lookup
+GBD,Republic of Malawi,MWI,lookup
+GBD,Republic of Maldives,MDV,lookup
+GBD,Republic of Mali,MLI,lookup
+GBD,Republic of Malta,MLT,lookup
+GBD,Republic of Mauritius,MUS,lookup
+GBD,Republic of Moldova,MDA,override
+GBD,Republic of Mozambique,MOZ,lookup
+GBD,Republic of Namibia,NAM,lookup
+GBD,Republic of Nauru,NRU,lookup
+GBD,Republic of Nicaragua,NIC,lookup
+GBD,Republic of Niue,NIU,override
+GBD,Republic of Palau,PLW,lookup
+GBD,Republic of Panama,PAN,lookup
+GBD,Republic of Paraguay,PRY,lookup
+GBD,Republic of Peru,PER,lookup
+GBD,Republic of Poland,POL,lookup
+GBD,Republic of Rwanda,RWA,override
+GBD,Republic of San Marino,SMR,lookup
+GBD,Republic of Senegal,SEN,lookup
+GBD,Republic of Serbia,SRB,lookup
+GBD,Republic of Seychelles,SYC,lookup
+GBD,Republic of Sierra Leone,SLE,lookup
+GBD,Republic of Singapore,SGP,lookup
+GBD,Republic of Slovenia,SVN,lookup
+GBD,Republic of South Africa,ZAF,lookup
+GBD,Republic of South Sudan,SSD,lookup
+GBD,Republic of Sudan,SDN,override
+GBD,Republic of Suriname,SUR,lookup
+GBD,Republic of Tajikistan,TJK,lookup
+GBD,Republic of Trinidad and Tobago,TTO,lookup
+GBD,Republic of Tunisia,TUN,lookup
+GBD,Republic of Turkey,TUR,override
+GBD,Republic of Uganda,UGA,lookup
+GBD,Republic of Uzbekistan,UZB,lookup
+GBD,Republic of Vanuatu,VUT,lookup
+GBD,Republic of Yemen,YEM,lookup
+GBD,Republic of Zambia,ZMB,lookup
+GBD,Republic of Zimbabwe,ZWE,lookup
+GBD,Republic of the Congo,COG,lookup
+GBD,Republic of the Gambia,GMB,lookup
+GBD,Republic of the Marshall Islands,MHL,lookup
+GBD,Republic of the Niger,NER,lookup
+GBD,Republic of the Philippines,PHL,lookup
+GBD,Republic of the Union of Myanmar,MMR,override
+GBD,Romania,ROU,lookup
+GBD,Russian Federation,RUS,override
+GBD,Rwanda,RWA,lookup
+GBD,Saint Kitts and Nevis,KNA,lookup
+GBD,Saint Lucia,LCA,lookup
+GBD,Saint Vincent and the Grenadines,VCT,lookup
+GBD,Samoa,WSM,lookup
+GBD,San Marino,SMR,lookup
+GBD,Sao Tome and Principe,STP,override
+GBD,Saudi Arabia,SAU,lookup
+GBD,Senegal,SEN,lookup
+GBD,Serbia,SRB,lookup
+GBD,Seychelles,SYC,lookup
+GBD,Sierra Leone,SLE,lookup
+GBD,Singapore,SGP,lookup
+GBD,Slovak Republic,SVK,lookup
+GBD,Slovakia,SVK,lookup
+GBD,Slovenia,SVN,lookup
+GBD,Socialist Republic of Viet Nam,VNM,lookup
+GBD,Solomon Islands,SLB,lookup
+GBD,Somalia,SOM,lookup
+GBD,South Africa,ZAF,lookup
+GBD,South Sudan,SSD,lookup
+GBD,Spain,ESP,lookup
+GBD,Sri Lanka,LKA,lookup
+GBD,State of Eritrea,ERI,override
+GBD,State of Israel,ISR,lookup
+GBD,State of Kuwait,KWT,lookup
+GBD,State of Libya,LBY,override
+GBD,State of Qatar,QAT,lookup
+GBD,Sudan,SDN,lookup
+GBD,Sultanate of Oman,OMN,lookup
+GBD,Suriname,SUR,lookup
+GBD,Sweden,SWE,lookup
+GBD,Swiss Confederation,CHE,lookup
+GBD,Switzerland,CHE,lookup
+GBD,Syrian Arab Republic,SYR,override
+GBD,Taiwan,TWN,override
+GBD,Taiwan (Province of China),TWN,override
+GBD,Tajikistan,TJK,lookup
+GBD,Thailand,THA,lookup
+GBD,Timor-Leste,TLS,override
+GBD,Togo,TGO,lookup
+GBD,Togolese Republic,TGO,lookup
+GBD,Tokelau,TKL,lookup
+GBD,Tonga,TON,lookup
+GBD,Trinidad and Tobago,TTO,lookup
+GBD,Tunisia,TUN,lookup
+GBD,Turkmenistan,TKM,lookup
+GBD,Tuvalu,TUV,lookup
+GBD,Türkiye,TUR,override
+GBD,Uganda,UGA,lookup
+GBD,Ukraine,UKR,lookup
+GBD,Union of the Comoros,COM,lookup
+GBD,United Arab Emirates,ARE,lookup
+GBD,United Kingdom,GBR,lookup
+GBD,United Kingdom of Great Britain and Northern Ireland,GBR,lookup
+GBD,United Mexican States,MEX,lookup
+GBD,United Republic of Tanzania,TZA,override
+GBD,United States Virgin Islands,VIR,override
+GBD,United States of America,USA,override
+GBD,Uruguay,URY,lookup
+GBD,Uzbekistan,UZB,lookup
+GBD,Vanuatu,VUT,lookup
+GBD,Venezuela (Bolivarian Republic of),VEN,override
+GBD,Viet Nam,VNM,override
+GBD,Yemen,YEM,lookup
+GBD,Zambia,ZMB,lookup
+GBD,Zimbabwe,ZWE,lookup

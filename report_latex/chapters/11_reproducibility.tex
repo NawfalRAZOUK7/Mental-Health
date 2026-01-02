@@ -1,0 +1,48 @@
+\chapter{Reproductibilité}
+\section{Dépendances}
+Les dépendances sont séparées en deux niveaux :
+\begin{itemize}
+    \item \texttt{requirements.txt} : dépendances cœur (pandas, numpy, plotly, streamlit, scikit-learn, etc.).
+    \item \texttt{requirements-v2.txt} : dépendances avancées (torch, tslearn, great\_expectations, mlxtend, networkx, streamlit-plotly-events).
+\end{itemize}
+Installation recommandée :
+\begin{verbatim}
+pip install -r requirements.txt
+pip install -r requirements-v2.txt
+\end{verbatim}
+
+\section{Exécuter chaque version}
+Les commandes sont centralisées dans \texttt{VERSIONS.md}. Résumé :
+\begin{itemize}
+    \item v0 (exports statiques) : \texttt{MHP\_VERSION=v0 python src/v0\_visuals.py}
+    \item v1 (pipeline complet) : \texttt{python scripts/run\_v1\_pipeline.py}
+    \item v2 (synthétique/avancé) : \texttt{python scripts/run\_v2\_pipeline.py}
+    \item v3 (risk estimator) : \texttt{python scripts/run\_v3\_pipeline.py}
+    \item Dashboard : \texttt{python scripts/run\_app.py --version vX}
+\end{itemize}
+
+\section{Sorties attendues}
+\textbf{v0} :
+\begin{itemize}
+    \item \texttt{v0/assets/} : PNG et HTML
+    \item \texttt{v0/assets/manifest.csv}
+\end{itemize}
+
+\textbf{v1} :
+\begin{itemize}
+    \item \texttt{v1/data\_clean/} : fichiers nettoyés + \texttt{merged\_ml\_country.csv}
+    \item \texttt{v1/data\_clean/context\_tables/} : tables de contexte
+    \item \texttt{v1/report/} : qualité, dictionnaire, ML baseline
+\end{itemize}
+
+\textbf{v2} :
+\begin{itemize}
+    \item \texttt{v2/data\_clean/} : données synthétiques (long/country/region) + clusters
+    \item \texttt{v2/report/} : forecasting, clustering, backtest, qualité
+\end{itemize}
+
+\textbf{v3} :
+\begin{itemize}
+    \item \texttt{v3/data\_clean/} : tables de features v1/v2
+    \item \texttt{v3/report/} : résumé des features et rapports légers
+\end{itemize}

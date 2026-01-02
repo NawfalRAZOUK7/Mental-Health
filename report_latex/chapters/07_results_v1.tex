@@ -1,0 +1,123 @@
+\chapter{Résultats et tableau de bord (v1)}
+\section{Vue d'ensemble}
+La page d'accueil consolide les indicateurs principaux et fournit une lecture rapide :
+\begin{itemize}
+    \item Cartes KPI : taux de suicide âge-standardisé, taux brut, et points de repère globaux.
+    \item Carte choropleth 2021 pour situer la charge par pays.
+    \item Tendance régionale : évolution du taux par région pour situer les dynamiques.
+\end{itemize}
+L'objectif est de donner une première lecture, puis d'orienter l'exploration vers les pages thématiques.
+
+\section{WHO Suicide Explorer}
+Cette page se concentre sur les données OMS 2021 :
+\begin{itemize}
+    \item Carte des taux âge-standardisés par pays.
+    \item Classements (top/bottom) des pays.
+    \item Comparaison par sexe (Male/Female/Both) pour visualiser les écarts.
+    \item Dispersion taux brut vs taux standardisé pour détecter les effets de structure d'âge.
+\end{itemize}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{figures/fig_v1_who_crude_vs_age_std.png}
+    \caption{v1 : comparaison taux brut vs taux âge-standardisé (OMS 2021).}
+    \label{fig:v1_who_crude_vs_age_std}
+\end{figure}
+
+\section{Dépression (DALYs)}
+La page dépression s'appuie sur les DALYs (GBD 2023) :
+\begin{itemize}
+    \item Carte des DALYs rate par pays.
+    \item Top 20 des pays les plus élevés.
+    \item Comparaison par groupes d'âge (ex. <20, 20-24, 25+).
+\end{itemize}
+Cette vue met en avant les différences d'âge et les zones de forte charge.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{figures/fig_v1_depression_top10.png}
+    \caption{v1 : top 10 des DALYs de dépression par groupe d'âge (2023).}
+    \label{fig:v1_depression_top10}
+\end{figure}
+
+\section{Addictions}
+La page addictions explore les causes liées aux troubles de l'usage de substances :
+\begin{itemize}
+    \item Sélection de cause (alcohol, drug, substance use disorders).
+    \item Carte et top 20 par taux de décès.
+    \item Comparaison par sexe.
+\end{itemize}
+
+\section{Automutilation}
+La page self-harm présente :
+\begin{itemize}
+    \item Carte du taux de décès par automutilation.
+    \item Comparaison Male/Female.
+    \item Optionnel : distribution par méthodes si disponible.
+\end{itemize}
+
+\section{Probabilité de décès}
+Cette page utilise la métrique \texttt{Probability of death} (GBD) :
+\begin{itemize}
+    \item Carte mondiale pour un couple cause/âge sélectionné.
+    \item Classement des pays.
+\end{itemize}
+La lecture se fait en probabilité (0 à 1), différente d'un taux par 100 000.
+
+\section{Tendances toutes causes}
+Les tendances globales 2021--2023 sont présentées par métrique :
+\begin{itemize}
+    \item Courbes \texttt{Number} et \texttt{Rate} par sexe.
+    \item Comparaison entre évolution des volumes et évolution des taux.
+\end{itemize}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{figures/fig_v1_allcause_trends.png}
+    \caption{v1 : tendances toutes causes (Global, Number et Rate).}
+    \label{fig:v1_allcause_trends}
+\end{figure}
+Cette page sert de contexte macro pour les indicateurs mentaux.
+
+\section{Grandes catégories}
+La page "Big categories" résume la structure des causes (GBD) via un treemap :
+\begin{itemize}
+    \item Niveau 0 : All causes.
+    \item Niveau 1 : Communicable, Non-communicable, Injuries.
+    \item Niveau 2 : Substance use disorders dans Non-communicable.
+    \item Niveau 3 : Alcohol use disorders et Drug use disorders.
+\end{itemize}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{figures/fig_v1_big_categories_treemap.png}
+    \caption{v1 : treemap des grandes catégories (hiérarchie GBD).}
+    \label{fig:v1_big_categories_treemap}
+\end{figure}
+Cette hiérarchie met en perspective la place des troubles liés aux substances.
+
+\section{Relations entre indicateurs}
+La page "Relationships" montre les liens entre suicide et autres charges :
+\begin{itemize}
+    \item Scatter suicide vs dépression.
+    \item Scatter suicide vs addictions.
+    \item Heatmap de corrélations.
+\end{itemize}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{figures/fig_v1_relationships_scatter.png}
+    \caption{v1 : relation entre taux de suicide et DALYs de dépression (moyenne pays).}
+    \label{fig:v1_relationships_scatter}
+\end{figure}
+
+\section{Démonstration ML}
+La page ML illustre une baseline prédictive :
+\begin{itemize}
+    \item Modèles Ridge et RandomForest.
+    \item Métriques MAE et R2 (holdout + validation croisée).
+    \item Importance des variables pour interprétabilité.
+\end{itemize}
+
+\section{Méthodes et limites}
+La page finale rappelle les principaux points de prudence :
+\begin{itemize}
+    \item Décalage temporel OMS 2021 vs GBD 2023.
+    \item Données agrégées et risque d'erreur écologique.
+    \item Données manquantes ou pays non appariés en ISO3.
+\end{itemize}

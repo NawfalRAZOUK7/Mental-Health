@@ -1,0 +1,34 @@
+\chapter{Analyses avancées (v2)}
+\section{Clustering et segmentation}
+La version v2 introduit des profils de pays par clustering sur des indicateurs synthétiques (suicide, dépression, addictions, automutilation). L'objectif est d'identifier des groupes de pays aux profils similaires et d'offrir une lecture comparative (clusters faibles, moyens, élevés).
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{figures/fig_v2_clusters_scatter.png}
+    \caption{v2 : dispersion des pays par cluster (suicide vs dépression).}
+    \label{fig:v2_clusters_scatter}
+\end{figure}
+
+\section{Anomalies et alertes}
+Une détection d'anomalies met en évidence des pays atypiques (valeurs extrêmes ou combinaisons incohérentes). Ces résultats sont présentés sous forme de tableaux et de nuages de points afin de guider des analyses qualitatives.
+
+\section{Forecasts et backtest}
+Les tendances régionales sont modélisées avec des approches classiques et une variante deep learning. Un backtest évalue la performance via MAE/RMSE et met en comparaison les trajectoires prédites vs observées.
+
+\section{Régression quantile et intervalles}
+La régression quantile permet de produire des intervalles de prédiction (ex. quantiles 0.1, 0.5, 0.9) afin d'exprimer l'incertitude et de ne pas se limiter à une valeur ponctuelle.
+
+\section{Explicabilité}
+Deux techniques sont mobilisées :
+\begin{itemize}
+    \item Importance par permutation pour classer les variables selon leur impact.
+    \item Dépendances partielles pour visualiser l'effet marginal des features majeures.
+\end{itemize}
+
+\section{Graphes de similarité et règles d'association}
+Un graphe de similarité (distance cosinus) produit des communautés de pays, et des règles d'association sont extraites après discrétisation (low/med/high). Ces outils renforcent l'aspect data mining et l'interprétation exploratoire.
+
+\section{Scénario lab}
+Le module "what-if" simule l'effet de variations des indicateurs (ex. baisse des addictions) sur des mesures cibles. Il sert à illustrer l'usage décisionnel des modèles.
+
+\section{Synthèse qualité}
+La qualité des données v2 est suivie via un rapport Great Expectations et un résumé de tests (types, plages, valeurs manquantes). Cela permet d'encadrer l'usage des données synthétiques par des contrôles explicites.

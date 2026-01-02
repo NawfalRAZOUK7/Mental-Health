@@ -1,0 +1,187 @@
+region_name,year,suicide_rate,type
+African Region,2024,107.37997176090022,forecast
+African Region,2025,107.59001005727015,forecast
+African Region,2026,107.80004835364014,forecast
+African Region,2027,108.01008665001012,forecast
+African Region,2028,108.22012494638011,forecast
+African Region,2029,108.43016324275004,forecast
+African Region,2030,108.64020153912003,forecast
+African Region,2000,101.89335423656036,actual
+African Region,2001,102.01224976350446,actual
+African Region,2002,103.05469672021476,actual
+African Region,2003,102.14493502040762,actual
+African Region,2004,102.3698047689512,actual
+African Region,2005,103.10843197307588,actual
+African Region,2006,104.5557732506408,actual
+African Region,2007,103.65920087340466,actual
+African Region,2008,103.52446315864586,actual
+African Region,2009,104.11096183119407,actual
+African Region,2010,105.7225100807608,actual
+African Region,2011,105.52999314403566,actual
+African Region,2012,106.2975873841116,actual
+African Region,2013,105.72885782231684,actual
+African Region,2014,104.6215747441418,actual
+African Region,2015,105.92310934268784,actual
+African Region,2016,106.64999286811867,actual
+African Region,2017,105.94565144553944,actual
+African Region,2018,106.6700365699126,actual
+African Region,2019,105.68856113355102,actual
+African Region,2020,104.86579680217622,actual
+African Region,2021,106.87900466001346,actual
+African Region,2022,105.46090903284896,actual
+African Region,2023,107.69037672379932,actual
+Eastern Mediterranean Region,2024,109.13661903398628,forecast
+Eastern Mediterranean Region,2025,109.35034702356705,forecast
+Eastern Mediterranean Region,2026,109.56407501314783,forecast
+Eastern Mediterranean Region,2027,109.7778030027286,forecast
+Eastern Mediterranean Region,2028,109.99153099230938,forecast
+Eastern Mediterranean Region,2029,110.20525898189015,forecast
+Eastern Mediterranean Region,2030,110.41898697147093,forecast
+Eastern Mediterranean Region,2000,102.1987907283302,actual
+Eastern Mediterranean Region,2001,107.05706566038964,actual
+Eastern Mediterranean Region,2002,103.9828331920088,actual
+Eastern Mediterranean Region,2003,102.95085110311538,actual
+Eastern Mediterranean Region,2004,104.18366513267816,actual
+Eastern Mediterranean Region,2005,106.16996792203358,actual
+Eastern Mediterranean Region,2006,106.47601189815788,actual
+Eastern Mediterranean Region,2007,104.92143239646038,actual
+Eastern Mediterranean Region,2008,105.57479461863176,actual
+Eastern Mediterranean Region,2009,105.21017280519716,actual
+Eastern Mediterranean Region,2010,109.48311086020644,actual
+Eastern Mediterranean Region,2011,101.96560704360122,actual
+Eastern Mediterranean Region,2012,107.52382090963611,actual
+Eastern Mediterranean Region,2013,107.15594178326349,actual
+Eastern Mediterranean Region,2014,105.58215654530795,actual
+Eastern Mediterranean Region,2015,109.0635484897775,actual
+Eastern Mediterranean Region,2016,110.8021644126172,actual
+Eastern Mediterranean Region,2017,107.60708938957067,actual
+Eastern Mediterranean Region,2018,106.80572310101503,actual
+Eastern Mediterranean Region,2019,110.50457411675904,actual
+Eastern Mediterranean Region,2020,101.81827101447313,actual
+Eastern Mediterranean Region,2021,109.32050372681078,actual
+Eastern Mediterranean Region,2022,108.78804158680536,actual
+Eastern Mediterranean Region,2023,110.01432150459212,actual
+European Region,2024,93.0424814015173,forecast
+European Region,2025,93.35030587356096,forecast
+European Region,2026,93.6581303456046,forecast
+European Region,2027,93.96595481764825,forecast
+European Region,2028,94.27377928969202,forecast
+European Region,2029,94.58160376173566,forecast
+European Region,2030,94.88942823377931,forecast
+European Region,2000,86.75242839188144,actual
+European Region,2001,86.34037466095292,actual
+European Region,2002,85.01443242227285,actual
+European Region,2003,87.69604521478315,actual
+European Region,2004,86.91717086701834,actual
+European Region,2005,87.82117307489045,actual
+European Region,2006,85.94746091474109,actual
+European Region,2007,87.4681298344098,actual
+European Region,2008,88.29568195065326,actual
+European Region,2009,88.75657443518399,actual
+European Region,2010,86.42892654159046,actual
+European Region,2011,88.57962995420375,actual
+European Region,2012,89.43951656229335,actual
+European Region,2013,90.38395202363834,actual
+European Region,2014,89.92800521018448,actual
+European Region,2015,90.4485069459122,actual
+European Region,2016,91.46075223118176,actual
+European Region,2017,90.03626981426025,actual
+European Region,2018,91.58562701766844,actual
+European Region,2019,92.1650456243478,actual
+European Region,2020,93.28223235522968,actual
+European Region,2021,91.92960423004504,actual
+European Region,2022,91.99965163833085,actual
+European Region,2023,91.99502010764122,actual
+Region of the Americas,2024,99.19378684302586,forecast
+Region of the Americas,2025,99.44450063094553,forecast
+Region of the Americas,2026,99.69521441886519,forecast
+Region of the Americas,2027,99.94592820678486,forecast
+Region of the Americas,2028,100.19664199470446,forecast
+Region of the Americas,2029,100.44735578262413,forecast
+Region of the Americas,2030,100.6980695705438,forecast
+Region of the Americas,2000,94.56085880195728,actual
+Region of the Americas,2001,93.52676138234484,actual
+Region of the Americas,2002,94.64300028294204,actual
+Region of the Americas,2003,93.69361113981758,actual
+Region of the Americas,2004,94.1510326096651,actual
+Region of the Americas,2005,91.36890908000414,actual
+Region of the Americas,2006,93.75820704112758,actual
+Region of the Americas,2007,94.52844851993088,actual
+Region of the Americas,2008,95.84175511099214,actual
+Region of the Americas,2009,95.72809009817304,actual
+Region of the Americas,2010,97.37043902023298,actual
+Region of the Americas,2011,96.81742893544904,actual
+Region of the Americas,2012,96.60255705072306,actual
+Region of the Americas,2013,93.81791081422296,actual
+Region of the Americas,2014,96.47729050230782,actual
+Region of the Americas,2015,95.78931551598988,actual
+Region of the Americas,2016,97.88948938480767,actual
+Region of the Americas,2017,97.23556975924151,actual
+Region of the Americas,2018,98.84522140375404,actual
+Region of the Americas,2019,99.73665915854936,actual
+Region of the Americas,2020,97.7337267068176,actual
+Region of the Americas,2021,98.0656996668573,actual
+Region of the Americas,2022,98.47634937538952,actual
+Region of the Americas,2023,98.77841649542766,actual
+South-East Asia Region,2024,76.7301398504427,forecast
+South-East Asia Region,2025,77.01460044072792,forecast
+South-East Asia Region,2026,77.29906103101314,forecast
+South-East Asia Region,2027,77.58352162129836,forecast
+South-East Asia Region,2028,77.86798221158358,forecast
+South-East Asia Region,2029,78.1524428018688,forecast
+South-East Asia Region,2030,78.43690339215402,forecast
+South-East Asia Region,2000,70.23747278804187,actual
+South-East Asia Region,2001,69.78865786347838,actual
+South-East Asia Region,2002,70.4810373700435,actual
+South-East Asia Region,2003,71.33722056426039,actual
+South-East Asia Region,2004,68.26526897210869,actual
+South-East Asia Region,2005,71.47644257537452,actual
+South-East Asia Region,2006,72.33650969437164,actual
+South-East Asia Region,2007,72.27332730301099,actual
+South-East Asia Region,2008,72.02093322510112,actual
+South-East Asia Region,2009,74.12477814382909,actual
+South-East Asia Region,2010,73.40011870223013,actual
+South-East Asia Region,2011,70.93702279499094,actual
+South-East Asia Region,2012,72.4303390722875,actual
+South-East Asia Region,2013,73.3860037848921,actual
+South-East Asia Region,2014,78.62498156331228,actual
+South-East Asia Region,2015,73.25084671626284,actual
+South-East Asia Region,2016,72.48963258989178,actual
+South-East Asia Region,2017,74.27044681102097,actual
+South-East Asia Region,2018,77.80572649313612,actual
+South-East Asia Region,2019,74.71846997876894,actual
+South-East Asia Region,2020,75.27456994393111,actual
+South-East Asia Region,2021,75.93593161641037,actual
+South-East Asia Region,2022,75.25108280946476,actual
+South-East Asia Region,2023,76.06835794883455,actual
+Western Pacific Region,2024,80.32102708180037,forecast
+Western Pacific Region,2025,80.50842073507806,forecast
+Western Pacific Region,2026,80.6958143883557,forecast
+Western Pacific Region,2027,80.88320804163334,forecast
+Western Pacific Region,2028,81.07060169491103,forecast
+Western Pacific Region,2029,81.25799534818867,forecast
+Western Pacific Region,2030,81.44538900146637,forecast
+Western Pacific Region,2000,77.03380151391659,actual
+Western Pacific Region,2001,76.22016951046444,actual
+Western Pacific Region,2002,76.30622396082413,actual
+Western Pacific Region,2003,76.59159857100228,actual
+Western Pacific Region,2004,75.37747046451135,actual
+Western Pacific Region,2005,76.35835591012837,actual
+Western Pacific Region,2006,78.80372848062949,actual
+Western Pacific Region,2007,76.10072471287347,actual
+Western Pacific Region,2008,78.04011866179243,actual
+Western Pacific Region,2009,77.73997362451865,actual
+Western Pacific Region,2010,74.51366390777221,actual
+Western Pacific Region,2011,78.24400784042744,actual
+Western Pacific Region,2012,76.26786753540742,actual
+Western Pacific Region,2013,78.65681839221304,actual
+Western Pacific Region,2014,78.67582378355758,actual
+Western Pacific Region,2015,78.26195543582618,actual
+Western Pacific Region,2016,79.24583974733495,actual
+Western Pacific Region,2017,79.68556330820215,actual
+Western Pacific Region,2018,79.60096268435068,actual
+Western Pacific Region,2019,80.1341642119218,actual
+Western Pacific Region,2020,80.2505862873646,actual
+Western Pacific Region,2021,81.77460256701383,actual
+Western Pacific Region,2022,77.87489381464736,actual
+Western Pacific Region,2023,79.72763905321125,actual

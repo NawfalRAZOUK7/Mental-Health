@@ -1,0 +1,14 @@
+dataset,column,missing_count,missing_pct
+gbd_prob_death_clean,upper,93480,100.0
+gbd_prob_death_clean,lower,93480,100.0
+context_big_categories_2023,iso3,29382,98.69
+gbd_big_categories_clean,iso3,50700,98.48
+context_probdeath_2023,upper,594,96.59
+context_probdeath_2023,lower,594,96.59
+gbd_allcauses_clean,iso3,46737,73.5
+gbd_addiction_clean,iso3,1731,73.5
+context_probdeath_2023,region_name,54,8.78
+context_allcauses_trend,region_name,486,8.7
+context_probdeath_2023,iso3,21,3.41
+context_allcauses_trend,iso3,189,3.38
+gbd_prob_death_clean,iso3,456,0.49

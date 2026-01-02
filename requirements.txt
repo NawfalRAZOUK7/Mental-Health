@@ -1,0 +1,10 @@
+pandas
+numpy<2
+plotly
+kaleido
+streamlit
+scikit-learn
+scipy
+pycountry
+openpyxl
+python-dotenv
