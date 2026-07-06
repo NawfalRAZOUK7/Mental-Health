@@ -1,14 +1,15 @@
 // Streaming dashboards for each project version.
-// Paste your deployed Streamlit URLs here after deploying (Streamlit Community Cloud).
-// Until then, "#" keeps the buttons inert. The same app serves all versions via
-// the ?version= query param, so you can point them all at one deployment.
+// One Streamlit deployment serves every version via the ?version= query param;
+// each button below opens the app locked to that version.
+const STREAMLIT = "https://mental-health-razouk.streamlit.app";
+
 export const VERSIONS = [
   {
     id: "v0",
     title: "v0 · Visual gallery",
     blurb: "Static, high-variety visuals straight from the raw WHO & IHME data.",
     tag: "Real data",
-    url: "#", // e.g. "https://your-app.streamlit.app/?version=v0"
+    url: `${STREAMLIT}/?version=v0`,
     accent: "#8a6d3b",
   },
   {
@@ -16,7 +17,7 @@ export const VERSIONS = [
     title: "v1 · Main dashboard",
     blurb: "Real-data BI dashboard, ML baseline, and the leakage-free enriched model.",
     tag: "Real data",
-    url: "#",
+    url: `${STREAMLIT}/?version=v1`,
     accent: "#1f6f8b",
   },
   {
@@ -24,7 +25,7 @@ export const VERSIONS = [
     title: "v2 · Advanced analytics",
     blurb: "Methods showcase: clustering, forecasting, graphs, explainability.",
     tag: "Synthetic",
-    url: "#",
+    url: `${STREAMLIT}/?version=v2`,
     accent: "#5c6bc0",
   },
   {
@@ -32,7 +33,7 @@ export const VERSIONS = [
     title: "v3 · Risk estimator",
     blurb: "Interactive probability tool with calibration and what-if scenarios.",
     tag: "Synthetic",
-    url: "#",
+    url: `${STREAMLIT}/?version=v3`,
     accent: "#b0453c",
   },
 ];

@@ -194,12 +194,12 @@ a { color: var(--accent); }
 
 
 def select_version(default: str) -> str:
+    # Version is chosen on the project website (each button opens ?version=vN).
+    # No in-app switcher: the view is locked to the version in the URL.
     query_version = st.query_params.get("version")
-    fallback = query_version or default or "v1"
-    if fallback not in VERSION_OPTIONS:
-        fallback = "v1"
-    index = VERSION_OPTIONS.index(fallback)
-    choice = st.sidebar.selectbox("Version", VERSION_OPTIONS, index=index)
+    choice = query_version or default or "v1"
+    if choice not in VERSION_OPTIONS:
+        choice = "v1"
     st.session_state["mhv_version"] = choice
     if query_version != choice:
         st.query_params["version"] = choice
@@ -4212,15 +4212,26 @@ def pages_for(version: str) -> dict[str, callable]:
     return PAGES_V1
 
 
+VERSION_LABELS = {
+    "v0": "v0 · Visual gallery",
+    "v1": "v1 · Main dashboard",
+    "v2": "v2 · Advanced analytics",
+    "v3": "v3 · Risk estimator",
+}
+
+
 def main() -> None:
     st.sidebar.markdown("## Navigation")
     version_default = st.session_state.get("mhv_version", VERSION)
     version_choice = select_version(version_default)
     apply_version(version_choice)
-    st.sidebar.markdown(f"**Version active**: {VERSION}")
+    st.sidebar.markdown(
+        f'<span class="info-chip">{VERSION_LABELS.get(VERSION, VERSION)}</span>',
+        unsafe_allow_html=True,
+    )
+    st.sidebar.caption("Switch versions on the project website.")
     pages = pages_for(VERSION)
     page = st.sidebar.radio("Go to", list(pages.keys()), key=f"nav_{VERSION}")
-    st.sidebar.markdown('<span class="info-chip">Layer A + Layer B integrated</span>', unsafe_allow_html=True)
 
     # --- Ethics / data disclaimer (always visible) ---
     if VERSION in ("v2", "v3"):
