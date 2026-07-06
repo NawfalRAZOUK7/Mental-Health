@@ -12,7 +12,7 @@ Global mental-health analytics built on WHO (2021) and IHME Global Burden of Dis
 
 > ⚠️ **Educational project — not a clinical tool.** This work is for learning, BI, and data-storytelling. It is **not** medical advice, diagnosis, or a risk assessment for any real person. Versions **v2 and v3 run on synthetic data** and exist to demonstrate methodology only.
 
-> 🔗 **Live demo:** _deploy to Streamlit Community Cloud (see [Deploy](#deploy)) and paste the URL here._
+> 🔗 **Live demo:** **[mental-health-iota-vert.vercel.app](https://mental-health-iota-vert.vercel.app)** (website) · **[dashboards](https://mental-health-razouk.streamlit.app)** (Streamlit)
 
 ---
 
