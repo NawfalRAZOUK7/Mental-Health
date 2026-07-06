@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
-from pathlib import Path
 import base64
 import html as html_lib
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
-from project_paths import DATA_CLEAN, REPORT_DIR, REPO_ROOT, VERSION
+
+from project_paths import DATA_CLEAN, REPO_ROOT, REPORT_DIR, VERSION
 
 try:
     from sklearn.calibration import CalibratedClassifierCV
@@ -18,7 +19,7 @@ try:
     from sklearn.ensemble import RandomForestRegressor
     from sklearn.linear_model import LogisticRegression, Ridge
     from sklearn.metrics import accuracy_score, brier_score_loss, mean_absolute_error, r2_score, roc_auc_score
-    from sklearn.model_selection import train_test_split
+    from sklearn.model_selection import StratifiedKFold, cross_val_predict, train_test_split
     from sklearn.neighbors import NearestNeighbors
     from sklearn.pipeline import Pipeline
     from sklearn.preprocessing import OneHotEncoder, StandardScaler
@@ -45,6 +46,14 @@ V3_NUMERIC_COLS = [
 
 
 st.set_page_config(page_title="Mental Health Dashboard", layout="wide")
+
+# Apply the shared design system to all Plotly charts (colors, fonts, grid).
+try:
+    import theme as _theme
+
+    _theme.register_plotly()
+except Exception:  # noqa: BLE001 - theming is cosmetic; never block the app
+    pass
 
 
 st.markdown(
@@ -145,6 +154,39 @@ html, body, [class*="css"]  {
   color: var(--muted);
 }
 .chart-guide strong { color: var(--ink); }
+
+/* ---- Refined design-system polish for native Streamlit chrome ---- */
+section[data-testid="stSidebar"] {
+  background: var(--bg-2);
+  border-right: 1px solid var(--border);
+}
+section[data-testid="stSidebar"] .stRadio label { font-size: 14px; }
+.stButton > button, .stDownloadButton > button {
+  background: var(--accent);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 8px 16px;
+  transition: background .15s ease, transform .05s ease;
+}
+.stButton > button:hover, .stDownloadButton > button:hover { background: #185a72; }
+.stButton > button:active { transform: scale(.98); }
+h1, h2, h3 { font-family: "Source Serif 4", serif; }
+[data-testid="stMetric"] {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px 16px;
+  box-shadow: 0 10px 22px rgba(28, 27, 26, 0.06);
+}
+[data-testid="stMetricValue"] { color: var(--accent); font-weight: 700; }
+[data-testid="stMetricLabel"] { color: var(--muted); }
+.stTabs [data-baseweb="tab-list"] { gap: 6px; }
+.stTabs [data-baseweb="tab"] { border-radius: 10px 10px 0 0; }
+.stTabs [aria-selected="true"] { color: var(--accent); }
+[data-testid="stDataFrame"] { border: 1px solid var(--border); border-radius: 12px; }
+a { color: var(--accent); }
 </style>
 """,
     unsafe_allow_html=True,
@@ -1299,11 +1341,31 @@ def train_v3_model(
         predictor = calibrated if calibrated is not None else base
         proba = predictor.predict_proba(X)[:, 1]
         preds = (proba >= 0.5).astype(int)
+        # In-sample metrics (optimistic; kept only for reference).
         metrics["train_accuracy"] = float(accuracy_score(y, preds))
         if y.nunique() > 1:
             metrics["train_auc"] = float(roc_auc_score(y, proba))
         if brier_score_loss is not None:
             metrics["train_brier"] = float(brier_score_loss(y, proba))
+
+        # Out-of-fold metrics (honest generalization estimate). These are the
+        # numbers to trust; the train_* values above are in-sample and inflated.
+        try:
+            min_class = int(y.value_counts().min())
+            if y.nunique() > 1 and min_class >= 3:
+                n_splits = min(5, min_class)
+                skf = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=42)
+                oof = cross_val_predict(
+                    Pipeline([("prep", preprocessor), ("model", model)]),
+                    X, y, cv=skf, method="predict_proba",
+                )[:, 1]
+                metrics["cv_folds"] = float(n_splits)
+                metrics["cv_auc"] = float(roc_auc_score(y, oof))
+                metrics["cv_accuracy"] = float(accuracy_score(y, (oof >= 0.5).astype(int)))
+                if brier_score_loss is not None:
+                    metrics["cv_brier"] = float(brier_score_loss(y, oof))
+        except Exception:  # noqa: BLE001 - OOF is best-effort; app still works without it
+            pass
 
     return base, calibrated, metrics, cat_cols, num_cols
 
@@ -3578,9 +3640,30 @@ def page_v3_risk_estimator() -> None:
     with kpi_cols[2]:
         st.metric("Baseline high-risk rate", f"{metrics['positive_rate']:.1%}")
 
-    if "train_accuracy" in metrics or "train_auc" in metrics:
+    if "cv_auc" in metrics:
+        folds = int(metrics.get("cv_folds", 5))
+        st.markdown(f"### Model diagnostics (out-of-fold, {folds}-fold CV)")
+        st.caption(
+            "Honest generalization estimate from held-out folds. "
+            "In-sample training metrics are shown afterward and are optimistic."
+        )
+        diag_items = []
+        if "cv_accuracy" in metrics:
+            diag_items.append(("Accuracy (OOF)", f"{metrics['cv_accuracy']:.2f}"))
+        diag_items.append(("ROC AUC (OOF)", f"{metrics['cv_auc']:.2f}"))
+        if "cv_brier" in metrics:
+            diag_items.append(("Brier OOF (lower=better)", f"{metrics['cv_brier']:.3f}"))
+        render_kpis(diag_items)
+        train_bits = []
+        if "train_auc" in metrics:
+            train_bits.append(f"AUC {metrics['train_auc']:.2f}")
+        if "train_brier" in metrics:
+            train_bits.append(f"Brier {metrics['train_brier']:.3f}")
+        if train_bits:
+            st.caption("In-sample (optimistic): " + ", ".join(train_bits))
+    elif "train_accuracy" in metrics or "train_auc" in metrics:
         st.markdown("### Model diagnostics (training set)")
-        st.caption("Training-only metrics; use as a quick sanity check.")
+        st.caption("In-sample only (too few positives for cross-validation); optimistic.")
         diag_items = []
         if "train_accuracy" in metrics:
             diag_items.append(("Accuracy", f"{metrics['train_accuracy']:.2f}"))
@@ -4138,6 +4221,21 @@ def main() -> None:
     pages = pages_for(VERSION)
     page = st.sidebar.radio("Go to", list(pages.keys()), key=f"nav_{VERSION}")
     st.sidebar.markdown('<span class="info-chip">Layer A + Layer B integrated</span>', unsafe_allow_html=True)
+
+    # --- Ethics / data disclaimer (always visible) ---
+    if VERSION in ("v2", "v3"):
+        st.sidebar.warning(
+            "**Educational demo — not clinical.** v2/v3 run on **synthetic data** "
+            "and illustrate methodology only. Outputs are **not** medical advice, "
+            "diagnosis, or a risk assessment for any real person or country."
+        )
+    else:
+        st.sidebar.info(
+            "**Educational use only — not clinical.** Built on public WHO (2021) & "
+            "IHME GBD (2023) data for learning and storytelling. Not medical advice "
+            "or diagnosis."
+        )
+
     pages[page]()
 
 
