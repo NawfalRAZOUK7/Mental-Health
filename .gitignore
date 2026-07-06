@@ -1,0 +1,54 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+ENV/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+
+# ---- IDE ----
+.idea/
+.vscode/
+*.iml
+
+# ---- Streamlit ----
+.streamlit/secrets.toml
+
+# ---- LaTeX build artifacts ----
+report_latex/*.aux
+report_latex/*.log
+report_latex/*.out
+report_latex/*.toc
+report_latex/*.fls
+report_latex/*.fdb_latexmk
+report_latex/*.synctex.gz
+report_latex/*.bbl
+report_latex/*.blg
+
+# ---- Node / Next.js (web/) ----
+node_modules/
+web/.next/
+web/out/
+web/next-env.d.ts
+npm-debug.log*
+
+# ---- Environment ----
+.env
+*.local

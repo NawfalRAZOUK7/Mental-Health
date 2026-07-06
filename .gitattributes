@@ -1,0 +1,19 @@
+# Normalize line endings.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.pdf binary
+
+# Notebooks: keep out of language stats, don't diff-explode.
+*.ipynb linguist-vendored
+
+# Generated data & versioned outputs: exclude from GitHub language stats and
+# collapse in diffs so the repo reads as source code, not data dumps.
+data_raw/**            linguist-generated
+v0/**                  linguist-generated
+v1/**                  linguist-generated
+v2/**                  linguist-generated
+v3/**                  linguist-generated
+report_latex/figures/** linguist-generated
+report_latex/main.pdf  linguist-generated
+web/data/**            linguist-generated

@@ -1,0 +1,14 @@
+# Advanced ML / Data-Mining stack (v1b real-data enhancements).
+# Install after requirements.txt:  pip install -r requirements-advanced.txt
+lightgbm
+optuna
+shap
+mapie
+statsmodels
+umap-learn
+pysubgroup
+mlxtend==0.23.1
+networkx
+matplotlib
+# Deep-learning global forecaster (optional): the N-BEATS path needs only PyTorch.
+#   pip install torch

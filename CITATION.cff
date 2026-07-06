@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it as below."
+title: "Mental Health Viz: WHO/IHME GBD dashboards and analytics"
+authors:
+  - family-names: Razouk
+    given-names: Nawfal
+year: 2025
+url: "https://github.com/NawfalRAZOUK7/Mental-Health"
+repository-code: "https://github.com/NawfalRAZOUK7/Mental-Health"
+license: MIT
+keywords:
+  - data-science
+  - public-health
+  - machine-learning
+  - data-mining
+  - visualization
+  - streamlit
+abstract: >-
+  An educational, full-stack analytics project on global mental-health
+  indicators (WHO 2021, IHME GBD 2023, World Bank). It provides reproducible
+  pipelines, leakage-free machine learning with SHAP and conformal intervals,
+  data-mining (UMAP, similarity networks, subgroup discovery, association rules),
+  deep-learning forecasting, a FastAPI prediction service, and a Next.js website.
+  Not a clinical tool.
