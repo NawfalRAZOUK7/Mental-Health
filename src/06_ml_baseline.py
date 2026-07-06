@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
-from project_paths import DATA_CLEAN, REPORT_DIR, REPO_ROOT, VERSION, ensure_dirs
-
 import pandas as pd
+
+from project_paths import DATA_CLEAN, REPO_ROOT, REPORT_DIR, VERSION, ensure_dirs
 
 try:
     from sklearn.compose import ColumnTransformer

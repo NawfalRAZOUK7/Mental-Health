@@ -16,8 +16,7 @@ except ImportError as exc:
         "torch is required. Install dependencies with: pip install -r requirements.txt"
     ) from exc
 
-from project_paths import DATA_CLEAN, REPORT_DIR, REPO_ROOT, VERSION, ensure_dirs
-
+from project_paths import DATA_CLEAN, REPO_ROOT, REPORT_DIR, VERSION, ensure_dirs
 
 LOOKBACK = 5
 EPOCHS = 200

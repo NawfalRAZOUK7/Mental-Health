@@ -1,0 +1,184 @@
+iso3,name,region,suicide_rate,community,degree,betweenness
+SLV,El Salvador,Region of the Americas,7.8,1,5,0.1205
+GRC,Greece,European Region,3.4,2,5,0.1081
+MMR,Myanmar,South-East Asia Region,2.9,1,4,0.1042
+CAN,Canada,Region of the Americas,8.1,2,5,0.0846
+EST,Estonia,European Region,12.5,5,8,0.0823
+LBN,Lebanon,Eastern Mediterranean Region,0.6999999999999998,0,7,0.0774
+UKR,Ukraine,European Region,17.0,5,4,0.0701
+MNG,Mongolia,Western Pacific Region,19.8,5,4,0.0682
+ERI,Eritrea,African Region,20.2,9,9,0.0656
+RUS,Russian Federation,European Region,17.9,5,9,0.0639
+AZE,Azerbaijan,European Region,1.6000000000000003,0,13,0.0623
+BLZ,Belize,Region of the Americas,4.6,0,9,0.0617
+BRB,Barbados,Region of the Americas,2.7999999999999994,3,6,0.0603
+PRT,Portugal,European Region,7.2,2,5,0.0597
+BHS,Bahamas,Region of the Americas,2.9,3,4,0.0583
+MDG,Madagascar,African Region,10.0,4,7,0.055
+USA,United States of America,Region of the Americas,14.199999999999998,2,4,0.0546
+PRY,Paraguay,Region of the Americas,6.5,1,8,0.0514
+ESP,Spain,European Region,6.2,2,5,0.0499
+RWA,Rwanda,African Region,13.6,9,7,0.0482
+CPV,Cabo Verde,African Region,16.6,3,7,0.0453
+NPL,Nepal,South-East Asia Region,11.1,0,7,0.0445
+SRB,Serbia,European Region,9.4,3,10,0.0444
+NZL,New Zealand,Western Pacific Region,11.1,2,7,0.0438
+CYP,Cyprus,European Region,2.7000000000000006,6,6,0.0435
+HTI,Haiti,Region of the Americas,9.3,8,7,0.0402
+SAU,Saudi Arabia,Eastern Mediterranean Region,1.6000000000000003,6,7,0.0399
+KAZ,Kazakhstan,European Region,15.199999999999998,0,5,0.039
+GNQ,Equatorial Guinea,African Region,10.5,8,4,0.0383
+DOM,Dominican Republic,Region of the Americas,4.3,1,6,0.0371
+TGO,Togo,African Region,15.199999999999998,4,8,0.0356
+MUS,Mauritius,African Region,9.6,0,5,0.0356
+FIN,Finland,European Region,12.6,2,5,0.0355
+SUR,Suriname,Region of the Americas,22.5,1,6,0.0355
+PER,Peru,Region of the Americas,1.5,1,8,0.0348
+HRV,Croatia,European Region,10.6,5,6,0.0348
+YEM,Yemen,Eastern Mediterranean Region,5.2,7,5,0.0345
+SVN,Slovenia,European Region,13.199999999999998,5,5,0.0343
+PRK,Democratic People's Republic of Korea,South-East Asia Region,7.599999999999999,0,11,0.0329
+KEN,Kenya,African Region,8.9,4,10,0.0323
+GTM,Guatemala,Region of the Americas,5.3,1,5,0.0318
+FJI,Fiji,Western Pacific Region,8.5,0,8,0.0297
+SYR,Syrian Arab Republic,Eastern Mediterranean Region,0.6999999999999998,8,4,0.0296
+BWA,Botswana,African Region,10.4,8,6,0.029
+SYC,Seychelles,African Region,3.9,3,7,0.0284
+MDA,Republic of Moldova,European Region,11.9,3,4,0.0268
+IRQ,Iraq,Eastern Mediterranean Region,3.7999999999999994,0,5,0.0267
+GHA,Ghana,African Region,8.1,4,6,0.0267
+CIV,Côte d'Ivoire,African Region,12.699999999999998,4,11,0.0263
+BRN,Brunei Darussalam,Western Pacific Region,2.7999999999999994,0,5,0.0263
+KGZ,Kyrgyzstan,European Region,7.8,7,5,0.026
+CHL,Chile,Region of the Americas,6.8,1,5,0.026
+SDN,Sudan,Eastern Mediterranean Region,3.9,7,8,0.0258
+SLB,Solomon Islands,Western Pacific Region,22.5,9,8,0.0254
+GUY,Guyana,Region of the Americas,26.3,0,4,0.0248
+TTO,Trinidad and Tobago,Region of the Americas,11.6,0,6,0.0243
+MYS,Malaysia,Western Pacific Region,5.599999999999999,1,5,0.024
+BEN,Benin,African Region,11.800000000000002,4,6,0.0234
+OMN,Oman,Eastern Mediterranean Region,0.9,6,6,0.0233
+PHL,Philippines,Western Pacific Region,4.0,3,5,0.0233
+HUN,Hungary,European Region,11.4,5,8,0.0226
+MEX,Mexico,Region of the Americas,6.900000000000001,1,8,0.0226
+POL,Poland,European Region,11.5,5,8,0.0226
+MOZ,Mozambique,African Region,19.0,1,4,0.0225
+SVK,Slovakia,European Region,7.599999999999999,5,6,0.0223
+COM,Comoros,African Region,8.9,7,8,0.022
+COG,Congo,African Region,11.199999999999998,8,5,0.0217
+SEN,Senegal,African Region,11.6,4,6,0.0208
+TZA,United Republic of Tanzania,African Region,9.1,3,6,0.0207
+UZB,Uzbekistan,European Region,9.1,0,10,0.0205
+GNB,Guinea-Bissau,African Region,12.199999999999998,4,9,0.0196
+CHE,Switzerland,European Region,9.9,2,5,0.0192
+SLE,Sierra Leone,African Region,9.7,4,8,0.0192
+ZWE,Zimbabwe,African Region,25.399999999999995,4,7,0.0189
+BGR,Bulgaria,European Region,6.3,3,4,0.0188
+URY,Uruguay,Region of the Americas,22.0,1,6,0.0186
+HND,Honduras,Region of the Americas,3.7000000000000006,1,7,0.0183
+TCD,Chad,African Region,10.699999999999998,4,6,0.0181
+TKM,Turkmenistan,European Region,7.5,0,7,0.0181
+MDV,Maldives,South-East Asia Region,2.0,0,4,0.0174
+VCT,Saint Vincent and the Grenadines,Region of the Americas,0.3,8,5,0.0172
+BRA,Brazil,Region of the Americas,6.900000000000001,1,5,0.0171
+DEU,Germany,European Region,8.2,2,7,0.016
+NAM,Namibia,African Region,11.1,8,7,0.0158
+VEN,Venezuela (Bolivarian Republic of),Region of the Americas,8.9,0,4,0.0155
+IRN,Iran (Islamic Republic of),Eastern Mediterranean Region,4.1,0,5,0.0155
+JAM,Jamaica,Region of the Americas,1.7,1,4,0.0151
+STP,Sao Tome and Principe,African Region,1.3,0,6,0.0148
+GRD,Grenada,Region of the Americas,1.2,0,6,0.0148
+IND,India,South-East Asia Region,12.6,7,5,0.0148
+TUR,Türkiye,European Region,2.6,1,4,0.0147
+CHN,China,Western Pacific Region,6.8,0,7,0.0146
+KIR,Kiribati,Western Pacific Region,18.7,7,4,0.0144
+PAK,Pakistan,Eastern Mediterranean Region,6.5,7,7,0.0142
+ISL,Iceland,European Region,10.800000000000002,2,10,0.0141
+LBY,Libya,Eastern Mediterranean Region,5.1,0,6,0.014
+GEO,Georgia,European Region,4.6,5,5,0.0138
+BOL,Bolivia,Region of the Americas,5.1,1,5,0.0135
+DJI,Djibouti,Eastern Mediterranean Region,10.1,8,6,0.0126
+MNE,Montenegro,European Region,8.9,3,4,0.0122
+ARM,Armenia,European Region,1.8999999999999997,3,4,0.0121
+AUT,Austria,European Region,10.2,2,5,0.0121
+BTN,Bhutan,South-East Asia Region,5.1,7,6,0.0121
+LAO,Lao People's Democratic Republic,Western Pacific Region,5.0,3,5,0.0119
+TJK,Tajikistan,European Region,3.1,9,6,0.0118
+DZA,Algeria,African Region,2.3,0,7,0.0117
+SSD,South Sudan,African Region,13.4,4,4,0.0117
+QAT,Qatar,Eastern Mediterranean Region,4.2,6,5,0.0112
+LSO,Lesotho,African Region,36.7,4,4,0.0109
+FSM,Micronesia (Federated States of),Western Pacific Region,20.8,9,10,0.0109
+LKA,Sri Lanka,South-East Asia Region,14.0,9,4,0.0105
+ZMB,Zambia,African Region,13.300000000000002,1,4,0.0103
+LTU,Lithuania,European Region,16.8,5,5,0.0101
+THA,Thailand,South-East Asia Region,15.4,3,5,0.0097
+MLI,Mali,African Region,8.3,4,6,0.0092
+MWI,Malawi,African Region,14.199999999999998,9,5,0.0087
+DNK,Denmark,European Region,7.599999999999999,2,8,0.0087
+FRA,France,European Region,11.800000000000002,2,8,0.0086
+CZE,Czechia,European Region,10.3,5,5,0.0084
+AGO,Angola,African Region,14.6,8,6,0.0083
+UGA,Uganda,African Region,11.6,3,5,0.0083
+ARG,Argentina,Region of the Americas,7.7,1,6,0.0083
+ZAF,South Africa,African Region,21.1,8,4,0.0083
+CMR,Cameroon,African Region,13.800000000000002,3,4,0.0081
+COD,Democratic Republic of the Congo,African Region,15.800000000000002,4,4,0.0079
+CRI,Costa Rica,Region of the Americas,7.599999999999999,1,7,0.0078
+ECU,Ecuador,Region of the Americas,7.400000000000001,1,7,0.0075
+AUS,Australia,Western Pacific Region,11.699999999999998,2,9,0.0072
+MAR,Morocco,Eastern Mediterranean Region,3.0,0,5,0.0072
+TUN,Tunisia,Eastern Mediterranean Region,1.8,0,8,0.0067
+SGP,Singapore,Western Pacific Region,7.0,6,4,0.0066
+LCA,Saint Lucia,Region of the Americas,4.7,0,4,0.0066
+ROU,Romania,European Region,7.2,5,4,0.0065
+AFG,Afghanistan,Eastern Mediterranean Region,5.3,7,4,0.0064
+KWT,Kuwait,Eastern Mediterranean Region,2.2,6,6,0.0058
+MLT,Malta,European Region,5.599999999999999,6,5,0.0056
+NOR,Norway,European Region,11.4,2,5,0.0049
+SOM,Somalia,Eastern Mediterranean Region,15.300000000000002,8,4,0.0047
+SWZ,Eswatini,African Region,31.8,8,5,0.0046
+ATG,Antigua and Barbuda,Region of the Americas,1.3999999999999997,0,4,0.0044
+BEL,Belgium,European Region,14.300000000000002,2,6,0.0041
+ARE,United Arab Emirates,Eastern Mediterranean Region,1.7,6,7,0.0039
+ALB,Albania,European Region,2.1,3,4,0.0038
+GIN,Guinea,African Region,8.2,4,6,0.0037
+NER,Niger,African Region,8.9,9,4,0.0036
+JPN,Japan,Western Pacific Region,14.699999999999998,6,5,0.0035
+VUT,Vanuatu,Western Pacific Region,18.2,9,8,0.0034
+IDN,Indonesia,South-East Asia Region,1.3,0,4,0.0033
+VNM,Viet Nam,Western Pacific Region,7.0,3,5,0.0032
+BFA,Burkina Faso,African Region,15.4,3,4,0.0031
+NIC,Nicaragua,Region of the Americas,4.2,0,7,0.0028
+NLD,Netherlands (Kingdom of the),European Region,9.1,2,4,0.0027
+GMB,Gambia,African Region,8.3,4,4,0.0026
+BDI,Burundi,African Region,14.800000000000002,4,5,0.0025
+KHM,Cambodia,Western Pacific Region,5.0,3,4,0.0024
+MRT,Mauritania,African Region,4.9,0,4,0.0016
+CUB,Cuba,Region of the Americas,9.2,0,4,0.0014
+BLR,Belarus,European Region,11.699999999999998,5,4,0.0009
+GAB,Gabon,African Region,10.5,8,4,0.0009
+PNG,Papua New Guinea,Western Pacific Region,2.1,9,6,0.0006
+ITA,Italy,European Region,4.6,6,5,0.0005
+COL,Colombia,Region of the Americas,4.7,1,4,0.0004
+LUX,Luxembourg,European Region,6.2,2,4,0.0002
+GBR,United Kingdom of Great Britain and Northern Ireland,European Region,8.8,2,4,0.0001
+SWE,Sweden,European Region,11.699999999999998,2,8,0.0001
+LBR,Liberia,African Region,9.6,4,6,0.0
+WSM,Samoa,Western Pacific Region,14.300000000000002,9,4,0.0
+LVA,Latvia,European Region,12.0,5,6,0.0
+BGD,Bangladesh,South-East Asia Region,2.9,7,4,0.0
+MKD,North Macedonia,European Region,4.6,3,5,0.0
+NGA,Nigeria,African Region,8.8,4,4,0.0
+KOR,Republic of Korea,Western Pacific Region,20.6,6,4,0.0
+ISR,Israel,European Region,4.4,6,4,0.0
+BHR,Bahrain,Eastern Mediterranean Region,4.2,6,6,0.0
+BIH,Bosnia and Herzegovina,European Region,5.7,3,6,0.0
+EGY,Egypt,Eastern Mediterranean Region,0.6999999999999998,7,4,0.0
+TON,Tonga,Western Pacific Region,5.400000000000001,7,4,0.0
+TLS,Timor-Leste,South-East Asia Region,4.2,9,4,0.0
+ETH,Ethiopia,African Region,10.699999999999998,7,4,0.0
+PAN,Panama,Region of the Americas,3.2999999999999994,1,4,0.0
+JOR,Jordan,Eastern Mediterranean Region,0.6999999999999998,0,4,0.0
+IRL,Ireland,European Region,7.7,2,5,0.0
+CAF,Central African Republic,African Region,18.7,4,4,0.0

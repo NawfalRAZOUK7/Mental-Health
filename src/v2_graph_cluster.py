@@ -19,8 +19,7 @@ except ImportError as exc:
         "scikit-learn is required. Install dependencies with: pip install -r requirements.txt"
     ) from exc
 
-from project_paths import DATA_CLEAN, REPORT_DIR, REPO_ROOT, VERSION, ensure_dirs
-
+from project_paths import DATA_CLEAN, REPO_ROOT, REPORT_DIR, VERSION, ensure_dirs
 
 FEATURE_COLS = [
     "suicide_rate",

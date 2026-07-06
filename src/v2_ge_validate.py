@@ -3,7 +3,6 @@ from __future__ import annotations
 
 from datetime import datetime
 
-import numpy as np
 import pandas as pd
 
 try:
@@ -15,8 +14,7 @@ except Exception as exc:  # pragma: no cover - runtime dependency issues
     GE_AVAILABLE = False
     GE_IMPORT_ERROR = exc
 
-from project_paths import DATA_CLEAN, REPORT_DIR, REPO_ROOT, VERSION, ensure_dirs
-
+from project_paths import DATA_CLEAN, REPORT_DIR, VERSION, ensure_dirs
 
 FEATURE_COLS = [
     "suicide_rate",

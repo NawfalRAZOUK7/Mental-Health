@@ -6,7 +6,6 @@ from pathlib import Path
 
 from project_paths import DATA_CLEAN, DATA_RAW, VERSION, ensure_dirs
 
-
 ADDICTION_CAUSES = {
     "Substance use disorders",
 }

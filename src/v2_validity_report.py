@@ -8,8 +8,7 @@ try:
 except ImportError:  # pragma: no cover - optional dependency
     stats = None
 
-from project_paths import DATA_CLEAN, REPORT_DIR, REPO_ROOT, VERSION, ensure_dirs
-
+from project_paths import DATA_CLEAN, REPO_ROOT, REPORT_DIR, VERSION, ensure_dirs
 
 FEATURE_MAP = {
     "suicide_rate": "age_standardized_suicide_rate_2021",

@@ -1,0 +1,88 @@
+antecedents,consequents,support,confidence,lift
+addiction_death_rate=high + alcohol_litres_per_capita=high + depression_dalys_rate=low,suicide=high,0.055,0.714,2.143
+addiction_death_rate=high + depression_dalys_rate=low + region_name=European Region,suicide=high,0.055,0.667,2.0
+health_exp_per_capita_usd=low + income_group=LI + life_expectancy_years=low + region_name=African Region + urban_population_pct=low,suicide=high,0.066,0.667,2.0
+income_group=LI + life_expectancy_years=low + region_name=African Region + urban_population_pct=low,suicide=high,0.066,0.667,2.0
+health_exp_per_capita_usd=low + income_group=LI + region_name=African Region + urban_population_pct=low,suicide=high,0.066,0.667,2.0
+income_group=LI + region_name=African Region + urban_population_pct=low,suicide=high,0.066,0.667,2.0
+life_expectancy_years=low + region_name=African Region + urban_population_pct=low,suicide=high,0.093,0.63,1.889
+gdp_per_capita_usd=low + income_group=LI + region_name=African Region + urban_population_pct=low,suicide=high,0.055,0.625,1.875
+gdp_per_capita_usd=low + income_group=LI + life_expectancy_years=low + region_name=African Region + urban_population_pct=low,suicide=high,0.055,0.625,1.875
+gdp_per_capita_usd=low + health_exp_per_capita_usd=low + income_group=LI + life_expectancy_years=low + region_name=African Region + urban_population_pct=low,suicide=high,0.055,0.625,1.875
+gdp_per_capita_usd=low + health_exp_per_capita_usd=low + income_group=LI + region_name=African Region + urban_population_pct=low,suicide=high,0.055,0.625,1.875
+region_name=African Region + unemployment_pct=high,suicide=high,0.055,0.625,1.875
+health_exp_per_capita_usd=low + income_group=LI + life_expectancy_years=low + region_name=African Region,suicide=high,0.066,0.6,1.8
+health_exp_per_capita_usd=low + income_group=LI + region_name=African Region,suicide=high,0.066,0.6,1.8
+income_group=LI + region_name=African Region,suicide=high,0.066,0.6,1.8
+income_group=LI + life_expectancy_years=low + region_name=African Region,suicide=high,0.066,0.6,1.8
+health_exp_per_capita_usd=low + region_name=African Region + urban_population_pct=low,suicide=high,0.082,0.6,1.8
+health_exp_per_capita_usd=low + life_expectancy_years=low + region_name=African Region + urban_population_pct=low,suicide=high,0.082,0.6,1.8
+region_name=African Region + urban_population_pct=low,suicide=high,0.093,0.586,1.759
+income_group=LMI + region_name=African Region,suicide=high,0.06,0.579,1.737
+alcohol_litres_per_capita=high + unemployment_pct=low,suicide=high,0.06,0.579,1.737
+health_exp_per_capita_usd=low + income_group=LI + life_expectancy_years=low + urban_population_pct=low,suicide=high,0.066,0.571,1.714
+income_group=LI + urban_population_pct=low,suicide=high,0.066,0.571,1.714
+health_exp_per_capita_usd=low + income_group=LI + urban_population_pct=low,suicide=high,0.066,0.571,1.714
+income_group=LI + life_expectancy_years=low + urban_population_pct=low,suicide=high,0.066,0.571,1.714
+health_exp_per_capita_usd=low + life_expectancy_years=low + region_name=African Region,suicide=high,0.115,0.568,1.703
+health_exp_per_capita_usd=low + region_name=African Region,suicide=high,0.115,0.568,1.703
+gdp_per_capita_usd=low + health_exp_per_capita_usd=low + region_name=African Region + urban_population_pct=low,suicide=high,0.071,0.565,1.696
+gdp_per_capita_usd=low + region_name=African Region + urban_population_pct=low,suicide=high,0.071,0.565,1.696
+gdp_per_capita_usd=low + health_exp_per_capita_usd=low + life_expectancy_years=low + region_name=African Region + urban_population_pct=low,suicide=high,0.071,0.565,1.696
+gdp_per_capita_usd=low + life_expectancy_years=low + region_name=African Region + urban_population_pct=low,suicide=high,0.071,0.565,1.696
+life_expectancy_years=low + region_name=African Region,suicide=high,0.131,0.558,1.674
+gdp_per_capita_usd=low + income_group=LI + urban_population_pct=low,suicide=high,0.055,0.556,1.667
+gdp_per_capita_usd=low + health_exp_per_capita_usd=low + income_group=LI + life_expectancy_years=low + region_name=African Region,suicide=high,0.055,0.556,1.667
+gdp_per_capita_usd=low + health_exp_per_capita_usd=low + income_group=LI + life_expectancy_years=low + urban_population_pct=low,suicide=high,0.055,0.556,1.667
+gdp_per_capita_usd=low + income_group=LI + region_name=African Region,suicide=high,0.055,0.556,1.667
+gdp_per_capita_usd=low + income_group=LI + life_expectancy_years=low + region_name=African Region,suicide=high,0.055,0.556,1.667
+gdp_per_capita_usd=low + income_group=LI + life_expectancy_years=low + urban_population_pct=low,suicide=high,0.055,0.556,1.667
+gdp_per_capita_usd=low + health_exp_per_capita_usd=low + income_group=LI + region_name=African Region,suicide=high,0.055,0.556,1.667
+gdp_per_capita_usd=low + health_exp_per_capita_usd=low + income_group=LI + urban_population_pct=low,suicide=high,0.055,0.556,1.667
+income_group=LMI + life_expectancy_years=low + region_name=African Region,suicide=high,0.055,0.556,1.667
+addiction_death_rate=high + alcohol_litres_per_capita=high + region_name=European Region,suicide=high,0.082,0.556,1.667
+addiction_death_rate=high + depression_dalys_rate=low,suicide=high,0.06,0.55,1.65
+gdp_per_capita_usd=low + region_name=African Region,suicide=high,0.104,0.543,1.629
+gdp_per_capita_usd=low + health_exp_per_capita_usd=low + region_name=African Region,suicide=high,0.104,0.543,1.629
+gdp_per_capita_usd=low + life_expectancy_years=low + region_name=African Region,suicide=high,0.104,0.543,1.629
+gdp_per_capita_usd=low + health_exp_per_capita_usd=low + life_expectancy_years=low + region_name=African Region,suicide=high,0.104,0.543,1.629
+income_group=LI + life_expectancy_years=low,suicide=high,0.071,0.542,1.625
+health_exp_per_capita_usd=low + income_group=LI + life_expectancy_years=low,suicide=high,0.071,0.542,1.625
+addiction_death_rate=high + alcohol_litres_per_capita=high + gdp_per_capita_usd=high + income_group=HI,suicide=high,0.077,0.538,1.615
+addiction_death_rate=high + alcohol_litres_per_capita=high + gdp_per_capita_usd=high + health_exp_per_capita_usd=high,suicide=high,0.077,0.538,1.615
+addiction_death_rate=high + alcohol_litres_per_capita=high + gdp_per_capita_usd=high,suicide=high,0.077,0.538,1.615
+addiction_death_rate=high + alcohol_litres_per_capita=high + income_group=HI,suicide=high,0.077,0.538,1.615
+addiction_death_rate=high + alcohol_litres_per_capita=high + health_exp_per_capita_usd=high + income_group=HI,suicide=high,0.077,0.538,1.615
+addiction_death_rate=high + alcohol_litres_per_capita=high + gdp_per_capita_usd=high + health_exp_per_capita_usd=high + income_group=HI,suicide=high,0.077,0.538,1.615
+addiction_death_rate=high + region_name=European Region,suicide=high,0.087,0.533,1.6
+region_name=African Region,suicide=high,0.137,0.532,1.596
+addiction_death_rate=high + alcohol_litres_per_capita=high,suicide=high,0.104,0.528,1.583
+life_expectancy_years=low + unemployment_pct=high,suicide=high,0.06,0.524,1.571
+gdp_per_capita_usd=low + income_group=LI + life_expectancy_years=low,suicide=high,0.06,0.524,1.571
+gdp_per_capita_usd=low + health_exp_per_capita_usd=low + income_group=LI + life_expectancy_years=low,suicide=high,0.06,0.524,1.571
+addiction_death_rate=high + alcohol_litres_per_capita=high + health_exp_per_capita_usd=high + region_name=European Region,suicide=high,0.066,0.522,1.565
+addiction_death_rate=high + alcohol_litres_per_capita=high + gdp_per_capita_usd=high + health_exp_per_capita_usd=high + income_group=HI + region_name=European Region,suicide=high,0.066,0.522,1.565
+addiction_death_rate=high + alcohol_litres_per_capita=high + health_exp_per_capita_usd=high + income_group=HI + region_name=European Region,suicide=high,0.066,0.522,1.565
+addiction_death_rate=high + alcohol_litres_per_capita=high + gdp_per_capita_usd=high + health_exp_per_capita_usd=high + region_name=European Region,suicide=high,0.066,0.522,1.565
+addiction_death_rate=high + gdp_per_capita_usd=high + health_exp_per_capita_usd=high + income_group=HI + region_name=European Region,suicide=high,0.066,0.522,1.565
+addiction_death_rate=high + health_exp_per_capita_usd=high + income_group=HI + region_name=European Region,suicide=high,0.066,0.522,1.565
+addiction_death_rate=high + health_exp_per_capita_usd=high + region_name=European Region,suicide=high,0.066,0.522,1.565
+addiction_death_rate=high + alcohol_litres_per_capita=high + gdp_per_capita_usd=high + income_group=HI + region_name=European Region,suicide=high,0.066,0.522,1.565
+addiction_death_rate=high + alcohol_litres_per_capita=high + gdp_per_capita_usd=high + region_name=European Region,suicide=high,0.066,0.522,1.565
+addiction_death_rate=high + gdp_per_capita_usd=high + income_group=HI + region_name=European Region,suicide=high,0.066,0.522,1.565
+addiction_death_rate=high + gdp_per_capita_usd=high + health_exp_per_capita_usd=high + region_name=European Region,suicide=high,0.066,0.522,1.565
+addiction_death_rate=high + income_group=HI + region_name=European Region,suicide=high,0.066,0.522,1.565
+addiction_death_rate=high + gdp_per_capita_usd=high + region_name=European Region,suicide=high,0.066,0.522,1.565
+addiction_death_rate=high + alcohol_litres_per_capita=high + income_group=HI + region_name=European Region,suicide=high,0.066,0.522,1.565
+health_exp_per_capita_usd=low + income_group=LI,suicide=high,0.071,0.52,1.56
+addiction_death_rate=high + alcohol_litres_per_capita=high + health_exp_per_capita_usd=high,suicide=high,0.077,0.519,1.556
+addiction_death_rate=high + gdp_per_capita_usd=high + health_exp_per_capita_usd=high + income_group=HI,suicide=high,0.077,0.5,1.5
+life_expectancy_years=low + urban_population_pct=low,suicide=high,0.104,0.5,1.5
+gdp_per_capita_usd=low + health_exp_per_capita_usd=low + income_group=LI,suicide=high,0.06,0.5,1.5
+addiction_death_rate=high + health_exp_per_capita_usd=high + income_group=HI,suicide=high,0.077,0.5,1.5
+addiction_death_rate=high + gdp_per_capita_usd=high + income_group=HI,suicide=high,0.077,0.5,1.5
+addiction_death_rate=high + income_group=HI,suicide=high,0.077,0.5,1.5
+addiction_death_rate=high + gdp_per_capita_usd=high + health_exp_per_capita_usd=high,suicide=high,0.077,0.5,1.5
+addiction_death_rate=high + gdp_per_capita_usd=high,suicide=high,0.077,0.5,1.5
+income_group=LI,suicide=high,0.071,0.5,1.5
+gdp_per_capita_usd=low + income_group=LI,suicide=high,0.06,0.5,1.5

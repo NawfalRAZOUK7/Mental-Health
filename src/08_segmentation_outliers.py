@@ -14,7 +14,7 @@ except ImportError as exc:
     ) from exc
 
 
-from project_paths import DATA_CLEAN, REPORT_DIR, REPO_ROOT, VERSION, ensure_dirs
+from project_paths import DATA_CLEAN, REPO_ROOT, REPORT_DIR, VERSION, ensure_dirs
 
 FEATURES = [
     "age_standardized_suicide_rate_2021",

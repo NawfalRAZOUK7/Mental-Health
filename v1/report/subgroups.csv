@@ -1,0 +1,13 @@
+subgroup,quality,n_countries,share_high
+region_name=='African Region',0.051,47,0.532
+life_expectancy_years<66.60 AND region_name=='African Region',0.0437,30,0.6
+region_name=='African Region' AND urban_population_pct: [37.21:56.08[,0.0401,17,0.765
+life_expectancy_years<66.60,0.0383,36,0.528
+life_expectancy_years<66.60 AND urban_population_pct: [37.21:56.08[,0.0383,15,0.8
+alcohol_litres_per_capita>=9.24,0.0364,37,0.514
+gdp_per_capita_usd<2086.19 AND urban_population_pct: [37.21:56.08[,0.0346,14,0.786
+health_exp_per_capita_usd<76.07 AND region_name=='African Region',0.0346,26,0.577
+gdp_per_capita_usd<2086.19 AND region_name=='African Region',0.0328,27,0.556
+addiction_death_rate>=5.41,0.031,37,0.486
+depression_dalys_rate: [634.57:708.12[ AND region_name=='African Region',0.0291,14,0.714
+income_group=='LI' AND region_name=='African Region',0.0291,20,0.6

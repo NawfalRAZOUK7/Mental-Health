@@ -5,7 +5,6 @@ import pandas as pd
 
 from project_paths import DATA_CLEAN, REPORT_DIR, VERSION, ensure_dirs
 
-
 FEATURE_COLS = [
     "suicide_rate",
     "depression_dalys_rate",

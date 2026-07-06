@@ -1,0 +1,6 @@
+model,mae,n_series
+"Global N-BEATS (deep, PyTorch)",3.287,183
+darts N-BEATS (deep),3.531,183
+darts LightGBM (global),4.643,183
+Global LightGBM (all series),4.81,183
+Naive drift (per series),6.265,183

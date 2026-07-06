@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
-import numpy as np
 import pandas as pd
 
 from project_paths import DATA_CLEAN, REPORT_DIR, VERSION, ensure_dirs
-
 
 Z_THRESHOLD = 2.0
 

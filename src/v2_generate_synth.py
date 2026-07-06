@@ -1,13 +1,10 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
-from pathlib import Path
-
 import numpy as np
 import pandas as pd
 
-from project_paths import DATA_CLEAN, REPORT_DIR, REPO_ROOT, VERSION, ensure_dirs
-
+from project_paths import DATA_CLEAN, REPO_ROOT, REPORT_DIR, VERSION, ensure_dirs
 
 YEARS = np.arange(2000, 2024)
 SEXES = ["Male", "Female"]

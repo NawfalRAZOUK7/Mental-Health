@@ -18,8 +18,7 @@ try:
 except ImportError:
     silhouette_score = None
 
-from project_paths import DATA_CLEAN, REPORT_DIR, REPO_ROOT, VERSION, ensure_dirs
-
+from project_paths import DATA_CLEAN, REPO_ROOT, REPORT_DIR, VERSION, ensure_dirs
 
 K_OPTIONS = [3, 4, 5, 6]
 MAX_SILHOUETTE_SAMPLES = 250

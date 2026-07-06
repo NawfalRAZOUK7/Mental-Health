@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
-import numpy as np
 import pandas as pd
 
 try:
@@ -12,7 +11,6 @@ except ImportError as exc:
     ) from exc
 
 from project_paths import DATA_CLEAN, REPORT_DIR, VERSION, ensure_dirs
-
 
 FEATURE_COLS = [
     "suicide_rate",

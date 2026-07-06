@@ -17,7 +17,6 @@ except ImportError as exc:
 
 from project_paths import DATA_RAW, VERSION, VERSION_DIR
 
-
 ASSETS_DIR = VERSION_DIR / "assets"
 HTML_DIR = ASSETS_DIR / "html"
 REPORT_DIR = VERSION_DIR / "report"

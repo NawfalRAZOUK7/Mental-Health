@@ -1,0 +1,12 @@
+feature,mean_abs_shap
+life_expectancy_years,1.365759718915028
+alcohol_litres_per_capita,1.0250032316839945
+addiction_death_rate,0.6575470529825272
+gdp_per_capita_usd,0.3576823214092999
+urban_population_pct,0.3079044309531041
+unemployment_pct,0.2593171880509797
+depression_dalys_rate,0.2576561634728866
+gini_index,0.19718839299525234
+health_exp_per_capita_usd,0.18437445779716952
+region_name,0.0
+income_group,0.0

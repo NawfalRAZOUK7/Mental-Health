@@ -16,7 +16,6 @@ except ImportError as exc:
 
 from project_paths import DATA_CLEAN, REPORT_DIR, VERSION, ensure_dirs
 
-
 FEATURE_COLS = [
     "depression_dalys_rate",
     "addiction_death_rate",

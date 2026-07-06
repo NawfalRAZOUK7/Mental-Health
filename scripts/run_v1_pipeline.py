@@ -19,6 +19,11 @@ STEPS = [
     "src/06_ml_baseline.py",
     "src/07_data_quality_scorecard.py",
     "src/08_segmentation_outliers.py",
+    "src/09_source_agreement.py",
+    # 10_enrich_covariates.py is intentionally not run here: it needs internet.
+    # Run it once manually to populate data_raw/worldbank_covariates.csv, then
+    # 11_ml_enriched.py will automatically use the covariates.
+    "src/11_ml_enriched.py",
 ]
 
 
