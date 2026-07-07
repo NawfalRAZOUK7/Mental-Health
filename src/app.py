@@ -1696,7 +1696,7 @@ def page_who_explorer() -> None:
         ],
     )
 
-    sex = st.selectbox(i18n.tr("Sex"), sorted(who["sex_name"].unique()))
+    sex = st.selectbox(i18n.tr("Sex"), sorted(who["sex_name"].unique()), format_func=i18n.vf("sex"))
     metric = st.selectbox(i18n.tr("Metric"), ["age_standardized_suicide_rate_2021", "crude_suicide_rate_2021"]
     )
     who_sel = who[who["sex_name"] == sex].copy()
@@ -1805,7 +1805,7 @@ def page_depression() -> None:
     df = df[df["iso3"].notna() & (df["iso3"].astype(str) != "")]
 
     df_both_all = df[df["sex_name"] == "Both"].copy()
-    age = st.selectbox(i18n.tr("Age group"), sorted(df_both_all["age_name"].unique()))
+    age = st.selectbox(i18n.tr("Age group"), sorted(df_both_all["age_name"].unique()), format_func=i18n.vf("age"))
     df_both = df_both_all[df_both_all["age_name"] == age]
 
     col1, col2 = st.columns([1.3, 1])
@@ -1873,8 +1873,8 @@ def page_addiction() -> None:
     df = df[df["iso3"].notna() & (df["iso3"].astype(str) != "")]
 
     causes = sorted(df["cause_name"].unique())
-    cause = st.selectbox(i18n.tr("Cause"), causes)
-    sex = st.selectbox(i18n.tr("Sex"), sorted(df["sex_name"].unique()))
+    cause = st.selectbox(i18n.tr("Cause"), causes, format_func=i18n.vf("cause"))
+    sex = st.selectbox(i18n.tr("Sex"), sorted(df["sex_name"].unique()), format_func=i18n.vf("sex"))
     filtered = df[(df["cause_name"] == cause) & (df["sex_name"] == sex)]
 
     col1, col2 = st.columns([1.3, 1])
@@ -1937,8 +1937,8 @@ def page_selfharm() -> None:
     ]
     df = df[df["iso3"].notna() & (df["iso3"].astype(str) != "")]
 
-    age = st.selectbox(i18n.tr("Age group"), sorted(df["age_name"].unique()))
-    sex = st.selectbox(i18n.tr("Sex"), sorted(df["sex_name"].unique()))
+    age = st.selectbox(i18n.tr("Age group"), sorted(df["age_name"].unique()), format_func=i18n.vf("age"))
+    sex = st.selectbox(i18n.tr("Sex"), sorted(df["sex_name"].unique()), format_func=i18n.vf("sex"))
     df = df[(df["age_name"] == age) & (df["sex_name"] == sex)]
 
     col1, col2 = st.columns([1.3, 1])
@@ -2018,9 +2018,9 @@ def page_prob_death() -> None:
     df = df[df["metric_name"] == "Probability of death"]
     df = df[df["iso3"].notna() & (df["iso3"].astype(str) != "")]
 
-    cause = st.selectbox(i18n.tr("Cause"), sorted(df["cause_name"].unique()))
-    sex = st.selectbox(i18n.tr("Sex"), sorted(df["sex_name"].unique()))
-    age = st.selectbox(i18n.tr("Age group"), sorted(df["age_name"].unique()))
+    cause = st.selectbox(i18n.tr("Cause"), sorted(df["cause_name"].unique()), format_func=i18n.vf("cause"))
+    sex = st.selectbox(i18n.tr("Sex"), sorted(df["sex_name"].unique()), format_func=i18n.vf("sex"))
+    age = st.selectbox(i18n.tr("Age group"), sorted(df["age_name"].unique()), format_func=i18n.vf("age"))
     df = df[(df["cause_name"] == cause) & (df["sex_name"] == sex) & (df["age_name"] == age)]
 
     col1, col2 = st.columns([1.3, 1])
@@ -2058,12 +2058,12 @@ def page_allcause_trends() -> None:
     df = ensure_exists(CONTEXT_DIR / "context_allcauses_trend.csv", "Context all-cause trends")
     df = numeric(df, ["val"])
 
-    location_type = st.selectbox(i18n.tr("Location type"), sorted(df["location_type"].unique()))
+    location_type = st.selectbox(i18n.tr("Location type"), sorted(df["location_type"].unique()), format_func=i18n.vf("location_type"))
     subset = df[df["location_type"] == location_type]
     location = st.selectbox(i18n.tr("Location"), sorted(subset["location_name"].unique()))
-    sex = st.selectbox(i18n.tr("Sex"), sorted(subset["sex_name"].unique()))
-    age = st.selectbox(i18n.tr("Age group"), sorted(subset["age_name"].unique()))
-    metric = st.selectbox(i18n.tr("Metric"), sorted(subset["metric_name"].unique()))
+    sex = st.selectbox(i18n.tr("Sex"), sorted(subset["sex_name"].unique()), format_func=i18n.vf("sex"))
+    age = st.selectbox(i18n.tr("Age group"), sorted(subset["age_name"].unique()), format_func=i18n.vf("age"))
+    metric = st.selectbox(i18n.tr("Metric"), sorted(subset["metric_name"].unique()), format_func=i18n.vf("metric"))
 
     filtered = subset[
         (subset["location_name"] == location)
@@ -2095,9 +2095,9 @@ def page_big_categories() -> None:
     df = numeric(df, ["val"])
 
     location = st.selectbox(i18n.tr("Aggregate location"), sorted(df["location_name"].unique()))
-    sex = st.selectbox(i18n.tr("Sex"), sorted(df["sex_name"].unique()))
-    age = st.selectbox(i18n.tr("Age group"), sorted(df["age_name"].unique()))
-    metric = st.selectbox(i18n.tr("Metric"), sorted(df["metric_name"].unique()))
+    sex = st.selectbox(i18n.tr("Sex"), sorted(df["sex_name"].unique()), format_func=i18n.vf("sex"))
+    age = st.selectbox(i18n.tr("Age group"), sorted(df["age_name"].unique()), format_func=i18n.vf("age"))
+    metric = st.selectbox(i18n.tr("Metric"), sorted(df["metric_name"].unique()), format_func=i18n.vf("metric"))
     chart = st.selectbox(i18n.tr("Chart type"), ["Treemap", "Donut"])
 
     filtered = df[
@@ -2410,7 +2410,7 @@ def page_v2_overview() -> None:
     )
 
     year = st.selectbox(i18n.tr("Year"), sorted(df["year"].unique()))
-    sex = st.selectbox(i18n.tr("Sex"), sorted(df["sex_name"].unique()))
+    sex = st.selectbox(i18n.tr("Sex"), sorted(df["sex_name"].unique()), format_func=i18n.vf("sex"))
     subset = df[(df["year"] == year) & (df["sex_name"] == sex)]
 
     render_kpis(
@@ -2446,7 +2446,7 @@ def page_v2_overview() -> None:
         )
 
     with col2:
-        region = st.selectbox(i18n.tr("Region"), sorted(df["region_name"].unique()))
+        region = st.selectbox(i18n.tr("Region"), sorted(df["region_name"].unique()), format_func=i18n.vf("region"))
         trend_view = st.selectbox(i18n.tr("Trend view"),
             ["Region + IQR band", "Region aggregate", "Country trajectories"],
         )
@@ -3061,7 +3061,7 @@ def page_v2_linked_views() -> None:
     df = df[df["year"].notna()]
 
     year = st.selectbox(i18n.tr("Year"), sorted(df["year"].unique()))
-    sex = st.selectbox(i18n.tr("Sex"), sorted(df["sex_name"].unique()))
+    sex = st.selectbox(i18n.tr("Sex"), sorted(df["sex_name"].unique()), format_func=i18n.vf("sex"))
     subset = df[(df["year"] == year) & (df["sex_name"] == sex)]
 
     feature_cols = [
@@ -3171,6 +3171,7 @@ def page_v2_linked_views() -> None:
     region_sex = st.selectbox(i18n.tr("Sex (multiples)"),
         sorted(region_df["sex_name"].unique()),
         key="linked_views_sex",
+        format_func=i18n.vf("sex"),
     )
     metric = st.selectbox(i18n.tr("Metric (multiples)"),
         feature_cols,
@@ -3221,7 +3222,7 @@ def page_v2_forecasts() -> None:
 
     df = load_csv(data_path)
     df = numeric(df, ["suicide_rate", "year"])
-    region = st.selectbox(i18n.tr("Region"), sorted(df["region_name"].unique()))
+    region = st.selectbox(i18n.tr("Region"), sorted(df["region_name"].unique()), format_func=i18n.vf("region"))
     subset = df[df["region_name"] == region]
     fig = px.line(
         subset,
@@ -3275,7 +3276,7 @@ def page_v2_backtest() -> None:
         st.info(i18n.tr("Backtest predictions are empty. Re-run src/v2_backtest.py to regenerate."))
         return
     preds = numeric(preds, ["actual", "predicted", "year"])
-    region = st.selectbox(i18n.tr("Region"), sorted(preds["region_name"].unique()))
+    region = st.selectbox(i18n.tr("Region"), sorted(preds["region_name"].unique()), format_func=i18n.vf("region"))
     subset = preds[preds["region_name"] == region]
     fig = px.line(
         subset,
@@ -3415,8 +3416,8 @@ def page_v2_scenario() -> None:
         quant = numeric(quant, ["year", "suicide_rate", "q10", "q50", "q90"])
         region_opt = sorted(quant["region_name"].dropna().unique())
         sex_opt = sorted(quant["sex_name"].dropna().unique())
-        region = st.selectbox(i18n.tr("Region (intervals)"), region_opt, key="quant_region")
-        sex = st.selectbox(i18n.tr("Sex (intervals)"), sex_opt, key="quant_sex")
+        region = st.selectbox(i18n.tr("Region (intervals)"), region_opt, key="quant_region", format_func=i18n.vf("region"))
+        sex = st.selectbox(i18n.tr("Sex (intervals)"), sex_opt, key="quant_sex", format_func=i18n.vf("sex"))
         subset = quant[(quant["region_name"] == region) & (quant["sex_name"] == sex)]
         if subset.empty:
             st.info(i18n.tr("No quantile predictions for this selection."))
@@ -3679,7 +3680,7 @@ def page_v3_risk_estimator() -> None:
         return
 
     sex_options = sorted(df["sex_name"].dropna().unique()) if "sex_name" in df.columns else ["Both"]
-    sex = st.selectbox(i18n.tr("Sex"), sex_options)
+    sex = st.selectbox(i18n.tr("Sex"), sex_options, format_func=i18n.vf("sex"))
     df_sex = df[df["sex_name"] == sex] if "sex_name" in df.columns else df
     if df_sex.empty:
         df_sex = df
@@ -3911,7 +3912,7 @@ def page_relationships() -> None:
     df = numeric(df, [col for col in df.columns if col.startswith("gbd_")])
     df = numeric(df, ["age_standardized_suicide_rate_2021"])
 
-    age = st.selectbox(i18n.tr("Age group"), sorted(df["age_name"].unique()))
+    age = st.selectbox(i18n.tr("Age group"), sorted(df["age_name"].unique()), format_func=i18n.vf("age"))
     df = df[df["age_name"] == age]
 
     gbd_cols = [col for col in df.columns if col.startswith("gbd_") and col != "gbd_year"]

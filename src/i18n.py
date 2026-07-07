@@ -267,6 +267,26 @@ def fmt(en_template: str, *args) -> str:
     return tmpl.format(*args)
 
 
+def label_value(value, category: str):
+    """Translate a *data value* shown in a dropdown for display only.
+
+    The raw ``value`` is what gets returned/filtered on; this only changes the
+    label the user sees. Use as ``format_func=lambda v: i18n.label_value(v, "sex")``.
+    Categories: "sex", "age", "cause", "region", "metric", "location_type".
+    Unknown values fall back to the original string unchanged.
+    """
+    if current_lang() != "fr":
+        return value
+    from i18n_fr import VALUE_FR
+
+    return VALUE_FR.get(category, {}).get(value, value)
+
+
+def vf(category: str):
+    """Return a ``format_func`` callable for a data-value ``category``."""
+    return lambda v: label_value(v, category)
+
+
 def page_label(name: str) -> str:
     if current_lang() == "fr":
         return PAGE_NAMES_FR.get(name, name)

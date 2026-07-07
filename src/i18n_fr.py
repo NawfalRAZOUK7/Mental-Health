@@ -277,3 +277,65 @@ FMT_FR: dict[str, str] = {
     "(lift {}, confidence {}).": "(lift {}, confiance {}).",
     "(p{} of the selected dataset).": "(p{} du jeu de données sélectionné).",
 }
+
+# --- Data-value labels (display only) --------------------------------------
+# Keys are the exact source-data strings. Selecting an option still returns the
+# raw value; these only change what the user sees (via i18n.label_value / vf).
+VALUE_FR: dict[str, dict[str, str]] = {
+    "sex": {
+        "Both": "Les deux",
+        "Both sexes": "Les deux sexes",
+        "Female": "Femmes",
+        "Females": "Femmes",
+        "Male": "Hommes",
+        "Males": "Hommes",
+    },
+    "age": {
+        "<20 years": "< 20 ans",
+        "20-24 years": "20-24 ans",
+        "25+ years": "25 ans et plus",
+        "All ages": "Tous âges",
+        "Age-standardized": "Standardisé par âge",
+    },
+    "cause": {
+        "Alcohol use disorders": "Troubles liés à l'alcool",
+        "All causes": "Toutes causes",
+        "Cannabis use disorders": "Troubles liés au cannabis",
+        "Communicable, maternal, neonatal, and nutritional diseases":
+            "Maladies transmissibles, maternelles, néonatales et nutritionnelles",
+        "Depressive disorders": "Troubles dépressifs",
+        "Drug use disorders": "Troubles liés aux drogues",
+        "Dysthymia": "Dysthymie",
+        "Injuries": "Traumatismes",
+        "Non-communicable diseases": "Maladies non transmissibles",
+        "Self-harm": "Automutilation",
+        "Substance use disorders": "Troubles liés à l'usage de substances",
+    },
+    "region": {
+        "Africa": "Afrique",
+        "African Region": "Région africaine",
+        "Americas": "Amériques",
+        "EMRO": "EMRO",
+        "Eastern Mediterranean Region": "Région de la Méditerranée orientale",
+        "Europe": "Europe",
+        "European Region": "Région européenne",
+        "Overall": "Ensemble",
+        "Region of the Americas": "Région des Amériques",
+        "SEARO": "SEARO",
+        "South-East Asia Region": "Région de l'Asie du Sud-Est",
+        "WPRO": "WPRO",
+        "Western Pacific Region": "Région du Pacifique occidental",
+    },
+    "metric": {
+        "Number": "Nombre",
+        "Percent": "Pourcentage",
+        "Probability of death": "Probabilité de décès",
+        "Rate": "Taux",
+    },
+    "location_type": {
+        "country": "pays",
+        "gbd_aggregate": "agrégat GBD",
+        "global": "mondial",
+        "who_region": "région OMS",
+    },
+}
