@@ -1,0 +1,33 @@
+{
+  "version": "v1",
+  "n_countries": 183,
+  "neighbour_definition": "feature-space k-NN similarity graph (not geographic)",
+  "permutations": 999,
+  "moran": {
+    "suicide_rate": {
+      "variable": "suicide_rate",
+      "morans_I": 0.2089,
+      "expected_I": -0.0055,
+      "z_sim": 5.2121,
+      "p_sim": 0.001,
+      "significant": true,
+      "interpretation": "Significant positive autocorrelation in suicide_rate (I=0.209, p=0.001): countries with similar profiles have similar values \u2014 they cluster."
+    },
+    "model_residual": {
+      "variable": "model_residual",
+      "morans_I": 0.0027,
+      "expected_I": -0.0055,
+      "z_sim": 0.1507,
+      "p_sim": 0.415,
+      "significant": false,
+      "interpretation": "No significant network autocorrelation in model_residual (p=0.415) \u2014 similar-profile countries are not more alike than chance."
+    }
+  },
+  "spatial_regression": {
+    "n": 109,
+    "ols_r2": 0.272,
+    "spatial_lag_pseudo_r2": 0.2577,
+    "spatial_rho": 0.281,
+    "note": "rho is the spatial-lag coefficient on the similarity graph; a nonzero rho means a country's suicide rate co-moves with its profile-neighbours beyond the covariates."
+  }
+}

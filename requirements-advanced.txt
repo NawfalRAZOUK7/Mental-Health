@@ -10,5 +10,7 @@ pysubgroup
 mlxtend==0.23.1
 networkx
 matplotlib
+# Spatial autocorrelation add-on (optional): MHV_SPATIAL=1 python scripts/run_advanced.py
+#   pip install libpysal esda spreg
 # Deep-learning global forecaster (optional): the N-BEATS path needs only PyTorch.
 #   pip install torch
