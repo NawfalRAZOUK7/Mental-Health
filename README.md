@@ -16,7 +16,20 @@ Global mental-health analytics built on WHO (2021) and IHME Global Burden of Dis
 
 ---
 
-![Global suicide rate map](report_latex/figures/fig_v1_who_map.png)
+![Mental Health Viz website hero](docs/img/web_hero.png)
+
+## Gallery
+
+<table>
+  <tr>
+    <td width="50%"><img src="docs/img/web_predictor.png" alt="Website country predictor showing a France estimate and confidence interval"/><br/><sub><b>Website predictor</b> — select any country and see the leakage-free estimate in the browser.</sub></td>
+    <td width="50%"><img src="docs/img/dash_overview.png" alt="Streamlit v2 overview dashboard with map and regional trend charts"/><br/><sub><b>v2 dashboard overview</b> — synthetic advanced-analytics view with filters, KPIs, and charts.</sub></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="docs/img/dash_chart_guide.png" alt="Dashboard chart guide modal explaining the synthetic suicide-rate map"/><br/><sub><b>Chart guide</b> — explanation panels make each dashboard visual easier to read.</sub></td>
+    <td width="50%"><img src="docs/img/web_fr.png" alt="French website hero with the FR language toggle active"/><br/><sub><b>French interface</b> — the website and dashboard experience support EN/FR switching.</sub></td>
+  </tr>
+</table>
 
 ## What's inside
 
