@@ -127,7 +127,7 @@ Notes:
 
 ## Website (Next.js)
 
-A dynamic **Next.js (React)** website (`web/`) presents the project, an interactive **"predict any country"** widget, cards linking to each version's live dashboard (v0–v3), and a lightweight **guide chatbot** (no LLM) that answers from the project's results — SHAP drivers, metrics, subgroups, association rules, and country predictions — never the raw data. It builds to a fully static site (predictions baked in), so it needs no backend and deploys free.
+A dynamic **Next.js (React)** website (`web/`) presents the project, an interactive **"predict any country"** widget, cards linking to each version's live dashboard (v0–v3), and a lightweight **guide chatbot** (no LLM) that answers from the project's results — SHAP drivers, metrics, subgroups, association rules, and country predictions — never the raw data. Fully **bilingual (English / French)** via a header toggle (site + chatbot); the Streamlit dashboards also carry an EN/FR switch. It builds to a fully static site (predictions baked in), so it needs no backend and deploys free.
 
 ```bash
 python scripts/build_web_data.py     # bake predictions + copy figures into web/
