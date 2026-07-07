@@ -9,6 +9,9 @@ Global mental-health analytics built on WHO (2021) and IHME Global Burden of Dis
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB.svg?logo=python&logoColor=white)](pyproject.toml)
 [![Built with Streamlit](https://img.shields.io/badge/Built%20with-Streamlit-FF4B4B.svg?logo=streamlit&logoColor=white)](https://streamlit.io)
 [![CI](https://github.com/NawfalRAZOUK7/Mental-Health/actions/workflows/ci.yml/badge.svg)](https://github.com/NawfalRAZOUK7/Mental-Health/actions/workflows/ci.yml)
+[![Status: v1.0 complete](https://img.shields.io/badge/status-v1.0%20complete-2f8f6b.svg)](PROJECT_STATUS.md)
+[![Cost: $0](https://img.shields.io/badge/cost-%240%20(free%20stack)-1f6f8b.svg)](PROJECT_STATUS.md)
+[![Bilingual: EN · FR](https://img.shields.io/badge/i18n-EN%20%C2%B7%20FR-b0453c.svg)](PROJECT_STATUS.md)
 
 > ⚠️ **Educational project — not a clinical tool.** This work is for learning, BI, and data-storytelling. It is **not** medical advice, diagnosis, or a risk assessment for any real person. Versions **v2 and v3 run on synthetic data** and exist to demonstrate methodology only.
 
@@ -71,7 +74,8 @@ A dedicated advanced suite runs modern ML and data-mining on the real, covariate
 - **Hierarchical mixed-effects model** — partial pooling of countries within WHO regions; **ICC ≈ 0.22** cleanly quantifies geographic clustering, the statistically correct treatment of nested data.
 - **UMAP embedding** and a **country-similarity network** (10 communities, modularity 0.72) — real structure, not the synthetic v2 demo.
 - **Pattern mining** — subgroup discovery (e.g. low-development African-region countries reach ~76–80% high-suicide share vs a 33% base rate) and FP-Growth association rules with categoricals (e.g. *high alcohol + high addiction ⇒ high suicide*, lift ≈ 2.1).
-- **Global forecasting** — a single darts model trained across all country series (N-BEATS when PyTorch is present), beating a naive baseline — the right tool for many short series, replacing the per-series toy RNN.
+- **Global forecasting** — a single model trained across all country series, beating a naive baseline — the right tool for many short series, replacing the per-series toy RNN. The default global LightGBM needs no extra deps; **deep models are opt-in** (`pip install -r requirements-deep.txt`, then `MHV_DEEP=1 python src/v2_global_forecast.py`) and cross-check a pure-PyTorch N-BEATS against library-backed **darts N-BEATS** and **darts TFT** (`MHV_DEEP_BACKEND=torch|darts|all`).
+- **Spatial autocorrelation** *(opt-in: `MHV_SPATIAL=1`)* — Moran's I and LISA clusters over the similarity graph. The raw suicide rate is strongly clustered (I ≈ 0.21, p = 0.001), but the model **residuals are not** (I ≈ 0.00, p = 0.42) — evidence the leakage-free model already captures the structure. Neighbours are feature-space, not geographic, and labelled as such.
 
 <table>
   <tr>
