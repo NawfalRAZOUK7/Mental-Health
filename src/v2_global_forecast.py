@@ -10,9 +10,19 @@ series is short.
 - Global model: one LightGBM trained on pooled (lag-window -> next-step) examples,
   then rolled out recursively per country. Needs only lightgbm (already a dep).
 - Baseline: naive drift per series (must be beaten to justify the model).
-- Optional deep model: a compact generic **N-BEATS implemented in pure PyTorch**
-  (needs only `torch`, no darts); trained globally across all series, skipped
-  gracefully if torch is absent.
+- Optional deep models (opt-in, see flags below): a compact generic **N-BEATS in
+  pure PyTorch** (needs only `torch`), plus library-backed **darts N-BEATS** and
+  **darts TFT** (need `pip install -r requirements-deep.txt`). All skip gracefully
+  if their dependencies are absent.
+
+Flags:
+- MHV_DEEP=1                 include the deep models (otherwise only baselines run).
+- MHV_DEEP_BACKEND=torch|darts|all   which deep backend(s) to run (default "all").
+    torch  -> pure-PyTorch N-BEATS only
+    darts  -> darts N-BEATS + darts TFT only
+    all    -> both (cross-check the two implementations)
+  (The darts *LightGBM* global model runs whenever darts is installed, since it is
+   cheap and needs no Lightning.)
 
 NOTE: runs on the v2 SYNTHETIC panel -- the only longitudinal data available -- so it
 is a methods demo, not a validated forecast. See v2/README.md.
@@ -84,7 +94,8 @@ def run_darts(series: dict[str, np.ndarray], lags: int, horizon: int, seed: int,
     """Forecast with darts. Returns {model_name: mae}.
 
     - darts LightGBMModel: global ML forecaster, needs only lightgbm (no Lightning).
-    - darts NBEATSModel: deep model (only if run_deep), needs torch + pytorch-lightning.
+    - darts NBEATSModel + TFTModel: deep models (only if run_deep), need
+      torch + pytorch-lightning (pip install -r requirements-deep.txt).
     Raises ModuleNotFoundError if darts itself is not installed (caller treats as skip).
     """
     from darts import TimeSeries  # ModuleNotFoundError here => darts not installed
@@ -107,7 +118,7 @@ def run_darts(series: dict[str, np.ndarray], lags: int, horizon: int, seed: int,
         pass
 
     if not run_deep:
-        return results  # skip the slow deep model unless explicitly requested
+        return results  # skip the slow deep models unless explicitly requested
 
     try:  # darts N-BEATS (needs torch + pytorch-lightning)
         from darts.models import NBEATSModel
@@ -118,6 +129,22 @@ def run_darts(series: dict[str, np.ndarray], lags: int, horizon: int, seed: int,
         nb.fit(train)
         results["darts N-BEATS (deep)"] = mae_of(nb.predict(n=horizon, series=train))
     except Exception:  # noqa: BLE001 - usually missing pytorch-lightning; skip quietly
+        pass
+
+    try:  # darts Temporal Fusion Transformer (needs torch + pytorch-lightning)
+        import torch as _torch
+        from darts.models import TFTModel
+
+        # Univariate series with no covariates -> add_relative_index gives the model a
+        # positional signal; likelihood=None + MSE keeps the forecast deterministic so
+        # mae_of can read point values directly.
+        tft = TFTModel(input_chunk_length=lags, output_chunk_length=horizon,
+                       n_epochs=50, random_state=seed, add_relative_index=True,
+                       likelihood=None, loss_fn=_torch.nn.MSELoss(),
+                       pl_trainer_kwargs={"accelerator": "cpu", "enable_progress_bar": True})
+        tft.fit(train)
+        results["darts TFT (deep)"] = mae_of(tft.predict(n=horizon, series=train))
+    except Exception:  # noqa: BLE001 - version/config or missing Lightning; skip quietly
         pass
 
     return results
@@ -238,12 +265,19 @@ def main() -> None:
     ]
 
     run_deep = bool(os.getenv("MHV_DEEP"))
+    backend = os.getenv("MHV_DEEP_BACKEND", "all").strip().lower()
+    if backend not in {"torch", "darts", "all"}:
+        backend = "all"
+    run_torch_deep = run_deep and backend in {"torch", "all"}
+    run_darts_deep = run_deep and backend in {"darts", "all"}
     print(f"[{VERSION}] baselines done (global LightGBM={global_mae:.3f}, naive={naive_mae:.3f}).",
           flush=True)
-
-    # ---- Optional deep model: pure-PyTorch N-BEATS (opt-in via MHV_DEEP=1; slow to import torch) ----
-    nbeats_note = "N-BEATS (PyTorch) skipped; set MHV_DEEP=1 to include deep models."
     if run_deep:
+        print(f"[{VERSION}] deep models ON (backend={backend}).", flush=True)
+
+    # ---- Optional deep model: pure-PyTorch N-BEATS (MHV_DEEP=1 and backend in {torch,all}) ----
+    nbeats_note = "N-BEATS (PyTorch) skipped; set MHV_DEEP=1 to include deep models."
+    if run_torch_deep:
         print(f"[{VERSION}] training PyTorch N-BEATS (importing torch, may take ~20s first time)...",
               flush=True)
         try:
@@ -255,20 +289,22 @@ def main() -> None:
             nbeats_note = "N-BEATS skipped (PyTorch not installed)."
         except Exception as exc:  # noqa: BLE001
             nbeats_note = f"N-BEATS skipped ({type(exc).__name__})."
+    elif run_deep:
+        nbeats_note = f"PyTorch N-BEATS skipped (backend={backend})."
 
     print(f"[{VERSION}] {nbeats_note}", flush=True)
     print(f"[{VERSION}] running darts models...", flush=True)
 
-    # ---- Optional: darts models (global LightGBM always; darts N-BEATS only if MHV_DEEP=1) ----
+    # ---- Optional: darts models (global LightGBM always; darts N-BEATS/TFT only if run_darts_deep) ----
     darts_note = "darts skipped (not installed)."
     try:
-        darts_results = run_darts(series, LAGS, TEST_YEARS, RNG, run_deep=run_deep)
+        darts_results = run_darts(series, LAGS, TEST_YEARS, RNG, run_deep=run_darts_deep)
         for name, mae in darts_results.items():
             rows.append({"model": name, "mae": round(mae, 3), "n_series": len(series)})
         if darts_results:
             darts_note = "darts models: " + ", ".join(f"{k}={v:.3f}" for k, v in darts_results.items())
-            if run_deep and not any("N-BEATS" in k for k in darts_results):
-                darts_note += " (darts N-BEATS needs `pip install pytorch-lightning`)."
+            if run_darts_deep and not any("deep" in k for k in darts_results):
+                darts_note += " (darts N-BEATS/TFT need `pip install -r requirements-deep.txt`)."
         else:
             darts_note = "darts ran no model (check lightgbm install)."
     except ModuleNotFoundError:

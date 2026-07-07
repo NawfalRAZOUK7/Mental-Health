@@ -1,0 +1,14 @@
+# Deep-learning forecasting add-on (OPTIONAL, ~1-2 GB) — NOT needed for the base
+# pipeline, the dashboards, or deployment. Install only to run the deep models:
+#
+#   pip install -r requirements-deep.txt
+#   MHV_DEEP=1 MHV_DEEP_BACKEND=darts python src/v2_global_forecast.py
+#
+# Backends (MHV_DEEP_BACKEND): "torch" (pure-PyTorch N-BEATS), "darts"
+# (darts N-BEATS + TFT), or "all" (default, cross-checks both).
+#
+# On Apple Silicon / CPU, install a CPU build of torch first if the default wheel
+# is too heavy:  pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch>=2.2
+pytorch-lightning>=2.2
+darts>=0.30
