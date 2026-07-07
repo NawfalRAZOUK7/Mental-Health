@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { FALLBACK, INTENTS, SUGGESTIONS } from "../lib/knowledge";
+import { CHAT, CHIP_LABELS, INTENTS, SUGGESTIONS } from "../lib/knowledge";
+import { useLang } from "./LanguageContext";
 
 function escapeRe(s) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -26,8 +27,9 @@ function bestIntent(text) {
   let top = null;
   let topScore = 0;
   for (const intent of INTENTS) {
+    const kws = [...(intent.keywords.en || []), ...(intent.keywords.fr || [])];
     let score = 0;
-    for (const kw of intent.keywords) if (lower.includes(kw)) score += 1;
+    for (const kw of kws) if (lower.includes(kw)) score += 1;
     if (score > topScore) {
       topScore = score;
       top = intent;
@@ -36,62 +38,58 @@ function bestIntent(text) {
   return topScore > 0 ? top : null;
 }
 
-function countryReply(p) {
-  return {
-    role: "bot",
-    text: `${p.name}: predicted ${p.pred.toFixed(1)} per 100k (90% interval ${p.lower.toFixed(
-      1
-    )}–${p.upper.toFixed(1)}); observed WHO rate ${p.actual.toFixed(
-      1
-    )}. Educational estimate, not a clinical assessment.`,
-    chips: ["What drives suicide risk?", "How accurate is the model?"],
-  };
-}
-
-function respond(text, predictions) {
-  const intent = bestIntent(text);
-  const country = detectCountry(text, predictions);
-  if (country && (!intent || intent.id === "predict_help")) return countryReply(country);
-  if (intent) return { role: "bot", text: intent.answer, chips: intent.followups || [] };
-  if (country) return countryReply(country);
-  return { role: "bot", text: FALLBACK, chips: SUGGESTIONS };
+function suggestionLabel(id, lang) {
+  const s = CHIP_LABELS[id];
+  return s ? s[lang] : id;
 }
 
 export default function Chatbot({ predictions }) {
+  const { lang } = useLang();
+  const c = CHAT[lang] || CHAT.en;
   const [open, setOpen] = useState(false);
   const [input, setInput] = useState("");
-  const [messages, setMessages] = useState([
-    {
-      role: "bot",
-      text: "Hi! I'm the project guide. Ask me about the findings, the models, or type a country to see its prediction. I only share results — not the raw data.",
-      chips: SUGGESTIONS,
-    },
-  ]);
+  const [messages, setMessages] = useState([]);
   const bodyRef = useRef(null);
   const preds = useMemo(() => predictions || [], [predictions]);
+
+  // Reset the greeting + suggestions whenever the language changes.
+  useEffect(() => {
+    setMessages([{ role: "bot", text: c.greeting, chips: SUGGESTIONS }]);
+  }, [lang, c.greeting]);
 
   useEffect(() => {
     if (bodyRef.current) bodyRef.current.scrollTop = bodyRef.current.scrollHeight;
   }, [messages, open]);
 
+  function respond(text) {
+    const intent = bestIntent(text);
+    const country = detectCountry(text, preds);
+    if (country && (!intent || intent.id === "predict")) {
+      return { role: "bot", text: c.country(country), chips: ["drivers", "accuracy"] };
+    }
+    if (intent) return { role: "bot", text: intent.answer[lang], chips: intent.followups || [] };
+    if (country) return { role: "bot", text: c.country(country), chips: ["drivers", "accuracy"] };
+    return { role: "bot", text: c.fallback, chips: SUGGESTIONS };
+  }
+
   function send(text) {
     const q = (text ?? input).trim();
     if (!q) return;
-    setMessages((m) => [...m, { role: "user", text: q }, respond(q, preds)]);
+    setMessages((m) => [...m, { role: "user", text: q }, respond(q)]);
     setInput("");
   }
 
   return (
     <>
-      <button className="cb-fab" onClick={() => setOpen((o) => !o)} aria-label="Open project guide">
-        {open ? "Close guide" : "Ask the guide"}
+      <button className="cb-fab" onClick={() => setOpen((o) => !o)} aria-label={c.open}>
+        {open ? c.close : c.open}
       </button>
 
       {open && (
-        <div className="cb-panel" role="dialog" aria-label="Project guide chatbot">
+        <div className="cb-panel" role="dialog" aria-label={c.header}>
           <div className="cb-head">
-            <b>Project guide</b>
-            <button className="cb-x" onClick={() => setOpen(false)} aria-label="Close">
+            <b>{c.header}</b>
+            <button className="cb-x" onClick={() => setOpen(false)} aria-label={c.close}>
               ×
             </button>
           </div>
@@ -102,9 +100,9 @@ export default function Chatbot({ predictions }) {
                 <div className={`cb-msg ${m.role === "user" ? "cb-user" : "cb-bot"}`}>{m.text}</div>
                 {m.chips && m.chips.length > 0 && (
                   <div className="cb-chips">
-                    {m.chips.map((c) => (
-                      <button key={c} className="cb-chip" onClick={() => send(c)}>
-                        {c}
+                    {m.chips.map((id) => (
+                      <button key={id} className="cb-chip" onClick={() => send(suggestionLabel(id, lang))}>
+                        {suggestionLabel(id, lang)}
                       </button>
                     ))}
                   </div>
@@ -116,16 +114,16 @@ export default function Chatbot({ predictions }) {
           <div className="cb-foot">
             <input
               value={input}
-              placeholder="Ask about results, or type a country…"
+              placeholder={c.placeholder}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && send()}
-              aria-label="Message"
+              aria-label={c.placeholder}
             />
-            <button onClick={() => send()} aria-label="Send">
-              Send
+            <button onClick={() => send()} aria-label={c.send}>
+              {c.send}
             </button>
           </div>
-          <div className="cb-note">Educational guide · answers from project results, not raw data · no medical advice</div>
+          <div className="cb-note">{c.note}</div>
         </div>
       )}
     </>

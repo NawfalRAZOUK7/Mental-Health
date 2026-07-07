@@ -13,6 +13,10 @@ h1,h2,h3{font-family:"Source Serif 4",Georgia,serif;line-height:1.15}
 .disclaimer{background:rgba(176,69,60,.10);color:var(--accent2);font-size:13px;padding:10px 0;text-align:center}
 .hero{padding:64px 0 40px;background:linear-gradient(180deg,var(--bg2),var(--bg))}
 .eyebrow{color:var(--accent);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:12px}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:2px}
+.lang-toggle{display:inline-flex;border:1px solid var(--border);border-radius:999px;overflow:hidden;background:var(--card)}
+.lang-toggle button{border:none;background:transparent;padding:6px 12px;font-family:inherit;font-size:12px;font-weight:600;color:var(--muted);cursor:pointer}
+.lang-toggle button.on{background:var(--accent);color:#fff}
 .hero h1{font-size:clamp(30px,5vw,52px);margin:10px 0 12px}
 .lede{font-size:clamp(16px,2.2vw,20px);color:var(--muted);max-width:730px}
 .cta{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}

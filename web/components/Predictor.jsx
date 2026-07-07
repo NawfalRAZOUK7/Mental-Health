@@ -1,8 +1,10 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useLang } from "./LanguageContext";
 
 export default function Predictor({ predictions, scaleMax }) {
+  const { t } = useLang();
   const sorted = useMemo(
     () => [...predictions].sort((a, b) => a.name.localeCompare(b.name)),
     [predictions]
@@ -13,9 +15,9 @@ export default function Predictor({ predictions, scaleMax }) {
 
   return (
     <div className="predictor">
-      <label htmlFor="country">Choose a country</label>
+      <label htmlFor="country">{t("predictor.choose")}</label>
       <select id="country" value={iso} onChange={(e) => setIso(e.target.value)}>
-        <option value="">— select —</option>
+        <option value="">{t("predictor.select")}</option>
         {sorted.map((c) => (
           <option key={c.iso3} value={c.iso3}>
             {c.name}
@@ -26,19 +28,19 @@ export default function Predictor({ predictions, scaleMax }) {
       {p && (
         <div>
           <div className="bignum">
-            <span>predicted </span>
+            <span>{t("predictor.predicted")} </span>
             {p.pred.toFixed(1)}
-            <span> per 100k</span>
+            <span> {t("predictor.per100k")}</span>
           </div>
           <div className="rowline">
             <span>
-              90% interval:{" "}
+              {t("predictor.interval")}{" "}
               <b>
                 {p.lower.toFixed(1)} – {p.upper.toFixed(1)}
               </b>
             </span>
             <span>
-              observed (WHO): <b>{p.actual.toFixed(1)}</b>
+              {t("predictor.observed")} <b>{p.actual.toFixed(1)}</b>
             </span>
           </div>
           <div className="bar">
@@ -55,21 +57,21 @@ export default function Predictor({ predictions, scaleMax }) {
           <div className="legend">
             <span>
               <span className="swatch" style={{ background: "var(--accent)" }} />
-              model prediction
+              {t("predictor.legPred")}
             </span>
             <span>
               <span className="swatch" style={{ background: "var(--accent2)" }} />
-              observed rate
+              {t("predictor.legObs")}
             </span>
             <span>
               <span className="swatch" style={{ background: "rgba(31,111,139,.3)" }} />
-              90% interval
+              {t("predictor.legInt")}
             </span>
-            <span>scale 0–{scaleMax} per 100k</span>
+            <span>
+              {t("predictor.scale")} 0–{scaleMax}
+            </span>
           </div>
-          <p style={{ color: "var(--muted)", fontSize: 13, marginTop: 14 }}>
-            Educational estimate, not a clinical or individual risk assessment.
-          </p>
+          <p style={{ color: "var(--muted)", fontSize: 13, marginTop: 14 }}>{t("predictor.note")}</p>
         </div>
       )}
     </div>
