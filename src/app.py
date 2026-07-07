@@ -11,6 +11,8 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 
+import i18n
+from i18n_fr import CHART_GUIDES_FR
 from project_paths import DATA_CLEAN, REPO_ROOT, REPORT_DIR, VERSION
 
 try:
@@ -279,6 +281,74 @@ V1_PAGE_GUIDES = {
         "objective": "Document sources, definitions, and data quality checks.",
         "how": "Use this page to understand how the clean tables were constructed.",
         "notes": "See report outputs for data quality and modeling details.",
+    },
+}
+
+V1_PAGE_GUIDES_FR = {
+    "overview": {
+        "objective": "Résumer le fardeau du suicide en 2021 et mettre en évidence les grands schémas régionaux.",
+        "how": "Utilisez les indicateurs pour l'échelle, puis comparez les pays de tête et la dispersion régionale.",
+        "notes": "Toutes les mesures sont des taux pour 100 000 (OMS 2021) ; la corrélation porte sur 25+ ans.",
+    },
+    "who": {
+        "objective": "Explorer les taux de suicide OMS 2021 par sexe et par mesure.",
+        "how": "Choisissez le sexe et la mesure ; la carte et le classement se mettent à jour. Le nuage compare taux brut et standardisé.",
+        "notes": "Les taux standardisés par âge corrigent la structure d'âge, pas les taux bruts.",
+    },
+    "depression": {
+        "objective": "Comparer les taux de DALYs de dépression entre pays et groupes d'âge.",
+        "how": "Filtrez l'âge pour la carte et le top-20 ; la barre de synthèse porte sur tous âges (les deux sexes).",
+        "notes": "Les DALYs combinent années de vie perdues et années vécues avec incapacité.",
+    },
+    "addiction": {
+        "objective": "Comparer les taux de décès liés aux substances par cause et par sexe.",
+        "how": "Sélectionnez la cause et le sexe pour mettre à jour la carte et les classements, puis comparez les sexes.",
+        "notes": "Les taux sont pour 100 000 et utilisent les valeurs GBD 2023.",
+    },
+    "selfharm": {
+        "objective": "Voir les taux de décès par automutilation par groupe d'âge et sexe.",
+        "how": "Choisissez l'âge et le sexe pour la carte et les classements, puis comparez les sexes pour un pays.",
+        "notes": "L'automutilation est filtrée comme une cause unique dans le fichier GBD.",
+    },
+    "prob_death": {
+        "objective": "Montrer les probabilités de décès, qui ne sont pas des taux.",
+        "how": "Filtrez cause, sexe et âge. La carte montre la répartition géographique, le graphique le classement.",
+        "notes": "Ce sont des probabilités, à ne pas comparer directement aux taux pour 100 000.",
+    },
+    "allcause": {
+        "objective": "Suivre les tendances toutes causes dans le temps (pays, régions, agrégats mondiaux).",
+        "how": "Sélectionnez le type de lieu, le lieu, le sexe, l'âge et la mesure pour afficher la courbe.",
+        "notes": "Les mesures incluent Nombre et Taux selon la disponibilité.",
+    },
+    "big_categories": {
+        "objective": "Montrer la composition des DALYs par grands groupes de causes.",
+        "how": "La treemap montre la hiérarchie et l'anneau les parts de premier niveau.",
+        "notes": "La treemap agrège les niveaux de cause ; l'anneau ne montre que le niveau 1.",
+    },
+    "relationships": {
+        "objective": "Examiner les relations entre taux de suicide et indicateurs GBD.",
+        "how": "Choisissez les variables du nuage, puis consultez la carte de chaleur des corrélations.",
+        "notes": "Ce sont des corrélations écologiques, pas des effets causals.",
+    },
+    "segmentation": {
+        "objective": "Regrouper les pays en profils à partir des indicateurs de santé mentale.",
+        "how": "La carte montre les schémas spatiaux et le graphique de profil les signatures de clusters.",
+        "notes": "Les clusters sont non supervisés, à visée descriptive.",
+    },
+    "outliers": {
+        "objective": "Faire ressortir les pays aux combinaisons d'indicateurs inhabituelles.",
+        "how": "Sélectionnez deux indicateurs et examinez les signalements et scores d'anomalie.",
+        "notes": "Les valeurs aberrantes sont statistiques, pas nécessairement des erreurs.",
+    },
+    "ml_demo": {
+        "objective": "Comparer deux modèles de référence pour la prédiction du taux de suicide.",
+        "how": "Examinez les métriques sur jeu de test, la validation croisée et l'importance des variables.",
+        "notes": "Une ligne par pays est utilisée pour éviter la fuite entre groupes d'âge.",
+    },
+    "methods": {
+        "objective": "Documenter les sources, définitions et contrôles de qualité des données.",
+        "how": "Cette page explique comment les tables nettoyées ont été construites.",
+        "notes": "Voir les sorties du rapport pour la qualité des données et les détails de modélisation.",
     },
 }
 
@@ -552,6 +622,73 @@ V2_PAGE_GUIDES = {
     },
 }
 
+V2_PAGE_GUIDES_FR = {
+    "v2_overview": {
+        "objective": "Résumer d'un coup d'œil les schémas synthétiques et les tendances régionales.",
+        "how": "Choisissez année, sexe et région pour mettre à jour la carte et la tendance.",
+        "notes": "Toutes les valeurs sont synthétiques, pour des démonstrations avancées.",
+    },
+    "v2_clusters": {
+        "objective": "Regrouper les pays en profils à partir des indicateurs synthétiques 2023.",
+        "how": "La carte montre la géographie des clusters ; la table des centres aide à les interpréter.",
+        "notes": "Clusters non supervisés, purement descriptifs.",
+    },
+    "v2_trajectory": {
+        "objective": "Regrouper les pays selon les trajectoires de taux de suicide à long terme.",
+        "how": "Les nuages de points montrent pente, volatilité et évolution récente.",
+        "notes": "Trajectoires basées sur des séries synthétiques (2000-2023).",
+    },
+    "v2_dtw": {
+        "objective": "Regrouper les formes de trajectoires via la distance DTW.",
+        "how": "La tendance prototype montre la forme typique de chaque cluster.",
+        "notes": "La DTW se concentre sur la forme de la courbe plutôt que l'alignement point à point.",
+    },
+    "v2_network": {
+        "objective": "Montrer les réseaux de similarité entre pays.",
+        "how": "Les nœuds sont des pays, les liens une forte similarité cosinus ; les grands nœuds sont plus centraux.",
+        "notes": "Communautés détectées par modularité gloutonne sur les profils synthétiques.",
+    },
+    "v2_linked": {
+        "objective": "Explorer des vues liées avec sélection et petits multiples.",
+        "how": "Sélectionnez des points dans le nuage pour filtrer la carte et la table.",
+        "notes": "Les petits multiples utilisent des agrégats régionaux pour le contexte.",
+    },
+    "v2_forecasts": {
+        "objective": "Comparer les prévisions régionales classiques et par apprentissage profond.",
+        "how": "Choisissez le modèle, puis lisez les courbes réel vs prévu.",
+        "notes": "Prévisions synthétiques, à visée méthodologique uniquement.",
+    },
+    "v2_backtest": {
+        "objective": "Valider la performance de prévision par un backtest glissant.",
+        "how": "Comparez réel vs prédit par région et examinez les métriques.",
+        "notes": "Le backtest utilise des variables décalées et des données synthétiques.",
+    },
+    "v2_scenario": {
+        "objective": "Exécuter des scénarios hypothétiques sur un modèle de régression synthétique.",
+        "how": "Ajustez les entrées et observez l'évolution du taux de suicide prédit.",
+        "notes": "Modèle jouet pour la démonstration, pas d'inférence causale.",
+    },
+    "v2_outliers": {
+        "objective": "Mettre en évidence les profils de pays anormaux.",
+        "how": "Les anomalies sont signalées par IsolationForest sur des variables synthétiques.",
+        "notes": "Anomalies statistiques, pas des erreurs.",
+    },
+    "v2_patterns": {
+        "objective": "Découvrir des règles d'association entre variables discrétisées.",
+        "how": "Lisez les règles par lift et interprétez antécédents vs conséquents.",
+        "notes": "Règles descriptives, pas causales.",
+    },
+    "v2_methods": {
+        "objective": "Documenter la génération, la validation et les contrôles qualité des données synthétiques.",
+        "how": "Consultez les notes, dictionnaires, rapports de validité et sorties GE.",
+        "notes": "Toutes les sorties v2 sont synthétiques, pour démonstrations avancées uniquement.",
+    },
+}
+
+# One FR registry keyed by page_key (unique across v1/v2). Lets the guide renderer
+# serve French for any page without editing call sites.
+GUIDES_FR = {**V1_PAGE_GUIDES_FR, **V2_PAGE_GUIDES_FR}
+
 V2_CHART_GUIDES = {
     "v2_overview_kpis": {
         "title": "Overview KPIs",
@@ -788,7 +925,7 @@ def load_csv(path: Path) -> pd.DataFrame:
 
 def ensure_exists(path: Path, label: str) -> pd.DataFrame:
     if not path.exists():
-        st.error(f"Missing {label}: {path}")
+        st.error(i18n.fmt("Missing {}: {}", label, path))
         st.stop()
     return load_csv(path)
 
@@ -895,7 +1032,7 @@ def render_kpis(items: list[tuple[str, str]]) -> None:
     kpi_html = '<div class="kpi-grid">'
     for label, value in items:
         kpi_html += (
-            f'<div class="kpi-card"><div class="kpi-label">{label}</div>'
+            f'<div class="kpi-card"><div class="kpi-label">{i18n.tr(label)}</div>'
             f'<div class="kpi-value">{value}</div></div>'
         )
     kpi_html += "</div>"
@@ -903,16 +1040,19 @@ def render_kpis(items: list[tuple[str, str]]) -> None:
 
 
 def render_page_guide_from_map(page_key: str, guide_map: dict[str, dict[str, str]]) -> None:
-    guide = guide_map.get(page_key)
+    if i18n.current_lang() == "fr" and page_key in GUIDES_FR:
+        guide = GUIDES_FR[page_key]
+    else:
+        guide = guide_map.get(page_key)
     if not guide:
         return
     st.markdown(
         f"""
 <div class="guide-card">
-  <div class="guide-title">Page guide</div>
-  <div class="guide-line"><strong>Objective:</strong> {guide["objective"]}</div>
-  <div class="guide-line"><strong>How to use:</strong> {guide["how"]}</div>
-  <div class="guide-line"><strong>Notes:</strong> {guide["notes"]}</div>
+  <div class="guide-title">{i18n.t("guide.title")}</div>
+  <div class="guide-line"><strong>{i18n.t("guide.objective")}:</strong> {guide["objective"]}</div>
+  <div class="guide-line"><strong>{i18n.t("guide.how")}:</strong> {guide["how"]}</div>
+  <div class="guide-line"><strong>{i18n.t("guide.notes")}:</strong> {guide["notes"]}</div>
 </div>
 """,
         unsafe_allow_html=True,
@@ -929,21 +1069,24 @@ def render_chart_guide_from_map(
     summary: str | None = None,
     key_prefix: str = "",
 ) -> None:
-    guide = guide_map.get(chart_key)
+    if i18n.current_lang() == "fr" and chart_key in CHART_GUIDES_FR:
+        guide = CHART_GUIDES_FR[chart_key]
+    else:
+        guide = guide_map.get(chart_key)
     if not guide:
         return
-    snapshot = summary or "Use the filters to update this view."
+    snapshot = summary or i18n.t("cg.default_snapshot")
     st.markdown(
-        f"<div class='chart-guide'><strong>Objective:</strong> {guide['objective']}<br/>"
-        f"<strong>Snapshot:</strong> {snapshot}</div>",
+        f"<div class='chart-guide'><strong>{i18n.t('cg.objective')}:</strong> {guide['objective']}<br/>"
+        f"<strong>{i18n.t('cg.snapshot')}:</strong> {snapshot}</div>",
         unsafe_allow_html=True,
     )
-    if st.button("Explain chart", key=f"{key_prefix}explain_{chart_key}"):
+    if st.button(i18n.tr("Explain chart"), key=f"{key_prefix}explain_{chart_key}"):
         def _dialog_body() -> None:
-            st.markdown(f"**Objective:** {guide['objective']}")
-            st.markdown(f"**How to read:** {guide['how']}")
-            st.markdown(f"**Why this chart:** {guide['why']}")
-            st.markdown(f"**Current snapshot:** {snapshot}")
+            st.markdown(f"**{i18n.t('cg.objective')}:** {guide['objective']}")
+            st.markdown(f"**{i18n.t('cg.how')}:** {guide['how']}")
+            st.markdown(f"**{i18n.t('cg.why')}:** {guide['why']}")
+            st.markdown(f"**{i18n.t('cg.current')}:** {snapshot}")
 
         if hasattr(st, "dialog"):
             dialog = st.dialog(guide["title"])(_dialog_body)
@@ -1129,7 +1272,7 @@ def page_v0_gallery() -> None:
     assets_dir = version_dir / "assets"
     manifest_path = assets_dir / "manifest.csv"
     if not manifest_path.exists():
-        st.info("Missing v0/assets/manifest.csv. Generate it to power the gallery.")
+        st.info(i18n.tr("Missing v0/assets/manifest.csv. Generate it to power the gallery."))
         return
 
     manifest = load_csv(manifest_path)
@@ -1148,7 +1291,7 @@ def page_v0_gallery() -> None:
     }
     missing = required_cols - set(manifest.columns)
     if missing:
-        st.error(f"Manifest missing columns: {', '.join(sorted(missing))}")
+        st.error(i18n.fmt("Manifest missing columns: {}", ", ".join(sorted(missing))))
         return
 
     manifest["order"] = pd.to_numeric(manifest["order"], errors="coerce").fillna(9999)
@@ -1157,13 +1300,13 @@ def page_v0_gallery() -> None:
 
     filters = st.columns([2, 2, 1, 1])
     with filters[0]:
-        dataset_sel = st.multiselect("Datasets", datasets, default=datasets)
+        dataset_sel = st.multiselect(i18n.tr("Datasets"), datasets, default=datasets)
     with filters[1]:
-        chart_sel = st.multiselect("Chart types", chart_types, default=chart_types)
+        chart_sel = st.multiselect(i18n.tr("Chart types"), chart_types, default=chart_types)
     with filters[2]:
-        show_html = st.checkbox("Show HTML", value=False)
+        show_html = st.checkbox(i18n.tr("Show HTML"), value=False)
     with filters[3]:
-        print_mode = st.checkbox("Print / PDF mode", value=False)
+        print_mode = st.checkbox(i18n.tr("Print / PDF mode"), value=False)
 
     if print_mode:
         st.markdown(
@@ -1184,14 +1327,14 @@ header, footer, div[data-testid="stToolbar"] { display: none; }
 """,
             unsafe_allow_html=True,
         )
-        st.info("Print mode enabled. Use browser Print → Save as PDF for submission.")
+        st.info(i18n.tr("Print mode enabled. Use browser Print → Save as PDF for submission."))
 
     filtered = manifest[
         manifest["dataset"].isin(dataset_sel)
         & manifest["chart_type"].isin(chart_sel)
     ].copy()
     if filtered.empty:
-        st.info("No charts match the current filters.")
+        st.info(i18n.tr("No charts match the current filters."))
         return
 
     dataset_blurbs = {
@@ -1254,24 +1397,24 @@ header, footer, div[data-testid="stToolbar"] { display: none; }
                     st.markdown(card, unsafe_allow_html=True)
 
                     dialog_key = f"v0_dialog_{row_data.get('id', '')}"
-                    if st.button("Explain chart", key=dialog_key):
+                    if st.button(i18n.tr("Explain chart"), key=dialog_key):
                         dialog_title = f"{row_data.get('title', 'Chart')} — Explanation"
 
                         @st.dialog(dialog_title)
                         def _chart_dialog() -> None:
-                            st.markdown(f"**Dataset:** {row_data.get('dataset', '')}")
-                            st.markdown(f"**Chart type:** {row_data.get('chart_type', '')}")
-                            st.markdown(f"**Objective:** {row_data.get('objective', '')}")
-                            st.markdown(f"**Result:** {row_data.get('result', '')}")
-                            st.markdown(f"**Why this chart:** {row_data.get('why', '')}")
-                            st.markdown(f"**Key takeaway:** {row_data.get('key_takeaway', '')}")
+                            st.markdown(i18n.fmt("**Dataset:** {}", row_data.get("dataset", "")))
+                            st.markdown(i18n.fmt("**Chart type:** {}", row_data.get("chart_type", "")))
+                            st.markdown(i18n.fmt("**Objective:** {}", row_data.get("objective", "")))
+                            st.markdown(i18n.fmt("**Result:** {}", row_data.get("result", "")))
+                            st.markdown(i18n.fmt("**Why this chart:** {}", row_data.get("why", "")))
+                            st.markdown(i18n.fmt("**Key takeaway:** {}", row_data.get("key_takeaway", "")))
 
                         _chart_dialog()
 
                     if show_html:
                         html_path = assets_dir / str(row["html"])
                         if html_path.exists():
-                            with st.expander("Interactive version", expanded=False):
+                            with st.expander(i18n.tr("Interactive version"), expanded=False):
                                 st.components.v1.html(
                                     html_path.read_text(encoding="utf-8"),
                                     height=520,
@@ -1435,9 +1578,9 @@ def v3_feature_contributions(
 
 
 def page_overview() -> None:
-    st.markdown('<div class="section-title">Overview</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{i18n.section("Overview")}</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-subtitle">Story snapshot across WHO and GBD features.</div>',
+        f'<div class="section-subtitle">{i18n.section("Story snapshot across WHO and GBD features.")}</div>',
         unsafe_allow_html=True,
     )
     render_page_guide("overview")
@@ -1519,7 +1662,7 @@ def page_overview() -> None:
             )
         render_chart_guide("overview_region_box", summary=region_summary)
 
-    st.markdown("### Model demo signal (quick check)")
+    st.markdown(i18n.section("### Model demo signal (quick check)"))
     merged = numeric(
         merged,
         [
@@ -1536,9 +1679,9 @@ def page_overview() -> None:
 
 
 def page_who_explorer() -> None:
-    st.markdown('<div class="section-title">WHO Suicide Explorer</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{i18n.section("WHO Suicide Explorer")}</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-subtitle">Global and regional suicide patterns (2021).</div>',
+        f'<div class="section-subtitle">{i18n.section("Global and regional suicide patterns (2021).")}</div>',
         unsafe_allow_html=True,
     )
     render_page_guide("who")
@@ -1553,9 +1696,8 @@ def page_who_explorer() -> None:
         ],
     )
 
-    sex = st.selectbox("Sex", sorted(who["sex_name"].unique()))
-    metric = st.selectbox(
-        "Metric", ["age_standardized_suicide_rate_2021", "crude_suicide_rate_2021"]
+    sex = st.selectbox(i18n.tr("Sex"), sorted(who["sex_name"].unique()))
+    metric = st.selectbox(i18n.tr("Metric"), ["age_standardized_suicide_rate_2021", "crude_suicide_rate_2021"]
     )
     who_sel = who[who["sex_name"] == sex].copy()
     who_sel = who_sel[who_sel["iso3"].notna() & (who_sel["iso3"].astype(str) != "")]
@@ -1611,8 +1753,8 @@ def page_who_explorer() -> None:
             )
         render_chart_guide("who_top_bottom", summary=rank_summary)
 
-    st.markdown("### Sex comparison")
-    country = st.selectbox("Country", sorted(who["location_name"].unique()))
+    st.markdown(i18n.section("### Sex comparison"))
+    country = st.selectbox(i18n.tr("Country"), sorted(who["location_name"].unique()))
     compare = who[who["location_name"] == country].copy()
     fig = px.bar(
         compare,
@@ -1629,7 +1771,7 @@ def page_who_explorer() -> None:
         sex_summary = f"Highest: {max_row['sex_name']} ({fmt_value(max_row[metric])})."
     render_chart_guide("who_sex_compare", summary=sex_summary)
 
-    st.markdown("### Crude vs age-standardized")
+    st.markdown(i18n.section("### Crude vs age-standardized"))
     scatter = who_sel.dropna(subset=["crude_suicide_rate_2021", "age_standardized_suicide_rate_2021"])
     fig = px.scatter(
         scatter,
@@ -1647,9 +1789,9 @@ def page_who_explorer() -> None:
 
 
 def page_depression() -> None:
-    st.markdown('<div class="section-title">Depression Burden (DALYs)</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{i18n.section("Depression Burden (DALYs)")}</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-subtitle">GBD DALYs rate for depressive disorders.</div>',
+        f'<div class="section-subtitle">{i18n.section("GBD DALYs rate for depressive disorders.")}</div>',
         unsafe_allow_html=True,
     )
     render_page_guide("depression")
@@ -1663,7 +1805,7 @@ def page_depression() -> None:
     df = df[df["iso3"].notna() & (df["iso3"].astype(str) != "")]
 
     df_both_all = df[df["sex_name"] == "Both"].copy()
-    age = st.selectbox("Age group", sorted(df_both_all["age_name"].unique()))
+    age = st.selectbox(i18n.tr("Age group"), sorted(df_both_all["age_name"].unique()))
     df_both = df_both_all[df_both_all["age_name"] == age]
 
     col1, col2 = st.columns([1.3, 1])
@@ -1690,7 +1832,7 @@ def page_depression() -> None:
         st.plotly_chart(fig, use_container_width=True)
         render_chart_guide("depression_top20", summary=summarize_top(top, "val"))
 
-    st.markdown("### By age group")
+    st.markdown(i18n.section("### By age group"))
     age_summary = (
         df_both_all.groupby("age_name", as_index=False)["val"]
         .mean()
@@ -1715,9 +1857,9 @@ def page_depression() -> None:
 
 
 def page_addiction() -> None:
-    st.markdown('<div class="section-title">Addiction (Deaths Rate)</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{i18n.section("Addiction (Deaths Rate)")}</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-subtitle">GBD substance-use mortality rates.</div>',
+        f'<div class="section-subtitle">{i18n.section("GBD substance-use mortality rates.")}</div>',
         unsafe_allow_html=True,
     )
     render_page_guide("addiction")
@@ -1731,8 +1873,8 @@ def page_addiction() -> None:
     df = df[df["iso3"].notna() & (df["iso3"].astype(str) != "")]
 
     causes = sorted(df["cause_name"].unique())
-    cause = st.selectbox("Cause", causes)
-    sex = st.selectbox("Sex", sorted(df["sex_name"].unique()))
+    cause = st.selectbox(i18n.tr("Cause"), causes)
+    sex = st.selectbox(i18n.tr("Sex"), sorted(df["sex_name"].unique()))
     filtered = df[(df["cause_name"] == cause) & (df["sex_name"] == sex)]
 
     col1, col2 = st.columns([1.3, 1])
@@ -1759,8 +1901,8 @@ def page_addiction() -> None:
         st.plotly_chart(fig, use_container_width=True)
         render_chart_guide("addiction_top20", summary=summarize_top(top, "val"))
 
-    st.markdown("### Sex comparison")
-    country = st.selectbox("Country", sorted(df["location_name"].unique()))
+    st.markdown(i18n.section("### Sex comparison"))
+    country = st.selectbox(i18n.tr("Country"), sorted(df["location_name"].unique()))
     compare = df[(df["location_name"] == country) & (df["cause_name"] == cause)].copy()
     compare = compare.groupby("sex_name", as_index=False)["val"].mean()
     fig = px.bar(
@@ -1780,9 +1922,9 @@ def page_addiction() -> None:
 
 
 def page_selfharm() -> None:
-    st.markdown('<div class="section-title">Self-harm (Deaths Rate)</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{i18n.section("Self-harm (Deaths Rate)")}</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-subtitle">GBD self-harm mortality patterns.</div>',
+        f'<div class="section-subtitle">{i18n.section("GBD self-harm mortality patterns.")}</div>',
         unsafe_allow_html=True,
     )
     render_page_guide("selfharm")
@@ -1795,8 +1937,8 @@ def page_selfharm() -> None:
     ]
     df = df[df["iso3"].notna() & (df["iso3"].astype(str) != "")]
 
-    age = st.selectbox("Age group", sorted(df["age_name"].unique()))
-    sex = st.selectbox("Sex", sorted(df["sex_name"].unique()))
+    age = st.selectbox(i18n.tr("Age group"), sorted(df["age_name"].unique()))
+    sex = st.selectbox(i18n.tr("Sex"), sorted(df["sex_name"].unique()))
     df = df[(df["age_name"] == age) & (df["sex_name"] == sex)]
 
     col1, col2 = st.columns([1.3, 1])
@@ -1823,7 +1965,7 @@ def page_selfharm() -> None:
         st.plotly_chart(fig, use_container_width=True)
         render_chart_guide("selfharm_top20", summary=summarize_top(top, "val"))
 
-    st.markdown("### Sex comparison")
+    st.markdown(i18n.section("### Sex comparison"))
     base = ensure_exists(DATA_CLEAN / "gbd_selfharm_clean.csv", "GBD self-harm clean file")
     base = numeric(base, ["val"])
     base = base[
@@ -1832,7 +1974,7 @@ def page_selfharm() -> None:
         & (base["cause_name"] == "Self-harm")
         & (base["age_name"] == age)
     ]
-    country = st.selectbox("Country", sorted(base["location_name"].unique()))
+    country = st.selectbox(i18n.tr("Country"), sorted(base["location_name"].unique()))
     compare = base[base["location_name"] == country]
     fig = px.bar(
         compare,
@@ -1850,7 +1992,7 @@ def page_selfharm() -> None:
     render_chart_guide("selfharm_sex_compare", summary=sex_summary)
 
     if base["cause_name"].nunique() > 1:
-        st.markdown("### Methods breakdown")
+        st.markdown(i18n.section("### Methods breakdown"))
         methods = base.groupby("cause_name", as_index=False)["val"].mean()
         fig = px.bar(
             methods,
@@ -1861,13 +2003,13 @@ def page_selfharm() -> None:
         st.plotly_chart(fig, use_container_width=True)
         render_chart_guide("selfharm_methods", summary=summarize_top(methods, "val", "cause_name"))
     else:
-        st.info("Methods breakdown not available in the filtered self-harm dataset.")
+        st.info(i18n.tr("Methods breakdown not available in the filtered self-harm dataset."))
 
 
 def page_prob_death() -> None:
-    st.markdown('<div class="section-title">Probability of Death</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{i18n.section("Probability of Death")}</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-subtitle">Interpretation differs from rates: it is a probability, not a per-100k rate.</div>',
+        f'<div class="section-subtitle">{i18n.section("Interpretation differs from rates: it is a probability, not a per-100k rate.")}</div>',
         unsafe_allow_html=True,
     )
     render_page_guide("prob_death")
@@ -1876,9 +2018,9 @@ def page_prob_death() -> None:
     df = df[df["metric_name"] == "Probability of death"]
     df = df[df["iso3"].notna() & (df["iso3"].astype(str) != "")]
 
-    cause = st.selectbox("Cause", sorted(df["cause_name"].unique()))
-    sex = st.selectbox("Sex", sorted(df["sex_name"].unique()))
-    age = st.selectbox("Age group", sorted(df["age_name"].unique()))
+    cause = st.selectbox(i18n.tr("Cause"), sorted(df["cause_name"].unique()))
+    sex = st.selectbox(i18n.tr("Sex"), sorted(df["sex_name"].unique()))
+    age = st.selectbox(i18n.tr("Age group"), sorted(df["age_name"].unique()))
     df = df[(df["cause_name"] == cause) & (df["sex_name"] == sex) & (df["age_name"] == age)]
 
     col1, col2 = st.columns([1.3, 1])
@@ -1907,21 +2049,21 @@ def page_prob_death() -> None:
 
 
 def page_allcause_trends() -> None:
-    st.markdown('<div class="section-title">All-cause Trends</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{i18n.section("All-cause Trends")}</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-subtitle">DALYs trend across countries, WHO regions, and global aggregates.</div>',
+        f'<div class="section-subtitle">{i18n.section("DALYs trend across countries, WHO regions, and global aggregates.")}</div>',
         unsafe_allow_html=True,
     )
     render_page_guide("allcause")
     df = ensure_exists(CONTEXT_DIR / "context_allcauses_trend.csv", "Context all-cause trends")
     df = numeric(df, ["val"])
 
-    location_type = st.selectbox("Location type", sorted(df["location_type"].unique()))
+    location_type = st.selectbox(i18n.tr("Location type"), sorted(df["location_type"].unique()))
     subset = df[df["location_type"] == location_type]
-    location = st.selectbox("Location", sorted(subset["location_name"].unique()))
-    sex = st.selectbox("Sex", sorted(subset["sex_name"].unique()))
-    age = st.selectbox("Age group", sorted(subset["age_name"].unique()))
-    metric = st.selectbox("Metric", sorted(subset["metric_name"].unique()))
+    location = st.selectbox(i18n.tr("Location"), sorted(subset["location_name"].unique()))
+    sex = st.selectbox(i18n.tr("Sex"), sorted(subset["sex_name"].unique()))
+    age = st.selectbox(i18n.tr("Age group"), sorted(subset["age_name"].unique()))
+    metric = st.selectbox(i18n.tr("Metric"), sorted(subset["metric_name"].unique()))
 
     filtered = subset[
         (subset["location_name"] == location)
@@ -1943,20 +2085,20 @@ def page_allcause_trends() -> None:
 
 
 def page_big_categories() -> None:
-    st.markdown('<div class="section-title">Big Categories</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{i18n.section("Big Categories")}</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-subtitle">GBD aggregate locations for big-category DALYs.</div>',
+        f'<div class="section-subtitle">{i18n.section("GBD aggregate locations for big-category DALYs.")}</div>',
         unsafe_allow_html=True,
     )
     render_page_guide("big_categories")
     df = ensure_exists(CONTEXT_DIR / "context_big_categories_2023.csv", "Context big categories")
     df = numeric(df, ["val"])
 
-    location = st.selectbox("Aggregate location", sorted(df["location_name"].unique()))
-    sex = st.selectbox("Sex", sorted(df["sex_name"].unique()))
-    age = st.selectbox("Age group", sorted(df["age_name"].unique()))
-    metric = st.selectbox("Metric", sorted(df["metric_name"].unique()))
-    chart = st.selectbox("Chart type", ["Treemap", "Donut"])
+    location = st.selectbox(i18n.tr("Aggregate location"), sorted(df["location_name"].unique()))
+    sex = st.selectbox(i18n.tr("Sex"), sorted(df["sex_name"].unique()))
+    age = st.selectbox(i18n.tr("Age group"), sorted(df["age_name"].unique()))
+    metric = st.selectbox(i18n.tr("Metric"), sorted(df["metric_name"].unique()))
+    chart = st.selectbox(i18n.tr("Chart type"), ["Treemap", "Donut"])
 
     filtered = df[
         (df["location_name"] == location)
@@ -2077,16 +2219,16 @@ def page_big_categories() -> None:
 
 
 def page_segmentation() -> None:
-    st.markdown('<div class="section-title">Country Segmentation</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{i18n.section("Country Segmentation")}</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-subtitle">Unsupervised clustering of country profiles.</div>',
+        f'<div class="section-subtitle">{i18n.section("Unsupervised clustering of country profiles.")}</div>',
         unsafe_allow_html=True,
     )
     render_page_guide("segmentation")
 
     clusters_path = DATA_CLEAN / "segmentation_clusters.csv"
     if not clusters_path.exists():
-        st.info("Run src/08_segmentation_outliers.py to generate segmentation outputs.")
+        st.info(i18n.tr("Run src/08_segmentation_outliers.py to generate segmentation outputs."))
         return
 
     df = load_csv(clusters_path)
@@ -2163,14 +2305,14 @@ def page_segmentation() -> None:
             st.plotly_chart(fig, use_container_width=True)
             render_chart_guide("segmentation_profile", summary="Z-scores compare each cluster to the overall mean.")
 
-        st.markdown("### Cluster centers (original units)")
+        st.markdown(i18n.section("### Cluster centers (original units)"))
         center_cols = ["cluster_label", "count"] + feature_cols
         display_cols = [col for col in center_cols if col in centers.columns]
         st.dataframe(centers[display_cols], use_container_width=True)
 
     k_metrics = load_report_csv(REPORT_DIR / "segmentation_k_selection.csv")
     if k_metrics is not None and not k_metrics.empty:
-        st.markdown("### K selection (silhouette)")
+        st.markdown(i18n.section("### K selection (silhouette)"))
         st.dataframe(k_metrics, use_container_width=True)
         best_row = k_metrics.loc[k_metrics["silhouette"].idxmax()] if "silhouette" in k_metrics.columns else None
         if best_row is not None:
@@ -2181,16 +2323,16 @@ def page_segmentation() -> None:
 
 
 def page_outliers() -> None:
-    st.markdown('<div class="section-title">Outliers & Alerts</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{i18n.section("Outliers & Alerts")}</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-subtitle">Countries with unusual indicator patterns.</div>',
+        f'<div class="section-subtitle">{i18n.section("Countries with unusual indicator patterns.")}</div>',
         unsafe_allow_html=True,
     )
     render_page_guide("outliers")
 
     features_path = DATA_CLEAN / "segmentation_features.csv"
     if not features_path.exists():
-        st.info("Run src/08_segmentation_outliers.py to generate outlier outputs.")
+        st.info(i18n.tr("Run src/08_segmentation_outliers.py to generate outlier outputs."))
         return
 
     df = load_csv(features_path)
@@ -2203,8 +2345,8 @@ def page_outliers() -> None:
     feature_cols = list(feature_labels.keys())
     df = numeric(df, feature_cols)
 
-    x_col = st.selectbox("X axis", feature_cols, index=0)
-    y_col = st.selectbox("Y axis", feature_cols, index=1)
+    x_col = st.selectbox(i18n.tr("X axis"), feature_cols, index=0)
+    y_col = st.selectbox(i18n.tr("Y axis"), feature_cols, index=1)
     fig = px.scatter(
         df,
         x=x_col,
@@ -2223,7 +2365,7 @@ def page_outliers() -> None:
 
     outliers = df[df["is_outlier"]] if "is_outlier" in df.columns else pd.DataFrame()
     if outliers.empty:
-        st.info("No outliers detected with the current threshold.")
+        st.info(i18n.tr("No outliers detected with the current threshold."))
     else:
         cols = [
             "location_name",
@@ -2233,7 +2375,7 @@ def page_outliers() -> None:
             "outlier_reason",
         ] + feature_cols
         cols = [col for col in cols if col in outliers.columns]
-        st.markdown("### Top anomalies")
+        st.markdown(i18n.section("### Top anomalies"))
         st.dataframe(
             outliers.sort_values("outlier_score", ascending=False)[cols].head(20),
             use_container_width=True,
@@ -2241,17 +2383,17 @@ def page_outliers() -> None:
 
 
 def page_v2_overview() -> None:
-    st.markdown('<div class="section-title">v2 Synthetic Overview</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{i18n.section("v2 Synthetic Overview")}</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-subtitle">Synthetic long-panel data for advanced demos.</div>',
+        f'<div class="section-subtitle">{i18n.section("Synthetic long-panel data for advanced demos.")}</div>',
         unsafe_allow_html=True,
     )
-    st.info("Synthetic data for demonstration only.")
+    st.info(i18n.tr("Synthetic data for demonstration only."))
     render_page_guide_from_map("v2_overview", V2_PAGE_GUIDES)
 
     data_path = DATA_CLEAN / "synth_country_year.csv"
     if not data_path.exists():
-        st.info("Run src/v2_generate_synth.py and src/v2_analytics.py for v2 outputs.")
+        st.info(i18n.tr("Run src/v2_generate_synth.py and src/v2_analytics.py for v2 outputs."))
         return
 
     df = load_csv(data_path)
@@ -2267,8 +2409,8 @@ def page_v2_overview() -> None:
         ],
     )
 
-    year = st.selectbox("Year", sorted(df["year"].unique()))
-    sex = st.selectbox("Sex", sorted(df["sex_name"].unique()))
+    year = st.selectbox(i18n.tr("Year"), sorted(df["year"].unique()))
+    sex = st.selectbox(i18n.tr("Sex"), sorted(df["sex_name"].unique()))
     subset = df[(df["year"] == year) & (df["sex_name"] == sex)]
 
     render_kpis(
@@ -2304,9 +2446,8 @@ def page_v2_overview() -> None:
         )
 
     with col2:
-        region = st.selectbox("Region", sorted(df["region_name"].unique()))
-        trend_view = st.selectbox(
-            "Trend view",
+        region = st.selectbox(i18n.tr("Region"), sorted(df["region_name"].unique()))
+        trend_view = st.selectbox(i18n.tr("Trend view"),
             ["Region + IQR band", "Region aggregate", "Country trajectories"],
         )
         trend = df[(df["region_name"] == region) & (df["sex_name"] == sex)].copy()
@@ -2336,7 +2477,7 @@ def page_v2_overview() -> None:
             )
             fig.update_traces(line=dict(color="#1f6f8b"), opacity=0.35)
             fig.update_layout(showlegend=False)
-            st.caption("Each line is a country. The region trend is the overall band of country trajectories.")
+            st.caption(i18n.tr("Each line is a country. The region trend is the overall band of country trajectories."))
             if not trend.empty:
                 trend_summary = summarize_change(
                     trend.groupby("year", as_index=False)["suicide_rate"].median(),
@@ -2344,7 +2485,7 @@ def page_v2_overview() -> None:
                 )
         elif trend_view == "Region aggregate":
             if region_df is None:
-                st.info("Region aggregates not available. Showing country trajectories.")
+                st.info(i18n.tr("Region aggregates not available. Showing country trajectories."))
                 fig = px.line(
                     trend,
                     x="year",
@@ -2367,7 +2508,7 @@ def page_v2_overview() -> None:
                     title=f"{region} trend ({sex})",
                     markers=True,
                 )
-                st.caption("This line is the population-weighted regional aggregate.")
+                st.caption(i18n.tr("This line is the population-weighted regional aggregate."))
                 trend_summary = summarize_change(region_df, "suicide_rate")
         else:
             fig = go.Figure()
@@ -2410,7 +2551,7 @@ def page_v2_overview() -> None:
                     )
                 )
             fig.update_layout(title=f"{region} trend ({sex})", yaxis_title="suicide_rate", xaxis_title="year")
-            st.caption("Line = regional aggregate; shaded band = country interquartile range (25th–75th).")
+            st.caption(i18n.tr("Line = regional aggregate; shaded band = country interquartile range (25th–75th)."))
             trend_summary = summarize_change(region_df, "suicide_rate") if region_df is not None else None
         changepoints_path = REPORT_DIR / "v2_changepoints.csv"
         if sex == "Both" and changepoints_path.exists():
@@ -2439,7 +2580,7 @@ def page_v2_overview() -> None:
 
     benchmarks_path = REPORT_DIR / "v2_kpi_benchmarks.csv"
     if benchmarks_path.exists():
-        st.markdown("### KPI Benchmarking (2021 global percentiles)")
+        st.markdown(i18n.section("### KPI Benchmarking (2021 global percentiles)"))
         benchmarks = load_csv(benchmarks_path)
         benchmarks = numeric(benchmarks, ["p10", "median", "p90"])
         feature_labels = {
@@ -2448,8 +2589,7 @@ def page_v2_overview() -> None:
             "addiction_death_rate": "Addiction deaths rate",
             "selfharm_death_rate": "Self-harm deaths rate",
         }
-        metric = st.selectbox(
-            "Benchmark metric",
+        metric = st.selectbox(i18n.tr("Benchmark metric"),
             list(feature_labels.keys()),
             format_func=lambda x: feature_labels.get(x, x),
         )
@@ -2474,7 +2614,7 @@ def page_v2_overview() -> None:
                 return ""
 
             styled = table.head(25).style.applymap(highlight, subset=["value"])
-            st.caption(f"Red = above p90 ({p90:.2f}), Blue = below p10 ({p10:.2f}).")
+            st.caption(i18n.fmt("Red = above p90 ({}), Blue = below p10 ({}).", f"{p90:.2f}", f"{p10:.2f}"))
             st.dataframe(styled, use_container_width=True)
             if table.empty:
                 bench_summary = "No data for benchmarking."
@@ -2493,16 +2633,16 @@ def page_v2_overview() -> None:
 
 
 def page_v2_clusters() -> None:
-    st.markdown('<div class="section-title">v2 Profile Clusters</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{i18n.section("v2 Profile Clusters")}</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-subtitle">KMeans clustering on synthetic 2023 profiles.</div>',
+        f'<div class="section-subtitle">{i18n.section("KMeans clustering on synthetic 2023 profiles.")}</div>',
         unsafe_allow_html=True,
     )
     render_page_guide_from_map("v2_clusters", V2_PAGE_GUIDES)
 
     data_path = DATA_CLEAN / "v2_clusters.csv"
     if not data_path.exists():
-        st.info("Run src/v2_analytics.py to generate cluster outputs.")
+        st.info(i18n.tr("Run src/v2_analytics.py to generate cluster outputs."))
         return
 
     df = load_csv(data_path)
@@ -2539,7 +2679,7 @@ def page_v2_clusters() -> None:
             "addiction_death_rate",
             "selfharm_death_rate",
         ]
-        st.markdown("### Cluster centers (original units)")
+        st.markdown(i18n.section("### Cluster centers (original units)"))
         st.dataframe(centers[[c for c in center_cols if c in centers.columns]], use_container_width=True)
         render_chart_guide_from_map(
             "v2_clusters_centers",
@@ -2550,7 +2690,7 @@ def page_v2_clusters() -> None:
 
     k_metrics = load_report_csv(REPORT_DIR / "v2_k_selection.csv")
     if k_metrics is not None and not k_metrics.empty:
-        st.markdown("### K selection (silhouette)")
+        st.markdown(i18n.section("### K selection (silhouette)"))
         st.dataframe(k_metrics, use_container_width=True)
         if "silhouette" in k_metrics.columns and "k" in k_metrics.columns:
             best = k_metrics.loc[k_metrics["silhouette"].idxmax()]
@@ -2566,16 +2706,16 @@ def page_v2_clusters() -> None:
 
 
 def page_v2_trajectory_clusters() -> None:
-    st.markdown('<div class="section-title">v2 Trajectory Clusters</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{i18n.section("v2 Trajectory Clusters")}</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-subtitle">Clusters based on 2000–2023 suicide-rate trajectories.</div>',
+        f'<div class="section-subtitle">{i18n.section("Clusters based on 2000–2023 suicide-rate trajectories.")}</div>',
         unsafe_allow_html=True,
     )
     render_page_guide_from_map("v2_trajectory", V2_PAGE_GUIDES)
 
     data_path = DATA_CLEAN / "v2_trajectory_clusters.csv"
     if not data_path.exists():
-        st.info("Run src/v2_trajectory.py to generate trajectory outputs.")
+        st.info(i18n.tr("Run src/v2_trajectory.py to generate trajectory outputs."))
         return
 
     df = load_csv(data_path)
@@ -2635,7 +2775,7 @@ def page_v2_trajectory_clusters() -> None:
 
     centers = load_report_csv(REPORT_DIR / "v2_trajectory_cluster_centers.csv")
     if centers is not None and not centers.empty:
-        st.markdown("### Cluster centers (trajectory features)")
+        st.markdown(i18n.section("### Cluster centers (trajectory features)"))
         st.dataframe(centers, use_container_width=True)
         render_chart_guide_from_map(
             "v2_traj_centers",
@@ -2646,7 +2786,7 @@ def page_v2_trajectory_clusters() -> None:
 
     k_metrics = load_report_csv(REPORT_DIR / "v2_trajectory_k_selection.csv")
     if k_metrics is not None and not k_metrics.empty:
-        st.markdown("### K selection (silhouette)")
+        st.markdown(i18n.section("### K selection (silhouette)"))
         st.dataframe(k_metrics, use_container_width=True)
         if "silhouette" in k_metrics.columns and "k" in k_metrics.columns:
             best = k_metrics.loc[k_metrics["silhouette"].idxmax()]
@@ -2662,16 +2802,16 @@ def page_v2_trajectory_clusters() -> None:
 
 
 def page_v2_dtw_clusters() -> None:
-    st.markdown('<div class="section-title">v2 DTW Clusters</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{i18n.section("v2 DTW Clusters")}</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-subtitle">DTW clustering on 2000–2023 suicide-rate trajectories.</div>',
+        f'<div class="section-subtitle">{i18n.section("DTW clustering on 2000–2023 suicide-rate trajectories.")}</div>',
         unsafe_allow_html=True,
     )
     render_page_guide_from_map("v2_dtw", V2_PAGE_GUIDES)
 
     data_path = REPORT_DIR / "v2_dtw_clusters.csv"
     if not data_path.exists():
-        st.info("Run src/v2_dtw_clusters.py to generate DTW cluster outputs.")
+        st.info(i18n.tr("Run src/v2_dtw_clusters.py to generate DTW cluster outputs."))
         return
 
     df = load_csv(data_path)
@@ -2698,8 +2838,7 @@ def page_v2_dtw_clusters() -> None:
     centers = load_report_csv(REPORT_DIR / "v2_dtw_cluster_centers.csv")
     if centers is not None and not centers.empty:
         year_cols = [col for col in centers.columns if col.isdigit()]
-        cluster_choice = st.selectbox(
-            "Cluster",
+        cluster_choice = st.selectbox(i18n.tr("Cluster"),
             centers["cluster_label"].dropna().unique().tolist(),
         )
         center = centers[centers["cluster_label"] == cluster_choice]
@@ -2730,7 +2869,7 @@ def page_v2_dtw_clusters() -> None:
 
     k_metrics = load_report_csv(REPORT_DIR / "v2_dtw_k_selection.csv")
     if k_metrics is not None and not k_metrics.empty:
-        st.markdown("### K selection (silhouette/inertia)")
+        st.markdown(i18n.section("### K selection (silhouette/inertia)"))
         st.dataframe(k_metrics, use_container_width=True)
         if "silhouette" in k_metrics.columns and "k" in k_metrics.columns:
             best = k_metrics.loc[k_metrics["silhouette"].idxmax()]
@@ -2746,9 +2885,9 @@ def page_v2_dtw_clusters() -> None:
 
 
 def page_v2_country_network() -> None:
-    st.markdown('<div class="section-title">v2 Country Network</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{i18n.section("v2 Country Network")}</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-subtitle">Similarity graph on 2023 profiles (cosine). Communities via modularity.</div>',
+        f'<div class="section-subtitle">{i18n.section("Similarity graph on 2023 profiles (cosine). Communities via modularity.")}</div>',
         unsafe_allow_html=True,
     )
     render_page_guide_from_map("v2_network", V2_PAGE_GUIDES)
@@ -2756,7 +2895,7 @@ def page_v2_country_network() -> None:
     cluster_path = REPORT_DIR / "v2_graph_clusters.csv"
     edges_path = REPORT_DIR / "v2_graph_edges.csv"
     if not cluster_path.exists() or not edges_path.exists():
-        st.info("Run src/v2_graph_cluster.py to generate network outputs.")
+        st.info(i18n.tr("Run src/v2_graph_cluster.py to generate network outputs."))
         return
 
     clusters = load_csv(cluster_path)
@@ -2834,7 +2973,7 @@ def page_v2_country_network() -> None:
         key_prefix="v2_",
     )
 
-    st.markdown("### Community sizes")
+    st.markdown(i18n.section("### Community sizes"))
     size_df = clusters.groupby("cluster_label", as_index=False).size()
     st.dataframe(size_df.sort_values("size", ascending=False), use_container_width=True)
     size_counts = size_df.rename(columns={"size": "count"})
@@ -2845,7 +2984,7 @@ def page_v2_country_network() -> None:
         key_prefix="v2_",
     )
 
-    st.markdown("### Top central countries")
+    st.markdown(i18n.section("### Top central countries"))
     top_central = clusters.sort_values("betweenness_centrality", ascending=False).head(15)
     st.dataframe(
         top_central[
@@ -2873,7 +3012,7 @@ def page_v2_country_network() -> None:
         key_prefix="v2_",
     )
 
-    st.markdown("### Strongest edges")
+    st.markdown(i18n.section("### Strongest edges"))
     st.dataframe(
         edges[["source_name", "target_name", "similarity"]].head(20),
         use_container_width=True,
@@ -2895,9 +3034,9 @@ def page_v2_country_network() -> None:
 
 
 def page_v2_linked_views() -> None:
-    st.markdown('<div class="section-title">v2 Linked Views</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{i18n.section("v2 Linked Views")}</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-subtitle">Brush the scatter to filter map + table. Small multiples for trends.</div>',
+        f'<div class="section-subtitle">{i18n.section("Brush the scatter to filter map + table. Small multiples for trends.")}</div>',
         unsafe_allow_html=True,
     )
     render_page_guide_from_map("v2_linked", V2_PAGE_GUIDES)
@@ -2905,7 +3044,7 @@ def page_v2_linked_views() -> None:
     data_path = DATA_CLEAN / "synth_country_year.csv"
     region_path = DATA_CLEAN / "synth_region_year.csv"
     if not data_path.exists() or not region_path.exists():
-        st.info("Run src/v2_generate_synth.py to generate v2 datasets.")
+        st.info(i18n.tr("Run src/v2_generate_synth.py to generate v2 datasets."))
         return
 
     df = load_csv(data_path)
@@ -2921,8 +3060,8 @@ def page_v2_linked_views() -> None:
     )
     df = df[df["year"].notna()]
 
-    year = st.selectbox("Year", sorted(df["year"].unique()))
-    sex = st.selectbox("Sex", sorted(df["sex_name"].unique()))
+    year = st.selectbox(i18n.tr("Year"), sorted(df["year"].unique()))
+    sex = st.selectbox(i18n.tr("Sex"), sorted(df["sex_name"].unique()))
     subset = df[(df["year"] == year) & (df["sex_name"] == sex)]
 
     feature_cols = [
@@ -2931,12 +3070,12 @@ def page_v2_linked_views() -> None:
         "addiction_death_rate",
         "selfharm_death_rate",
     ]
-    x_col = st.selectbox("X axis", feature_cols, index=1)
-    y_col = st.selectbox("Y axis", feature_cols, index=0)
+    x_col = st.selectbox(i18n.tr("X axis"), feature_cols, index=1)
+    y_col = st.selectbox(i18n.tr("Y axis"), feature_cols, index=0)
 
     subset = subset.dropna(subset=[x_col, y_col])
     if subset.empty:
-        st.info("No data available for this selection. Try another year or sex.")
+        st.info(i18n.tr("No data available for this selection. Try another year or sex."))
         return
 
     scatter = px.scatter(
@@ -2951,7 +3090,7 @@ def page_v2_linked_views() -> None:
     scatter.update_layout(dragmode="lasso", height=520)
     scatter.update_traces(marker=dict(size=7, opacity=0.85))
 
-    enable_brush = st.checkbox("Enable brush selection", value=True)
+    enable_brush = st.checkbox(i18n.tr("Enable brush selection"), value=True)
     if enable_brush:
         event = st.plotly_chart(
             scatter,
@@ -2973,10 +3112,10 @@ def page_v2_linked_views() -> None:
     }
     if selected_iso3:
         filtered = subset[subset["iso3"].isin(selected_iso3)].copy()
-        st.caption(f"Selection: {len(filtered)} countries.")
+        st.caption(i18n.fmt("Selection: {} countries.", len(filtered)))
     else:
         filtered = subset.copy()
-        st.caption("Tip: brush the scatter to filter the map and table.")
+        st.caption(i18n.tr("Tip: brush the scatter to filter the map and table."))
     scatter_summary = f"Selection size: {len(filtered)} countries."
     render_chart_guide_from_map(
         "v2_linked_scatter",
@@ -3025,17 +3164,15 @@ def page_v2_linked_views() -> None:
         key_prefix="v2_",
     )
 
-    st.markdown("### Small multiples (regional trends)")
+    st.markdown(i18n.section("### Small multiples (regional trends)"))
     region_df = load_csv(region_path)
     region_df = numeric(region_df, ["year"] + feature_cols)
     region_df = region_df[region_df["year"].notna()]
-    region_sex = st.selectbox(
-        "Sex (multiples)",
+    region_sex = st.selectbox(i18n.tr("Sex (multiples)"),
         sorted(region_df["sex_name"].unique()),
         key="linked_views_sex",
     )
-    metric = st.selectbox(
-        "Metric (multiples)",
+    metric = st.selectbox(i18n.tr("Metric (multiples)"),
         feature_cols,
         index=0,
         key="linked_views_metric",
@@ -3061,30 +3198,30 @@ def page_v2_linked_views() -> None:
 
 
 def page_v2_forecasts() -> None:
-    st.markdown('<div class="section-title">v2 Forecasts</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{i18n.section("v2 Forecasts")}</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-subtitle">Regional suicide-rate forecasts from synthetic data.</div>',
+        f'<div class="section-subtitle">{i18n.section("Regional suicide-rate forecasts from synthetic data.")}</div>',
         unsafe_allow_html=True,
     )
     render_page_guide_from_map("v2_forecasts", V2_PAGE_GUIDES)
 
-    model_choice = st.radio("Forecast model", ["Classical (linear)", "DL (GRU/LSTM)"])
+    model_choice = st.radio(i18n.tr("Forecast model"), ["Classical (linear)", "DL (GRU/LSTM)"])
     if model_choice.startswith("DL"):
         data_path = REPORT_DIR / "v2_dl_forecast_region.csv"
         metrics_path = REPORT_DIR / "v2_dl_metrics.csv"
         if not data_path.exists():
-            st.info("Run src/v2_dl_forecast.py to generate DL forecasts.")
+            st.info(i18n.tr("Run src/v2_dl_forecast.py to generate DL forecasts."))
             return
     else:
         data_path = REPORT_DIR / "v2_forecast_region.csv"
         metrics_path = None
         if not data_path.exists():
-            st.info("Run src/v2_analytics.py to generate forecast outputs.")
+            st.info(i18n.tr("Run src/v2_analytics.py to generate forecast outputs."))
             return
 
     df = load_csv(data_path)
     df = numeric(df, ["suicide_rate", "year"])
-    region = st.selectbox("Region", sorted(df["region_name"].unique()))
+    region = st.selectbox(i18n.tr("Region"), sorted(df["region_name"].unique()))
     subset = df[df["region_name"] == region]
     fig = px.line(
         subset,
@@ -3109,7 +3246,7 @@ def page_v2_forecasts() -> None:
 
     if metrics_path and metrics_path.exists():
         metrics = load_csv(metrics_path)
-        st.markdown("### DL forecast metrics")
+        st.markdown(i18n.section("### DL forecast metrics"))
         st.dataframe(metrics, use_container_width=True)
         render_chart_guide_from_map(
             "v2_forecast_metrics",
@@ -3120,9 +3257,9 @@ def page_v2_forecasts() -> None:
 
 
 def page_v2_backtest() -> None:
-    st.markdown('<div class="section-title">v2 Backtest</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{i18n.section("v2 Backtest")}</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-subtitle">Rolling-origin backtest using lag features.</div>',
+        f'<div class="section-subtitle">{i18n.section("Rolling-origin backtest using lag features.")}</div>',
         unsafe_allow_html=True,
     )
     render_page_guide_from_map("v2_backtest", V2_PAGE_GUIDES)
@@ -3130,15 +3267,15 @@ def page_v2_backtest() -> None:
     pred_path = REPORT_DIR / "v2_backtest_predictions.csv"
     metrics_path = REPORT_DIR / "v2_backtest_metrics.csv"
     if not pred_path.exists() or not metrics_path.exists():
-        st.info("Run src/v2_backtest.py to generate backtest outputs.")
+        st.info(i18n.tr("Run src/v2_backtest.py to generate backtest outputs."))
         return
 
     preds = load_csv(pred_path)
     if preds.empty or not {"region_name", "year", "actual", "predicted"}.issubset(preds.columns):
-        st.info("Backtest predictions are empty. Re-run src/v2_backtest.py to regenerate.")
+        st.info(i18n.tr("Backtest predictions are empty. Re-run src/v2_backtest.py to regenerate."))
         return
     preds = numeric(preds, ["actual", "predicted", "year"])
-    region = st.selectbox("Region", sorted(preds["region_name"].unique()))
+    region = st.selectbox(i18n.tr("Region"), sorted(preds["region_name"].unique()))
     subset = preds[preds["region_name"] == region]
     fig = px.line(
         subset,
@@ -3162,7 +3299,7 @@ def page_v2_backtest() -> None:
     )
 
     metrics = load_csv(metrics_path)
-    st.markdown("### Backtest metrics")
+    st.markdown(i18n.section("### Backtest metrics"))
     st.dataframe(metrics, use_container_width=True)
     if "mae" in metrics.columns:
         best = metrics.sort_values("mae").iloc[0]
@@ -3178,9 +3315,9 @@ def page_v2_backtest() -> None:
 
 
 def page_v2_scenario() -> None:
-    st.markdown('<div class="section-title">v2 Scenario Lab</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{i18n.section("v2 Scenario Lab")}</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-subtitle">What-if simulator using synthetic regression model.</div>',
+        f'<div class="section-subtitle">{i18n.section("What-if simulator using synthetic regression model.")}</div>',
         unsafe_allow_html=True,
     )
     render_page_guide_from_map("v2_scenario", V2_PAGE_GUIDES)
@@ -3188,7 +3325,7 @@ def page_v2_scenario() -> None:
     coeff_path = REPORT_DIR / "v2_model_coeffs.csv"
     data_path = DATA_CLEAN / "synth_country_year.csv"
     if not coeff_path.exists() or not data_path.exists():
-        st.info("Run src/v2_analytics.py to generate model coefficients.")
+        st.info(i18n.tr("Run src/v2_analytics.py to generate model coefficients."))
         return
 
     coeffs = load_csv(coeff_path)
@@ -3205,7 +3342,7 @@ def page_v2_scenario() -> None:
     )
     baseline = df[(df["year"] == df["year"].max()) & (df["sex_name"] == "Both")]
     if baseline.empty:
-        st.info("No baseline data available for Scenario Lab.")
+        st.info(i18n.tr("No baseline data available for Scenario Lab."))
         return
 
     feature_cols = ["depression_dalys_rate", "addiction_death_rate", "selfharm_death_rate"]
@@ -3236,8 +3373,8 @@ def page_v2_scenario() -> None:
         pred += float(row["coef"]) * scaled
 
     pred = max(0.0, pred)
-    st.markdown(f"### Predicted suicide rate: **{pred:.2f}**")
-    st.caption("Inputs are bounded to the 10th–90th percentile of recent synthetic data.")
+    st.markdown(i18n.fmt("### Predicted suicide rate: **{}**", f"{pred:.2f}"))
+    st.caption(i18n.tr("Inputs are bounded to the 10th–90th percentile of recent synthetic data."))
     render_chart_guide_from_map(
         "v2_scenario_pred",
         V2_CHART_GUIDES,
@@ -3247,12 +3384,12 @@ def page_v2_scenario() -> None:
 
     metrics_path = REPORT_DIR / "v2_model_metrics.csv"
     if metrics_path.exists():
-        st.markdown("### Model metrics")
+        st.markdown(i18n.section("### Model metrics"))
         st.dataframe(load_csv(metrics_path), use_container_width=True)
 
     sens_path = REPORT_DIR / "v2_sensitivity.csv"
     if sens_path.exists():
-        st.markdown("### Sensitivity (10% increase per feature)")
+        st.markdown(i18n.section("### Sensitivity (10% increase per feature)"))
         sens = load_csv(sens_path)
         sens = numeric(sens, ["pct_change_prediction"])
         fig = px.bar(
@@ -3272,17 +3409,17 @@ def page_v2_scenario() -> None:
 
     quant_path = REPORT_DIR / "v2_quantile_predictions.csv"
     if quant_path.exists():
-        st.markdown("### Prediction intervals (quantile regression)")
-        st.caption("Bands show q10–q90 intervals; q50 is the median prediction.")
+        st.markdown(i18n.section("### Prediction intervals (quantile regression)"))
+        st.caption(i18n.tr("Bands show q10–q90 intervals; q50 is the median prediction."))
         quant = load_csv(quant_path)
         quant = numeric(quant, ["year", "suicide_rate", "q10", "q50", "q90"])
         region_opt = sorted(quant["region_name"].dropna().unique())
         sex_opt = sorted(quant["sex_name"].dropna().unique())
-        region = st.selectbox("Region (intervals)", region_opt, key="quant_region")
-        sex = st.selectbox("Sex (intervals)", sex_opt, key="quant_sex")
+        region = st.selectbox(i18n.tr("Region (intervals)"), region_opt, key="quant_region")
+        sex = st.selectbox(i18n.tr("Sex (intervals)"), sex_opt, key="quant_sex")
         subset = quant[(quant["region_name"] == region) & (quant["sex_name"] == sex)]
         if subset.empty:
-            st.info("No quantile predictions for this selection.")
+            st.info(i18n.tr("No quantile predictions for this selection."))
             return
         grouped = (
             subset.groupby("year", as_index=False)[["suicide_rate", "q10", "q50", "q90"]].mean()
@@ -3338,7 +3475,7 @@ def page_v2_scenario() -> None:
 
     metrics_path = REPORT_DIR / "v2_quantile_metrics.csv"
     if metrics_path.exists():
-        st.markdown("### Quantile model metrics")
+        st.markdown(i18n.section("### Quantile model metrics"))
         st.dataframe(load_csv(metrics_path), use_container_width=True)
         render_chart_guide_from_map(
             "v2_quantile_metrics",
@@ -3350,7 +3487,7 @@ def page_v2_scenario() -> None:
     perm_path = REPORT_DIR / "v2_perm_importance.csv"
     pdp_path = REPORT_DIR / "v2_partial_dependence.csv"
     if perm_path.exists() and pdp_path.exists():
-        st.markdown("### Explainability")
+        st.markdown(i18n.section("### Explainability"))
         perm = load_csv(perm_path)
         perm = numeric(perm, ["importance_mean", "importance_std"])
         fig = px.bar(
@@ -3392,16 +3529,16 @@ def page_v2_scenario() -> None:
 
 
 def page_v2_outliers() -> None:
-    st.markdown('<div class="section-title">v2 Outliers</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{i18n.section("v2 Outliers")}</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-subtitle">IsolationForest anomalies (2023 profiles).</div>',
+        f'<div class="section-subtitle">{i18n.section("IsolationForest anomalies (2023 profiles).")}</div>',
         unsafe_allow_html=True,
     )
     render_page_guide_from_map("v2_outliers", V2_PAGE_GUIDES)
 
     data_path = REPORT_DIR / "v2_outliers.csv"
     if not data_path.exists():
-        st.info("Run src/v2_analytics.py to generate outlier outputs.")
+        st.info(i18n.tr("Run src/v2_analytics.py to generate outlier outputs."))
         return
 
     df = load_csv(data_path)
@@ -3436,7 +3573,7 @@ def page_v2_outliers() -> None:
     )
 
     top = df.sort_values("outlier_score", ascending=False).head(20)
-    st.markdown("### Top anomalies")
+    st.markdown(i18n.section("### Top anomalies"))
     st.dataframe(
         top[
             [
@@ -3466,21 +3603,21 @@ def page_v2_outliers() -> None:
 
 
 def page_v2_patterns() -> None:
-    st.markdown('<div class="section-title">v2 Patterns</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{i18n.section("v2 Patterns")}</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-subtitle">Association rules on binned 2023 profiles.</div>',
+        f'<div class="section-subtitle">{i18n.section("Association rules on binned 2023 profiles.")}</div>',
         unsafe_allow_html=True,
     )
     render_page_guide_from_map("v2_patterns", V2_PAGE_GUIDES)
 
     rules_path = REPORT_DIR / "v2_assoc_rules.csv"
     if not rules_path.exists():
-        st.info("Run src/v2_assoc_rules.py to generate association rules.")
+        st.info(i18n.tr("Run src/v2_assoc_rules.py to generate association rules."))
         return
 
     rules = load_csv(rules_path)
     rules = numeric(rules, ["support", "confidence", "lift"])
-    st.markdown("### Top rules (by lift)")
+    st.markdown(i18n.section("### Top rules (by lift)"))
     st.dataframe(rules.head(20), use_container_width=True)
     if rules.empty:
         rules_summary = "No association rules available."
@@ -3494,12 +3631,12 @@ def page_v2_patterns() -> None:
         key_prefix="v2_",
     )
 
-    st.markdown("### Rule interpretation")
+    st.markdown(i18n.section("### Rule interpretation"))
     if not rules.empty:
         row = rules.iloc[0]
         st.info(
-            f"When {row['antecedents']} then {row['consequents']} "
-            f"(lift {row['lift']:.2f}, confidence {row['confidence']:.2f})."
+            i18n.fmt("When {} then {} ", row['antecedents'], row['consequents'])
+            + i18n.fmt("(lift {}, confidence {}).", f"{row['lift']:.2f}", f"{row['confidence']:.2f}")
         )
         interp_summary = (
             f"Lift {row['lift']:.2f}, confidence {row['confidence']:.2f} for top rule."
@@ -3513,15 +3650,14 @@ def page_v2_patterns() -> None:
 
 
 def page_v3_risk_estimator() -> None:
-    st.markdown('<div class="section-title">v3 Risk Estimator</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{i18n.section("v3 Risk Estimator")}</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-subtitle">Interactive probability of high-risk suicide category.</div>',
+        f'<div class="section-subtitle">{i18n.section("Interactive probability of high-risk suicide category.")}</div>',
         unsafe_allow_html=True,
     )
-    st.info(
-        "This is a demo model: probabilities reflect patterns in the selected dataset, not clinical risk."
+    st.info(i18n.tr("This is a demo model: probabilities reflect patterns in the selected dataset, not clinical risk.")
     )
-    with st.expander("How to read this page", expanded=False):
+    with st.expander(i18n.tr("How to read this page"), expanded=False):
         st.markdown(
             """
 - **High-risk cutoff** sets the percentile threshold for labeling high-risk.
@@ -3533,27 +3669,27 @@ def page_v3_risk_estimator() -> None:
         )
 
     if ColumnTransformer is None or LogisticRegression is None:
-        st.info("Install scikit-learn to enable the v3 estimator.")
+        st.info(i18n.tr("Install scikit-learn to enable the v3 estimator."))
         return
 
-    source = st.selectbox("Training data source", ["v1", "v2"], index=0)
+    source = st.selectbox(i18n.tr("Training data source"), ["v1", "v2"], index=0)
     df = load_v3_features(source)
     if df is None or df.empty:
-        st.info("Run python scripts/run_v3_pipeline.py to generate v3 feature tables.")
+        st.info(i18n.tr("Run python scripts/run_v3_pipeline.py to generate v3 feature tables."))
         return
 
     sex_options = sorted(df["sex_name"].dropna().unique()) if "sex_name" in df.columns else ["Both"]
-    sex = st.selectbox("Sex", sex_options)
+    sex = st.selectbox(i18n.tr("Sex"), sex_options)
     df_sex = df[df["sex_name"] == sex] if "sex_name" in df.columns else df
     if df_sex.empty:
         df_sex = df
 
-    country = st.selectbox("Country", sorted(df_sex["location_name"].unique()))
+    country = st.selectbox(i18n.tr("Country"), sorted(df_sex["location_name"].unique()))
     country_row = df_sex[df_sex["location_name"] == country].iloc[0]
 
     use_defaults = st.toggle("Use country defaults", value=True)
     st.caption(
-        f"Region: {country_row['region_name']} | Income group: {country_row['income_group']}"
+        i18n.fmt("Region: {} | Income group: {}", country_row['region_name'], country_row['income_group'])
     )
 
     def slider_params(series: pd.Series) -> tuple[float, float, float]:
@@ -3572,16 +3708,14 @@ def page_v3_risk_estimator() -> None:
     col1, col2 = st.columns(2)
     with col1:
         min_v, max_v, step = slider_params(df["depression_dalys_rate"])
-        depression = st.slider(
-            "Depression DALYs rate",
+        depression = st.slider(i18n.tr("Depression DALYs rate"),
             min_value=min_v,
             max_value=max_v,
             value=default_value("depression_dalys_rate"),
             step=step,
         )
         min_v, max_v, step = slider_params(df["addiction_death_rate"])
-        addiction = st.slider(
-            "Addiction death rate",
+        addiction = st.slider(i18n.tr("Addiction death rate"),
             min_value=min_v,
             max_value=max_v,
             value=default_value("addiction_death_rate"),
@@ -3589,15 +3723,13 @@ def page_v3_risk_estimator() -> None:
         )
     with col2:
         min_v, max_v, step = slider_params(df["selfharm_death_rate"])
-        selfharm = st.slider(
-            "Self-harm death rate",
+        selfharm = st.slider(i18n.tr("Self-harm death rate"),
             min_value=min_v,
             max_value=max_v,
             value=default_value("selfharm_death_rate"),
             step=step,
         )
-        cutoff_pct = st.slider(
-            "High-risk cutoff percentile",
+        cutoff_pct = st.slider(i18n.tr("High-risk cutoff percentile"),
             min_value=60,
             max_value=90,
             value=80,
@@ -3623,29 +3755,29 @@ def page_v3_risk_estimator() -> None:
 
     rate_threshold = metrics["threshold_rate"]
     st.caption(
-        f"High-risk means suicide_rate ≥ {rate_threshold:.2f} per 100k "
-        f"(p{cutoff_pct} of the selected dataset)."
+        i18n.fmt("High-risk means suicide_rate ≥ {} per 100k ", f"{rate_threshold:.2f}")
+        + i18n.fmt("(p{} of the selected dataset).", cutoff_pct)
     )
     if calibrated_model is not None:
-        st.caption("Calibration: isotonic (cv=3).")
+        st.caption(i18n.tr("Calibration: isotonic (cv=3)."))
     else:
-        st.caption("Calibration: off (insufficient data or sklearn unavailable).")
+        st.caption(i18n.tr("Calibration: off (insufficient data or sklearn unavailable)."))
 
     kpi_cols = st.columns(3)
     with kpi_cols[0]:
-        st.metric("Predicted high-risk probability", f"{proba:.1%}")
+        st.metric(i18n.tr("Predicted high-risk probability"), f"{proba:.1%}")
     with kpi_cols[1]:
-        label = "High-risk" if proba >= 0.5 else "Not high-risk"
-        st.metric("Predicted label", label)
+        label = i18n.tr("High-risk") if proba >= 0.5 else i18n.tr("Not high-risk")
+        st.metric(i18n.tr("Predicted label"), label)
     with kpi_cols[2]:
-        st.metric("Baseline high-risk rate", f"{metrics['positive_rate']:.1%}")
+        st.metric(i18n.tr("Baseline high-risk rate"), f"{metrics['positive_rate']:.1%}")
 
     if "cv_auc" in metrics:
         folds = int(metrics.get("cv_folds", 5))
-        st.markdown(f"### Model diagnostics (out-of-fold, {folds}-fold CV)")
+        st.markdown(i18n.fmt("### Model diagnostics (out-of-fold, {}-fold CV)", folds))
         st.caption(
-            "Honest generalization estimate from held-out folds. "
-            "In-sample training metrics are shown afterward and are optimistic."
+            i18n.tr("Honest generalization estimate from held-out folds. ")
+            + i18n.tr("In-sample training metrics are shown afterward and are optimistic.")
         )
         diag_items = []
         if "cv_accuracy" in metrics:
@@ -3660,10 +3792,10 @@ def page_v3_risk_estimator() -> None:
         if "train_brier" in metrics:
             train_bits.append(f"Brier {metrics['train_brier']:.3f}")
         if train_bits:
-            st.caption("In-sample (optimistic): " + ", ".join(train_bits))
+            st.caption(i18n.tr("In-sample (optimistic): ") + ", ".join(train_bits))
     elif "train_accuracy" in metrics or "train_auc" in metrics:
-        st.markdown("### Model diagnostics (training set)")
-        st.caption("In-sample only (too few positives for cross-validation); optimistic.")
+        st.markdown(i18n.section("### Model diagnostics (training set)"))
+        st.caption(i18n.tr("In-sample only (too few positives for cross-validation); optimistic."))
         diag_items = []
         if "train_accuracy" in metrics:
             diag_items.append(("Accuracy", f"{metrics['train_accuracy']:.2f}"))
@@ -3673,8 +3805,8 @@ def page_v3_risk_estimator() -> None:
             diag_items.append(("Brier (lower=better)", f"{metrics['train_brier']:.3f}"))
         render_kpis(diag_items)
 
-    st.markdown("### Calibration reliability")
-    st.caption("Closer to the diagonal means probabilities match observed rates.")
+    st.markdown(i18n.section("### Calibration reliability"))
+    st.caption(i18n.tr("Closer to the diagonal means probabilities match observed rates."))
     proba_all = predictor.predict_proba(df[cat_cols + num_cols])[:, 1]
     y_all = (df["suicide_rate"] >= rate_threshold).astype(int)
     rel = v3_reliability_curve(proba_all, y_all, bins=8)
@@ -3703,10 +3835,10 @@ def page_v3_risk_estimator() -> None:
     )
     st.plotly_chart(fig, use_container_width=True)
     if "train_brier" in metrics:
-        st.caption(f"Brier score (train): {metrics['train_brier']:.3f}")
+        st.caption(i18n.fmt("Brier score (train): {}", f"{metrics['train_brier']:.3f}"))
 
-    st.markdown("### Counterfactual hints (10% reduction)")
-    st.caption("Not causal; shows local sensitivity if one feature is reduced by 10%.")
+    st.markdown(i18n.section("### Counterfactual hints (10% reduction)"))
+    st.caption(i18n.tr("Not causal; shows local sensitivity if one feature is reduced by 10%."))
     cf_rows = []
     for feature in V3_NUMERIC_COLS:
         new_row = dict(input_row)
@@ -3725,8 +3857,8 @@ def page_v3_risk_estimator() -> None:
     cf_df["delta_probability"] = cf_df["delta_probability"].map(lambda x: round(x, 4))
     st.dataframe(cf_df, use_container_width=True)
 
-    st.markdown("### Local feature contributions")
-    st.caption("Top drivers for this prediction in log-odds space (positive increases risk).")
+    st.markdown(i18n.section("### Local feature contributions"))
+    st.caption(i18n.tr("Top drivers for this prediction in log-odds space (positive increases risk)."))
     contrib = v3_feature_contributions(base_model, input_df)
     top = contrib.head(10)
     fig = px.bar(
@@ -3738,8 +3870,8 @@ def page_v3_risk_estimator() -> None:
     )
     st.plotly_chart(fig, use_container_width=True)
 
-    st.markdown("### Similar countries (nearest neighbors)")
-    st.caption("Closest countries in feature space (standardized numeric inputs).")
+    st.markdown(i18n.section("### Similar countries (nearest neighbors)"))
+    st.caption(i18n.tr("Closest countries in feature space (standardized numeric inputs)."))
     neighbors = v3_neighbors(df, input_row, rate_threshold, k=5)
     cols = [
         "location_name",
@@ -3754,25 +3886,24 @@ def page_v3_risk_estimator() -> None:
 
 
 def page_v3_methods() -> None:
-    st.markdown('<div class="section-title">v3 Methods</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{i18n.section("v3 Methods")}</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-subtitle">Model scope, inputs, and dataset notes.</div>',
+        f'<div class="section-subtitle">{i18n.section("Model scope, inputs, and dataset notes.")}</div>',
         unsafe_allow_html=True,
     )
-    st.info(
-        "The v3 estimator predicts high-risk category membership, not individual outcomes."
+    st.info(i18n.tr("The v3 estimator predicts high-risk category membership, not individual outcomes.")
     )
 
     summary_path = REPORT_DIR / "v3_feature_summary.md"
     render_markdown_file(
         summary_path,
-        f"Missing {summary_path}. Run src/v3_prepare_features.py.",
+        i18n.fmt("Missing {}. Run {}.", summary_path, "src/v3_prepare_features.py"),
         strip_title=True,
     )
 def page_relationships() -> None:
-    st.markdown('<div class="section-title">Relationships</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{i18n.section("Relationships")}</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-subtitle">Correlation views from the merged ML dataset.</div>',
+        f'<div class="section-subtitle">{i18n.section("Correlation views from the merged ML dataset.")}</div>',
         unsafe_allow_html=True,
     )
     render_page_guide("relationships")
@@ -3780,12 +3911,12 @@ def page_relationships() -> None:
     df = numeric(df, [col for col in df.columns if col.startswith("gbd_")])
     df = numeric(df, ["age_standardized_suicide_rate_2021"])
 
-    age = st.selectbox("Age group", sorted(df["age_name"].unique()))
+    age = st.selectbox(i18n.tr("Age group"), sorted(df["age_name"].unique()))
     df = df[df["age_name"] == age]
 
     gbd_cols = [col for col in df.columns if col.startswith("gbd_") and col != "gbd_year"]
-    x_col = st.selectbox("X variable", gbd_cols, index=0)
-    y_col = st.selectbox("Y variable", ["age_standardized_suicide_rate_2021"] + gbd_cols, index=0)
+    x_col = st.selectbox(i18n.tr("X variable"), gbd_cols, index=0)
+    y_col = st.selectbox(i18n.tr("Y variable"), ["age_standardized_suicide_rate_2021"] + gbd_cols, index=0)
 
     scatter = df.dropna(subset=[x_col, y_col])
     fig = px.scatter(
@@ -3799,7 +3930,7 @@ def page_relationships() -> None:
     st.plotly_chart(fig, use_container_width=True)
     render_chart_guide("relationships_scatter", summary=summarize_corr(scatter, x_col, y_col))
 
-    st.markdown("### Correlation heatmap")
+    st.markdown(i18n.section("### Correlation heatmap"))
     corr_cols = ["age_standardized_suicide_rate_2021"] + gbd_cols
     corr = df[corr_cols].corr()
     fig = px.imshow(
@@ -3823,14 +3954,14 @@ def page_relationships() -> None:
 
 
 def page_ml_demo() -> None:
-    st.markdown('<div class="section-title">ML Demo</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{i18n.section("ML Demo")}</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-subtitle">Ridge and RandomForest quick model comparison.</div>',
+        f'<div class="section-subtitle">{i18n.section("Ridge and RandomForest quick model comparison.")}</div>',
         unsafe_allow_html=True,
     )
     render_page_guide("ml_demo")
     if ColumnTransformer is None:
-        st.error("scikit-learn is required for the ML demo.")
+        st.error(i18n.tr("scikit-learn is required for the ML demo."))
         return
 
     df = load_ml_baseline_features()
@@ -3845,8 +3976,7 @@ def page_ml_demo() -> None:
     ]
     missing = [col for col in required_cols if col not in df.columns]
     if missing:
-        st.error(
-            "Missing columns for ML demo: "
+        st.error(i18n.tr("Missing columns for ML demo: ")
             + ", ".join(missing)
             + ". Re-run src/06_ml_baseline.py."
         )
@@ -3856,9 +3986,9 @@ def page_ml_demo() -> None:
     if "crude_suicide_rate_2021" in df.columns:
         target_options.append("crude_suicide_rate_2021")
 
-    st.caption("Uses one row per country to avoid leakage across age groups.")
-    target = st.selectbox("Target", target_options)
-    test_size = st.slider("Test size", 0.2, 0.4, 0.25, step=0.05)
+    st.caption(i18n.tr("Uses one row per country to avoid leakage across age groups."))
+    target = st.selectbox(i18n.tr("Target"), target_options)
+    test_size = st.slider(i18n.tr("Test size"), 0.2, 0.4, 0.25, step=0.05)
 
     feature_cols = [
         "gbd_depression_dalys_rate_both",
@@ -3869,7 +3999,7 @@ def page_ml_demo() -> None:
 
     model_df = df.dropna(subset=[target] + feature_cols)
     if model_df.empty:
-        st.warning("Not enough data for ML demo.")
+        st.warning(i18n.tr("Not enough data for ML demo."))
         return
 
     X = model_df[feature_cols + categorical_features]
@@ -3927,7 +4057,7 @@ def page_ml_demo() -> None:
 
     cv_path = REPORT_DIR / "ml_baseline_cv.csv"
     if cv_path.exists():
-        st.markdown("### Cross-validation (5-fold)")
+        st.markdown(i18n.section("### Cross-validation (5-fold)"))
         cv_df = load_csv(cv_path)
         st.dataframe(cv_df, use_container_width=True)
         if cv_df.empty or "mae_mean" not in cv_df.columns:
@@ -3940,7 +4070,7 @@ def page_ml_demo() -> None:
             )
         render_chart_guide("ml_cv", summary=cv_summary)
     else:
-        st.info("Run src/06_ml_baseline.py to generate cross-validation metrics.")
+        st.info(i18n.tr("Run src/06_ml_baseline.py to generate cross-validation metrics."))
 
     fig = go.Figure()
     fig.add_trace(
@@ -3976,7 +4106,7 @@ def page_ml_demo() -> None:
         pred_summary = f"Top R2: {best_r2['Model']} ({best_r2['R2']:.2f})."
     render_chart_guide("ml_pred_actual", summary=pred_summary)
 
-    st.markdown("### Feature importance (RandomForest)")
+    st.markdown(i18n.section("### Feature importance (RandomForest)"))
     rf_model = rf.named_steps["model"]
     feature_names = (
         rf.named_steps["prep"]
@@ -4005,87 +4135,87 @@ def page_ml_demo() -> None:
 def page_methods() -> None:
     if VERSION == "v2":
         st.markdown(
-            '<div class="section-title">Methods & Synthetic Data</div>',
+            f'<div class="section-title">{i18n.section("Methods & Synthetic Data")}</div>',
             unsafe_allow_html=True,
         )
-        st.info("Synthetic data for demonstration only.")
+        st.info(i18n.tr("Synthetic data for demonstration only."))
         render_page_guide_from_map("v2_methods", V2_PAGE_GUIDES)
 
-        st.markdown("### Synthetic generation notes")
+        st.markdown(i18n.section("### Synthetic generation notes"))
         render_markdown_file(
             REPORT_DIR / "synth_generation_notes.md",
-            f"Missing {REPORT_DIR / 'synth_generation_notes.md'}. Run src/v2_generate_synth.py.",
+            i18n.fmt("Missing {}. Run {}.", REPORT_DIR / 'synth_generation_notes.md', "src/v2_generate_synth.py"),
             strip_title=True,
         )
 
-        with st.expander("Synthetic data dictionary", expanded=False):
+        with st.expander(i18n.tr("Synthetic data dictionary"), expanded=False):
             render_markdown_file(
                 REPORT_DIR / "synth_data_dictionary.md",
-                f"Missing {REPORT_DIR / 'synth_data_dictionary.md'}. Run src/v2_generate_synth.py.",
+                i18n.fmt("Missing {}. Run {}.", REPORT_DIR / 'synth_data_dictionary.md', "src/v2_generate_synth.py"),
                 strip_title=True,
             )
 
-        st.markdown("### Synthetic validity report")
+        st.markdown(i18n.section("### Synthetic validity report"))
         render_markdown_file(
             REPORT_DIR / "v2_validity_report.md",
-            f"Missing {REPORT_DIR / 'v2_validity_report.md'}. Run src/v2_validity_report.py.",
+            i18n.fmt("Missing {}. Run {}.", REPORT_DIR / 'v2_validity_report.md', "src/v2_validity_report.py"),
             strip_title=True,
         )
 
-        st.markdown("### Analytics notes")
+        st.markdown(i18n.section("### Analytics notes"))
         render_markdown_file(
             REPORT_DIR / "v2_analytics_notes.md",
-            f"Missing {REPORT_DIR / 'v2_analytics_notes.md'}. Run src/v2_analytics.py.",
+            i18n.fmt("Missing {}. Run {}.", REPORT_DIR / 'v2_analytics_notes.md', "src/v2_analytics.py"),
             strip_title=True,
         )
 
-        with st.expander("Advanced methods notes", expanded=False):
-            st.markdown("#### Trajectory clustering")
+        with st.expander(i18n.tr("Advanced methods notes"), expanded=False):
+            st.markdown(i18n.section("#### Trajectory clustering"))
             render_markdown_file(
                 REPORT_DIR / "v2_trajectory_notes.md",
-                f"Missing {REPORT_DIR / 'v2_trajectory_notes.md'}. Run src/v2_trajectory.py.",
+                i18n.fmt("Missing {}. Run {}.", REPORT_DIR / 'v2_trajectory_notes.md', "src/v2_trajectory.py"),
                 strip_title=True,
             )
-            st.markdown("#### DTW clustering")
+            st.markdown(i18n.section("#### DTW clustering"))
             render_markdown_file(
                 REPORT_DIR / "v2_dtw_notes.md",
-                f"Missing {REPORT_DIR / 'v2_dtw_notes.md'}. Run src/v2_dtw_clusters.py.",
+                i18n.fmt("Missing {}. Run {}.", REPORT_DIR / 'v2_dtw_notes.md', "src/v2_dtw_clusters.py"),
                 strip_title=True,
             )
-            st.markdown("#### Graph clustering")
+            st.markdown(i18n.section("#### Graph clustering"))
             render_markdown_file(
                 REPORT_DIR / "v2_graph_notes.md",
-                f"Missing {REPORT_DIR / 'v2_graph_notes.md'}. Run src/v2_graph_cluster.py.",
+                i18n.fmt("Missing {}. Run {}.", REPORT_DIR / 'v2_graph_notes.md', "src/v2_graph_cluster.py"),
                 strip_title=True,
             )
-            st.markdown("#### DL forecast")
+            st.markdown(i18n.section("#### DL forecast"))
             render_markdown_file(
                 REPORT_DIR / "v2_dl_notes.md",
-                f"Missing {REPORT_DIR / 'v2_dl_notes.md'}. Run src/v2_dl_forecast.py.",
+                i18n.fmt("Missing {}. Run {}.", REPORT_DIR / 'v2_dl_notes.md', "src/v2_dl_forecast.py"),
                 strip_title=True,
             )
 
         metrics_path = REPORT_DIR / "v2_model_metrics.csv"
         if metrics_path.exists():
-            st.markdown("### Model metrics")
+            st.markdown(i18n.section("### Model metrics"))
             st.dataframe(load_csv(metrics_path), use_container_width=True)
 
-        st.markdown("### Data Quality (Great Expectations)")
+        st.markdown(i18n.section("### Data Quality (Great Expectations)"))
         ge_summary = REPORT_DIR / "v2_quality_summary.md"
         render_markdown_file(
             ge_summary,
-            f"Missing {ge_summary}. Run src/v2_ge_validate.py.",
+            i18n.fmt("Missing {}. Run {}.", ge_summary, "src/v2_ge_validate.py"),
             strip_title=True,
         )
 
         ge_report = REPORT_DIR / "ge_report.html"
         if ge_report.exists():
-            with st.expander("Open Great Expectations HTML report", expanded=False):
+            with st.expander(i18n.tr("Open Great Expectations HTML report"), expanded=False):
                 st.components.v1.html(ge_report.read_text(encoding="utf-8"), height=520, scrolling=True)
         return
 
     st.markdown(
-        '<div class="section-title">Methods, Data Model & Quality</div>',
+        f'<div class="section-title">{i18n.section("Methods, Data Model & Quality")}</div>',
         unsafe_allow_html=True,
     )
     render_page_guide("methods")
@@ -4110,24 +4240,24 @@ def page_methods() -> None:
         unsafe_allow_html=True,
     )
 
-    st.markdown("### Data Model (Star Schema)")
+    st.markdown(i18n.section("### Data Model (Star Schema)"))
     render_markdown_file(
         REPORT_DIR / "data_model.md",
         f"Data model not found. Run the BI pack to generate {REPORT_DIR / 'data_model.md'}.",
         strip_title=True,
     )
 
-    with st.expander("Data Dictionary", expanded=False):
+    with st.expander(i18n.tr("Data Dictionary"), expanded=False):
         render_markdown_file(
             REPORT_DIR / "data_dictionary.md",
             f"Data dictionary not found. Run the BI pack to generate {REPORT_DIR / 'data_dictionary.md'}.",
             strip_title=True,
         )
 
-    st.markdown("### Data Quality Scorecard")
+    st.markdown(i18n.section("### Data Quality Scorecard"))
     scorecard_df = load_report_csv(REPORT_DIR / "data_quality_scorecard.csv")
     if scorecard_df is None or scorecard_df.empty:
-        st.info("Data quality scorecard not found. Run src/07_data_quality_scorecard.py.")
+        st.info(i18n.tr("Data quality scorecard not found. Run src/07_data_quality_scorecard.py."))
     else:
         st.dataframe(scorecard_df, use_container_width=True)
 
@@ -4158,7 +4288,7 @@ def page_methods() -> None:
 
     iso_df = load_report_csv(REPORT_DIR / "data_quality_iso3_unmatched.csv")
     if iso_df is not None and not iso_df.empty:
-        st.markdown("#### ISO3 unmatched (by source_type)")
+        st.markdown(i18n.section("#### ISO3 unmatched (by source_type)"))
         st.dataframe(iso_df, use_container_width=True)
 
 
@@ -4212,40 +4342,27 @@ def pages_for(version: str) -> dict[str, callable]:
     return PAGES_V1
 
 
-VERSION_LABELS = {
-    "v0": "v0 · Visual gallery",
-    "v1": "v1 · Main dashboard",
-    "v2": "v2 · Advanced analytics",
-    "v3": "v3 · Risk estimator",
-}
-
-
 def main() -> None:
-    st.sidebar.markdown("## Navigation")
+    i18n.language_selector()
+    st.sidebar.markdown(f"## {i18n.t('nav.title')}")
     version_default = st.session_state.get("mhv_version", VERSION)
     version_choice = select_version(version_default)
     apply_version(version_choice)
     st.sidebar.markdown(
-        f'<span class="info-chip">{VERSION_LABELS.get(VERSION, VERSION)}</span>',
+        f'<span class="info-chip">{i18n.t(f"ver.{VERSION}")}</span>',
         unsafe_allow_html=True,
     )
-    st.sidebar.caption("Switch versions on the project website.")
+    st.sidebar.caption(i18n.t("nav.switch"))
     pages = pages_for(VERSION)
-    page = st.sidebar.radio("Go to", list(pages.keys()), key=f"nav_{VERSION}")
+    page = st.sidebar.radio(
+        i18n.t("nav.goto"), list(pages.keys()), key=f"nav_{VERSION}", format_func=i18n.page_label
+    )
 
     # --- Ethics / data disclaimer (always visible) ---
     if VERSION in ("v2", "v3"):
-        st.sidebar.warning(
-            "**Educational demo — not clinical.** v2/v3 run on **synthetic data** "
-            "and illustrate methodology only. Outputs are **not** medical advice, "
-            "diagnosis, or a risk assessment for any real person or country."
-        )
+        st.sidebar.warning(i18n.t("disc.synthetic"))
     else:
-        st.sidebar.info(
-            "**Educational use only — not clinical.** Built on public WHO (2021) & "
-            "IHME GBD (2023) data for learning and storytelling. Not medical advice "
-            "or diagnosis."
-        )
+        st.sidebar.info(i18n.t("disc.real"))
 
     pages[page]()
 
