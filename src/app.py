@@ -1259,10 +1259,10 @@ def page_v0_gallery() -> None:
     )
 
     st.markdown(
-        """
+        f"""
 <div class="v0-hero">
-  <h1>v0 Static Visuals Gallery</h1>
-  <p>Curated, presentation-ready visuals with clear objectives and chart rationale.</p>
+  <h1>{html_lib.escape(i18n.tr("v0 Static Visuals Gallery"))}</h1>
+  <p>{html_lib.escape(i18n.tr("Curated, presentation-ready visuals with clear objectives and chart rationale."))}</p>
 </div>
 """,
         unsafe_allow_html=True,
@@ -1358,7 +1358,10 @@ header, footer, div[data-testid="stToolbar"] { display: none; }
         st.markdown(f'<div class="v0-section">{html_lib.escape(dataset)}</div>', unsafe_allow_html=True)
         blurb = dataset_blurbs.get(dataset)
         if blurb:
-            st.markdown(f'<div class="section-subtitle">{html_lib.escape(blurb)}</div>', unsafe_allow_html=True)
+            st.markdown(
+                f'<div class="section-subtitle">{html_lib.escape(i18n.tr(blurb))}</div>',
+                unsafe_allow_html=True,
+            )
 
         rows = [section.iloc[i : i + 2] for i in range(0, len(section), 2)]
         for row_chunk in rows:
@@ -1377,7 +1380,7 @@ header, footer, div[data-testid="stToolbar"] { display: none; }
                     img_html = (
                         f'<img class="v0-image" src="{data_uri}" alt="{title}">'
                         if data_uri
-                        else '<div class="v0-image">Missing image</div>'
+                        else f'<div class="v0-image">{html_lib.escape(i18n.tr("Missing image"))}</div>'
                     )
                     card = f"""
 <div class="v0-card">
@@ -1386,11 +1389,11 @@ header, footer, div[data-testid="stToolbar"] { display: none; }
     <span class="v0-tag">{chart_type}</span>
   </div>
   {img_html}
-  <div class="v0-takeaway">Key takeaway: {takeaway}</div>
+  <div class="v0-takeaway">{html_lib.escape(i18n.tr("Key takeaway:"))} {takeaway}</div>
   <div class="v0-meta">
-    <div><span class="v0-label">Objective:</span> {objective}</div>
-    <div><span class="v0-label">Result:</span> {result}</div>
-    <div><span class="v0-label">Why this chart:</span> {why}</div>
+    <div><span class="v0-label">{html_lib.escape(i18n.tr("Objective:"))}</span> {objective}</div>
+    <div><span class="v0-label">{html_lib.escape(i18n.tr("Result:"))}</span> {result}</div>
+    <div><span class="v0-label">{html_lib.escape(i18n.tr("Why this chart:"))}</span> {why}</div>
   </div>
 </div>
 """
@@ -3688,7 +3691,7 @@ def page_v3_risk_estimator() -> None:
     country = st.selectbox(i18n.tr("Country"), sorted(df_sex["location_name"].unique()))
     country_row = df_sex[df_sex["location_name"] == country].iloc[0]
 
-    use_defaults = st.toggle("Use country defaults", value=True)
+    use_defaults = st.toggle(i18n.tr("Use country defaults"), value=True)
     st.caption(
         i18n.fmt("Region: {} | Income group: {}", country_row['region_name'], country_row['income_group'])
     )

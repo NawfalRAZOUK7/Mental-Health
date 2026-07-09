@@ -6,6 +6,35 @@ CHART_GUIDES_FR (bottom) holds French chart-guide entries keyed by chart_key.
 """
 
 UI_FR: dict[str, str] = {
+    # --- v0 gallery hero + card labels ---
+    "v0 Static Visuals Gallery": "Galerie de visuels statiques v0",
+    "Curated, presentation-ready visuals with clear objectives and chart rationale.":
+        "Visuels prêts à présenter, avec des objectifs clairs et la justification de chaque graphique.",
+    "Missing image": "Image manquante",
+    "Key takeaway:": "À retenir :",
+    "Objective:": "Objectif :",
+    "Result:": "Résultat :",
+    "Why this chart:": "Pourquoi ce graphique :",
+    "Use country defaults": "Utiliser les valeurs par défaut du pays",
+    # --- v0 gallery dataset blurbs ---
+    "WHO suicide indicators for 2021 with a focus on spatial patterns and rate comparability.":
+        "Indicateurs OMS du suicide pour 2021, axés sur les schémas spatiaux et la comparabilité des taux.",
+    "Regional distribution views to compare spread and variability by sex.":
+        "Vues de distribution régionale pour comparer la dispersion et la variabilité par sexe.",
+    "GBD DALYs burden for depressive disorders with age group rankings.":
+        "Fardeau en DALYs (GBD) des troubles dépressifs, avec classement par groupe d'âge.",
+    "Cause level deaths across mental and substance categories for cross cause comparison.":
+        "Décès par cause dans les catégories mentales et liées aux substances, pour comparaison inter-causes.",
+    "Age standardized death rates across causes and sexes for matrix scanning.":
+        "Taux de décès standardisés par âge, par causes et sexes, pour une lecture matricielle.",
+    "Longitudinal all cause trends to show metric trajectories over time.":
+        "Tendances longitudinales toutes causes, montrant l'évolution des mesures dans le temps.",
+    "Probability of death indicators highlighting spatial risk and top countries.":
+        "Indicateurs de probabilité de décès mettant en évidence le risque spatial et les principaux pays.",
+    "Risk factor composition view to show dominant contributors.":
+        "Vue de la composition des facteurs de risque montrant les contributeurs dominants.",
+    "Anemia YLD rates across years by sex for temporal comparison.":
+        "Taux de YLD de l'anémie au fil des ans par sexe, pour comparaison temporelle.",
     # --- Widget labels ---
     "Country": "Pays",
     "Sex": "Sexe",
