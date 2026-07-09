@@ -1,12 +1,12 @@
 \chapter{Conclusion et perspectives}
 \section{Constats principaux}
-Ce projet met en évidence la forte hétérogénéité des taux de suicide et des indicateurs associés selon les pays, les régions, le sexe et l'âge. Les tableaux de bord v1 offrent une lecture claire des tendances et des comparaisons internationales, tandis que les couches analytiques (v2/v3) illustrent la valeur d'approches avancées pour la segmentation, la détection d'anomalies et l'estimation de risque.
+Ce projet met en évidence la forte hétérogénéité des taux de suicide et des indicateurs associés selon les pays, les régions, le sexe et l'âge. Les tableaux de bord v1 offrent une lecture claire des tendances et des comparaisons internationales, tandis que la suite analytique sur données réelles apporte une contribution méthodologique : identification et correction d'une fuite de données, enrichissement par covariables, modèles réglés avec intervalles conformes, modèle hiérarchique, réduction de dimension, fouille de motifs et autocorrélation spatiale. Un enseignement transversal est l'\textbf{honnêteté méthodologique} : après correction de la fuite, la performance réelle est modeste, ce qui est assumé plutôt que masqué. Enfin, la diffusion (API, site web bilingue, chatbot de guidage) rend le travail accessible à un public large.
 
 \section{Perspectives}
-Plusieurs extensions sont envisageables :
+Plusieurs extensions restent envisageables :
 \begin{itemize}
-    \item Intégrer des années supplémentaires (séries longues) pour consolider l'analyse temporelle.
-    \item Enrichir les facteurs explicatifs (variables socio-économiques, services de santé, indicateurs d'accessibilité).
+    \item Intégrer des années supplémentaires (séries longues) pour consolider l'analyse temporelle et valider les prévisions sur données réelles.
+    \item Étendre encore les facteurs explicatifs (services de santé, indicateurs d'accessibilité) au-delà des covariables socio-économiques déjà intégrées.
     \item Valider les modèles sur des données externes ou des études de cas nationales.
-    \item Ajouter des mécanismes de gouvernance des données (audit automatique, versioning avancé).
+    \item Renforcer la gouvernance des données (audit automatique, versioning avancé) et ajouter des variantes bayésiennes du modèle hiérarchique.
 \end{itemize}

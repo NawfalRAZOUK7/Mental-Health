@@ -14,6 +14,8 @@ Une détection d'anomalies met en évidence des pays atypiques (valeurs extrême
 \section{Forecasts et backtest}
 Les tendances régionales sont modélisées avec des approches classiques et une variante deep learning. Un backtest évalue la performance via MAE/RMSE et met en comparaison les trajectoires prédites vs observées.
 
+\paragraph{Prévision globale multi-séries.} Plutôt que d'ajuster un modèle par série (approche fragile quand chaque série est courte), un \textbf{modèle global} est entraîné conjointement sur l'ensemble des séries pays. La baseline (dérive naïve) doit être battue pour justifier toute complexité. En option, des modèles profonds sont disponibles : un N-BEATS en PyTorch pur, ainsi que les implémentations \texttt{darts} (N-BEATS et \emph{Temporal Fusion Transformer}), sélectionnables via \texttt{MHV\_DEEP\_BACKEND}. Ces modèles restent optionnels et isolés (\texttt{requirements-deep.txt}) afin de ne pas alourdir l'installation de base. Comme toute la v2, ils s'exécutent sur des données synthétiques et constituent une démonstration méthodologique.
+
 \section{Régression quantile et intervalles}
 La régression quantile permet de produire des intervalles de prédiction (ex. quantiles 0.1, 0.5, 0.9) afin d'exprimer l'incertitude et de ne pas se limiter à une valeur ponctuelle.
 

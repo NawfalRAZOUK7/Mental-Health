@@ -1,14 +1,17 @@
 \chapter{Reproductibilité}
 \section{Dépendances}
-Les dépendances sont séparées en deux niveaux :
+Les dépendances sont organisées par niveau, du plus léger au plus lourd :
 \begin{itemize}
     \item \texttt{requirements.txt} : dépendances cœur (pandas, numpy, plotly, streamlit, scikit-learn, etc.).
-    \item \texttt{requirements-v2.txt} : dépendances avancées (torch, tslearn, great\_expectations, mlxtend, networkx, streamlit-plotly-events).
+    \item \texttt{requirements-v2.txt} : dépendances de démonstration v2 (tslearn, great\_expectations, mlxtend, networkx, streamlit-plotly-events).
+    \item \texttt{requirements-advanced.txt} : suite ML / data-mining sur données réelles (lightgbm, optuna, shap, mapie, statsmodels, umap-learn, pysubgroup).
+    \item \texttt{requirements-deep.txt} (optionnel) : prévision profonde (torch, pytorch-lightning, darts).
+    \item Autocorrélation spatiale (optionnel) : \texttt{libpysal esda spreg}.
 \end{itemize}
 Installation recommandée :
 \begin{verbatim}
 pip install -r requirements.txt
-pip install -r requirements-v2.txt
+pip install -r requirements-advanced.txt   # suite avancée (données réelles)
 \end{verbatim}
 
 \section{Exécuter chaque version}
@@ -18,7 +21,14 @@ Les commandes sont centralisées dans \texttt{VERSIONS.md}. Résumé :
     \item v1 (pipeline complet) : \texttt{python scripts/run\_v1\_pipeline.py}
     \item v2 (synthétique/avancé) : \texttt{python scripts/run\_v2\_pipeline.py}
     \item v3 (risk estimator) : \texttt{python scripts/run\_v3\_pipeline.py}
+    \item Suite avancée (données réelles) : \texttt{python scripts/run\_advanced.py}
     \item Dashboard : \texttt{python scripts/run\_app.py --version vX}
+\end{itemize}
+Les modules lourds sont optionnels et activés par variable d'environnement, en
+échouant proprement si leurs dépendances sont absentes :
+\begin{itemize}
+    \item Autocorrélation spatiale : \texttt{MHV\_SPATIAL=1 python scripts/run\_advanced.py}
+    \item Prévision profonde : \texttt{MHV\_DEEP=1 [MHV\_DEEP\_BACKEND=torch|darts|all] python src/v2\_global\_forecast.py}
 \end{itemize}
 
 \section{Sorties attendues}
@@ -45,4 +55,13 @@ Les commandes sont centralisées dans \texttt{VERSIONS.md}. Résumé :
 \begin{itemize}
     \item \texttt{v3/data\_clean/} : tables de features v1/v2
     \item \texttt{v3/report/} : résumé des features et rapports légers
+\end{itemize}
+
+\section{Service, diffusion et internationalisation}
+Au-delà des tableaux de bord, le projet est diffusé sous forme de produit :
+\begin{itemize}
+    \item \textbf{Service de prédiction} : une API \texttt{FastAPI} (\texttt{api/}) expose des points d'accès de prédiction avec intervalles conformes, documentés via Swagger, et conteneurisés (\texttt{Docker} + \texttt{docker-compose}).
+    \item \textbf{Site web} : une application \texttt{Next.js} / React (\texttt{web/}) présente le projet, un estimateur interactif « prédire un pays », des liens vers chaque version des tableaux de bord, et un chatbot de guidage fondé sur des règles (sans LLM, sans coût d'API). Le site est exporté en statique et déployé gratuitement.
+    \item \textbf{Bilinguisme (FR / EN)} : le site, le chatbot et l'intégralité des textes des tableaux de bord Streamlit (v0--v3) sont traduits, avec un sélecteur de langue. L'architecture repose sur des dictionnaires et des fonctions d'aide (\texttt{i18n}).
+    \item \textbf{Déploiement} : tableaux de bord sur Streamlit Community Cloud, site web sur Vercel ; l'ensemble s'appuie sur des offres gratuites, sans service payant.
 \end{itemize}

@@ -32,5 +32,13 @@ La version v0 (visualisations statiques) exploite l'ensemble des fichiers bruts 
     \item \texttt{IHME-GBD\_2023\_DATA-anemia-prevalence-ylds-1.csv} (56\,520 lignes) : 2020--2023, mesures Prevalence/YLDs, métriques Number/Percent/Rate, âge \texttt{All ages}.
 \end{itemize}
 
+\section{Covariables socio-économiques (Banque mondiale)}
+Pour l'analyse avancée sur données réelles, des covariables issues de la
+\textbf{Banque mondiale} (World Bank Open Data) sont récupérées et mises en cache
+(\texttt{data\_raw/worldbank\_covariates.csv}), par exemple l'espérance de vie et
+la consommation d'alcool. Elles sont jointes par code ISO3 à la table pays et
+deviennent, après suppression de la fuite de données, les principaux facteurs
+explicatifs du modèle.
+
 \section{Notes de couverture}
 La couverture temporelle est hétérogène : OMS est figée sur 2021, tandis que GBD est principalement 2023, avec des séries courtes pour les tendances (2021--2023) et l'anémie (2020--2023). Les métriques \texttt{Rate} sont des taux (par 100\,000 habitants), \texttt{Number} des volumes bruts, \texttt{Percent} des parts relatives, et \texttt{Probability of death} une probabilité entre 0 et 1. Les variables de sexe (Both/Male/Female) et d'âge (\texttt{<20}, \texttt{20-24}, \texttt{25+}, \texttt{All ages}, \texttt{Age-standardized}) sont harmonisées dans la phase de nettoyage pour assurer la cohérence des comparaisons.

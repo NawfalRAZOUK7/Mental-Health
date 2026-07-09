@@ -5,6 +5,9 @@ Le scorecard de qualité (\texttt{v1/report/data\_quality\_scorecard.md}) montre
 \section{Fusion inter-années}
 La fusion principale combine un outcome OMS 2021 avec des features GBD 2023. Cela introduit un décalage temporel explicite : les relations estimées ne sont pas causales et peuvent varier entre les périodes. Cette limitation est affichée dans la page méthodes du tableau de bord et rappelle que les analyses ML sont exploratoires.
 
+\section{Fuite de données et petit échantillon}
+Le taux d'automutilation (IHME) est presque identique au suicide (OMS) : l'inclure comme prédicteur constituait une \emph{fuite de données}, corrigée en le retirant (chapitre~\ref{chap:advanced_real}). Après correction, la performance honnête est modeste ($R^2 \approx 0{,}19$ en validation croisée), ce qui reflète la difficulté réelle de la tâche sur seulement 183 pays. Les intervalles conformes accompagnent donc chaque prédiction pour exprimer cette incertitude. Par ailleurs, l'analyse d'autocorrélation utilise un voisinage en \emph{espace de features} et non géographique ; elle ne doit pas être lue comme une analyse spatiale au sens cartographique.
+
 \section{Risque d'erreur écologique}
 Les analyses sont conduites à l'échelle des pays et régions. Les corrélations observées ne doivent pas être interprétées comme des relations individuelles. Cette erreur écologique est une limite classique des analyses macroscopiques et doit être mentionnée dans toute interprétation.
 
