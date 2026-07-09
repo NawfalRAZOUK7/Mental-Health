@@ -70,6 +70,8 @@ export const translations = {
     "footer.p1": "Mental Health Viz — educational analytics on public data. Sources: WHO suicide statistics (2021), IHME Global Burden of Disease (2023), World Bank Open Data.",
     "footer.p2": "Not medical advice. If you or someone you know is struggling, please contact a local health professional or crisis line. Code: MIT · Content: CC BY 4.0.",
     "footer.github": "GitHub repository",
+    "footer.author": "By Nawfal RAZOUK",
+    "footer.supervisor": "Supervised by Nabila ZRIRA (ENSMR)",
   },
 
   fr: {
@@ -138,6 +140,8 @@ export const translations = {
     "footer.p1": "Mental Health Viz — analyses éducatives sur données publiques. Sources : statistiques de l'OMS sur le suicide (2021), IHME Global Burden of Disease (2023), World Bank Open Data.",
     "footer.p2": "Ceci n'est pas un avis médical. Si vous ou une personne de votre entourage traversez une période difficile, contactez un professionnel de santé local ou une ligne d'écoute. Code : MIT · Contenu : CC BY 4.0.",
     "footer.github": "Dépôt GitHub",
+    "footer.author": "Par Nawfal RAZOUK",
+    "footer.supervisor": "Encadré par Nabila ZRIRA (ENSMR)",
   },
 };
 

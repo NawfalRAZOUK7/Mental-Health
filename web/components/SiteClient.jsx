@@ -7,6 +7,11 @@ import { LANGS } from "../lib/i18n";
 import { VERSIONS } from "../lib/versions";
 
 const REPO_URL = "https://github.com/NawfalRAZOUK7/Mental-Health";
+// Author + supervisor contact links shown in the footer.
+const AUTHOR_PORTFOLIO = "https://nawfalrazouk.me";
+const AUTHOR_LINKEDIN = "https://www.linkedin.com/in/nawfal-razouk";
+const AUTHOR_GITHUB = "https://github.com/NawfalRAZOUK7";
+const SUPERVISOR_LINKEDIN = "https://www.linkedin.com/in/dr-nabila-zrira-99321563";
 const BP = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const FIGURES = [
@@ -143,6 +148,20 @@ function Site({ predictions, scaleMax }) {
         <div className="wrap">
           <p><b>Mental Health Viz</b> — {t("footer.p1").replace("Mental Health Viz — ", "")}</p>
           <p>{t("footer.p2")}</p>
+          <p className="footer-credits">
+            <span>{t("footer.author")}</span>
+            {" — "}
+            <a href={AUTHOR_PORTFOLIO} target="_blank" rel="noopener noreferrer">Portfolio</a>
+            {" · "}
+            <a href={AUTHOR_LINKEDIN} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            {" · "}
+            <a href={AUTHOR_GITHUB} target="_blank" rel="noopener noreferrer">GitHub</a>
+          </p>
+          <p className="footer-credits">
+            <span>{t("footer.supervisor")}</span>
+            {" — "}
+            <a href={SUPERVISOR_LINKEDIN} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </p>
           <p><a href={REPO_URL} target="_blank" rel="noopener noreferrer">{t("footer.github")}</a></p>
         </div>
       </footer>
